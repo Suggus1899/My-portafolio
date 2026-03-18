@@ -135,6 +135,86 @@ export const blogPosts: BlogPost[] = [
         'Valida sempre con test e lint prima di chiudere un task.'
       ]
     }
+  },
+  {
+    slug: 'spring-security-para-apis-rest',
+    date: '2026-03-01',
+    readTime: '7 min',
+    tags: ['Java', 'Spring Boot', 'Security'],
+    title: {
+      es: 'Spring Security para APIs REST: autenticacion sin magia',
+      en: 'Spring Security for REST APIs: Authentication Without Magic',
+      fr: 'Spring Security pour les APIs REST: authentification sans magie',
+      it: 'Spring Security per API REST: autenticazione senza magia'
+    },
+    excerpt: {
+      es: 'Como configurar JWT, roles y permisos en Spring Boot de forma explícita y mantenible.',
+      en: 'How to configure JWT, roles and permissions in Spring Boot in an explicit and maintainable way.',
+      fr: 'Comment configurer JWT, roles et permissions dans Spring Boot de maniere explicite et maintenable.',
+      it: 'Come configurare JWT, ruoli e permessi in Spring Boot in modo esplicito e manutenibile.'
+    },
+    content: {
+      es: [
+        'Spring Security puede parecer complicado, pero la clave esta en entender su cadena de filtros y configurar explicitamente lo que necesitas.',
+        'Para APIs REST stateless, lo mas limpio es deshabilitar sesiones y CSRF, usar un filtro JWT propio y definir rules de acceso por endpoint.',
+        'Los roles y permisos deben vivir en el token y validarse en cada request, no en sesion. Esto hace la arquitectura horizontal y escalable.'
+      ],
+      en: [
+        'Spring Security can feel complex, but the key is understanding its filter chain and configuring only what you actually need.',
+        'For stateless REST APIs, the cleanest approach is to disable sessions and CSRF, add a custom JWT filter and define per-endpoint access rules.',
+        'Roles and permissions should live in the token and be validated per request, not per session. This enables stateless horizontal scaling.'
+      ],
+      fr: [
+        'Spring Security peut sembler complexe, mais la cle est de comprendre sa chaine de filtres et de configurer uniquement ce dont vous avez besoin.',
+        'Pour des APIs REST stateless, la meilleure approche est de desactiver les sessions et CSRF, ajouter un filtre JWT personnalise et definir des regles par endpoint.',
+        'Les roles et permissions doivent vivre dans le token et etre valides a chaque requete, pas en session. Cela permet une scalabilite horizontale.'
+      ],
+      it: [
+        'Spring Security puo sembrare complesso, ma la chiave e capire la sua catena di filtri e configurare solo cio di cui hai bisogno.',
+        'Per API REST stateless, l approccio piu pulito e disabilitare sessioni e CSRF, aggiungere un filtro JWT personalizzato e definire regole per endpoint.',
+        'Ruoli e permessi devono risiedere nel token e essere validati per ogni richiesta, non in sessione. Questo abilitante il scaling orizzontale.'
+      ]
+    }
+  },
+  {
+    slug: 'de-javascript-a-typescript-en-el-backend',
+    date: '2026-02-20',
+    readTime: '5 min',
+    tags: ['TypeScript', 'JavaScript', 'Backend'],
+    title: {
+      es: 'De JavaScript a TypeScript: que cambia realmente en el backend',
+      en: 'From JavaScript to TypeScript: What Actually Changes on the Backend',
+      fr: 'De JavaScript a TypeScript: ce qui change vraiment cote backend',
+      it: 'Da JavaScript a TypeScript: cosa cambia davvero nel backend'
+    },
+    excerpt: {
+      es: 'Mas alla de los tipos: como TypeScript cambia la arquitectura, el refactor y la confianza en el codigo.',
+      en: 'Beyond types: how TypeScript changes architecture, refactoring confidence and runtime predictability.',
+      fr: 'Au-dela des types: comment TypeScript change l architecture, la confiance dans le refactor et la predictibilite du code.',
+      it: 'Oltre i tipi: come TypeScript cambia l architettura, la confidenza nel refactor e la prevedibilita del codice.'
+    },
+    content: {
+      es: [
+        'Migrar a TypeScript no es solo poner tipos encima del codigo. Es repensar como estructuras dominios, contratos y capas de tu aplicacion.',
+        'Los beneficios reales aparecen en el refactor: cambias una interfaz y el compilador te senala todos los puntos de rotura antes de ejecutar nada.',
+        'Para el backend, los mayores ganancias son en los contratos de API (request/response shapes), la validacion de entrada y la seguridad de los modelos de datos.'
+      ],
+      en: [
+        'Migrating to TypeScript is not just adding types on top of existing code. It is rethinking how you structure domains, contracts and application layers.',
+        'The real benefits appear during refactoring: change one interface and the compiler immediately shows you every breakpoint before you run anything.',
+        'For backends, the biggest wins are in API contracts (request/response shapes), input validation and type-safe data models.'
+      ],
+      fr: [
+        'Migrer vers TypeScript n est pas juste ajouter des types sur du code existant. C est repenser comment structurer domaines, contrats et couches applicatives.',
+        'Les vrais benefices apparaissent lors du refactor: changez une interface et le compilateur vous montre immediatement chaque point de rupture.',
+        'Pour le backend, les plus grands gains sont dans les contrats API (formes requete/reponse), la validation des entrees et les modeles de donnees types.'
+      ],
+      it: [
+        'Migrare a TypeScript non significa solo aggiungere tipi al codice esistente. Significa ripensare come strutturare dominio, contratti e layer applicativi.',
+        'I vantaggi reali emergono nel refactor: cambia un interfaccia e il compilatore mostra immediatamente ogni punto di rottura prima di eseguire qualsiasi cosa.',
+        'Per il backend, i guadagni piu grandi sono nei contratti API (forme request/response), la validazione degli input e i modelli di dati tipizzati.'
+      ]
+    }
   }
 ];
 

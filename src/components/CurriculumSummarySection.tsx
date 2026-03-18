@@ -1,5 +1,8 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import { Download, BriefcaseBusiness, GraduationCap, Sparkles } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const highlights = [
   {
@@ -20,7 +23,14 @@ export default function CurriculumSummarySection() {
   const t = useTranslations('Curriculum');
 
   return (
-    <section id="curriculum" className="w-full py-24 px-6">
+    <motion.section
+      id="curriculum"
+      className="w-full py-24 px-6"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+    >
       <div className="max-w-4xl mx-auto border-2 border-zinc-900 bg-white/95 p-8 dark:border-zinc-100 dark:bg-zinc-950/95">
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
           {t('kicker')}
@@ -47,7 +57,7 @@ export default function CurriculumSummarySection() {
 
         <div className="mt-8 flex flex-wrap gap-3">
           <a
-            href="/docs/sintesis-curricular.md"
+            href="/sintesis-curricular.pdf"
             download
             className="inline-flex items-center gap-2 border-2 border-zinc-900 bg-zinc-900 px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-zinc-700 dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
           >
@@ -62,6 +72,6 @@ export default function CurriculumSummarySection() {
           </a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

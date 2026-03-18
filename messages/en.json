@@ -110,5 +110,40 @@
   },
   "Education": {
     "title": "Education & Certifications"
+  },
+  "Stats": {
+    "yearsLabel": "Years of experience",
+    "projectsLabel": "Projects built",
+    "languagesLabel": "Languages spoken",
+    "techLabel": "Cloud / AI Technologies"
+  },
+  "Availability": {
+    "badge": "Available for work",
+    "title": "Open to remote opportunities",
+    "description": "Looking for freelance projects or backend positions where I can add value with robust APIs, clean architecture and continuous delivery. I work 100% remotely from Venezuela (UTC-4).",
+    "modalityLabel": "Modality",
+    "modality": "100% Remote",
+    "contractLabel": "Contract type",
+    "contract": "Freelance or Full-time",
+    "timezoneLabel": "Timezone",
+    "timezone": "UTC-4 (Venezuela)",
+    "ctaWhatsapp": "Chat on WhatsApp",
+    "ctaEmail": "Contact by email"
+  },
+  "Contact": {
+    "title": "Contact me",
+    "subtitle": "Have a project in mind or want to talk? Write to me directly.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your full name",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell me what you have in mind...",
+    "submit": "Send message",
+    "sending": "Sending...",
+    "successTitle": "Message sent!",
+    "successMessage": "Thanks for reaching out. I will get back to you soon.",
+    "sendAnother": "Send another message",
+    "errorMessage": "There was an error sending. Write to me directly on WhatsApp or email."
   }
 }

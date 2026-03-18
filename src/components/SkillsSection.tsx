@@ -1,4 +1,7 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
+import { motion } from 'framer-motion';
 import { 
   SiHtml5, SiReact, SiNextdotjs, SiVuedotjs, SiAngular, SiTailwindcss, 
   SiJavascript, SiTypescript, SiFramer, SiNodedotjs, SiExpress, SiMongodb, 
@@ -67,7 +70,14 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section id="skills" className="py-24 px-6 max-w-4xl mx-auto mb-24 w-full">
+    <motion.section
+      id="skills"
+      className="py-24 px-6 max-w-4xl mx-auto mb-24 w-full"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+    >
       <h2 className="text-3xl font-space font-black uppercase mb-4 tracking-tight">{t('title')}</h2>
       <div className="mb-10 h-[2px] w-36 bg-zinc-900/85 dark:bg-zinc-100/85" />
       
@@ -91,6 +101,6 @@ export default function SkillsSection() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

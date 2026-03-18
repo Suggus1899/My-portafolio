@@ -1,4 +1,7 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
+import { motion } from 'framer-motion';
 
 export default function ExperienceSection() {
   const t = useTranslations('Experience');
@@ -20,7 +23,14 @@ export default function ExperienceSection() {
   ];
 
   return (
-    <section id="experience" className="py-24 px-6 max-w-4xl mx-auto">
+    <motion.section
+      id="experience"
+      className="py-24 px-6 max-w-4xl mx-auto"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+    >
       <h2 className="text-3xl font-space font-black uppercase mb-4 tracking-tight">{t('title')}</h2>
       <div className="mb-10 h-[2px] w-40 bg-zinc-900/85 dark:bg-zinc-100/85" />
       <div className="space-y-12">
@@ -43,6 +53,6 @@ export default function ExperienceSection() {
           </article>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

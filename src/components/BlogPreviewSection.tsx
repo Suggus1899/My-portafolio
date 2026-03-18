@@ -1,14 +1,24 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import type { AppLocale } from '@/data/blogPosts';
 import { getBlogPostsForLocale } from '@/data/blogPosts';
+import { motion } from 'framer-motion';
 
 export default function BlogPreviewSection({ locale }: { locale: AppLocale }) {
   const t = useTranslations('Blog');
   const posts = getBlogPostsForLocale(locale).slice(0, 3);
 
   return (
-    <section id="blog" className="py-24 px-6 max-w-4xl mx-auto w-full">
+    <motion.section
+      id="blog"
+      className="py-24 px-6 max-w-4xl mx-auto w-full"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+    >
       <div className="flex flex-wrap items-end justify-between gap-4 mb-10">
         <div>
           <h2 className="text-3xl font-space font-black uppercase tracking-tight">{t('title')}</h2>
@@ -35,6 +45,6 @@ export default function BlogPreviewSection({ locale }: { locale: AppLocale }) {
           </article>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

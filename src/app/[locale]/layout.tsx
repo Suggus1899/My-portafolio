@@ -8,6 +8,7 @@ import '../globals.css';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ScrollProgressBar from '@/components/ScrollProgressBar';
 
 type AppLocale = (typeof routing.locales)[number];
 
@@ -42,12 +43,21 @@ export async function generateMetadata({
       url: `/${appLocale}`,
       siteName: 'Gustavo Colina Portfolio',
       locale: appLocale,
-      type: 'website'
+      type: 'website',
+      images: [
+        {
+          url: `${siteUrl}/og-image.png`,
+          width: 1200,
+          height: 630,
+          alt: 'Gustavo Colina — Software Engineer'
+        }
+      ]
     },
     twitter: {
       card: 'summary_large_image',
       title: t('title'),
-      description: t('description')
+      description: t('description'),
+      images: [`${siteUrl}/og-image.png`]
     }
   };
 }
@@ -71,6 +81,7 @@ export default async function RootLayout({
       <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased bg-white text-zinc-900 dark:bg-[#0a0a0a] dark:text-zinc-100 transition-colors duration-300 selection:bg-zinc-800 selection:text-white dark:selection:bg-zinc-200 dark:selection:text-black`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <NextIntlClientProvider messages={messages}>
+            <ScrollProgressBar />
             <Navbar />
             <main className="pt-24 min-h-screen page-gradient">
               {children}

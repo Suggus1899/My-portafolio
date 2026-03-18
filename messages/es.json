@@ -110,5 +110,40 @@
   },
   "Education": {
     "title": "Educación y Certificaciones"
+  },
+  "Stats": {
+    "yearsLabel": "Años de experiencia",
+    "projectsLabel": "Proyectos construidos",
+    "languagesLabel": "Idiomas dominados",
+    "techLabel": "Tecnologías Cloud / AI"
+  },
+  "Availability": {
+    "badge": "Disponible para trabajar",
+    "title": "Abierto a oportunidades remotas",
+    "description": "Busco proyectos freelance o posiciones de backend donde pueda aportar valor con APIs robustas, arquitectura limpia y entrega continua. Trabajo 100% remoto desde Venezuela (UTC-4).",
+    "modalityLabel": "Modalidad",
+    "modality": "100% Remoto",
+    "contractLabel": "Tipo de contrato",
+    "contract": "Freelance o Full-time",
+    "timezoneLabel": "Zona horaria",
+    "timezone": "UTC-4 (Venezuela)",
+    "ctaWhatsapp": "Escribir por WhatsApp",
+    "ctaEmail": "Contactar por correo"
+  },
+  "Contact": {
+    "title": "Contáctame",
+    "subtitle": "¿Tienes un proyecto en mente o quieres conversar? Escríbeme directamente.",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu nombre completo",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "tu@email.com",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Cuéntame qué tienes en mente...",
+    "submit": "Enviar mensaje",
+    "sending": "Enviando...",
+    "successTitle": "¡Mensaje enviado!",
+    "successMessage": "Gracias por escribirme. Te respondo pronto.",
+    "sendAnother": "Enviar otro mensaje",
+    "errorMessage": "Hubo un error al enviar. Escríbeme directamente por WhatsApp o email."
   }
 }

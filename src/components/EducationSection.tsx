@@ -1,5 +1,8 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import { GraduationCap, Award } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function EducationSection() {
   const t = useTranslations('Education');
@@ -27,7 +30,14 @@ export default function EducationSection() {
   ];
 
   return (
-    <section id="education" className="py-24 px-6 max-w-4xl mx-auto w-full">
+    <motion.section
+      id="education"
+      className="py-24 px-6 max-w-4xl mx-auto w-full"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+    >
       <h2 className="text-3xl font-space font-black uppercase mb-4 tracking-tight">{t('title')}</h2>
       <div className="mb-10 h-[2px] w-52 bg-zinc-900/85 dark:bg-zinc-100/85" />
       
@@ -70,6 +80,6 @@ export default function EducationSection() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

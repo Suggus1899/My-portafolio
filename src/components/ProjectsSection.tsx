@@ -1,6 +1,9 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import { ArrowUpRight, PlayCircle, Github } from 'lucide-react';
 import repos from '../repos.json';
+import { motion } from 'framer-motion';
 
 type Repo = {
   name: string;
@@ -40,7 +43,14 @@ export default function ProjectsSection() {
   const allProjects: Project[] = [privateProject, ...(repos as Repo[])];
 
   return (
-    <section id="projects" className="py-24 px-6 max-w-4xl mx-auto">
+    <motion.section
+      id="projects"
+      className="py-24 px-6 max-w-4xl mx-auto"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+    >
       <h2 className="text-3xl font-space font-black uppercase mb-4 tracking-tight">{t('title')}</h2>
       <div className="mb-10 h-[2px] w-36 bg-zinc-900/85 dark:bg-zinc-100/85" />
       
@@ -137,6 +147,6 @@ export default function ProjectsSection() {
           </article>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

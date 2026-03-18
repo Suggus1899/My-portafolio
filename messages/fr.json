@@ -110,5 +110,40 @@
   },
   "Education": {
     "title": "Éducation et Certifications"
+  },
+  "Stats": {
+    "yearsLabel": "Années d expérience",
+    "projectsLabel": "Projets construits",
+    "languagesLabel": "Langues maitrisées",
+    "techLabel": "Technologies Cloud / IA"
+  },
+  "Availability": {
+    "badge": "Disponible pour travailler",
+    "title": "Ouvert aux opportunités à distance",
+    "description": "Je recherche des projets freelance ou des postes backend où je peux apporter de la valeur avec des APIs robustes, une architecture propre et une livraison continue. Je travaille 100% à distance depuis le Venezuela (UTC-4).",
+    "modalityLabel": "Modalité",
+    "modality": "100% à distance",
+    "contractLabel": "Type de contrat",
+    "contract": "Freelance ou Temps plein",
+    "timezoneLabel": "Fuseau horaire",
+    "timezone": "UTC-4 (Venezuela)",
+    "ctaWhatsapp": "Écrire sur WhatsApp",
+    "ctaEmail": "Contacter par email"
+  },
+  "Contact": {
+    "title": "Me contacter",
+    "subtitle": "Vous avez un projet en tête ou souhaitez discuter ? Écrivez-moi directement.",
+    "nameLabel": "Nom",
+    "namePlaceholder": "Votre nom complet",
+    "emailLabel": "Adresse email",
+    "emailPlaceholder": "vous@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Dites-moi ce que vous avez en tête...",
+    "submit": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "successTitle": "Message envoyé !",
+    "successMessage": "Merci pour votre message. Je vous répondrai bientôt.",
+    "sendAnother": "Envoyer un autre message",
+    "errorMessage": "Une erreur est survenue. Écrivez-moi directement sur WhatsApp ou par email."
   }
 }
