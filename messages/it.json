@@ -34,7 +34,15 @@
     "contact": "Contatta via email"
   },
   "Experience": {
-    "title": "Esperienza"
+    "title": "Esperienza",
+    "exp1Role": "Stagista Ingegnere del Software / Studente",
+    "exp1Company": "Università",
+    "exp1Period": "2022 — Presente",
+    "exp1Description": "Studio Ingegneria dei Sistemi (8° semestre su 10). Concentrato sullo sviluppo backend con Java e Node.js, progettazione di API e fondamenti di reti cloud, costruendo nel contempo applicazioni full-stack.",
+    "exp2Role": "Sviluppatore Backend",
+    "exp2Company": "Freelance",
+    "exp2Period": "2023 — Presente",
+    "exp2Description": "Sviluppo di progetti indipendenti con Spring Boot, Spring Security, Hibernate/JPA e Node.js. Progettazione di modelli di dati relazionali in PostgreSQL, MySQL e SQLite, oltre a integrazioni con MongoDB quando è necessaria maggiore flessibilità nel dominio."
   },
   "Projects": {
     "title": "Progetti",
@@ -106,10 +114,27 @@
     "ctaEmail": "Scrivi via Gmail"
   },
   "Skills": {
-    "title": "Competenze"
+    "title": "Competenze",
+    "catFrontend": "Frontend",
+    "catBackend": "Backend & Cloud",
+    "catAI": "Ingegneria AI & Strumenti",
+    "catLanguages": "Lingue (Parlate)",
+    "langSpanish": "Spagnolo (Madrelingua)",
+    "langEnglish": "Inglese",
+    "langFrench": "Francese",
+    "langItalian": "Italiano"
   },
   "Education": {
-    "title": "Educazione e Certificazioni"
+    "title": "Educazione e Certificazioni",
+    "university": "Studi Universitari",
+    "certifications": "Corsi e Certificazioni",
+    "universityTitle": "Ingegneria Informatica",
+    "universitySubtitle": "Specializzazione in Ingegneria dei Sistemi (8° Semestre su 10)",
+    "universityEntity": "Università",
+    "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermedio)",
+    "certDataScienceEntity": "DataCamp",
+    "certJavaTitle": "Fondamenti di Java, Java OOP, Spring Boot",
+    "certJavaEntity": "TodoCode"
   },
   "Stats": {
     "yearsLabel": "Anni di esperienza",

@@ -16,7 +16,7 @@ export default function SkillsSection() {
 
   const skillCategories = [
     {
-      title: 'Frontend',
+      title: t('catFrontend'),
       skills: [
         { name: 'HTML & CSS', icon: <div className="flex -space-x-1"><SiHtml5 className="text-[#E34F26]" /><SiCss className="text-[#1572B6]" /></div> },
         { name: 'JavaScript', icon: <SiJavascript className="text-[#F7DF1E]" /> },
@@ -30,7 +30,7 @@ export default function SkillsSection() {
       ],
     },
     {
-      title: 'Backend & Cloud',
+      title: t('catBackend'),
       skills: [
         { name: 'Node.js', icon: <SiNodedotjs className="text-[#339933]" /> },
         { name: 'Express', icon: <SiExpress className="dark:invert" /> },
@@ -48,7 +48,7 @@ export default function SkillsSection() {
       ],
     },
     {
-      title: 'AI Engineering & Tools',
+      title: t('catAI'),
       skills: [
         { name: 'Gemini', icon: <BsStars className="text-blue-500" /> },
         { name: 'Claude Code', icon: <SiAnthropic className="text-[#D97757]" /> },
@@ -59,12 +59,12 @@ export default function SkillsSection() {
       ],
     },
     {
-      title: 'Languages (Spoken)',
+      title: t('catLanguages'),
       skills: [
-        { name: 'Spanish (Native)', icon: <Languages size={14} className="text-zinc-500" /> },
-        { name: 'English', icon: <Languages size={14} className="text-zinc-500" /> },
-        { name: 'French', icon: <Languages size={14} className="text-zinc-500" /> },
-        { name: 'Italian', icon: <Languages size={14} className="text-zinc-500" /> },
+        { name: t('langSpanish'), icon: <Languages size={14} className="text-zinc-500" /> },
+        { name: t('langEnglish'), icon: <Languages size={14} className="text-zinc-500" /> },
+        { name: t('langFrench'), icon: <Languages size={14} className="text-zinc-500" /> },
+        { name: t('langItalian'), icon: <Languages size={14} className="text-zinc-500" /> },
       ],
     }
   ];

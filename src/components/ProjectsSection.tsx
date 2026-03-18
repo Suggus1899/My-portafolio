@@ -25,13 +25,13 @@ export default function ProjectsSection() {
   const t = useTranslations('Projects');
 
   const privateProject: Project = {
-    name: 'Private Project (Core Engine)',
-    description: t('private_projects_note') + ' - A proprietary system featuring AI integrations and complex distributed architectures.',
+    name: t('privateName'),
+    description: t('private_projects_note') + t('privateDescSuffix'),
     url: '#',
-    language: 'TypeScript / AI',
+    language: t('privateLanguage'),
     demoUrl: null,
     status: t('privateStatus'),
-    year: '2026',
+    year: t('privateDate'),
     license: t('privateLicense'),
     highlights: [
       t('privateHighlight1'),

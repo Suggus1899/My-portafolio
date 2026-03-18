@@ -34,7 +34,15 @@
     "contact": "Contactar por correo"
   },
   "Experience": {
-    "title": "Experiencia"
+    "title": "Experiencia",
+    "exp1Role": "Pasante Ingeniero de Software / Estudiante",
+    "exp1Company": "Universidad",
+    "exp1Period": "2022 — Presente",
+    "exp1Description": "Estudiando Ingeniería en Sistemas (8vo de 10 semestres). Enfocado en desarrollo backend con Java y Node.js, diseño de APIs y fundamentos de redes cloud, mientras construyo aplicaciones full-stack.",
+    "exp2Role": "Desarrollador Backend",
+    "exp2Company": "Freelance",
+    "exp2Period": "2023 — Presente",
+    "exp2Description": "Desarrollando proyectos independientes con Spring Boot, Spring Security, Hibernate/JPA y Node.js. Diseñando modelos de datos relacionales en PostgreSQL, MySQL y SQLite, además de integraciones con MongoDB cuando se requiere flexibilidad de dominio."
   },
   "Projects": {
     "title": "Proyectos",
@@ -50,6 +58,10 @@
     "unknown": "No definido",
     "viewCode": "Código",
     "liveDemo": "Demo",
+    "privateDescSuffix": " - Un sistema propietario con integraciones de IA y arquitecturas distribuidas complejas.",
+    "privateName": "Proyecto Privado (Core Engine)",
+    "privateLanguage": "TypeScript / IA",
+    "privateDate": "2026",
     "comingSoon": "Demo pronto",
     "noDescription": "Sin descripción todavía."
   },
@@ -106,10 +118,27 @@
     "ctaEmail": "Escribir por Gmail"
   },
   "Skills": {
-    "title": "Habilidades"
+    "title": "Habilidades",
+    "catFrontend": "Frontend",
+    "catBackend": "Backend & Cloud",
+    "catAI": "Ingeniería de IA y Herramientas",
+    "catLanguages": "Idiomas (Hablados)",
+    "langSpanish": "Español (Nativo)",
+    "langEnglish": "Inglés",
+    "langFrench": "Francés",
+    "langItalian": "Italiano"
   },
   "Education": {
-    "title": "Educación y Certificaciones"
+    "title": "Educación y Certificaciones",
+    "university": "Estudios Universitarios",
+    "certifications": "Cursos y Certificaciones",
+    "universityTitle": "Ingeniería en Informática",
+    "universitySubtitle": "Mención Ingeniería en Sistemas (8vo Semestre de 10)",
+    "universityEntity": "Universidad",
+    "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermedio)",
+    "certDataScienceEntity": "DataCamp",
+    "certJavaTitle": "Java Principios, Java POO, Spring Boot",
+    "certJavaEntity": "TodoCode"
   },
   "Stats": {
     "yearsLabel": "Años de experiencia",

@@ -34,7 +34,15 @@
     "contact": "Contact by email"
   },
   "Experience": {
-    "title": "Experience"
+    "title": "Experience",
+    "exp1Role": "Software Engineer Intern / Student",
+    "exp1Company": "University",
+    "exp1Period": "2022 — Present",
+    "exp1Description": "Studying Systems Engineering (8/10 semesters). Focused on backend development with Java and Node.js, API design, and cloud networking fundamentals while building full-stack applications.",
+    "exp2Role": "Backend Developer",
+    "exp2Company": "Freelance",
+    "exp2Period": "2023 — Present",
+    "exp2Description": "Developing independent projects with Spring Boot, Spring Security, Hibernate/JPA and Node.js. Designing relational data models in PostgreSQL, MySQL and SQLite, plus MongoDB integrations when domain flexibility is needed."
   },
   "Projects": {
     "title": "Projects",
@@ -50,6 +58,10 @@
     "unknown": "Not defined",
     "viewCode": "Code",
     "liveDemo": "Live demo",
+    "privateDescSuffix": " - A proprietary system featuring AI integrations and complex distributed architectures.",
+    "privateName": "Private Project (Core Engine)",
+    "privateLanguage": "TypeScript / AI",
+    "privateDate": "2026",
     "comingSoon": "Demo soon",
     "noDescription": "No description yet."
   },
@@ -106,10 +118,27 @@
     "ctaEmail": "Email via Gmail"
   },
   "Skills": {
-    "title": "Skills"
+    "title": "Skills",
+    "catFrontend": "Frontend",
+    "catBackend": "Backend & Cloud",
+    "catAI": "AI Engineering & Tools",
+    "catLanguages": "Languages (Spoken)",
+    "langSpanish": "Spanish (Native)",
+    "langEnglish": "English",
+    "langFrench": "French",
+    "langItalian": "Italian"
   },
   "Education": {
-    "title": "Education & Certifications"
+    "title": "Education & Certifications",
+    "university": "University Studies",
+    "certifications": "Courses & Certifications",
+    "universityTitle": "Computer Engineering",
+    "universitySubtitle": "Systems Engineering Specialization (8th Semester out of 10)",
+    "universityEntity": "University",
+    "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermediate)",
+    "certDataScienceEntity": "DataCamp",
+    "certJavaTitle": "Java Fundamentals, Java OOP, Spring Boot",
+    "certJavaEntity": "TodoCode"
   },
   "Stats": {
     "yearsLabel": "Years of experience",

@@ -9,22 +9,22 @@ export default function EducationSection() {
 
   const education = [
     {
-      title: 'Ingeniería en Informática',
-      subtitle: 'Mención Ingeniería en Sistemas (8vo Semestre de 10)',
-      entity: 'Universidad',
+      title: t('universityTitle'),
+      subtitle: t('universitySubtitle'),
+      entity: t('universityEntity'),
       icon: <GraduationCap className="text-blue-500" />,
     }
   ];
 
   const certifications = [
     {
-      title: 'Data Science, Prompt Engineering, SQL (Intro & Intermediate)',
-      entity: 'DataCamp',
+      title: t('certDataScienceTitle'),
+      entity: t('certDataScienceEntity'),
       icon: <Award className="text-green-500" />
     },
     {
-      title: 'Java Principios, Java POO, Spring Boot',
-      entity: 'TodoCode',
+      title: t('certJavaTitle'),
+      entity: t('certJavaEntity'),
       icon: <Award className="text-purple-500" />
     }
   ];
@@ -44,7 +44,7 @@ export default function EducationSection() {
       <div className="space-y-12">
         <div>
           <h3 className="text-xl font-space font-black uppercase mb-6 flex items-center gap-2 text-zinc-900 dark:text-zinc-100">
-            Estudios Universitarios
+            {t('university')}
           </h3>
           <div className="grid gap-4">
             {education.map((item, idx) => (
@@ -63,7 +63,7 @@ export default function EducationSection() {
 
         <div>
           <h3 className="text-xl font-space font-black uppercase mb-6 flex items-center gap-2 text-zinc-900 dark:text-zinc-100">
-            Cursos y Certificaciones
+            {t('certifications')}
           </h3>
           <div className="grid md:grid-cols-2 gap-4">
             {certifications.map((item, idx) => (

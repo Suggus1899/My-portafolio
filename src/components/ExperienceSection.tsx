@@ -8,17 +8,16 @@ export default function ExperienceSection() {
 
   const experiences = [
     {
-      role: 'Software Engineer Intern / Student',
-      company: 'Universidad',
-      period: '2022 — Present',
-      description: 'Studying Systems Engineering (8/10 semesters). Focused on backend development with Java and Node.js, API design, and cloud networking fundamentals while building full-stack applications.',
+      role: t('exp1Role'),
+      company: t('exp1Company'),
+      period: t('exp1Period'),
+      description: t('exp1Description'),
     },
-    // Placholder for the user to add more
     {
-      role: 'Backend Developer',
-      company: 'Freelance',
-      period: '2023 — Present',
-      description: 'Developing independent projects with Spring Boot, Spring Security, Hibernate/JPA and Node.js. Designing relational data models in PostgreSQL, MySQL and SQLite, plus MongoDB integrations when domain flexibility is needed.',
+      role: t('exp2Role'),
+      company: t('exp2Company'),
+      period: t('exp2Period'),
+      description: t('exp2Description'),
     }
   ];
 
