@@ -65,7 +65,7 @@ export default function CurriculumSummarySection() {
             {t('download')}
           </a>
           <a
-            href="mailto:gustavojose0819@gmail.com"
+            href="#contact"
             className="inline-flex items-center border-2 border-zinc-900 bg-white px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
           >
             {t('contact')}

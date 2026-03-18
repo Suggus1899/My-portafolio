@@ -43,7 +43,7 @@ export default function HeroSection() {
 
             <div className="mt-3 flex items-center gap-2">
               <a
-                href="mailto:gustavojose0819@gmail.com"
+                href="#contact"
                 aria-label={t('contact')}
                 className="inline-flex h-10 w-10 items-center justify-center border-2 border-zinc-900 bg-white text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
               >
@@ -94,7 +94,7 @@ export default function HeroSection() {
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4 md:justify-start">
               <a
-                href="mailto:gustavojose0819@gmail.com"
+                href="#contact"
                 className="inline-flex items-center justify-center border-2 border-zinc-900 bg-zinc-900 px-8 py-3 text-base font-bold uppercase tracking-wider text-white transition-colors hover:bg-zinc-700 dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
               >
                 {t('contact')}
