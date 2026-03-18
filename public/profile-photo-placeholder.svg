@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-label="Profile placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" fill="url(#bg)"/>
+  <circle cx="320" cy="240" r="120" fill="#ffffff" fill-opacity="0.92"/>
+  <path d="M 130 580 C 130 455 215 390 320 390 C 425 390 510 455 510 580" fill="#ffffff" fill-opacity="0.92"/>
+  <text x="50%" y="88%" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" font-weight="700" fill="#e2e8f0">Gustavo Colina</text>
+</svg>

@@ -1,0 +1,114 @@
+{
+  "Index": {
+    "title": "Gustavo Colina — Ingeniero de Software",
+    "description": "Estudiante de Ingeniería de Sistemas. Enfocado en Backend y Cloud."
+  },
+  "Navigation": {
+    "curriculum": "Síntesis CV",
+    "services": "Servicios",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "now": "Now",
+    "blog": "Blog",
+    "language": "Idioma",
+    "theme": "Tema"
+  },
+  "Hero": {
+    "greeting": "¡Hola! Soy Gustavo Colina (Suggus1899)",
+    "role": "Estudiante de Ing. de Sistemas (8/10 semestres) • Backend-first • Estudiante Cloud",
+    "whatIDo": "¿Qué hago?",
+    "availability": "Disponible para nuevas oportunidades",
+    "contact": "Contáctame",
+    "downloadCv": "Descargar síntesis CV",
+    "github": "GitHub"
+  },
+  "Curriculum": {
+    "kicker": "Síntesis Curricular",
+    "title": "Resumen profesional orientado a producto y backend",
+    "summary": "Combino una base fuerte en ingeniería de sistemas con enfoque en backend, APIs escalables y adopción práctica de cloud e IA para acelerar entregas con calidad.",
+    "highlight1": "Desarrollo backend con Node.js/TypeScript, priorizando arquitectura mantenible.",
+    "highlight2": "Formación académica en Ingeniería de Sistemas con enfoque en resultados reales.",
+    "highlight3": "Uso de IA aplicada al flujo de desarrollo para mejorar velocidad y calidad.",
+    "download": "Descargar síntesis curricular",
+    "contact": "Contactar por correo"
+  },
+  "Experience": {
+    "title": "Experiencia"
+  },
+  "Projects": {
+    "title": "Proyectos",
+    "private_projects_note": "Un proyecto privado como ejemplo",
+    "private": "Privado",
+    "privateStatus": "En desarrollo interno",
+    "privateLicense": "Licencia privada",
+    "privateHighlight1": "Motor propietario con automatizaciones asistidas por IA",
+    "privateHighlight2": "Arquitectura distribuida para flujos de alta demanda",
+    "statusLabel": "Estado",
+    "yearLabel": "Año",
+    "licenseLabel": "Licencia",
+    "unknown": "No definido",
+    "viewCode": "Código",
+    "liveDemo": "Demo",
+    "comingSoon": "Demo pronto",
+    "noDescription": "Sin descripción todavía."
+  },
+  "FavoriteStack": {
+    "title": "Stack favorito",
+    "subtitle": "Tecnologías con las que me siento más productivo para construir productos completos.",
+    "item1": "Base backend robusta para APIs limpias, tipadas y mantenibles.",
+    "item2": "Frontend rápido con enfoque en UX, performance y escalabilidad de componentes.",
+    "item3": "Persistencia flexible: SQL para consistencia y NoSQL para modelos dinámicos.",
+    "item4": "Despliegue moderno con observabilidad básica y ciclos de entrega cortos.",
+    "item5": "Servicios Java listos para producción con arquitectura limpia y modular.",
+    "item6": "Autenticación robusta y persistencia empresarial para APIs seguras y escalables."
+  },
+  "Blog": {
+    "kicker": "Blog técnico corto",
+    "title": "Notas técnicas",
+    "subtitle": "Ideas cortas sobre backend, cloud y productividad con IA.",
+    "viewAll": "Ver todo",
+    "readMore": "Leer más"
+  },
+  "Now": {
+    "kicker": "Página Now",
+    "title": "En qué estoy enfocado ahora",
+    "intro": "Esta página resume en tiempo real en qué estoy trabajando y qué estoy estudiando para mejorar mi perfil técnico.",
+    "currentFocus": "En este momento estoy priorizando arquitectura backend, profundidad en Java/Spring y mejora continua de mi posicionamiento profesional con entregables medibles.",
+    "buildingTitle": "Construyendo",
+    "building1": "Refinando mi portafolio multilenguaje con enfoque en SEO y conversión.",
+    "building2": "Mejorando proyectos backend con diseño API-first y mejor estructura de dominio.",
+    "building3": "Documentando casos de estudio de proyectos para entrevistas técnicas.",
+    "building4": "Consolidando una sección de servicios orientada a captación de clientes y leads.",
+    "learningTitle": "Aprendiendo",
+    "learning1": "Cloud networking aplicado a despliegues de servicios backend.",
+    "learning2": "Buenas prácticas de observabilidad y rendimiento para APIs.",
+    "learning3": "Flujos de trabajo con IA para acelerar entrega sin perder calidad.",
+    "learning4": "Buenas prácticas enterprise con Java, Spring Security e Hibernate/JPA.",
+    "shippingTitle": "Entregando",
+    "shipping1": "Mejoras iterativas en UX del portafolio con una línea visual más coherente.",
+    "shipping2": "Ajustes de calidad técnica: lint, build y control de errores de hidratación.",
+    "shipping3": "Nuevos módulos de contenido: blog técnico, servicios y metadata SEO.",
+    "nextTitle": "Siguiente paso",
+    "next1": "Publicar casos de estudio completos por proyecto.",
+    "next2": "Integrar analítica de conversiones en botones de contacto.",
+    "next3": "Implementar pipeline CI/CD con pruebas automáticas."
+  },
+  "Services": {
+    "title": "Servicios",
+    "subtitle": "Selecciona una tarjeta para ver detalle del servicio, alcance y forma de contacto directa.",
+    "openModal": "Ver detalle",
+    "close": "Cerrar",
+    "includes": "Incluye",
+    "deliverables": "Entregables",
+    "etaLabel": "Tiempo estimado",
+    "ctaWhatsapp": "Escribir por WhatsApp",
+    "ctaEmail": "Escribir por Gmail"
+  },
+  "Skills": {
+    "title": "Habilidades"
+  },
+  "Education": {
+    "title": "Educación y Certificaciones"
+  }
+}

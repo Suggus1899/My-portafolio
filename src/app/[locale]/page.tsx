@@ -1,0 +1,31 @@
+import { setRequestLocale } from 'next-intl/server';
+import { routing } from '@/i18n/routing';
+import HeroSection from '@/components/HeroSection';
+import CurriculumSummarySection from '@/components/CurriculumSummarySection';
+import ExperienceSection from '@/components/ExperienceSection';
+import FavoriteStackSection from '@/components/FavoriteStackSection';
+import BlogPreviewSection from '@/components/BlogPreviewSection';
+import SkillsSection from '@/components/SkillsSection';
+import EducationSection from '@/components/EducationSection';
+
+type AppLocale = (typeof routing.locales)[number];
+
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const appLocale = routing.locales.includes(locale as AppLocale)
+    ? (locale as AppLocale)
+    : routing.defaultLocale;
+
+  return (
+    <div className="flex flex-col items-center w-full">
+      <HeroSection />
+      <CurriculumSummarySection />
+      <ExperienceSection />
+      <EducationSection />
+      <FavoriteStackSection />
+      <BlogPreviewSection locale={appLocale} />
+      <SkillsSection />
+    </div>
+  );
+}

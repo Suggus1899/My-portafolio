@@ -1,0 +1,114 @@
+{
+  "Index": {
+    "title": "Gustavo Colina — Ingegnere del Software",
+    "description": "Studente di Ingegneria dei Sistemi. Orientato al backend e al cloud."
+  },
+  "Navigation": {
+    "curriculum": "Sintesi CV",
+    "services": "Servizi",
+    "experience": "Esperienza",
+    "projects": "Progetti",
+    "skills": "Competenze",
+    "now": "Now",
+    "blog": "Blog",
+    "language": "Lingua",
+    "theme": "Tema"
+  },
+  "Hero": {
+    "greeting": "Ciao! Sono Gustavo Colina (Suggus1899)",
+    "role": "Studente di Ingegneria dei Sistemi (8/10 semestri) • Orientato al backend • Apprendista Cloud",
+    "whatIDo": "Cosa faccio?",
+    "availability": "Disponibile per nuove opportunita",
+    "contact": "Contattami",
+    "downloadCv": "Scarica sintesi CV",
+    "github": "GitHub"
+  },
+  "Curriculum": {
+    "kicker": "Sintesi CV",
+    "title": "Sintesi professionale orientata a prodotto e backend",
+    "summary": "Unisco una solida base in ingegneria dei sistemi con focus su backend, API scalabili e adozione pratica di cloud e IA.",
+    "highlight1": "Sviluppo backend con Node.js/TypeScript e architettura manutenibile.",
+    "highlight2": "Percorso accademico in ingegneria dei sistemi orientato ai risultati.",
+    "highlight3": "Uso pratico dell IA per accelerare i cicli di sviluppo.",
+    "download": "Scarica sintesi CV",
+    "contact": "Contatta via email"
+  },
+  "Experience": {
+    "title": "Esperienza"
+  },
+  "Projects": {
+    "title": "Progetti",
+    "private_projects_note": "Un segnaposto per progetti privati",
+    "private": "Privato",
+    "privateStatus": "Sviluppo interno",
+    "privateLicense": "Licenza privata",
+    "privateHighlight1": "Core proprietario con automazioni assistite da IA",
+    "privateHighlight2": "Architettura distribuita per flussi ad alta domanda",
+    "statusLabel": "Stato",
+    "yearLabel": "Anno",
+    "licenseLabel": "Licenza",
+    "unknown": "Non definito",
+    "viewCode": "Codice",
+    "liveDemo": "Demo live",
+    "comingSoon": "Demo presto",
+    "noDescription": "Nessuna descrizione disponibile."
+  },
+  "FavoriteStack": {
+    "title": "Stack preferito",
+    "subtitle": "Tecnologie con cui sono piu produttivo nella costruzione di prodotti completi.",
+    "item1": "Base backend solida per API pulite, tipizzate e manutenibili.",
+    "item2": "Frontend rapido con focus su UX, performance e scalabilita dei componenti.",
+    "item3": "Persistenza flessibile: SQL per coerenza e NoSQL per modelli dinamici.",
+    "item4": "Deploy moderno con osservabilita base e cicli di rilascio brevi.",
+    "item5": "Servizi Java pronti per la produzione con architettura pulita e modulare.",
+    "item6": "Autenticazione robusta e persistenza enterprise per API sicure e scalabili."
+  },
+  "Blog": {
+    "kicker": "Blog tecnico breve",
+    "title": "Note tecniche",
+    "subtitle": "Idee brevi su backend, cloud e produttivita con IA.",
+    "viewAll": "Vedi tutto",
+    "readMore": "Leggi di piu"
+  },
+  "Now": {
+    "kicker": "Pagina Now",
+    "title": "Su cosa sono concentrato ora",
+    "intro": "Questa pagina riassume in tempo reale cosa sto costruendo e cosa sto studiando per migliorare il mio profilo tecnico.",
+    "currentFocus": "In questo momento sto dando priorita all architettura backend, all approfondimento Java/Spring e al posizionamento professionale con risultati misurabili.",
+    "buildingTitle": "Sto costruendo",
+    "building1": "Rifinitura del portfolio multilingua con SEO e ottimizzazione conversione.",
+    "building2": "Miglioramento di progetti backend con approccio API-first.",
+    "building3": "Scrittura di case study per colloqui tecnici.",
+    "building4": "Consolidamento della sezione servizi orientata a clienti e lead.",
+    "learningTitle": "Sto imparando",
+    "learning1": "Cloud networking applicato ai deploy backend.",
+    "learning2": "Osservabilita e performance per piattaforme API.",
+    "learning3": "Workflow con IA per consegnare piu velocemente senza perdere qualita.",
+    "learning4": "Pratiche enterprise con Java, Spring Security e Hibernate/JPA.",
+    "shippingTitle": "Consegna",
+    "shipping1": "Miglioramenti UX iterativi con una linea visiva piu coerente.",
+    "shipping2": "Correzioni qualita tecnica: lint, build e mismatch di hydration.",
+    "shipping3": "Nuovi moduli: blog tecnico, servizi e metadata SEO.",
+    "nextTitle": "Prossimo passo",
+    "next1": "Pubblicare case study completi per progetto.",
+    "next2": "Aggiungere analytics di conversione ai CTA di contatto.",
+    "next3": "Implementare pipeline CI/CD con controlli automatici."
+  },
+  "Services": {
+    "title": "Servizi",
+    "subtitle": "Seleziona una card per vedere il dettaglio del servizio, lo scope e i contatti diretti.",
+    "openModal": "Vedi dettaglio",
+    "close": "Chiudi",
+    "includes": "Include",
+    "deliverables": "Deliverable",
+    "etaLabel": "Tempo stimato",
+    "ctaWhatsapp": "Scrivi su WhatsApp",
+    "ctaEmail": "Scrivi via Gmail"
+  },
+  "Skills": {
+    "title": "Competenze"
+  },
+  "Education": {
+    "title": "Educazione e Certificazioni"
+  }
+}

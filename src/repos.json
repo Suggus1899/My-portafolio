@@ -1,0 +1,86 @@
+[
+  {
+    "name": "S.I-Copernico-Academy",
+    "description": "Plataforma académica para gestionar tutorías, seguimiento de estudiantes y coordinación entre docentes, con enfoque en trazabilidad y automatización de procesos educativos.",
+    "url": "https://github.com/Suggus1899/S.I-Copernico-Academy",
+    "language": "JavaScript",
+    "demoUrl": null,
+    "status": "En desarrollo",
+    "year": "2025",
+    "license": "Open Source",
+    "highlights": [
+      "Gestión de tutorías y asesorías en un solo flujo",
+      "Mejora del seguimiento académico por estudiante"
+    ]
+  },
+  {
+    "name": "System_MotorAware",
+    "description": "Sistema de analítica vial orientado a seguridad preventiva, que procesa patrones de conducción para detectar riesgos y emitir alertas útiles para la toma de decisiones.",
+    "url": "https://github.com/Suggus1899/System_MotorAware",
+    "language": "Jupyter Notebook",
+    "demoUrl": null,
+    "status": "Investigación aplicada",
+    "year": "2024",
+    "license": "Open Source",
+    "highlights": [
+      "Modelado de comportamiento vial con notebooks",
+      "Enfoque en prevención de incidentes"
+    ]
+  },
+  {
+    "name": "MedAseets",
+    "description": "Sistema integral para inventario, trazabilidad y mantenimiento de equipos médicos en entornos hospitalarios, diseñado para reducir tiempos muertos operativos.",
+    "url": "https://github.com/Suggus1899/MedAseets",
+    "language": "TypeScript",
+    "demoUrl": null,
+    "status": "Activo",
+    "year": "2025",
+    "license": "Open Source",
+    "highlights": [
+      "Control de inventario clínico centralizado",
+      "Historial de mantenimiento por equipo"
+    ]
+  },
+  {
+    "name": "System-Eco-Friendly",
+    "description": "Aplicación interactiva con enfoque de gamificación ambiental para promover hábitos sostenibles y aprendizaje ecológico en usuarios jóvenes.",
+    "url": "https://github.com/Suggus1899/System-Eco-Friendly",
+    "language": null,
+    "demoUrl": null,
+    "status": "Demo pública",
+    "year": "2024",
+    "license": "Open Source",
+    "highlights": [
+      "Gamificación para crear conciencia ecológica",
+      "Diseño orientado a engagement educativo"
+    ]
+  },
+  {
+    "name": "Vertice-bnb",
+    "description": "Marketplace de alojamiento para estudiantes con filtros por ubicación, presupuesto y tipo de estadía, pensado para simplificar la búsqueda habitacional.",
+    "url": "https://github.com/Suggus1899/Vertice-bnb",
+    "language": "TypeScript",
+    "demoUrl": null,
+    "status": "MVP",
+    "year": "2025",
+    "license": "Open Source",
+    "highlights": [
+      "Búsqueda enfocada en necesidades estudiantiles",
+      "Arquitectura web preparada para escalar"
+    ]
+  },
+  {
+    "name": "Taller-los-Santos-Customs",
+    "description": "Sistema web para talleres mecánicos que centraliza clientes, vehículos, órdenes de trabajo e inventario para mejorar control operativo diario.",
+    "url": "https://github.com/Suggus1899/Taller-los-Santos-Customs",
+    "language": "EJS",
+    "demoUrl": null,
+    "status": "Producción local",
+    "year": "2024",
+    "license": "Open Source",
+    "highlights": [
+      "Gestión completa del flujo del taller",
+      "Reducción de tareas manuales administrativas"
+    ]
+  }
+]
