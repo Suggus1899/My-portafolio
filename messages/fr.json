@@ -63,7 +63,9 @@
     "privateLanguage": "TypeScript / IA",
     "privateDate": "2026",
     "comingSoon": "Démo bientôt",
-    "noDescription": "Pas encore de description."
+    "noDescription": "Aucune description.",
+    "filterAll": "Tous les projets",
+    "filterOther": "Autres"
   },
   "FavoriteStack": {
     "title": "Stack préféré",

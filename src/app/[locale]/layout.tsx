@@ -78,6 +78,24 @@ export default async function RootLayout({
  
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              name: 'Gustavo Colina',
+              jobTitle: 'Software Engineer',
+              url: siteUrl,
+              sameAs: [
+                'https://github.com/Suggus1899',
+                'https://linkedin.com/in/gustavo-colina'
+              ]
+            })
+          }}
+        />
+      </head>
       <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased bg-white text-zinc-900 dark:bg-[#0a0a0a] dark:text-zinc-100 transition-colors duration-300 selection:bg-zinc-800 selection:text-white dark:selection:bg-zinc-200 dark:selection:text-black`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <NextIntlClientProvider messages={messages}>

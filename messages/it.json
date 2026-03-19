@@ -58,8 +58,14 @@
     "unknown": "Non definito",
     "viewCode": "Codice",
     "liveDemo": "Demo live",
+    "privateDescSuffix": " - Un sistema proprietario con integrazioni IA e architetture distribuite complesse.",
+    "privateName": "Progetto Privato (Core Engine)",
+    "privateLanguage": "TypeScript / IA",
+    "privateDate": "2026",
     "comingSoon": "Demo presto",
-    "noDescription": "Nessuna descrizione disponibile."
+    "noDescription": "Nessuna descrizione disponibile.",
+    "filterAll": "Tutti i progetti",
+    "filterOther": "Altri"
   },
   "FavoriteStack": {
     "title": "Stack preferito",

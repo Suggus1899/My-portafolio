@@ -62,8 +62,10 @@
     "privateName": "Proyecto Privado (Core Engine)",
     "privateLanguage": "TypeScript / IA",
     "privateDate": "2026",
-    "comingSoon": "Demo pronto",
-    "noDescription": "Sin descripción todavía."
+    "comingSoon": "Pronto demo",
+    "noDescription": "Sin descripción por ahora.",
+    "filterAll": "Todos los proyectos",
+    "filterOther": "Otros"
   },
   "FavoriteStack": {
     "title": "Stack favorito",

@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { ArrowUpRight, PlayCircle, Github } from 'lucide-react';
 import repos from '../repos.json';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 type Repo = {
   name: string;
@@ -23,6 +24,7 @@ type Project = Repo & {
 
 export default function ProjectsSection() {
   const t = useTranslations('Projects');
+  const [activeFilter, setActiveFilter] = useState<string>('All');
 
   const privateProject: Project = {
     name: t('privateName'),
@@ -42,6 +44,17 @@ export default function ProjectsSection() {
 
   const allProjects: Project[] = [privateProject, ...(repos as Repo[])];
 
+  const filters = ['All', 'TypeScript', 'JavaScript', 'Other'];
+
+  const displayedProjects = allProjects.filter((repo) => {
+    if (activeFilter === 'All') return true;
+    const lang = repo.language || '';
+    if (activeFilter === 'Other') {
+      return !lang.includes('TypeScript') && !lang.includes('JavaScript');
+    }
+    return lang.includes(activeFilter);
+  });
+
   return (
     <motion.section
       id="projects"
@@ -54,8 +67,24 @@ export default function ProjectsSection() {
       <h2 className="text-3xl font-space font-black uppercase mb-4 tracking-tight">{t('title')}</h2>
       <div className="mb-10 h-[2px] w-36 bg-zinc-900/85 dark:bg-zinc-100/85" />
       
+      <div className="flex flex-wrap gap-2 mb-8">
+        {filters.map((filter) => (
+          <button
+            key={filter}
+            onClick={() => setActiveFilter(filter)}
+            className={`px-4 py-2 text-sm font-bold uppercase tracking-wide border-2 transition-colors ${
+              activeFilter === filter
+                ? 'bg-zinc-900 text-white border-zinc-900 dark:bg-zinc-100 dark:text-zinc-900 dark:border-zinc-100'
+                : 'bg-transparent text-zinc-900 border-zinc-900 hover:bg-zinc-100 dark:text-zinc-100 dark:border-zinc-100 dark:hover:bg-zinc-900'
+            }`}
+          >
+            {filter === 'All' ? t('filterAll') : filter === 'Other' ? t('filterOther') : filter}
+          </button>
+        ))}
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {allProjects.map((repo, idx) => (
+        {displayedProjects.map((repo, idx) => (
           <article
             key={idx}
             className={`group p-6 border-2 transition-all duration-300 hover:-translate-y-1 ${
