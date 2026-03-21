@@ -17,6 +17,46 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'hibernate-jpa-n-plus-1-problem',
+    date: '2026-03-20',
+    readTime: '6 min',
+    tags: ['Java', 'Spring Boot', 'Hibernate', 'JPA'],
+    title: {
+      es: 'El problema N+1 en Hibernate/JPA y cómo evitarlo',
+      en: 'The N+1 Problem in Hibernate/JPA and How to Avoid It',
+      fr: 'Le problème N+1 dans Hibernate/JPA et comment l\'éviter',
+      it: 'Il problema N+1 in Hibernate/JPA e come evitarlo'
+    },
+    excerpt: {
+      es: 'Optimiza tus consultas de base de datos entendiendo cuándo usar JOIN FETCH o @EntityGraph.',
+      en: 'Optimize your database queries by understanding when to use JOIN FETCH or @EntityGraph.',
+      fr: 'Optimisez vos requêtes de base de données en comprenant quand utiliser JOIN FETCH ou @EntityGraph.',
+      it: 'Ottimizza le tue query di database capendo quando usare JOIN FETCH o @EntityGraph.'
+    },
+    content: {
+      es: [
+        'El problema N+1 es el asesino silencioso del rendimiento en aplicaciones Spring Boot con datos relacionales.',
+        'Ocurre cuando cargas una entidad y luego accedes a sus colecciones lazy, ejecutando una consulta adicional por cada elemento.',
+        'La solución más limpia y moderna es usar @EntityGraph en tus repositorios de Spring Data JPA para definir dinámicamente qué relaciones cargar.'
+      ],
+      en: [
+        'The N+1 problem is the silent performance killer in Spring Boot applications with relational data.',
+        'It happens when you load an entity and then access its lazy collections, executing an additional query for each item.',
+        'The cleanest modern solution is using @EntityGraph in your Spring Data JPA repositories to dynamically define which relationships to fetch.'
+      ],
+      fr: [
+        'Le problème N+1 est le tueur silencieux des performances dans les applications Spring Boot avec des données relationnelles.',
+        'Il se produit lorsque vous chargez une entité puis accédez à ses collections paresseuses, exécutant une requête supplémentaire pour chaque élément.',
+        'La solution moderne la plus propre consiste à utiliser @EntityGraph dans vos dépôts Spring Data JPA pour définir dynamiquement les relations à charger.'
+      ],
+      it: [
+        'Il problema N+1 è il killer silenzioso delle prestazioni nelle applicazioni Spring Boot con dati relazionali.',
+        'Si verifica quando si carica un entità e poi si accede alle sue collezioni lazy, eseguendo una query aggiuntiva per ogni elemento.',
+        'La soluzione moderna più pulita è utilizzare @EntityGraph nei repository Spring Data JPA per definire dinamicamente quali relazioni caricare.'
+      ]
+    }
+  },
+  {
     slug: 'api-first-design-en-nodejs',
     date: '2026-02-10',
     readTime: '5 min',
