@@ -82,5 +82,131 @@
       "Gestión completa del flujo del taller",
       "Reducción de tareas manuales administrativas"
     ]
+  },
+  {
+    "name": "CRUD-Java-Spring-Boot-MongoDB",
+    "description": "Aplicación full-stack de gestión de tareas con autenticación JWT, roles de usuario y estadísticas. Backend Spring Boot 3 + MongoDB, frontend React 19 + TypeScript, desplegado con Docker y Nginx.",
+    "url": "#",
+    "language": "Java",
+    "demoUrl": null,
+    "status": "Completo",
+    "year": "2025",
+    "license": "Open Source",
+    "highlights": [
+      "CRUD completo con filtros, paginación y comentarios por tarea",
+      "Autenticación JWT con roles USER/ADMIN y estadísticas globales"
+    ]
+  },
+  {
+    "name": "Habitas — Residencias",
+    "description": "Plataforma de gestión de residencias estudiantiles con KYC biométrico (face-api.js + TensorFlow), transacciones P2P, mapa interactivo (Leaflet) y comunicación en tiempo real con Socket.io.",
+    "url": "#",
+    "language": "TypeScript",
+    "demoUrl": null,
+    "status": "En desarrollo activo",
+    "year": "2025",
+    "license": "Privado",
+    "highlights": [
+      "Verificación de identidad biométrica con detección de liveness",
+      "Chat y notificaciones en tiempo real vía Socket.io + Redis"
+    ]
+  },
+  {
+    "name": "Hermit",
+    "description": "Proyecto de sistemas de bajo nivel desarrollado en C++ con CMake. Enfocado en fundamentos de ingeniería de software, estructuras de datos y rendimiento nativo.",
+    "url": "#",
+    "language": "C++",
+    "demoUrl": null,
+    "status": "Investigación",
+    "year": "2024",
+    "license": "Open Source",
+    "highlights": [
+      "Implementación en C++17 con build system CMake",
+      "Enfoque en rendimiento nativo y control de memoria"
+    ]
+  },
+  {
+    "name": "Letramente",
+    "description": "Plataforma gamificada para fortalecer la lectoescritura en niños de primer grado. Monorepo con backend NestJS + Prisma, web Next.js 15 y app móvil.",
+    "url": "#",
+    "language": "TypeScript",
+    "demoUrl": null,
+    "status": "En desarrollo",
+    "year": "2025",
+    "license": "Open Source",
+    "highlights": [
+      "Arquitectura monorepo con NestJS, Next.js 15 y app móvil",
+      "Gamificación educativa con seguimiento de progreso por alumno"
+    ]
+  },
+  {
+    "name": "Netlab — SI Learning Red",
+    "description": "Simulador interactivo de redes para la enseñanza de protocolos (ICMP, ARP, DNS, DHCP, HTTP), firewall, NAT y laboratorios guiados con validación automática.",
+    "url": "#",
+    "language": "TypeScript",
+    "demoUrl": null,
+    "status": "Activo",
+    "year": "2024",
+    "license": "MIT",
+    "highlights": [
+      "Canvas drag & drop con React Flow para topologías de red",
+      "Validación automática de laboratorios y progreso con Zustand + Prisma"
+    ]
+  },
+  {
+    "name": "Orbital — Version Control",
+    "description": "Ecosistema de control de versiones distribuido: CLI nativo en Rust (orb), backend Actix-web + SeaORM y frontend React. CI/CD con GitHub Actions y métricas Prometheus.",
+    "url": "#",
+    "language": "Rust",
+    "demoUrl": null,
+    "status": "Activo",
+    "year": "2025",
+    "license": "MIT",
+    "highlights": [
+      "CLI en Rust con comandos init, add, commit, push/pull y branching",
+      "Backend Rust Actix-web con rate limiting, JWT y métricas Prometheus"
+    ]
+  },
+  {
+    "name": "TrickReport — IT Ticket System",
+    "description": "Sistema de gestión de tickets de soporte IT bajo estándares ITIL v4 e ISO/IEC 20000-1. Backend Java 21 + Spring Boot 3, frontend Next.js 14 + shadcn/ui y app Kotlin Multiplatform.",
+    "url": "#",
+    "language": "Java",
+    "demoUrl": null,
+    "status": "En desarrollo",
+    "year": "2024",
+    "license": "Propietario",
+    "highlights": [
+      "Flujo de escalado multinivel con roles ITIL (N1/N2/N3/ADMIN/AUDITOR)",
+      "App multiplataforma con Kotlin Multiplatform + Compose Multiplatform"
+    ]
+  },
+  {
+    "name": "LogMaster — Control de Acceso",
+    "description": "Aplicación de escritorio para control de acceso y gestión de visitantes en instalaciones corporativas. Electron + React + Express con base de datos cifrada SQLCipher (AES-256).",
+    "url": "#",
+    "language": "TypeScript",
+    "demoUrl": null,
+    "status": "Versión 1.0",
+    "year": "2026",
+    "license": "Propietario",
+    "highlights": [
+      "Base de datos cifrada con SQLCipher y campos sensibles con AES-256-GCM",
+      "Exportación de reportes a PDF/Excel y respaldos automáticos cifrados"
+    ]
+  },
+  {
+    "name": "Sistema de Proveedores — Cliente",
+    "description": "Frontend multiplataforma Flutter para un sistema de gestión de proveedores. Implementa Clean Architecture, animaciones Rive, glassmorphism y gestión de estado con Provider.",
+    "url": "#",
+    "language": "Dart",
+    "demoUrl": null,
+    "status": "En desarrollo",
+    "year": "2025",
+    "license": "Open Source",
+    "highlights": [
+      "Animaciones vectoriales interactivas con motor Rive",
+      "Clean Architecture con Provider para gestión de sesión y roles"
+    ]
   }
 ]

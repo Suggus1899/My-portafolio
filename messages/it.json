@@ -16,33 +16,41 @@
   },
   "Hero": {
     "greeting": "Ciao! Sono Gustavo Colina (Suggus1899)",
-    "role": "Studente di Ingegneria dei Sistemi (8/10 semestri) • Orientato al backend • Apprendista Cloud",
+    "role": "Sviluppatore Full-Stack · Laureato · Disponibile da remoto",
     "whatIDo": "Cosa faccio?",
     "availability": "Disponibile per nuove opportunita",
     "contact": "Contattami",
+    "contactAriaLabel": "Invia email a Gustavo Colina",
     "downloadCv": "Scarica sintesi CV",
-    "github": "GitHub"
+    "downloadCvAriaLabel": "Scarica CV in formato PDF",
+    "github": "GitHub",
+    "githubAriaLabel": "Visita profilo GitHub",
+    "profileAlt": "Foto profilo di Gustavo Colina"
   },
   "Curriculum": {
     "kicker": "Sintesi CV",
     "title": "Sintesi professionale orientata a prodotto e backend",
-    "summary": "Unisco una solida base in ingegneria dei sistemi con un focus sul backend, costruendo API solide con ecosistemi Java (Spring) e Node.js, supportato da automazioni IA e deployment cloud.",
-    "highlight1": "Sviluppo di servizi enterprise robusti utilizzando Java 17/21 e Spring Boot, insieme a Node.js.",
-    "highlight2": "Percorso accademico in ingegneria dei sistemi orientato ai risultati.",
-    "highlight3": "Uso pratico dell IA per accelerare i cicli di sviluppo.",
+    "summary": "Ingegnere Informatico laureato, specializzato nello sviluppo Full-Stack con focus sull'automazione dei processi e la digitalizzazione dei flussi documentali. Con esperienza in ambienti universitari, industriali e in azienda tech da remoto, costruisco sistemi web e desktop che riducono i tempi operativi e il margine di errore umano.",
+    "highlight1": "Sistemi web e desktop che digitalizzano processi fisici con report automatici (riduzione 10 min → 1 min).",
+    "highlight2": "Progettazione e modellazione di database relazionali e NoSQL orientata all'ottimizzazione e scalabilità.",
+    "highlight3": "Esperienza comprovata in università pubblica, industria alimentare e azienda tech da remoto (Perù).",
     "download": "Scarica sintesi CV",
     "contact": "Contatta via email"
   },
   "Experience": {
     "title": "Esperienza",
-    "exp1Role": "Stagista Ingegnere del Software / Studente",
-    "exp1Company": "Università",
-    "exp1Period": "2022 — Presente",
-    "exp1Description": "Studio Ingegneria dei Sistemi (8° semestre su 10). Concentrato sullo sviluppo backend con Java e Node.js, progettazione di API e fondamenti di reti cloud, costruendo nel contempo applicazioni full-stack.",
-    "exp2Role": "Sviluppatore Backend",
-    "exp2Company": "Freelance",
-    "exp2Period": "2023 — Presente",
-    "exp2Description": "Sviluppo di progetti indipendenti con Spring Boot, Spring Security, Hibernate/JPA e Node.js. Progettazione di modelli di dati relazionali in PostgreSQL, MySQL e SQLite, oltre a integrazioni con MongoDB quando è necessaria maggiore flessibilità nel dominio."
+    "exp1Role": "Sviluppatore Software",
+    "exp1Company": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
+    "exp1Period": "2025",
+    "exp1Description": "Sviluppo sul Sistema dell'Osservatorio di Ricerca, Scienza, Tecnologia e Innovazione. Correzioni alla progettazione del database per migliore ottimizzazione, migrazione di documenti fisici nel sistema digitale e miglioramenti logici che hanno portato il sistema a fasi operative avanzate.",
+    "exp2Role": "Sviluppatore Full-Stack",
+    "exp2Company": "Industrias de Alimentos El Trébol",
+    "exp2Period": "2025 — 2026",
+    "exp2Description": "Sistema LogMaster per il controllo accessi e la gestione dei visitatori. Raccolta requisiti, progettazione di database cifrato (SQLCipher/AES-256), sviluppo di app desktop (Electron + React) e web, automazione dei processi con generatore di report PDF/Excel. Riduzione dei tempi di processo da 10 minuti a meno di 1 minuto.",
+    "exp3Role": "Sviluppatore Full-Stack (Remoto)",
+    "exp3Company": "KeoIT · Perù",
+    "exp3Period": "Marzo 2026 — Presente",
+    "exp3Description": "Sviluppo di client multipiattaforma con Flutter/Dart (Android, iOS, Desktop) applicando Clean Architecture e Provider per la gestione di sessione e ruoli. Integrazione di animazioni vettoriali con Rive e design Glassmorphism. Collaborazione full-stack con Next.js sul livello web."
   },
   "Projects": {
     "title": "Progetti",
@@ -65,7 +73,9 @@
     "comingSoon": "Demo presto",
     "noDescription": "Nessuna descrizione disponibile.",
     "filterAll": "Tutti i progetti",
-    "filterOther": "Altri"
+    "filterOther": "Altri",
+    "filterJava": "Java",
+    "filterRust": "Rust"
   },
   "FavoriteStack": {
     "title": "Stack preferito",
@@ -75,7 +85,9 @@
     "item3": "Persistenza flessibile: SQL per coerenza e NoSQL per modelli dinamici.",
     "item4": "Deploy moderno con osservabilita base e cicli di rilascio brevi.",
     "item5": "Servizi Java pronti per la produzione con architettura pulita e modulare.",
-    "item6": "Autenticazione robusta e persistenza enterprise per API sicure e scalabili."
+    "item6": "Autenticazione robusta e persistenza enterprise per API sicure e scalabili.",
+    "item7": "CLI e backend ad alte prestazioni con memoria sicura e concorrenza senza GC.",
+    "item8": "App multipiattaforma (Android, iOS, Desktop) da un'unica base di codice."
   },
   "Blog": {
     "kicker": "Blog tecnico breve",
@@ -123,6 +135,7 @@
     "title": "Competenze",
     "catFrontend": "Frontend",
     "catBackend": "Backend & Cloud",
+    "catSystems": "Sistemi, Mobile & Desktop",
     "catAI": "Ingegneria AI & Strumenti",
     "catLanguages": "Lingue (Parlate)",
     "langSpanish": "Spagnolo (Madrelingua)",
@@ -135,8 +148,8 @@
     "university": "Studi Universitari",
     "certifications": "Corsi e Certificazioni",
     "universityTitle": "Ingegneria Informatica",
-    "universitySubtitle": "Specializzazione in Ingegneria dei Sistemi (8° Semestre su 10)",
-    "universityEntity": "Università",
+    "universitySubtitle": "Laureato · Specializzazione in Ingegneria dei Sistemi",
+    "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermedio)",
     "certDataScienceEntity": "DataCamp",
     "certJavaTitle": "Fondamenti di Java, Java OOP, Spring Boot",

@@ -16,33 +16,41 @@
   },
   "Hero": {
     "greeting": "Salut ! Je suis Gustavo Colina (Suggus1899)",
-    "role": "Étudiant en génie des systèmes (8/10 semestres) • Axé backend • Apprenti Cloud",
+    "role": "Développeur Full-Stack · Diplômé · Disponible à distance",
     "whatIDo": "Que fais-je ?",
     "availability": "Disponible pour de nouvelles opportunités",
     "contact": "Me contacter",
+    "contactAriaLabel": "Envoyer un email à Gustavo Colina",
     "downloadCv": "Télécharger la synthèse CV",
-    "github": "GitHub"
+    "downloadCvAriaLabel": "Télécharger le CV en PDF",
+    "github": "GitHub",
+    "githubAriaLabel": "Visiter le profil GitHub",
+    "profileAlt": "Photo de profil de Gustavo Colina"
   },
   "Curriculum": {
     "kicker": "Synthèse CV",
     "title": "Résumé professionnel orienté produit et backend",
-    "summary": "Je combine une solide base en ingénierie des systèmes avec une focalisation backend, en construisant des API robustes avec les écosystèmes Java (Spring) et Node.js, soutenu par des automatisations IA et des déploiements cloud.",
-    "highlight1": "Développement de services d'entreprise robustes utilisant Java 17/21 et Spring Boot, ainsi que Node.js.",
-    "highlight2": "Formation en ingénierie des systèmes avec orientation résultats.",
-    "highlight3": "Utilisation de l IA pour accélérer les cycles de livraison.",
+    "summary": "Ingénieur en Informatique diplômé, spécialisé dans le développement Full-Stack avec un focus sur l'automatisation des processus et la digitalisation des flux documentaires. Fort d'une expérience en milieu universitaire, industriel et en entreprise tech à distance, je construis des systèmes web et desktop qui réduisent les temps opérationnels et la marge d'erreur humaine.",
+    "highlight1": "Systèmes web et desktop qui digitalisent les processus physiques avec rapports automatisés (réduction 10 min → 1 min).",
+    "highlight2": "Conception et modélisation de bases de données relationnelles et NoSQL axées sur l'optimisation et l'évolutivité.",
+    "highlight3": "Expérience prouvée en université publique, industrie alimentaire et entreprise tech à distance (Pérou).",
     "download": "Télécharger la synthèse CV",
     "contact": "Contacter par email"
   },
   "Experience": {
     "title": "Expérience",
-    "exp1Role": "Stagiaire Ingénieur Logiciel / Étudiant",
-    "exp1Company": "Université",
-    "exp1Period": "2022 — Présent",
-    "exp1Description": "Étudiant en Ingénierie des Systèmes (8ème semestre sur 10). Axé sur le développement backend avec Java et Node.js, la conception d'API et les fondamentaux des réseaux cloud, tout en créant des applications full-stack.",
-    "exp2Role": "Développeur Backend",
-    "exp2Company": "Freelance",
-    "exp2Period": "2023 — Présent",
-    "exp2Description": "Développement de projets indépendants avec Spring Boot, Spring Security, Hibernate/JPA et Node.js. Conception de modèles de données relationnels dans PostgreSQL, MySQL et SQLite, plus des intégrations MongoDB lorsque la flexibilité du domaine est nécessaire."
+    "exp1Role": "Développeur Logiciel",
+    "exp1Company": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
+    "exp1Period": "2025",
+    "exp1Description": "Développement sur le Système de l'Observatoire de Recherche, Science, Technologie et Innovation. Corrections de la conception de base de données, migration de documents physiques vers le système digital et améliorations logiques portant le système à des phases opérationnelles avancées.",
+    "exp2Role": "Développeur Full-Stack",
+    "exp2Company": "Industrias de Alimentos El Trébol",
+    "exp2Period": "2025 — 2026",
+    "exp2Description": "Système LogMaster de contrôle d'accès et gestion des visiteurs. Recueil des besoins, conception de base de données chiffrée (SQLCipher/AES-256), développement d'application desktop (Electron + React) et web, automatisation des processus avec générateur de rapports PDF/Excel. Réduction du temps de traitement de 10 minutes à moins d'1 minute.",
+    "exp3Role": "Développeur Full-Stack (à distance)",
+    "exp3Company": "KeoIT · Pérou",
+    "exp3Period": "Mars 2026 — Aujourd'hui",
+    "exp3Description": "Développement d'un client multiplateforme avec Flutter/Dart (Android, iOS, Desktop) appliquant Clean Architecture et Provider pour la gestion de session et des rôles. Intégration d'animations vectorielles avec Rive et design Glassmorphism. Collaboration full-stack avec Next.js sur la couche web."
   },
   "Projects": {
     "title": "Projets",
@@ -65,7 +73,9 @@
     "comingSoon": "Démo bientôt",
     "noDescription": "Aucune description.",
     "filterAll": "Tous les projets",
-    "filterOther": "Autres"
+    "filterOther": "Autres",
+    "filterJava": "Java",
+    "filterRust": "Rust"
   },
   "FavoriteStack": {
     "title": "Stack préféré",
@@ -75,7 +85,9 @@
     "item3": "Persistance flexible: SQL pour la cohérence et NoSQL pour les modèles dynamiques.",
     "item4": "Déploiement moderne avec observabilité de base et livraisons courtes.",
     "item5": "Services Java prêts pour la production avec architecture claire et modulaire.",
-    "item6": "Authentification robuste et persistance enterprise pour des APIs sécurisées et évolutives."
+    "item6": "Authentification robuste et persistance enterprise pour des APIs sécurisées et évolutives.",
+    "item7": "CLI et backend haute performance avec mémoire sûre et concurrence sans GC.",
+    "item8": "Applications multiplateformes (Android, iOS, Desktop) depuis une seule base de code."
   },
   "Blog": {
     "kicker": "Blog technique court",
@@ -123,6 +135,7 @@
     "title": "Compétences",
     "catFrontend": "Frontend",
     "catBackend": "Backend & Cloud",
+    "catSystems": "Systèmes, Mobile & Desktop",
     "catAI": "Ingénierie IA & Outils",
     "catLanguages": "Langues (Parlées)",
     "langSpanish": "Espagnol (Natif)",
@@ -135,8 +148,8 @@
     "university": "Études Universitaires",
     "certifications": "Cours et Certifications",
     "universityTitle": "Ingénierie Informatique",
-    "universitySubtitle": "Spécialisation en Ingénierie des Systèmes (8ème Semestre sur 10)",
-    "universityEntity": "Université",
+    "universitySubtitle": "Diplômé · Spécialisation en Ingénierie des Systèmes",
+    "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermédiaire)",
     "certDataScienceEntity": "DataCamp",
     "certJavaTitle": "Fondamentaux de Java, Java POO, Spring Boot",

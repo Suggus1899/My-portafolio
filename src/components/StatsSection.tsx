@@ -40,7 +40,7 @@ export default function StatsSection() {
     { value: 3, suffix: '+', label: t('yearsLabel') },
     { value: 15, suffix: '+', label: t('projectsLabel') },
     { value: 4, suffix: '', label: t('languagesLabel') },
-    { value: 5, suffix: '+', label: t('techLabel') },
+    { value: 20, suffix: '+', label: t('techLabel') },
   ];
 
   return (

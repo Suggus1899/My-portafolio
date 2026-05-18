@@ -1,56 +1,39 @@
-'use client';
+"use client";
 
-import { useTranslations } from 'next-intl';
-import { ArrowUpRight, PlayCircle, Github } from 'lucide-react';
-import repos from '../repos.json';
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-
-type Repo = {
-  name: string;
-  description: string | null;
-  url: string;
-  language: string | null;
-  demoUrl?: string | null;
-  status?: string;
-  year?: string;
-  license?: string;
-  highlights?: string[];
-};
-
-type Project = Repo & {
-  isPrivate?: boolean;
-};
+import { useTranslations } from "next-intl";
+import { ArrowUpRight, PlayCircle, Github } from "lucide-react";
+import repos from "../repos.json";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import type { Repo, Project } from "@/types";
 
 export default function ProjectsSection() {
-  const t = useTranslations('Projects');
-  const [activeFilter, setActiveFilter] = useState<string>('All');
+  const t = useTranslations("Projects");
+  const [activeFilter, setActiveFilter] = useState<string>("All");
 
   const privateProject: Project = {
-    name: t('privateName'),
-    description: t('private_projects_note') + t('privateDescSuffix'),
-    url: '#',
-    language: t('privateLanguage'),
+    name: t("privateName"),
+    description: t("private_projects_note") + t("privateDescSuffix"),
+    url: "#",
+    language: t("privateLanguage"),
     demoUrl: null,
-    status: t('privateStatus'),
-    year: t('privateDate'),
-    license: t('privateLicense'),
-    highlights: [
-      t('privateHighlight1'),
-      t('privateHighlight2')
-    ],
+    status: t("privateStatus"),
+    year: t("privateDate"),
+    license: t("privateLicense"),
+    highlights: [t("privateHighlight1"), t("privateHighlight2")],
     isPrivate: true,
   };
 
   const allProjects: Project[] = [privateProject, ...(repos as Repo[])];
 
-  const filters = ['All', 'TypeScript', 'JavaScript', 'Other'];
+  const filters = ["All", "TypeScript", "JavaScript", "Java", "Rust", "Other"];
+  const primaryFilters = ["TypeScript", "JavaScript", "Java", "Rust"];
 
   const displayedProjects = allProjects.filter((repo) => {
-    if (activeFilter === 'All') return true;
-    const lang = repo.language || '';
-    if (activeFilter === 'Other') {
-      return !lang.includes('TypeScript') && !lang.includes('JavaScript');
+    if (activeFilter === "All") return true;
+    const lang = repo.language || "";
+    if (activeFilter === "Other") {
+      return !primaryFilters.some((f) => lang.includes(f));
     }
     return lang.includes(activeFilter);
   });
@@ -61,12 +44,14 @@ export default function ProjectsSection() {
       className="py-24 px-6 max-w-4xl mx-auto"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-80px' }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <h2 className="text-3xl font-space font-black uppercase mb-4 tracking-tight">{t('title')}</h2>
+      <h2 className="text-3xl font-space font-black uppercase mb-4 tracking-tight">
+        {t("title")}
+      </h2>
       <div className="mb-10 h-[2px] w-36 bg-zinc-900/85 dark:bg-zinc-100/85" />
-      
+
       <div className="flex flex-wrap gap-2 mb-8">
         {filters.map((filter) => (
           <button
@@ -74,11 +59,11 @@ export default function ProjectsSection() {
             onClick={() => setActiveFilter(filter)}
             className={`px-4 py-2 text-sm font-bold uppercase tracking-wide border-2 transition-colors ${
               activeFilter === filter
-                ? 'bg-zinc-900 text-white border-zinc-900 dark:bg-zinc-100 dark:text-zinc-900 dark:border-zinc-100'
-                : 'bg-transparent text-zinc-900 border-zinc-900 hover:bg-zinc-100 dark:text-zinc-100 dark:border-zinc-100 dark:hover:bg-zinc-900'
+                ? "bg-zinc-900 text-white border-zinc-900 dark:bg-zinc-100 dark:text-zinc-900 dark:border-zinc-100"
+                : "bg-transparent text-zinc-900 border-zinc-900 hover:bg-zinc-100 dark:text-zinc-100 dark:border-zinc-100 dark:hover:bg-zinc-900"
             }`}
           >
-            {filter === 'All' ? t('filterAll') : filter === 'Other' ? t('filterOther') : filter}
+            {filter === 'All' ? t('filterAll') : filter === 'Other' ? t('filterOther') : filter === 'Java' ? t('filterJava') : filter === 'Rust' ? t('filterRust') : filter}
           </button>
         ))}
       </div>
@@ -88,9 +73,9 @@ export default function ProjectsSection() {
           <article
             key={idx}
             className={`group p-6 border-2 transition-all duration-300 hover:-translate-y-1 ${
-              repo.isPrivate 
-                ? 'bg-zinc-50/90 border-zinc-900 dark:bg-zinc-900/50 dark:border-zinc-100 border-dashed' 
-                : 'bg-white/95 border-zinc-900 hover:shadow-lg dark:bg-zinc-950/95 dark:border-zinc-100'
+              repo.isPrivate
+                ? "bg-zinc-50/90 border-zinc-900 dark:bg-zinc-900/50 dark:border-zinc-100 border-dashed"
+                : "bg-white/95 border-zinc-900 hover:shadow-lg dark:bg-zinc-950/95 dark:border-zinc-100"
             }`}
           >
             <div className="flex justify-between items-start mb-4">
@@ -98,27 +83,33 @@ export default function ProjectsSection() {
                 {repo.name}
                 {repo.isPrivate && (
                   <span className="text-[10px] px-2 py-0.5 border border-zinc-900 dark:border-zinc-100 bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 uppercase tracking-wider font-bold">
-                    {t('private')}
+                    {t("private")}
                   </span>
                 )}
               </h3>
               {!repo.isPrivate && (
-                <ArrowUpRight className="text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-zinc-100 transition-colors" size={20} />
+                <ArrowUpRight
+                  className="text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-zinc-100 transition-colors"
+                  size={20}
+                />
               )}
             </div>
             <p className="text-zinc-500 dark:text-zinc-400 text-sm mb-6 line-clamp-2">
-              {repo.description || t('noDescription')}
+              {repo.description || t("noDescription")}
             </p>
 
             <div className="mb-5 grid grid-cols-2 gap-2 text-[11px] uppercase tracking-wider">
               <div className="border border-zinc-900/70 px-2 py-1 text-zinc-700 dark:border-zinc-100/70 dark:text-zinc-300">
-                <span className="font-bold">{t('statusLabel')}: </span>{repo.status || t('unknown')}
+                <span className="font-bold">{t("statusLabel")}: </span>
+                {repo.status || t("unknown")}
               </div>
               <div className="border border-zinc-900/70 px-2 py-1 text-zinc-700 dark:border-zinc-100/70 dark:text-zinc-300">
-                <span className="font-bold">{t('yearLabel')}: </span>{repo.year || t('unknown')}
+                <span className="font-bold">{t("yearLabel")}: </span>
+                {repo.year || t("unknown")}
               </div>
               <div className="col-span-2 border border-zinc-900/70 px-2 py-1 text-zinc-700 dark:border-zinc-100/70 dark:text-zinc-300">
-                <span className="font-bold">{t('licenseLabel')}: </span>{repo.license || t('unknown')}
+                <span className="font-bold">{t("licenseLabel")}: </span>
+                {repo.license || t("unknown")}
               </div>
             </div>
 
@@ -142,7 +133,7 @@ export default function ProjectsSection() {
               )}
 
               <div className="flex items-center gap-2">
-                {!repo.isPrivate && repo.url !== '#' && (
+                {!repo.isPrivate && repo.url !== "#" && (
                   <a
                     href={repo.url}
                     target="_blank"
@@ -150,7 +141,7 @@ export default function ProjectsSection() {
                     className="inline-flex items-center gap-1.5 border border-zinc-900 bg-white px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-zinc-900 hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
                   >
                     <Github size={13} />
-                    {t('viewCode')}
+                    {t("viewCode")}
                   </a>
                 )}
 
@@ -162,12 +153,12 @@ export default function ProjectsSection() {
                     className="inline-flex items-center gap-1.5 border border-zinc-900 bg-zinc-900 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-white hover:bg-zinc-700 dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
                   >
                     <PlayCircle size={13} />
-                    {t('liveDemo')}
+                    {t("liveDemo")}
                   </a>
                 ) : (
                   !repo.isPrivate && (
                     <span className="inline-flex items-center border border-dashed border-zinc-900 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-zinc-500 dark:border-zinc-100 dark:text-zinc-400">
-                      {t('comingSoon')}
+                      {t("comingSoon")}
                     </span>
                   )
                 )}

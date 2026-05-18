@@ -27,7 +27,7 @@ export default function HeroSection() {
               <div className="relative aspect-square overflow-hidden border-2 border-zinc-900 dark:border-zinc-100">
                 <Image
                   src={imageSrc}
-                  alt="Foto de Gustavo Colina"
+                  alt={t('profileAlt')}
                   fill
                   priority
                   sizes="(max-width: 768px) 250px, 250px"
@@ -44,7 +44,7 @@ export default function HeroSection() {
             <div className="mt-3 flex items-center gap-2">
               <a
                 href="#contact"
-                aria-label={t('contact')}
+                aria-label={t('contactAriaLabel')}
                 className="inline-flex h-10 w-10 items-center justify-center border-2 border-zinc-900 bg-white text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
               >
                 <Mail size={16} />
@@ -53,7 +53,7 @@ export default function HeroSection() {
                 href="https://github.com/Suggus1899"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={t('github')}
+                aria-label={t('githubAriaLabel')}
                 className="inline-flex h-10 w-10 items-center justify-center border-2 border-zinc-900 bg-white text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
               >
                 <Github size={16} />
@@ -61,7 +61,7 @@ export default function HeroSection() {
               <a
                 href="/sintesis-curricular.pdf"
                 download
-                aria-label={t('downloadCv')}
+                aria-label={t('downloadCvAriaLabel')}
                 className="inline-flex h-10 w-10 items-center justify-center border-2 border-zinc-900 bg-white text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
               >
                 <FileText size={16} />

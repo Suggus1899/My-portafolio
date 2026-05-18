@@ -16,33 +16,41 @@
   },
   "Hero": {
     "greeting": "Hi! I'm Gustavo Colina (Suggus1899)",
-    "role": "Systems Engineering Student (8/10 semesters) • Backend-first • Cloud learner",
+    "role": "Full-Stack Developer · Graduate · Available Remotely",
     "whatIDo": "What do I do?",
     "availability": "Available for new opportunities",
     "contact": "Contact me",
+    "contactAriaLabel": "Send email to Gustavo Colina",
     "downloadCv": "Download CV summary",
-    "github": "GitHub"
+    "downloadCvAriaLabel": "Download CV in PDF format",
+    "github": "GitHub",
+    "githubAriaLabel": "Visit GitHub profile",
+    "profileAlt": "Profile photo of Gustavo Colina"
   },
   "Curriculum": {
     "kicker": "CV Summary",
     "title": "Professional summary focused on product and backend engineering",
-    "summary": "I combine a strong systems engineering foundation with a backend focus, building solid APIs with Java (Spring) and Node.js ecosystems, supported by AI automations and cloud deployments.",
-    "highlight1": "Development of robust enterprise services using Java 17/21 and Spring Boot, alongside Node.js.",
-    "highlight2": "Systems engineering academic profile with practical execution focus.",
-    "highlight3": "Applied AI workflows to improve delivery speed and output quality.",
+    "summary": "Graduate Software Engineer specialized in Full-Stack development with a focus on process automation and digitalization of document-based workflows. With experience in university, industrial and remote tech company environments, I build web and desktop systems that reduce operational times and human error. Proficient in database design, clean architectures and results-driven delivery.",
+    "highlight1": "Web and desktop systems that digitalize physical processes with automated reporting (10 min → 1 min reduction).",
+    "highlight2": "Relational and NoSQL database design and modeling focused on optimization and scalability.",
+    "highlight3": "Proven experience in public university, food industry and remote tech company (Perú).",
     "download": "Download CV summary",
     "contact": "Contact by email"
   },
   "Experience": {
     "title": "Experience",
-    "exp1Role": "Software Engineer Intern / Student",
-    "exp1Company": "University",
-    "exp1Period": "2022 — Present",
-    "exp1Description": "Studying Systems Engineering (8/10 semesters). Focused on backend development with Java and Node.js, API design, and cloud networking fundamentals while building full-stack applications.",
-    "exp2Role": "Backend Developer",
-    "exp2Company": "Freelance",
-    "exp2Period": "2023 — Present",
-    "exp2Description": "Developing independent projects with Spring Boot, Spring Security, Hibernate/JPA and Node.js. Designing relational data models in PostgreSQL, MySQL and SQLite, plus MongoDB integrations when domain flexibility is needed."
+    "exp1Role": "Software Developer",
+    "exp1Company": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
+    "exp1Period": "2025",
+    "exp1Description": "Development on the Research, Science, Technology and Innovation Observatory System. Database design corrections for better optimization, migration of physical documents into the digital system, and logic improvements bringing the system to advanced operational phases.",
+    "exp2Role": "Full-Stack Developer",
+    "exp2Company": "Industrias de Alimentos El Trébol",
+    "exp2Period": "2025 — 2026",
+    "exp2Description": "LogMaster access control and visitor management system. Requirements gathering, encrypted database design (SQLCipher/AES-256), development of desktop app (Electron + React) and web version, managerial process automation with PDF/Excel report generation. Process time reduced from 10 minutes to under 1 minute.",
+    "exp3Role": "Full-Stack Developer (Remote)",
+    "exp3Company": "KeoIT · Peru",
+    "exp3Period": "March 2026 — Present",
+    "exp3Description": "Cross-platform client development with Flutter/Dart (Android, iOS, Desktop) applying Clean Architecture and Provider for session and role management. Integration of vector animations with Rive and Glassmorphism UI design. Collaboration on full-stack with Next.js on the web layer."
   },
   "Projects": {
     "title": "Projects",
@@ -65,7 +73,9 @@
     "comingSoon": "Demo soon",
     "noDescription": "No description yet.",
     "filterAll": "All Projects",
-    "filterOther": "Other"
+    "filterOther": "Other",
+    "filterJava": "Java",
+    "filterRust": "Rust"
   },
   "FavoriteStack": {
     "title": "Favorite stack",
@@ -75,7 +85,9 @@
     "item3": "Flexible persistence: SQL for consistency and NoSQL for dynamic models.",
     "item4": "Modern deployment flow with core observability and short delivery cycles.",
     "item5": "Production-ready Java services with clean and modular architecture.",
-    "item6": "Robust authentication and enterprise-grade persistence for secure scalable APIs."
+    "item6": "Robust authentication and enterprise-grade persistence for secure scalable APIs.",
+    "item7": "High-performance CLI and backend with safe memory and GC-free concurrency.",
+    "item8": "Cross-platform apps (Android, iOS, Desktop) from a single codebase."
   },
   "Blog": {
     "kicker": "Short technical blog",
@@ -110,19 +122,333 @@
   },
   "Services": {
     "title": "Services",
-    "subtitle": "Select a card to view service scope, deliverables and direct contact options.",
+    "subtitle": "Tailored technology solutions for your business. Select a category to explore specific services.",
     "openModal": "View details",
     "close": "Close",
-    "includes": "Includes",
+    "idealFor": "Ideal for",
+    "scope": "Scope",
     "deliverables": "Deliverables",
-    "etaLabel": "Estimated timeline",
-    "ctaWhatsapp": "Chat on WhatsApp",
-    "ctaEmail": "Email via Gmail"
+    "technologies": "Technologies",
+    "duration": "Estimated duration",
+    "contactCTAs": {
+      "whatsapp": "Quote via WhatsApp",
+      "email": "Send email",
+      "calendar": "Schedule a call"
+    },
+    "categories": [
+      {
+        "id": "backend",
+        "name": "Backend & APIs",
+        "description": "Robust and scalable APIs for your business",
+        "services": [
+          {
+            "id": "api-nodejs",
+            "title": "REST API with Node.js/NestJS",
+            "idealFor": "Startups that need a fast backend MVP",
+            "scope": "RESTful API design, JWT/Auth0 authentication, complete CRUD, Swagger/OpenAPI documentation",
+            "deliverables": ["GitHub repository", "Complete README", "Postman collection", "Deployment guide"],
+            "technologies": ["Node.js", "NestJS", "TypeScript", "PostgreSQL", "MongoDB", "Redis"],
+            "duration": "2-3 weeks"
+          },
+          {
+            "id": "api-java",
+            "title": "Enterprise API with Java Spring Boot",
+            "idealFor": "Companies with high availability requirements",
+            "scope": "Clean Architecture, Spring Security OAuth2, JPA/Hibernate, unit and integration testing",
+            "deliverables": ["Source code", "Technical documentation", "Automated tests", "docker-compose.yml"],
+            "technologies": ["Java 21", "Spring Boot 3", "Spring Security", "PostgreSQL", "Docker"],
+            "duration": "3-5 weeks"
+          },
+          {
+            "id": "db-optimization",
+            "title": "Database Optimization",
+            "idealFor": "Systems with performance issues",
+            "scope": "Query profiling, strategic indexes, normalization/denormalization, safe migrations with Flyway/Liquibase",
+            "deliverables": ["Report with before/after metrics", "Optimization scripts", "Migration plan"],
+            "technologies": ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+            "duration": "1-2 weeks"
+          }
+        ]
+      },
+      {
+        "id": "frontend",
+        "name": "Frontend Development",
+        "description": "Modern, fast, and converting interfaces",
+        "services": [
+          {
+            "id": "landing-page",
+            "title": "Professional Landing Page",
+            "idealFor": "Entrepreneurs that need web presence",
+            "scope": "Responsive design, smooth animations, technical SEO, integrated contact form, analytics",
+            "deliverables": ["Next.js code", "Vercel/Netlify deploy", "Content editing guide"],
+            "technologies": ["Next.js 14", "React", "Tailwind CSS", "Framer Motion"],
+            "duration": "1-2 weeks"
+          },
+          {
+            "id": "dashboard",
+            "title": "Admin Dashboard",
+            "idealFor": "SaaS that need data visualization",
+            "scope": "UI with interactive tables, charts (recharts/chart.js), advanced filters, CSV/Excel export, dark mode",
+            "deliverables": ["Functional app", "Documented components", "Theme system"],
+            "technologies": ["Next.js", "TypeScript", "Tailwind", "shadcn/ui", "TanStack Table"],
+            "duration": "2-4 weeks"
+          },
+          {
+            "id": "ecommerce",
+            "title": "E-commerce Frontend",
+            "idealFor": "Online stores",
+            "scope": "Catalog with filters, persistent cart, optimized checkout, payment gateway integration",
+            "deliverables": ["Functional store", "Stripe integration", "Orders panel"],
+            "technologies": ["Next.js", "Stripe SDK", "Tailwind", "Prisma"],
+            "duration": "3-4 weeks"
+          },
+          {
+            "id": "migration-nextjs",
+            "title": "Migration to Next.js",
+            "idealFor": "Legacy React apps that need SSR/SEO",
+            "scope": "CRA/Vite to Next.js migration, App Router, image/font optimization, SEO",
+            "deliverables": ["Migrated code", "Performance audit", "Migration guide"],
+            "technologies": ["Next.js 14", "React", "TypeScript"],
+            "duration": "2-3 weeks"
+          }
+        ]
+      },
+      {
+        "id": "devops",
+        "name": "DevOps & Cloud",
+        "description": "Scalable and automated infrastructure",
+        "services": [
+          {
+            "id": "cloud-setup",
+            "title": "AWS/GCP Setup for Backend",
+            "idealFor": "Teams that need cloud infrastructure",
+            "scope": "VPC + subnets, EC2/Cloud Run, RDS/Cloud SQL, S3/Storage, load balancer",
+            "deliverables": ["Infrastructure as Code (Terraform)", "Architecture documentation", "Operation guide"],
+            "technologies": ["AWS", "GCP", "Terraform", "Docker"],
+            "duration": "1-2 weeks"
+          },
+          {
+            "id": "cicd",
+            "title": "CI/CD Pipeline",
+            "idealFor": "Teams that want to automate deployments",
+            "scope": "GitHub Actions configured, automated tests on PRs, automatic deploy to staging/prod",
+            "deliverables": ["Configured workflows", "Pipeline documentation", "Rollback procedures"],
+            "technologies": ["GitHub Actions", "Docker", "Vercel", "AWS"],
+            "duration": "3-5 days"
+          },
+          {
+            "id": "docker",
+            "title": "Docker Containerization",
+            "idealFor": "Apps that need consistent deployment",
+            "scope": "Multi-stage Dockerfile, docker-compose, Docker Registry, image optimization",
+            "deliverables": ["Optimized Dockerfiles", "docker-compose.yml", "Debugging guide"],
+            "technologies": ["Docker", "Docker Compose", "Nginx"],
+            "duration": "2-4 days"
+          },
+          {
+            "id": "monitoring",
+            "title": "Monitoring and Observability",
+            "idealFor": "Production apps that need visibility",
+            "scope": "Centralized logs, metrics, alerting, health checks, distributed tracing",
+            "deliverables": ["Configured dashboards", "Configured alerts", "Troubleshooting runbook"],
+            "technologies": ["Datadog", "New Relic", "Prometheus", "Grafana"],
+            "duration": "3-5 days"
+          }
+        ]
+      },
+      {
+        "id": "fullstack",
+        "name": "Full-Stack Web",
+        "description": "Complete end-to-end web solutions",
+        "services": [
+          {
+            "id": "mvp",
+            "title": "Complete Web MVP",
+            "idealFor": "Startups validating business ideas",
+            "scope": "Landing page + dashboard + backend + auth + complete deployment",
+            "deliverables": ["Deployed functional app", "GitHub repository", "Documentation", "Demo video"],
+            "technologies": ["Next.js", "Node.js/NestJS", "PostgreSQL", "Prisma", "Vercel"],
+            "duration": "4-6 weeks"
+          },
+          {
+            "id": "erp-crm",
+            "title": "Internal Management System (ERP/CRM)",
+            "idealFor": "Companies digitizing processes",
+            "scope": "User/role management, complete CRUD, Excel/PDF reports, metrics dashboard",
+            "deliverables": ["Functional system", "User manual", "Source code", "1h training"],
+            "technologies": ["Next.js", "Node.js/Java", "PostgreSQL", "shadcn/ui"],
+            "duration": "4-6 weeks"
+          },
+          {
+            "id": "saas",
+            "title": "Multi-tenant SaaS",
+            "idealFor": "Entrepreneurs building SaaS products",
+            "scope": "Auth with roles, Stripe billing, subscriptions, onboarding, admin dashboard",
+            "deliverables": ["SaaS with billing", "Architecture documentation", "Scaling guide"],
+            "technologies": ["Next.js", "Stripe", "Clerk/NextAuth", "PostgreSQL", "Prisma"],
+            "duration": "6-8 weeks"
+          }
+        ]
+      },
+      {
+        "id": "mobile",
+        "name": "Mobile Apps",
+        "description": "Native apps for iOS and Android",
+        "services": [
+          {
+            "id": "flutter",
+            "title": "Cross-Platform App with Flutter",
+            "idealFor": "Businesses that need iOS + Android with single codebase",
+            "scope": "Native UI, navigation, backend integration, push notifications",
+            "deliverables": ["Source code", "iOS/Android builds", "Publication guide"],
+            "technologies": ["Flutter", "Dart", "Firebase", "Provider/Bloc"],
+            "duration": "4-6 weeks"
+          },
+          {
+            "id": "react-native",
+            "title": "React Native App",
+            "idealFor": "Teams with React knowledge that want mobile apps",
+            "scope": "Native components, API integration, authentication, deep linking",
+            "deliverables": ["Functional app", "Documented code", "Builds"],
+            "technologies": ["React Native", "Expo", "TypeScript", "Firebase"],
+            "duration": "4-6 weeks"
+          }
+        ]
+      },
+      {
+        "id": "integrations",
+        "name": "API Integrations",
+        "description": "Connect your app with third-party services",
+        "services": [
+          {
+            "id": "stripe",
+            "title": "Stripe / Payment Gateway Integration",
+            "idealFor": "E-commerce or SaaS that need online payments",
+            "scope": "Checkout, webhooks, subscription management, refunds",
+            "deliverables": ["Integrated payment module", "Tests", "Webhooks documentation"],
+            "technologies": ["Stripe API", "Node.js", "Next.js"],
+            "duration": "1-2 weeks"
+          },
+          {
+            "id": "communications",
+            "title": "Communication APIs Integration",
+            "idealFor": "Apps that need email/SMS/notifications",
+            "scope": "SendGrid/Twilio integration, dynamic templates, sending queues",
+            "deliverables": ["Working notification system", "Dashboards"],
+            "technologies": ["SendGrid", "Twilio", "AWS SES", "Node.js"],
+            "duration": "1-2 weeks"
+          },
+          {
+            "id": "openai",
+            "title": "OpenAI / AI Services Integration",
+            "idealFor": "Apps that want AI features",
+            "scope": "Chatbots, content generation, data analysis, embeddings",
+            "deliverables": ["Integrated AI module", "Optimized prompts", "Cost management"],
+            "technologies": ["OpenAI API", "LangChain", "Pinecone"],
+            "duration": "2-3 weeks"
+          }
+        ]
+      },
+      {
+        "id": "writing",
+        "name": "Technical Writing",
+        "description": "Professional quality technical documentation",
+        "services": [
+          {
+            "id": "api-docs",
+            "title": "API Documentation",
+            "idealFor": "Teams that need professional docs for their APIs",
+            "scope": "OpenAPI spec, usage guides, code examples, basic SDKs",
+            "deliverables": ["Web documentation (Swagger/ReadMe/Docusaurus)", "Postman collection"],
+            "technologies": ["OpenAPI 3.0", "Swagger UI", "Docusaurus"],
+            "duration": "1-2 weeks"
+          },
+          {
+            "id": "readme",
+            "title": "READMEs and Technical Documentation",
+            "idealFor": "Repositories that need better docs",
+            "scope": "Professional README, CONTRIBUTING.md, CHANGELOG, installation guides",
+            "deliverables": ["Markdown documentation", "Badges", "Diagrams"],
+            "technologies": ["Markdown", "Mermaid", "GitHub Actions"],
+            "duration": "3-5 days"
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "name": "Security Audit",
+        "description": "Security audit and hardening",
+        "services": [
+          {
+            "id": "security-review",
+            "title": "Web Application Security Review",
+            "idealFor": "Apps that handle sensitive data and need auditing",
+            "scope": "OWASP Top 10 analysis, auth review, input validation, HTTP headers",
+            "deliverables": ["Vulnerabilities report", "Remediation plan", "Fixes implementation"],
+            "technologies": ["OWASP ZAP", "SonarQube", "ESLint Security"],
+            "duration": "1-2 weeks"
+          },
+          {
+            "id": "hardening",
+            "title": "Server and App Hardening",
+            "idealFor": "Production systems that need more security",
+            "scope": "HTTPS/TLS configuration, security headers, rate limiting, CORS",
+            "deliverables": ["Hardening configurations", "Security checklist"],
+            "technologies": ["Nginx", "Cloudflare", "Helmet.js", "AWS WAF"],
+            "duration": "3-5 days"
+          }
+        ]
+      },
+      {
+        "id": "consulting",
+        "name": "Technical Consulting",
+        "description": "Expert advice for your team",
+        "services": [
+          {
+            "id": "architecture",
+            "title": "Software Architecture",
+            "idealFor": "Teams defining tech stack",
+            "scope": "Requirements evaluation, architecture design, technical roadmap",
+            "deliverables": ["Architecture document (ADR)", "C4 diagrams", "Recommendations"],
+            "technologies": ["Architecture", "Diagrams", "Documentation"],
+            "duration": "2-3 days"
+          },
+          {
+            "id": "code-review",
+            "title": "Code Review & Refactoring",
+            "idealFor": "Legacy code or technical debt",
+            "scope": "Static analysis, layer-based refactoring, test improvement",
+            "deliverables": ["Analysis report", "PRs with improvements", "Coding standards"],
+            "technologies": ["ESLint", "SonarQube", "Jest/Vitest"],
+            "duration": "1-2 weeks"
+          },
+          {
+            "id": "performance",
+            "title": "Performance Audit",
+            "idealFor": "Slow apps that need optimization",
+            "scope": "Lighthouse audit, Core Web Vitals, bundle analysis",
+            "deliverables": ["Performance report", "Improvements implementation"],
+            "technologies": ["Lighthouse", "Webpack Analyzer"],
+            "duration": "3-5 days"
+          },
+          {
+            "id": "mentorship",
+            "title": "1:1 Mentorship",
+            "idealFor": "Junior/mid devs growing technically",
+            "scope": "Weekly 1:1 sessions, code review, pair programming",
+            "deliverables": ["Personalized learning plan", "Written feedback"],
+            "technologies": ["Mentorship", "Code Review", "Pair Programming"],
+            "duration": "4/8/12 sessions (1h each)"
+          }
+        ]
+      }
+    ]
   },
   "Skills": {
     "title": "Skills",
     "catFrontend": "Frontend",
     "catBackend": "Backend & Cloud",
+    "catSystems": "Systems, Mobile & Desktop",
     "catAI": "AI Engineering & Tools",
     "catLanguages": "Languages (Spoken)",
     "langSpanish": "Spanish (Native)",
@@ -135,8 +461,8 @@
     "university": "University Studies",
     "certifications": "Courses & Certifications",
     "universityTitle": "Computer Engineering",
-    "universitySubtitle": "Systems Engineering Specialization (8th Semester out of 10)",
-    "universityEntity": "University",
+    "universitySubtitle": "Graduate · Systems Engineering Specialization",
+    "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermediate)",
     "certDataScienceEntity": "DataCamp",
     "certJavaTitle": "Java Fundamentals, Java OOP, Spring Boot",
@@ -175,6 +501,14 @@
     "successTitle": "Message sent!",
     "successMessage": "Thanks for reaching out. I will get back to you soon.",
     "sendAnother": "Send another message",
-    "errorMessage": "There was an error sending. Write to me directly on WhatsApp or email."
+    "errorMessage": "There was an error sending. Write to me directly on WhatsApp or email.",
+    "validation": {
+      "nameRequired": "Name is required",
+      "nameMin": "Name must be at least 2 characters",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email",
+      "messageRequired": "Message is required",
+      "messageMin": "Message must be at least 10 characters"
+    }
   }
 }

@@ -1,21 +1,75 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import emailjs from '@emailjs/browser';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { z } from 'zod';
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
+
+type ValidationErrors = {
+  name?: string;
+  email?: string;
+  message?: string;
+};
 
 export default function ContactSection() {
   const t = useTranslations('Contact');
   const formRef = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState<Status>('idle');
+  const [errors, setErrors] = useState<ValidationErrors>({});
+  const [rateLimitCount, setRateLimitCount] = useState(0);
+
+  const createSchema = useCallback(() => {
+    return z.object({
+      name: z.string()
+        .min(1, t('validation.nameRequired'))
+        .min(2, t('validation.nameMin')),
+      email: z.string()
+        .min(1, t('validation.emailRequired'))
+        .email(t('validation.emailInvalid')),
+      message: z.string()
+        .min(1, t('validation.messageRequired'))
+        .min(10, t('validation.messageMin'))
+    });
+  }, [t]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setErrors({});
+
     if (!formRef.current) return;
+
+    // Rate limiting check
+    if (rateLimitCount >= 3) {
+      setStatus('error');
+      return;
+    }
+
+    const formData = new FormData(formRef.current);
+    const data = {
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      message: formData.get('message') as string,
+    };
+
+    // Zod validation
+    const schema = createSchema();
+    const result = schema.safeParse(data);
+
+    if (!result.success) {
+      const fieldErrors: ValidationErrors = {};
+      result.error.issues.forEach((issue) => {
+        const field = issue.path[0] as keyof ValidationErrors;
+        if (!fieldErrors[field]) {
+          fieldErrors[field] = issue.message;
+        }
+      });
+      setErrors(fieldErrors);
+      return;
+    }
 
     const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
     const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
@@ -29,6 +83,7 @@ export default function ContactSection() {
     setStatus('loading');
     try {
       await emailjs.sendForm(serviceId, templateId, formRef.current, { publicKey });
+      setRateLimitCount((prev) => prev + 1);
       setStatus('success');
       formRef.current.reset();
     } catch {
@@ -79,10 +134,12 @@ export default function ContactSection() {
                     id="from_name"
                     name="name"
                     type="text"
-                    required
                     placeholder={t('namePlaceholder')}
-                    className="w-full border-2 border-zinc-900 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:border-zinc-100 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-600 dark:focus:ring-zinc-100"
+                    className={`w-full border-2 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-600 ${errors.name ? 'border-red-500 focus:ring-red-500 dark:border-red-500 dark:focus:ring-red-500' : 'border-zinc-900 focus:ring-zinc-900 dark:border-zinc-100 dark:focus:ring-zinc-100'}`}
                   />
+                  {errors.name && (
+                    <p className="mt-1 text-xs text-red-600 dark:text-red-400">{errors.name}</p>
+                  )}
                 </div>
                 <div>
                   <label htmlFor="reply_to" className="block text-xs font-bold uppercase tracking-[0.14em] text-zinc-700 dark:text-zinc-300 mb-2">
@@ -92,10 +149,12 @@ export default function ContactSection() {
                     id="reply_to"
                     name="email"
                     type="email"
-                    required
                     placeholder={t('emailPlaceholder')}
-                    className="w-full border-2 border-zinc-900 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:border-zinc-100 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-600 dark:focus:ring-zinc-100"
+                    className={`w-full border-2 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-600 ${errors.email ? 'border-red-500 focus:ring-red-500 dark:border-red-500 dark:focus:ring-red-500' : 'border-zinc-900 focus:ring-zinc-900 dark:border-zinc-100 dark:focus:ring-zinc-100'}`}
                   />
+                  {errors.email && (
+                    <p className="mt-1 text-xs text-red-600 dark:text-red-400">{errors.email}</p>
+                  )}
                 </div>
               </div>
 
@@ -106,11 +165,13 @@ export default function ContactSection() {
                 <textarea
                   id="message"
                   name="message"
-                  required
                   rows={5}
                   placeholder={t('messagePlaceholder')}
-                  className="w-full border-2 border-zinc-900 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-400 resize-none focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:border-zinc-100 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-600 dark:focus:ring-zinc-100"
+                  className={`w-full border-2 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-400 resize-none focus:outline-none focus:ring-2 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-600 ${errors.message ? 'border-red-500 focus:ring-red-500 dark:border-red-500 dark:focus:ring-red-500' : 'border-zinc-900 focus:ring-zinc-900 dark:border-zinc-100 dark:focus:ring-zinc-100'}`}
                 />
+                {errors.message && (
+                  <p className="mt-1 text-xs text-red-600 dark:text-red-400">{errors.message}</p>
+                )}
               </div>
 
               {status === 'error' && (

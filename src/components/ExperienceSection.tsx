@@ -18,6 +18,12 @@ export default function ExperienceSection() {
       company: t('exp2Company'),
       period: t('exp2Period'),
       description: t('exp2Description'),
+    },
+    {
+      role: t('exp3Role'),
+      company: t('exp3Company'),
+      period: t('exp3Period'),
+      description: t('exp3Description'),
     }
   ];
 

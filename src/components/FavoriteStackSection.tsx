@@ -27,6 +27,14 @@ const stackItems = [
   {
     name: 'Spring Security + Hibernate/JPA',
     detailKey: 'item6'
+  },
+  {
+    name: 'Rust + Actix-web',
+    detailKey: 'item7'
+  },
+  {
+    name: 'Flutter + Dart',
+    detailKey: 'item8'
   }
 ] as const;
 
