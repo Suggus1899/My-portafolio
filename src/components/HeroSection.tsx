@@ -30,6 +30,9 @@ export default function HeroSection() {
                   alt={t('profileAlt')}
                   fill
                   priority
+                  quality={85}
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTAiIGhlaWdodD0iMjUwIiB2aWV3Qm94PSIwIDAgMjUwIDI1MCIgZmlsbD0iIzI3MjcyYSIvPgo="
                   sizes="(max-width: 768px) 250px, 250px"
                   className="object-cover"
                   onError={() => {

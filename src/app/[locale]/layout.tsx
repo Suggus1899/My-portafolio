@@ -9,6 +9,7 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollProgressBar from '@/components/ScrollProgressBar';
+import ScrollToTop from '@/components/ScrollToTop';
 
 type AppLocale = (typeof routing.locales)[number];
 
@@ -101,10 +102,11 @@ export default async function RootLayout({
           <NextIntlClientProvider messages={messages}>
             <ScrollProgressBar />
             <Navbar />
-            <main className="pt-24 min-h-screen page-gradient">
+            <main id="main-content" className="pt-24 min-h-screen page-gradient">
               {children}
             </main>
             <Footer />
+            <ScrollToTop />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

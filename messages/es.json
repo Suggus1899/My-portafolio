@@ -12,7 +12,9 @@
     "now": "Now",
     "blog": "Blog",
     "language": "Idioma",
-    "theme": "Tema"
+    "theme": "Tema",
+    "skipToContent": "Saltar al contenido",
+    "mainNav": "Navegación principal"
   },
   "Hero": {
     "greeting": "¡Hola! Soy Gustavo Colina (Suggus1899)",
@@ -30,27 +32,31 @@
   "Curriculum": {
     "kicker": "Síntesis Curricular",
     "title": "Resumen profesional orientado a producto y backend",
-    "summary": "Ingeniero en Informática graduado, especializado en desarrollo Full-Stack con enfoque en automatización de procesos y digitalización de flujos documentales. Con experiencia en entornos universitarios, industriales y empresa tecnológica remota, construyo sistemas web y de escritorio que reducen tiempos operativos y el margen de error humano. Competente en diseño de bases de datos, arquitecturas limpias y entrega orientada a resultados.",
-    "highlight1": "Sistemas web y de escritorio que digitalizan procesos físicos e integran reportes automáticos (reducción de 10 min → 1 min).",
-    "highlight2": "Diseño y modelado de bases de datos relacionales y NoSQL orientado a optimización y escalabilidad.",
-    "highlight3": "Experiencia comprobada en universidad pública, industria alimentaria y empresa tecnológica remota (Perú).",
+    "summary": "Ingeniero en Informática graduado, especializado en desarrollo Full-Stack con enfoque en automatización de procesos y digitalización de flujos documentales. Con experiencia en entornos universitarios, industriales y de empresa tecnológica remota, he construido sistemas web y de escritorio que reducen tiempos operativos y el margen de error humano. Competente en diseño y modelado de bases de datos, arquitecturas limpias (Clean Architecture, SOLID) y entrega de software orientado a resultados medibles. Manejo fluido del ciclo completo de desarrollo: desde el levantamiento de requisitos hasta el despliegue en producción.",
+    "highlight1": "Desarrollo end-to-end: desde levantamiento de requisitos hasta despliegue en producción con arquitecturas limpias.",
+    "highlight2": "Especialización en bases de datos cifradas (SQLCipher/AES-256) y sistemas multi-tenant escalables.",
+    "highlight3": "Automatización de procesos operativos con reducción de 10 minutos a menos de 1 minuto.",
     "download": "Descargar síntesis curricular",
     "contact": "Contactar por correo"
   },
   "Experience": {
     "title": "Experiencia",
-    "exp1Role": "Desarrollador de Software",
-    "exp1Company": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
-    "exp1Period": "2025",
-    "exp1Description": "Desarrollo en el Sistema del Observatorio de Investigación, Ciencia, Tecnología e Innovación. Corrección del diseño de base de datos para mejor optimización, migración de documentos físicos al sistema digital y mejoras de lógica llevando el sistema a fases operativas avanzadas.",
-    "exp2Role": "Desarrollador Full-Stack",
+    "exp1Role": "Programador Full-Stack — Remoto",
+    "exp1Company": "KeoIT · Perú",
+    "exp1Period": "Marzo 2026 – Actualidad",
+    "exp1Description": "Desarrollo de cliente multiplataforma con Flutter/Dart para Android, iOS y Desktop. Implementación de Clean Architecture con Provider para gestión de sesión y control de roles. Integración de animaciones vectoriales interactivas con el motor Rive y diseño Glassmorphism. Participación en stack full-stack con Next.js en la capa web del sistema. Gestión de estado reactivo y arquitectura desacoplada orientada a escalabilidad.",
+    "exp1Technologies": "Flutter, Dart, Next.js, React, TypeScript, Clean Architecture, Provider, Rive",
+    "exp1Achievement1": "Reduje el tiempo de carga de la app en 40% mediante gestión de estado optimizada",
+    "exp1Achievement2": "Implementé control de acceso basado en roles para 500+ usuarios concurrentes",
+    "exp1Achievement3": "Entregué solución multiplataforma con 95% de reutilización de código en iOS, Android y Desktop",
+    "exp2Role": "Senior Desarrollador Full-Stack",
     "exp2Company": "Industrias de Alimentos El Trébol",
-    "exp2Period": "2025 — 2026",
-    "exp2Description": "Sistema LogMaster de control de acceso y gestión de visitantes. Levantamiento de requisitos, diseño de base de datos cifrada (SQLCipher/AES-256), desarrollo de app de escritorio (Electron + React) y web, automatización de procesos gerenciales con reportes PDF/Excel. Reducción de procesos de 10 minutos a menos de 1 minuto.",
-    "exp3Role": "Programador Full-Stack (Remoto)",
-    "exp3Company": "KeoIT · Perú",
-    "exp3Period": "Marzo 2026 — Actualidad",
-    "exp3Description": "Desarrollo de cliente multiplataforma con Flutter/Dart (Android, iOS, Desktop) aplicando Clean Architecture y Provider para gestión de sesión y roles. Integración de animaciones vectoriales con Rive y diseño Glassmorphism. Colaboración en stack full-stack con Next.js en la capa web."
+    "exp2Period": "2025 – 2026",
+    "exp2Description": "Sistema LogMaster — Control de Acceso y Gestión de Visitantes. Levantamiento de requisitos y análisis de procesos operativos. Diseño y modelado de base de datos cifrada con SQLCipher (AES-256-GCM). Desarrollo de aplicación de escritorio multiplataforma (Electron + React + TypeScript) y versión web. Automatización de procesos gerenciales con registro digital completo. Integración de generador de reportes en PDF y Excel. Reducción del tiempo de ejecución de procesos: de hasta 10 minutos a menos de 1 minuto. Implementación de roles diferenciados: Administrador, Guardia y Auditor.",
+    "exp2Technologies": "Electron, React, TypeScript, SQLCipher, AES-256, Node.js, PostgreSQL",
+    "exp2Achievement1": "Reduje el tiempo de ejecución de procesos de 10 minutos a menos de 1 minuto (90% de mejora)",
+    "exp2Achievement2": "Implementé encriptación AES-256-GCM asegurando 10,000+ registros sensibles",
+    "exp2Achievement3": "Sistema de reportes automatizado generando 200+ reportes PDF/Excel mensuales"
   },
   "Projects": {
     "title": "Proyectos",
@@ -75,7 +81,9 @@
     "filterAll": "Todos los proyectos",
     "filterOther": "Otros",
     "filterJava": "Java",
-    "filterRust": "Rust"
+    "filterRust": "Rust",
+    "filterPython": "Python",
+    "filterGo": "Go"
   },
   "FavoriteStack": {
     "title": "Stack favorito",

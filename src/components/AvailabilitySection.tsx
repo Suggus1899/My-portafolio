@@ -3,9 +3,7 @@
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { MessageCircle, Mail, MapPin, Clock, Briefcase } from 'lucide-react';
-
-const WHATSAPP_NUMBER = '584243737586';
-const EMAIL = 'gustavojose0819@gmail.com';
+import { WHATSAPP_NUMBER, EMAIL } from '@/config/constants';
 
 export default function AvailabilitySection() {
   const t = useTranslations('Availability');

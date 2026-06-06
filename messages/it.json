@@ -12,7 +12,9 @@
     "now": "Now",
     "blog": "Blog",
     "language": "Lingua",
-    "theme": "Tema"
+    "theme": "Tema",
+    "skipToContent": "Vai al contenuto",
+    "mainNav": "Navigazione principale"
   },
   "Hero": {
     "greeting": "Ciao! Sono Gustavo Colina (Suggus1899)",
@@ -30,27 +32,23 @@
   "Curriculum": {
     "kicker": "Sintesi CV",
     "title": "Sintesi professionale orientata a prodotto e backend",
-    "summary": "Ingegnere Informatico laureato, specializzato nello sviluppo Full-Stack con focus sull'automazione dei processi e la digitalizzazione dei flussi documentali. Con esperienza in ambienti universitari, industriali e in azienda tech da remoto, costruisco sistemi web e desktop che riducono i tempi operativi e il margine di errore umano.",
-    "highlight1": "Sistemi web e desktop che digitalizzano processi fisici con report automatici (riduzione 10 min → 1 min).",
-    "highlight2": "Progettazione e modellazione di database relazionali e NoSQL orientata all'ottimizzazione e scalabilità.",
-    "highlight3": "Esperienza comprovata in università pubblica, industria alimentare e azienda tech da remoto (Perù).",
+    "summary": "Ingegnere Informatico laureato, specializzato nello sviluppo Full-Stack con focus sull'automazione dei processi e la digitalizzazione dei flussi documentali. Con esperienza in ambienti universitari, industriali e in azienda tech da remoto, ho costruito sistemi web e desktop che riducono i tempi operativi e il margine di errore umano. Competente in progettazione e modellazione di database, architetture pulite (Clean Architecture, SOLID) e consegna di software orientata a risultati misurabili. Gestione fluida del ciclo completo di sviluppo: dalla raccolta dei requisiti al deploy in produzione.",
+    "highlight1": "Sviluppo end-to-end: dalla raccolta dei requisiti al deploy in produzione con architetture pulite.",
+    "highlight2": "Specializzazione in database cifrati (SQLCipher/AES-256) e sistemi multi-tenant scalabili.",
+    "highlight3": "Automazione dei processi operativi con riduzione da 10 minuti a meno di 1 minuto.",
     "download": "Scarica sintesi CV",
     "contact": "Contatta via email"
   },
   "Experience": {
     "title": "Esperienza",
-    "exp1Role": "Sviluppatore Software",
-    "exp1Company": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
-    "exp1Period": "2025",
-    "exp1Description": "Sviluppo sul Sistema dell'Osservatorio di Ricerca, Scienza, Tecnologia e Innovazione. Correzioni alla progettazione del database per migliore ottimizzazione, migrazione di documenti fisici nel sistema digitale e miglioramenti logici che hanno portato il sistema a fasi operative avanzate.",
-    "exp2Role": "Sviluppatore Full-Stack",
+    "exp1Role": "Programmatore Full-Stack — Remoto",
+    "exp1Company": "KeoIT · Perù",
+    "exp1Period": "Marzo 2026 – Presente",
+    "exp1Description": "Sviluppo di client multipiattaforma con Flutter/Dart per Android, iOS e Desktop. Implementazione di Clean Architecture con Provider per gestione sessione e controllo ruoli. Integrazione di animazioni vettoriali interattive con motore Rive e design Glassmorphism. Partecipazione in full-stack con Next.js nel livello web del sistema. Gestione stato reattiva e architettura disaccoppiata orientata alla scalabilità.",
+    "exp2Role": "Sviluppatore Full-Stack Senior",
     "exp2Company": "Industrias de Alimentos El Trébol",
-    "exp2Period": "2025 — 2026",
-    "exp2Description": "Sistema LogMaster per il controllo accessi e la gestione dei visitatori. Raccolta requisiti, progettazione di database cifrato (SQLCipher/AES-256), sviluppo di app desktop (Electron + React) e web, automazione dei processi con generatore di report PDF/Excel. Riduzione dei tempi di processo da 10 minuti a meno di 1 minuto.",
-    "exp3Role": "Sviluppatore Full-Stack (Remoto)",
-    "exp3Company": "KeoIT · Perù",
-    "exp3Period": "Marzo 2026 — Presente",
-    "exp3Description": "Sviluppo di client multipiattaforma con Flutter/Dart (Android, iOS, Desktop) applicando Clean Architecture e Provider per la gestione di sessione e ruoli. Integrazione di animazioni vettoriali con Rive e design Glassmorphism. Collaborazione full-stack con Next.js sul livello web."
+    "exp2Period": "2025 – 2026",
+    "exp2Description": "LogMaster — Sistema di Controllo Accessi e Gestione Visitatori. Raccolta requisiti e analisi processi operativi. Progettazione e modellazione di database cifrato con SQLCipher (AES-256-GCM). Sviluppo di applicazione desktop multipiattaforma (Electron + React + TypeScript) e versione web. Automazione processi manageriali con registro digitale completo. Integrazione di generatore di report PDF e Excel. Riduzione del tempo di esecuzione processi: da 10 minuti a meno di 1 minuto. Implementazione di ruoli differenziati: Amministratore, Guardia e Auditore."
   },
   "Projects": {
     "title": "Progetti",
@@ -75,7 +73,9 @@
     "filterAll": "Tutti i progetti",
     "filterOther": "Altri",
     "filterJava": "Java",
-    "filterRust": "Rust"
+    "filterRust": "Rust",
+    "filterPython": "Python",
+    "filterGo": "Go"
   },
   "FavoriteStack": {
     "title": "Stack preferito",

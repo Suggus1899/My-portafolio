@@ -15,6 +15,11 @@ type ValidationErrors = {
   message?: string;
 };
 
+function getFormStringValue(formData: FormData, name: string): string {
+  const value = formData.get(name);
+  return typeof value === 'string' ? value : '';
+}
+
 export default function ContactSection() {
   const t = useTranslations('Contact');
   const formRef = useRef<HTMLFormElement>(null);
@@ -50,9 +55,9 @@ export default function ContactSection() {
 
     const formData = new FormData(formRef.current);
     const data = {
-      name: formData.get('name') as string,
-      email: formData.get('email') as string,
-      message: formData.get('message') as string,
+      name: getFormStringValue(formData, 'name'),
+      email: getFormStringValue(formData, 'email'),
+      message: getFormStringValue(formData, 'message'),
     };
 
     // Zod validation
@@ -135,10 +140,13 @@ export default function ContactSection() {
                     name="name"
                     type="text"
                     placeholder={t('namePlaceholder')}
+                    aria-required="true"
+                    aria-invalid={errors.name ? 'true' : 'false'}
+                    aria-describedby={errors.name ? 'name-error' : undefined}
                     className={`w-full border-2 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-600 ${errors.name ? 'border-red-500 focus:ring-red-500 dark:border-red-500 dark:focus:ring-red-500' : 'border-zinc-900 focus:ring-zinc-900 dark:border-zinc-100 dark:focus:ring-zinc-100'}`}
                   />
                   {errors.name && (
-                    <p className="mt-1 text-xs text-red-600 dark:text-red-400">{errors.name}</p>
+                    <p id="name-error" className="mt-1 text-xs text-red-600 dark:text-red-400" role="alert">{errors.name}</p>
                   )}
                 </div>
                 <div>
@@ -150,10 +158,13 @@ export default function ContactSection() {
                     name="email"
                     type="email"
                     placeholder={t('emailPlaceholder')}
+                    aria-required="true"
+                    aria-invalid={errors.email ? 'true' : 'false'}
+                    aria-describedby={errors.email ? 'email-error' : undefined}
                     className={`w-full border-2 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-600 ${errors.email ? 'border-red-500 focus:ring-red-500 dark:border-red-500 dark:focus:ring-red-500' : 'border-zinc-900 focus:ring-zinc-900 dark:border-zinc-100 dark:focus:ring-zinc-100'}`}
                   />
                   {errors.email && (
-                    <p className="mt-1 text-xs text-red-600 dark:text-red-400">{errors.email}</p>
+                    <p id="email-error" className="mt-1 text-xs text-red-600 dark:text-red-400" role="alert">{errors.email}</p>
                   )}
                 </div>
               </div>
@@ -167,16 +178,19 @@ export default function ContactSection() {
                   name="message"
                   rows={5}
                   placeholder={t('messagePlaceholder')}
+                  aria-required="true"
+                  aria-invalid={errors.message ? 'true' : 'false'}
+                  aria-describedby={errors.message ? 'message-error' : undefined}
                   className={`w-full border-2 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-400 resize-none focus:outline-none focus:ring-2 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-600 ${errors.message ? 'border-red-500 focus:ring-red-500 dark:border-red-500 dark:focus:ring-red-500' : 'border-zinc-900 focus:ring-zinc-900 dark:border-zinc-100 dark:focus:ring-zinc-100'}`}
                 />
                 {errors.message && (
-                  <p className="mt-1 text-xs text-red-600 dark:text-red-400">{errors.message}</p>
+                  <p id="message-error" className="mt-1 text-xs text-red-600 dark:text-red-400" role="alert">{errors.message}</p>
                 )}
               </div>
 
               {status === 'error' && (
-                <div className="flex items-center gap-2 text-red-600 dark:text-red-400 text-sm">
-                  <AlertCircle size={16} />
+                <div className="flex items-center gap-2 text-red-600 dark:text-red-400 text-sm" role="alert" aria-live="assertive">
+                  <AlertCircle size={16} aria-hidden="true" />
                   <span>{t('errorMessage')}</span>
                 </div>
               )}
@@ -184,12 +198,14 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={status === 'loading'}
+                aria-busy={status === 'loading'}
+                aria-label={status === 'loading' ? t('sending') : t('submit')}
                 className="inline-flex items-center gap-2 border-2 border-zinc-900 bg-zinc-900 px-8 py-3 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-zinc-700 disabled:opacity-60 disabled:cursor-not-allowed dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
               >
                 {status === 'loading' ? (
-                  <><Loader2 size={16} className="animate-spin" /> {t('sending')}</>
+                  <><Loader2 size={16} className="animate-spin" aria-hidden="true" /> {t('sending')}</>
                 ) : (
-                  <><Send size={16} /> {t('submit')}</>
+                  <><Send size={16} aria-hidden="true" /> {t('submit')}</>
                 )}
               </button>
             </form>

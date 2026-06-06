@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useInView } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { stats } from '@/data/stats';
 
 function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: string }) {
   const [count, setCount] = useState(0);
@@ -36,13 +37,6 @@ function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: str
 export default function StatsSection() {
   const t = useTranslations('Stats');
 
-  const stats = [
-    { value: 3, suffix: '+', label: t('yearsLabel') },
-    { value: 15, suffix: '+', label: t('projectsLabel') },
-    { value: 4, suffix: '', label: t('languagesLabel') },
-    { value: 20, suffix: '+', label: t('techLabel') },
-  ];
-
   return (
     <section className="w-full py-16 px-6 border-y-2 border-zinc-900/20 dark:border-zinc-100/20 bg-zinc-50/70 dark:bg-zinc-900/30">
       <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -52,7 +46,7 @@ export default function StatsSection() {
               <AnimatedCounter target={stat.value} suffix={stat.suffix} />
             </p>
             <p className="text-xs font-bold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400 text-center md:text-left">
-              {stat.label}
+              {t(stat.labelKey)}
             </p>
           </div>
         ))}

@@ -8,17 +8,16 @@ import { WHATSAPP_NUMBER, EMAIL } from '@/config/constants';
 
 export default function ServicesSection() {
   const t = useTranslations('Services');
-  const [selectedCategory, setSelectedCategory] = useState<string>('');
-  const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
-
   const categories = useMemo(() => t.raw('categories') as ServiceCategory[], [t]);
 
-  // Set initial category
-  useEffect(() => {
-    if (categories.length > 0 && !selectedCategory) {
-      setSelectedCategory(categories[0].id);
-    }
-  }, [categories, selectedCategory]);
+  // Calculate initial category
+  const initialCategory = useMemo(() =>
+    categories.length > 0 ? categories[0].id : '',
+    [categories]
+  );
+
+  const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
+  const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
 
   const selectedCategoryData = useMemo(
     () => categories.find((cat) => cat.id === selectedCategory),

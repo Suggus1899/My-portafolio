@@ -208,5 +208,89 @@
       "Animaciones vectoriales interactivas con motor Rive",
       "Clean Architecture con Provider para gestión de sesión y roles"
     ]
+  },
+  {
+    "name": "SIGERCO",
+    "description": "Sistema de Gestión de Recursos y Contabilidad con motor DAG (Grafo Acíclico Dirigido) en Go para cálculos reactivos. Plataforma multi-tenant para contabilidad, inventario, compras, ventas y CRM.",
+    "url": "#",
+    "language": "TypeScript",
+    "demoUrl": null,
+    "status": "En desarrollo activo",
+    "year": "2025",
+    "license": "Privado",
+    "highlights": [
+      "Motor DAG en Go para cálculos de dependencias en milisegundos",
+      "Arquitectura multi-tenant con PostgreSQL (schema por tenant)"
+    ]
+  },
+  {
+    "name": "Vextel X",
+    "description": "Editor de canvas colaborativo en tiempo real con React, Yjs y WebSockets. Backend en Spring Boot con PostgreSQL. Versión desktop con Tauri.",
+    "url": "#",
+    "language": "TypeScript",
+    "demoUrl": null,
+    "status": "Activo",
+    "year": "2025",
+    "license": "Open Source",
+    "highlights": [
+      "Sincronización en tiempo real con Yjs y protocolo binario",
+      "Canvas interactivo con Web Workers y optimización de renderizado"
+    ]
+  },
+  {
+    "name": "TrickReport",
+    "description": "Sistema de gestión de tickets de soporte IT bajo estándares ITIL v4 e ISO/IEC 20000-1. Backend Java 21 + Spring Boot 3, frontend Next.js 14 + shadcn/ui, app Kotlin Multiplatform.",
+    "url": "#",
+    "language": "Java",
+    "demoUrl": null,
+    "status": "En desarrollo",
+    "year": "2024",
+    "license": "Propietario",
+    "highlights": [
+      "Flujo de escalado multinivel con roles ITIL (N1/N2/N3/ADMIN/AUDITOR)",
+      "App multiplataforma con Kotlin Multiplatform + Compose Multiplatform"
+    ]
+  },
+  {
+    "name": "SimuliMath",
+    "description": "Simulador académico en Python para estudiar interferencias electromagnéticas en comunicaciones inalámbricas. Métricas SNR, BER, PER y visualizaciones (tiempo, FFT, espectrogramas).",
+    "url": "https://github.com/Suggus1899/SimuliMath",
+    "language": "Python",
+    "demoUrl": null,
+    "status": "En desarrollo",
+    "year": "2025",
+    "license": "MIT",
+    "highlights": [
+      "Simulación de jammers: CW, pulsada, banda ancha, sweep",
+      "Visualizaciones didácticas: constelaciones, heatmaps, espectrogramas"
+    ]
+  },
+  {
+    "name": "Risk Calculator",
+    "description": "Aplicación de escritorio PySide6 para cálculo de riesgo empresarial (impacto × probabilidad). Persistencia SQLite, exportaciones CSV/Excel/PDF/PNG. Empaquetado con PyInstaller.",
+    "url": "https://github.com/Suggus1899/Risk_Calculator",
+    "language": "Python",
+    "demoUrl": null,
+    "status": "Completo",
+    "year": "2024",
+    "license": "Open Source",
+    "highlights": [
+      "Motor de reglas separado de la UI para testabilidad",
+      "Exportaciones multi-formato con reportes automáticos"
+    ]
+  },
+  {
+    "name": "E-commerce Microservices",
+    "description": "Plataforma de e-commerce basada en microservicios con Java Spring Boot. Servicios de usuarios, productos, órdenes, pagos, carrito y notificaciones. Service discovery con Eureka.",
+    "url": "#",
+    "language": "Java",
+    "demoUrl": null,
+    "status": "MVP",
+    "year": "2024",
+    "license": "Open Source",
+    "highlights": [
+      "Arquitectura de microservicios con Spring Cloud Gateway",
+      "Service discovery con Eureka Server y balanceo de carga"
+    ]
   }
 ]

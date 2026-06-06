@@ -12,7 +12,9 @@
     "now": "Now",
     "blog": "Blog",
     "language": "Langue",
-    "theme": "Thème"
+    "theme": "Thème",
+    "skipToContent": "Aller au contenu",
+    "mainNav": "Navigation principale"
   },
   "Hero": {
     "greeting": "Salut ! Je suis Gustavo Colina (Suggus1899)",
@@ -30,27 +32,23 @@
   "Curriculum": {
     "kicker": "Synthèse CV",
     "title": "Résumé professionnel orienté produit et backend",
-    "summary": "Ingénieur en Informatique diplômé, spécialisé dans le développement Full-Stack avec un focus sur l'automatisation des processus et la digitalisation des flux documentaires. Fort d'une expérience en milieu universitaire, industriel et en entreprise tech à distance, je construis des systèmes web et desktop qui réduisent les temps opérationnels et la marge d'erreur humaine.",
-    "highlight1": "Systèmes web et desktop qui digitalisent les processus physiques avec rapports automatisés (réduction 10 min → 1 min).",
-    "highlight2": "Conception et modélisation de bases de données relationnelles et NoSQL axées sur l'optimisation et l'évolutivité.",
-    "highlight3": "Expérience prouvée en université publique, industrie alimentaire et entreprise tech à distance (Pérou).",
+    "summary": "Ingénieur en Informatique diplômé, spécialisé dans le développement Full-Stack avec un focus sur l'automatisation des processus et la digitalisation des flux documentaires. Fort d'une expérience en milieu universitaire, industriel et en entreprise tech à distance, j'ai construit des systèmes web et desktop qui réduisent les temps opérationnels et la marge d'erreur humaine. Compétent en conception et modélisation de bases de données, architectures propres (Clean Architecture, SOLID) et livraison de logiciels orientée vers des résultats mesurables. Maîtrise fluide du cycle complet de développement : du recueil des besoins au déploiement en production.",
+    "highlight1": "Développement end-to-end : du recueil des besoins au déploiement en production avec architectures propres.",
+    "highlight2": "Spécialisation dans les bases de données chiffrées (SQLCipher/AES-256) et les systèmes multi-tenant évolutifs.",
+    "highlight3": "Automatisation des processus opérationnels avec réduction de 10 minutes à moins d'1 minute.",
     "download": "Télécharger la synthèse CV",
     "contact": "Contacter par email"
   },
   "Experience": {
     "title": "Expérience",
-    "exp1Role": "Développeur Logiciel",
-    "exp1Company": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
-    "exp1Period": "2025",
-    "exp1Description": "Développement sur le Système de l'Observatoire de Recherche, Science, Technologie et Innovation. Corrections de la conception de base de données, migration de documents physiques vers le système digital et améliorations logiques portant le système à des phases opérationnelles avancées.",
-    "exp2Role": "Développeur Full-Stack",
+    "exp1Role": "Programmeur Full-Stack — À distance",
+    "exp1Company": "KeoIT · Pérou",
+    "exp1Period": "Mars 2026 – Aujourd'hui",
+    "exp1Description": "Développement de client multiplateforme avec Flutter/Dart pour Android, iOS et Desktop. Implémentation de Clean Architecture avec Provider pour gestion de session et contrôle des rôles. Intégration d'animations vectorielles interactives avec le moteur Rive et design Glassmorphism. Participation en full-stack avec Next.js dans la couche web du système. Gestion d'état réactive et architecture découplée orientée scalabilité.",
+    "exp2Role": "Développeur Full-Stack Senior",
     "exp2Company": "Industrias de Alimentos El Trébol",
-    "exp2Period": "2025 — 2026",
-    "exp2Description": "Système LogMaster de contrôle d'accès et gestion des visiteurs. Recueil des besoins, conception de base de données chiffrée (SQLCipher/AES-256), développement d'application desktop (Electron + React) et web, automatisation des processus avec générateur de rapports PDF/Excel. Réduction du temps de traitement de 10 minutes à moins d'1 minute.",
-    "exp3Role": "Développeur Full-Stack (à distance)",
-    "exp3Company": "KeoIT · Pérou",
-    "exp3Period": "Mars 2026 — Aujourd'hui",
-    "exp3Description": "Développement d'un client multiplateforme avec Flutter/Dart (Android, iOS, Desktop) appliquant Clean Architecture et Provider pour la gestion de session et des rôles. Intégration d'animations vectorielles avec Rive et design Glassmorphism. Collaboration full-stack avec Next.js sur la couche web."
+    "exp2Period": "2025 – 2026",
+    "exp2Description": "LogMaster — Système de Contrôle d'Accès et Gestion des Visiteurs. Recueil des besoins et analyse des processus opérationnels. Conception et modélisation de base de données chiffrée avec SQLCipher (AES-256-GCM). Développement d'application desktop multiplateforme (Electron + React + TypeScript) et version web. Automatisation des processus managériaux avec enregistrement digital complet. Intégration de générateur de rapports PDF et Excel. Réduction du temps d'exécution des processus : de 10 minutes à moins d'1 minute. Implémentation de rôles différenciés : Administrateur, Garde et Auditeur."
   },
   "Projects": {
     "title": "Projets",
@@ -75,7 +73,9 @@
     "filterAll": "Tous les projets",
     "filterOther": "Autres",
     "filterJava": "Java",
-    "filterRust": "Rust"
+    "filterRust": "Rust",
+    "filterPython": "Python",
+    "filterGo": "Go"
   },
   "FavoriteStack": {
     "title": "Stack préféré",

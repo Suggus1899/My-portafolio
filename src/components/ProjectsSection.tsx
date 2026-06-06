@@ -26,8 +26,8 @@ export default function ProjectsSection() {
 
   const allProjects: Project[] = [privateProject, ...(repos as Repo[])];
 
-  const filters = ["All", "TypeScript", "JavaScript", "Java", "Rust", "Other"];
-  const primaryFilters = ["TypeScript", "JavaScript", "Java", "Rust"];
+  const filters = ["All", "TypeScript", "JavaScript", "Python", "Java", "Go", "Rust", "Other"];
+  const primaryFilters = ["TypeScript", "JavaScript", "Python", "Java", "Go", "Rust"];
 
   const displayedProjects = allProjects.filter((repo) => {
     if (activeFilter === "All") return true;
@@ -63,7 +63,7 @@ export default function ProjectsSection() {
                 : "bg-transparent text-zinc-900 border-zinc-900 hover:bg-zinc-100 dark:text-zinc-100 dark:border-zinc-100 dark:hover:bg-zinc-900"
             }`}
           >
-            {filter === 'All' ? t('filterAll') : filter === 'Other' ? t('filterOther') : filter === 'Java' ? t('filterJava') : filter === 'Rust' ? t('filterRust') : filter}
+            {filter === 'All' ? t('filterAll') : filter === 'Other' ? t('filterOther') : filter === 'Python' ? t('filterPython') : filter === 'Java' ? t('filterJava') : filter === 'Go' ? t('filterGo') : filter === 'Rust' ? t('filterRust') : filter}
           </button>
         ))}
       </div>
