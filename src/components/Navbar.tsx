@@ -15,13 +15,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { label: t('curriculum'), href: `/${locale}#curriculum`, isAnchor: true },
+    { label: t('cv'), href: `/${locale}#curriculum`, isAnchor: true },
     { label: t('services'), href: '/services', isAnchor: false },
-    { label: t('experience'), href: `/${locale}#experience`, isAnchor: true },
     { label: t('projects'), href: '/projects', isAnchor: false },
     { label: t('skills'), href: `/${locale}#skills`, isAnchor: true },
-    { label: t('now'), href: '/now', isAnchor: false },
-    { label: t('blog'), href: '/blog', isAnchor: false },
   ];
 
   const isActive = (href: string, isAnchor: boolean) => {
@@ -54,7 +51,7 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-6 text-xs font-bold uppercase tracking-[0.12em] text-zinc-700 dark:text-zinc-300">
           {navLinks.map((link) => {
             const active = isActive(link.href, link.isAnchor);
-            const activeClass = active ? 'text-zinc-900 dark:text-zinc-100 border-b-2 border-zinc-900 dark:border-zinc-100 pb-1' : '';
+            const activeClass = active ? 'text-zinc-900 dark:text-zinc-100' : '';
             return link.isAnchor ? (
               <li key={link.href} className={`transition-colors hover:text-zinc-900 dark:hover:text-zinc-100 ${activeClass}`}>
                 <a href={link.href}>{link.label}</a>

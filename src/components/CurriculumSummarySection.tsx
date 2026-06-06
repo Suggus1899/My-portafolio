@@ -57,7 +57,7 @@ export default function CurriculumSummarySection() {
 
         <div className="mt-8 flex flex-wrap gap-3">
           <a
-            href="/sintesis-curricular.pdf"
+            href="/curriculum.pdf"
             download
             className="inline-flex items-center gap-2 border-2 border-zinc-900 bg-zinc-900 px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-zinc-700 dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
           >
