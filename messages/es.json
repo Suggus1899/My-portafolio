@@ -19,7 +19,7 @@
   },
   "Hero": {
     "greeting": "¡Hola! Soy Gustavo Colina (Suggus1899)",
-    "role": "Full-Stack Developer · Graduado · Disponible Remotamente",
+    "role": "Full-Stack Developer · Disponible Remotamente",
     "whatIDo": "¿Qué hago?",
     "availability": "Disponible para nuevas oportunidades",
     "contact": "Contáctame",
@@ -33,7 +33,7 @@
   "Curriculum": {
     "kicker": "Síntesis Curricular",
     "title": "Resumen profesional orientado a producto y backend",
-    "summary": "Ingeniero en Informática graduado, especializado en desarrollo Full-Stack con enfoque en automatización de procesos y digitalización de flujos documentales. Con experiencia en entornos universitarios, industriales y de empresa tecnológica remota, he construido sistemas web y de escritorio que reducen tiempos operativos y el margen de error humano. Competente en diseño y modelado de bases de datos, arquitecturas limpias (Clean Architecture, SOLID) y entrega de software orientado a resultados medibles. Manejo fluido del ciclo completo de desarrollo: desde el levantamiento de requisitos hasta el despliegue en producción.",
+    "summary": "Ingeniero en Informática especializado en desarrollo Full-Stack con enfoque en automatización de procesos y digitalización de flujos documentales. Con experiencia en entornos universitarios, industriales y de empresa tecnológica remota, he construido sistemas web y de escritorio que reducen tiempos operativos y el margen de error humano. Competente en diseño y modelado de bases de datos, arquitecturas limpias (Clean Architecture, SOLID) y entrega de software orientado a resultados medibles. Manejo fluido del ciclo completo de desarrollo: desde el levantamiento de requisitos hasta el despliegue en producción.",
     "highlight1": "Desarrollo end-to-end: desde levantamiento de requisitos hasta despliegue en producción con arquitecturas limpias.",
     "highlight2": "Especialización en bases de datos cifradas (SQLCipher/AES-256) y sistemas multi-tenant escalables.",
     "highlight3": "Automatización de procesos operativos con reducción de 10 minutos a menos de 1 minuto.",
@@ -470,7 +470,7 @@
     "university": "Estudios Universitarios",
     "certifications": "Cursos y Certificaciones",
     "universityTitle": "Ingeniería en Informática",
-    "universitySubtitle": "Graduado · Especialización en Ingeniería de Sistemas",
+    "universitySubtitle": "Especialización en Ingeniería de Sistemas",
     "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermedio)",
     "certDataScienceEntity": "DataCamp",

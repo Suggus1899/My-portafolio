@@ -19,7 +19,7 @@
   },
   "Hero": {
     "greeting": "Hi! I'm Gustavo Colina (Suggus1899)",
-    "role": "Full-Stack Developer · Graduate · Available Remotely",
+    "role": "Full-Stack Developer · Available Remotely",
     "whatIDo": "What do I do?",
     "availability": "Available for new opportunities",
     "contact": "Contact me",
@@ -33,7 +33,7 @@
   "Curriculum": {
     "kicker": "CV Summary",
     "title": "Professional summary focused on product and backend engineering",
-    "summary": "Graduate Software Engineer specialized in Full-Stack development with a focus on process automation and digitalization of document-based workflows. With experience in university, industrial and remote tech company environments, I have built web and desktop systems that reduce operational times and human error. Competent in database design and modeling, clean architectures (Clean Architecture, SOLID) and software delivery oriented to measurable results. Fluent management of the complete development cycle: from requirements gathering to production deployment.",
+    "summary": "Software Engineer specialized in Full-Stack development with a focus on process automation and digitalization of document-based workflows. With experience in university, industrial and remote tech company environments, I have built web and desktop systems that reduce operational times and human error. Competent in database design and modeling, clean architectures (Clean Architecture, SOLID) and software delivery oriented to measurable results. Fluent management of the complete development cycle: from requirements gathering to production deployment.",
     "highlight1": "End-to-end development: from requirements gathering to production deployment with clean architectures.",
     "highlight2": "Specialization in encrypted databases (SQLCipher/AES-256) and scalable multi-tenant systems.",
     "highlight3": "Operational process automation with reduction from 10 minutes to less than 1 minute.",
@@ -470,7 +470,7 @@
     "university": "University Studies",
     "certifications": "Courses & Certifications",
     "universityTitle": "Computer Engineering",
-    "universitySubtitle": "Graduate · Systems Engineering Specialization",
+    "universitySubtitle": "Systems Engineering Specialization",
     "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermediate)",
     "certDataScienceEntity": "DataCamp",
