@@ -183,9 +183,16 @@ export default function ServicesSection() {
               </ul>
             </div>
 
-            {/* Duration */}
-            <div className="mt-6 border border-zinc-900/70 dark:border-zinc-100/70 px-3 py-2 text-xs font-bold uppercase tracking-wider text-zinc-700 dark:text-zinc-300">
-              {t('duration')}: {selectedService.duration}
+            {/* Duration and Price */}
+            <div className="mt-6 flex flex-wrap gap-4">
+              <div className="border border-zinc-900/70 dark:border-zinc-100/70 px-3 py-2 text-xs font-bold uppercase tracking-wider text-zinc-700 dark:text-zinc-300">
+                {t('duration')}: {selectedService.duration}
+              </div>
+              {selectedService.startingPrice && (
+                <div className="border border-zinc-900/70 dark:border-zinc-100/70 px-3 py-2 text-xs font-bold uppercase tracking-wider text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-950/30">
+                  {t('startingPrice')}: {selectedService.startingPrice}
+                </div>
+              )}
             </div>
 
             {/* Contact CTAs */}

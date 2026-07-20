@@ -6,6 +6,7 @@ export type Service = {
   deliverables: string[];
   technologies: string[];
   duration: string;
+  startingPrice?: string;
 };
 
 export type ServiceCategory = {

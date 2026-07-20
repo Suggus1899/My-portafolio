@@ -34,6 +34,7 @@ export type ServiceDetail = {
   deliverables: string[];
   technologies: string[];
   duration: string;
+  startingPrice?: string;
 };
 
 export type ServiceCategory = {

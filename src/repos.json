@@ -183,8 +183,8 @@
   },
   {
     "name": "LogMaster — Control de Acceso",
-    "description": "Aplicación de escritorio para control de acceso y gestión de visitantes en instalaciones corporativas. Electron + React + Express con base de datos cifrada SQLCipher (AES-256).",
-    "url": "#",
+    "description": "Aplicación web y de escritorio para control de acceso y gestión de visitantes en instalaciones corporativas. React + Express + PostgreSQL con cifrado de campos sensibles AES-256-GCM, roles RBAC (Root/Admin/Operador/Auditor/Demo) y empaquetado con Electron.",
+    "url": "https://github.com/Suggus1899/Visitors",
     "language": "TypeScript",
     "demoUrl": null,
     "status": "Versión 1.0",
@@ -238,20 +238,6 @@
     ]
   },
   {
-    "name": "TrickReport",
-    "description": "Sistema de gestión de tickets de soporte IT bajo estándares ITIL v4 e ISO/IEC 20000-1. Backend Java 21 + Spring Boot 3, frontend Next.js 14 + shadcn/ui, app Kotlin Multiplatform.",
-    "url": "#",
-    "language": "Java",
-    "demoUrl": null,
-    "status": "En desarrollo",
-    "year": "2024",
-    "license": "Propietario",
-    "highlights": [
-      "Flujo de escalado multinivel con roles ITIL (N1/N2/N3/ADMIN/AUDITOR)",
-      "App multiplataforma con Kotlin Multiplatform + Compose Multiplatform"
-    ]
-  },
-  {
     "name": "SimuliMath",
     "description": "Simulador académico en Python para estudiar interferencias electromagnéticas en comunicaciones inalámbricas. Métricas SNR, BER, PER y visualizaciones (tiempo, FFT, espectrogramas).",
     "url": "https://github.com/Suggus1899/SimuliMath",
@@ -291,6 +277,76 @@
     "highlights": [
       "Arquitectura de microservicios con Spring Cloud Gateway",
       "Service discovery con Eureka Server y balanceo de carga"
+    ]
+  },
+  {
+    "name": "Meden — Full Stack Developer",
+    "description": "Plataforma SaaS de facturación electrónica CFDI 4.0 y suscripciones con integración Facturama y MercadoPago. Backend Go (Gin, GORM, PostgreSQL) con feature gating por plan y frontend Flutter (GetX). Rol: Desarrollador Full Stack.",
+    "url": "#",
+    "language": "Go",
+    "demoUrl": null,
+    "status": "En desarrollo activo",
+    "year": "2026",
+    "license": "Propietario",
+    "highlights": [
+      "Timbrado CFDI 4.0 vía Facturama y pagos con MercadoPago (Checkout Pro + webhooks)",
+      "Feature gating multi-plan con middleware RequireFeature y 4 planes (Gratis/Básico/Pro/Premium)"
+    ]
+  },
+  {
+    "name": "SaludTech — BNPL HealthTech",
+    "description": "Plataforma Buy Now, Pay Later de cero interés para el sector salud en Venezuela. Monorepo Turborepo con backend Go (go-chi, sqlc, pgx) y 4 apps Next.js 16 (paciente PWA, admin, merchant, landing). Gamificación por niveles y mora automatizada.",
+    "url": "https://github.com/Suggus1899/SaludTech_CasheaMedico",
+    "language": "TypeScript",
+    "demoUrl": null,
+    "status": "En desarrollo activo",
+    "year": "2026",
+    "license": "Propietario",
+    "highlights": [
+      "Motor BNPL con líneas de crédito, cuotas cada 14 días y worker cron para mora",
+      "PWA instalable con scanner QR (@zxing/browser) y modo mock para desarrollo sin backend"
+    ]
+  },
+  {
+    "name": "Sezzle Calculator",
+    "description": "Calculadora full-stack con frontend React + TypeScript (Vite) y backend Go + chi. Arquitectura hexagonal-lite con dominio aislado del transporte, 100% de cobertura en el dominio y tests table-driven.",
+    "url": "https://github.com/Suggus1899/sezzle-calculator",
+    "language": "TypeScript",
+    "demoUrl": null,
+    "status": "Completo",
+    "year": "2026",
+    "license": "Open Source",
+    "highlights": [
+      "Dominio Go puro sin acoplamiento HTTP, errores sentinel con errors.Is",
+      "Frontend container/presentational con useReducer y soporte de teclado"
+    ]
+  },
+  {
+    "name": "TextilPOS-SIF",
+    "description": "Sistema POS de escritorio para tintorerías y lavanderías. React + TypeScript + Vite con empaquetado Tauri. Gestión de prendas, clientes, facturación, listados y estadísticas.",
+    "url": "https://github.com/Suggus1899/TextilPOS-SIF",
+    "language": "TypeScript",
+    "demoUrl": null,
+    "status": "En desarrollo",
+    "year": "2026",
+    "license": "Open Source",
+    "highlights": [
+      "App de escritorio nativa con Tauri y React Router",
+      "Flujo completo: recoger prendas, entregar, cobros e impresión de tickets"
+    ]
+  },
+  {
+    "name": "Trading webPropFirm Elite",
+    "description": "Plataforma web para prop firm de trading con dashboard, torneos, afiliados, checkout y panel admin. Next.js 16 + Prisma + Redis + Puppeteer, motor de riesgo y auditoría IA.",
+    "url": "https://github.com/Suggus1899/Trading-webPropFirm-Elite",
+    "language": "TypeScript",
+    "demoUrl": null,
+    "status": "En desarrollo activo",
+    "year": "2026",
+    "license": "Propietario",
+    "highlights": [
+      "Motor de riesgo propio (risk-engine) con stream de broker e inyección de copy-trading",
+      "Auditoría con IA y cron jobs para operaciones programadas"
     ]
   }
 ]

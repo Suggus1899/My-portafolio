@@ -8,7 +8,8 @@ import {
   SiNestjs, SiPrisma, SiSequelize, SiRedis, SiSocketdotio, SiNginx,
   SiDocker, SiGithubactions, SiVite, SiLeaflet,
   SiRust, SiFlutter, SiDart,
-  SiKotlin, SiElectron, SiTensorflow
+  SiKotlin, SiElectron, SiTensorflow,
+  SiGo, SiPhp, SiPython
 } from 'react-icons/si';
 import { BsStars, BsRobot, BsCloud } from 'react-icons/bs';
 import { Languages, Database, GitBranch, Layers, Cpu, Package, Server } from 'lucide-react';
@@ -54,6 +55,12 @@ export function getSkillIcon(skillName: string): ReactNode {
       return <SiNestjs className="text-[#E0234E]" />;
     case 'Java':
       return <SiOpenjdk className="text-[#ea2d2e]" />;
+    case 'Go':
+      return <SiGo className="text-[#00ADD8]" />;
+    case 'PHP':
+      return <SiPhp className="text-[#777BB4]" />;
+    case 'Python':
+      return <SiPython className="text-[#3776AB]" />;
     case 'Spring Boot':
       return <SiSpringboot className="text-[#6db33f]" />;
     case 'Spring Security':
