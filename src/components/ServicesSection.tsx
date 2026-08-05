@@ -1,7 +1,8 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { MessageCircle, Mail, X } from 'lucide-react';
 import type { ServiceCategory, ServiceDetail } from '@/types';
 import { WHATSAPP_NUMBER, EMAIL } from '@/config/constants';
@@ -18,6 +19,8 @@ export default function ServicesSection() {
 
   const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
   const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+  useFocusTrap(modalRef, !!selectedServiceId);
 
   const selectedCategoryData = useMemo(
     () => categories.find((cat) => cat.id === selectedCategory),
@@ -41,13 +44,13 @@ export default function ServicesSection() {
   }, []);
 
   const handleWhatsApp = (service: ServiceDetail) => {
-    const text = encodeURIComponent(`Hola Gustavo, me interesa el servicio: ${service.title}`);
+    const text = encodeURIComponent(t('whatsappServiceMessage', { title: service.title }));
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
   };
 
   const handleEmail = (service: ServiceDetail) => {
-    const subject = encodeURIComponent(`Cotización: ${service.title}`);
-    const body = encodeURIComponent(`Hola Gustavo,\n\nMe gustaría recibir más información sobre tu servicio: ${service.title}\n\nQuedo atento a tu respuesta.\n\nSaludos.`);
+    const subject = encodeURIComponent(t('emailServiceSubject', { title: service.title }));
+    const body = encodeURIComponent(t('emailServiceBody', { title: service.title }));
     window.open(`mailto:${EMAIL}?subject=${subject}&body=${body}`, '_blank');
   };
 
@@ -121,6 +124,7 @@ export default function ServicesSection() {
           aria-modal="true"
         >
           <div
+            ref={modalRef}
             className="w-full max-w-2xl border-2 border-zinc-900 bg-white p-6 dark:border-zinc-100 dark:bg-zinc-950 max-h-[90vh] overflow-y-auto"
             onClick={(event) => event.stopPropagation()}
           >

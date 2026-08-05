@@ -61,7 +61,7 @@ export default function AvailabilitySection() {
 
         <div className="mt-8 flex flex-wrap gap-3">
           <a
-            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola Gustavo, estoy interesado en trabajar contigo.')}`}
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t('whatsappMessage'))}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border-2 border-zinc-900 bg-zinc-900 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-zinc-700 dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
@@ -70,7 +70,7 @@ export default function AvailabilitySection() {
             {t('ctaWhatsapp')}
           </a>
           <a
-            href={`mailto:${EMAIL}?subject=${encodeURIComponent('Oportunidad de trabajo remoto')}`}
+            href={`mailto:${EMAIL}?subject=${encodeURIComponent(t('emailSubject'))}`}
             className="inline-flex items-center gap-2 border-2 border-zinc-900 bg-white px-6 py-3 text-sm font-bold uppercase tracking-wide text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
           >
             <Mail size={16} />

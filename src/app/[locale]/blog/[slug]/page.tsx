@@ -2,7 +2,13 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { setRequestLocale } from 'next-intl/server';
 import { Link, routing } from '@/i18n/routing';
-import { getBlogPostBySlug, type AppLocale } from '@/data/blogPosts';
+import { getBlogPostBySlug, blogPosts, type AppLocale } from '@/data/blogPosts';
+
+export function generateStaticParams() {
+  return routing.locales.flatMap((locale) =>
+    blogPosts.map((post) => ({ locale, slug: post.slug }))
+  );
+}
 
 type PageProps = {
   params: Promise<{ locale: string; slug: string }>;

@@ -14,7 +14,13 @@
     "language": "Langue",
     "theme": "Thème",
     "skipToContent": "Aller au contenu",
-    "mainNav": "Navigation principale"
+    "mainNav": "Navigation principale",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "scrollToTop": "Retour en haut",
+    "toggleTheme": "Changer le thème",
+    "footerSubtitle": "Étudiant en génie des systèmes et développeur backend.",
+    "allRightsReserved": "Tous droits réservés."
   },
   "Hero": {
     "greeting": "Salut ! Je suis Gustavo Colina (Suggus1899)",
@@ -129,7 +135,10 @@
     "deliverables": "Livrables",
     "etaLabel": "Délai estimé",
     "ctaWhatsapp": "Écrire sur WhatsApp",
-    "ctaEmail": "Écrire via Gmail"
+    "ctaEmail": "Écrire via Gmail",
+    "whatsappServiceMessage": "Bonjour Gustavo, je suis intéressé par le service : {title}",
+    "emailServiceSubject": "Devis : {title}",
+    "emailServiceBody": "Bonjour Gustavo,\n\nJe souhaiterais recevoir plus d'informations sur votre service : {title}\n\nCordialement."
   },
   "Skills": {
     "title": "Compétences",
@@ -172,7 +181,9 @@
     "timezoneLabel": "Fuseau horaire",
     "timezone": "UTC-4 (Venezuela)",
     "ctaWhatsapp": "Écrire sur WhatsApp",
-    "ctaEmail": "Contacter par email"
+    "ctaEmail": "Contacter par email",
+    "whatsappMessage": "Bonjour Gustavo, je suis intéressé par une collaboration avec vous.",
+    "emailSubject": "Opportunité de travail à distance"
   },
   "Contact": {
     "title": "Me contacter",

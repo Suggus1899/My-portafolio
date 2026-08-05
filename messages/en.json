@@ -15,7 +15,13 @@
     "language": "Language",
     "theme": "Theme",
     "skipToContent": "Skip to content",
-    "mainNav": "Main navigation"
+    "mainNav": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "scrollToTop": "Scroll to top",
+    "toggleTheme": "Toggle theme",
+    "footerSubtitle": "Systems Engineering Student & Backend Developer.",
+    "allRightsReserved": "All rights reserved."
   },
   "Hero": {
     "greeting": "Hi! I'm Gustavo Colina (Suggus1899)",
@@ -786,7 +792,10 @@
         ]
       }
     ],
-    "startingPrice": "Investment from"
+    "startingPrice": "Investment from",
+    "whatsappServiceMessage": "Hi Gustavo, I'm interested in the service: {title}",
+    "emailServiceSubject": "Quote: {title}",
+    "emailServiceBody": "Hi Gustavo,\n\nI would like to get more information about your service: {title}\n\nLooking forward to hearing from you.\n\nBest regards."
   },
   "Skills": {
     "title": "Skills",
@@ -829,7 +838,9 @@
     "timezoneLabel": "Timezone",
     "timezone": "UTC-4 (Venezuela)",
     "ctaWhatsapp": "Chat on WhatsApp",
-    "ctaEmail": "Contact by email"
+    "ctaEmail": "Contact by email",
+    "whatsappMessage": "Hi Gustavo, I'm interested in working with you.",
+    "emailSubject": "Remote work opportunity"
   },
   "Contact": {
     "title": "Contact me",

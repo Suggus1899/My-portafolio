@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
+import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { usePathname } from 'next/navigation';
 import { Link } from '@/i18n/routing';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -13,6 +14,8 @@ export default function Navbar() {
   const locale = useLocale();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const drawerRef = useRef<HTMLDivElement>(null);
+  useFocusTrap(drawerRef, isOpen);
 
   const navLinks = [
     { label: t('cv'), href: `/${locale}#curriculum`, isAnchor: true },
@@ -72,7 +75,7 @@ export default function Navbar() {
             type="button"
             className="md:hidden inline-flex h-9 w-9 items-center justify-center border-2 border-zinc-900 bg-white text-zinc-900 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100"
             onClick={() => setIsOpen((prev) => !prev)}
-            aria-label={isOpen ? 'Close menu' : 'Open menu'}
+            aria-label={isOpen ? t('closeMenu') : t('openMenu')}
           >
             {isOpen ? <X size={18} /> : <Menu size={18} />}
           </button>
@@ -89,12 +92,12 @@ export default function Navbar() {
             aria-hidden="true"
           />
           {/* Drawer */}
-          <div className="fixed top-0 right-0 z-50 h-full w-4/5 max-w-xs border-l-2 border-zinc-900 bg-white dark:border-zinc-100 dark:bg-[#0a0a0a] flex flex-col pt-24 pb-8 px-6 gap-2 overflow-y-auto">
+          <div ref={drawerRef} className="fixed top-0 right-0 z-50 h-full w-4/5 max-w-xs border-l-2 border-zinc-900 bg-white dark:border-zinc-100 dark:bg-[#0a0a0a] flex flex-col pt-24 pb-8 px-6 gap-2 overflow-y-auto">
             <button
               type="button"
               className="absolute top-5 right-5 inline-flex h-9 w-9 items-center justify-center border-2 border-zinc-900 dark:border-zinc-100"
               onClick={close}
-              aria-label="Close menu"
+              aria-label={t('closeMenu')}
             >
               <X size={18} />
             </button>

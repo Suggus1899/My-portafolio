@@ -42,7 +42,7 @@ export default function Footer() {
         <div className="text-center md:text-left">
           <h3 className="font-space font-black uppercase text-xl mb-2 text-zinc-900 dark:text-zinc-100">Gustavo Colina (Suggus1899)</h3>
           <p className="text-zinc-500 dark:text-zinc-400 text-sm">
-            Systems Engineering Student & Backend Developer.
+            {t('footerSubtitle')}
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export default function Footer() {
       </div>
       
       <div className="max-w-4xl mx-auto mt-12 pt-8 border-t-2 border-zinc-900/70 dark:border-zinc-100/70 text-center text-zinc-500 dark:text-zinc-500 text-sm uppercase tracking-[0.08em]">
-        <p>© {currentYear} Gustavo Colina. All rights reserved.</p>
+        <p>© {currentYear} Gustavo Colina. {t('allRightsReserved')}</p>
       </div>
     </footer>
   );
