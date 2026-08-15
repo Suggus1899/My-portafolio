@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import { SITE_URL } from '@/config/constants';
 
 export async function generateMetadata({
   params
@@ -13,7 +14,19 @@ export async function generateMetadata({
 
   return {
     title: `${t('title')} | Gustavo Colina`,
-    description: t('intro')
+    description: t('intro'),
+    openGraph: {
+      title: `${t('title')} | Gustavo Colina`,
+      description: t('intro'),
+      url: `${SITE_URL}/${locale}/now`,
+      images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630 }]
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${t('title')} | Gustavo Colina`,
+      description: t('intro'),
+      images: [`${SITE_URL}/og-image.png`]
+    }
   };
 }
 

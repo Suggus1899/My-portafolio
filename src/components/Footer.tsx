@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col gap-3">
-          <p className="text-xs font-bold uppercase tracking-[0.12em] text-zinc-400 dark:text-zinc-500">{t('language')}</p>
+          <p className="text-xs font-bold uppercase tracking-[0.12em] text-zinc-400 dark:text-zinc-500">{t('social')}</p>
           <div className="flex gap-2">
             {socialLinks.map((link, idx) => (
               <a
@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
 
         <nav className="flex flex-col gap-2">
-          <p className="text-xs font-bold uppercase tracking-[0.12em] text-zinc-400 dark:text-zinc-500 mb-1">Links</p>
+          <p className="text-xs font-bold uppercase tracking-[0.12em] text-zinc-400 dark:text-zinc-500 mb-1">{t('links')}</p>
           {secondaryLinks.map((link) => (
             <Link
               key={link.href}

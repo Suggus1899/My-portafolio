@@ -15,13 +15,14 @@ import Footer from '@/components/Footer';
 import ScrollProgressBar from '@/components/ScrollProgressBar';
 import ScrollToTop from '@/components/ScrollToTop';
 import SchemaOrg from '@/components/SchemaOrg';
+import { SITE_URL } from '@/config/constants';
 
 type AppLocale = (typeof routing.locales)[number];
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space' });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
+const siteUrl = SITE_URL;
 
 export async function generateMetadata({
   params

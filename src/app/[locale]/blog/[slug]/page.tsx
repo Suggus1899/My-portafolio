@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { Link, routing } from '@/i18n/routing';
 import { getBlogPostBySlug, blogPosts, type AppLocale } from '@/data/blogPosts';
+import { SITE_URL } from '@/config/constants';
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -21,16 +22,28 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     : routing.defaultLocale;
 
   const post = getBlogPostBySlug(slug, appLocale);
+  const tBlog = await getTranslations({ locale: appLocale, namespace: 'Blog' });
 
   if (!post) {
-    return {
-      title: 'Post not found | Gustavo Colina'
-    };
+    return { title: `${tBlog('title')} | Gustavo Colina` };
   }
 
   return {
     title: `${post.title} | Gustavo Colina`,
-    description: post.excerpt
+    description: post.excerpt,
+    openGraph: {
+      title: `${post.title} | Gustavo Colina`,
+      description: post.excerpt,
+      url: `${SITE_URL}/${appLocale}/blog/${slug}`,
+      type: 'article',
+      images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630 }]
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${post.title} | Gustavo Colina`,
+      description: post.excerpt,
+      images: [`${SITE_URL}/og-image.png`]
+    }
   };
 }
 
@@ -48,6 +61,8 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
+  const t = await getTranslations({ locale: appLocale, namespace: 'Blog' });
+
   return (
     <article className="px-6 py-24">
       <div className="mx-auto max-w-3xl">
@@ -55,7 +70,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           href="/blog"
           className="inline-flex rounded-full border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-200 dark:hover:bg-zinc-800"
         >
-          ← Blog
+          {t('backToBlog')}
         </Link>
 
         <h1 className="mt-6 text-4xl font-space font-bold tracking-tight text-zinc-900 dark:text-zinc-100">{post.title}</h1>

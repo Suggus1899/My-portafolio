@@ -64,7 +64,7 @@ function BlogList({ locale }: { locale: AppLocale }) {
                 ))}
               </div>
 
-              <Link href={`/blog/${post.slug}`} className="mt-5 inline-flex rounded-full border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-200 dark:hover:bg-zinc-800">
+              <Link href={`/blog/${post.slug}`} aria-label={`${t('readMore')} — ${post.title}`} className="mt-5 inline-flex rounded-full border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-200 dark:hover:bg-zinc-800">
                 {t('readMore')}
               </Link>
             </article>

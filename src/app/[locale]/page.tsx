@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic';
 import { setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import HeroSection from '@/components/HeroSection';
@@ -10,8 +9,7 @@ import BlogPreviewSection from '@/components/BlogPreviewSection';
 import SkillsSection from '@/components/SkillsSection';
 import EducationSection from '@/components/EducationSection';
 import AvailabilitySection from '@/components/AvailabilitySection';
-
-const ContactSection = dynamic(() => import('@/components/ContactSection'), { ssr: false });
+import ContactSection from '@/components/ContactSection';
 
 type AppLocale = (typeof routing.locales)[number];
 

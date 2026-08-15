@@ -1,7 +1,3 @@
-'use client';
-
-import Script from 'next/script';
-
 interface SchemaOrgProps {
   siteUrl: string;
 }
@@ -20,11 +16,9 @@ export default function SchemaOrg({ siteUrl }: SchemaOrgProps) {
   };
 
   return (
-    <Script
-      id="schema-org-person"
+    <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      strategy="afterInteractive"
     />
   );
 }

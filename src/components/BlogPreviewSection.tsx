@@ -39,7 +39,7 @@ export default function BlogPreviewSection({ locale }: { locale: AppLocale }) {
             <p className="text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400">{post.date}</p>
             <h3 className="mt-3 font-space font-black uppercase text-zinc-900 dark:text-zinc-100">{post.title}</h3>
             <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">{post.excerpt}</p>
-            <Link href={`/blog/${post.slug}`} className="mt-4 inline-flex text-sm font-bold uppercase tracking-wide text-zinc-900 dark:text-zinc-100">
+            <Link href={`/blog/${post.slug}`} aria-label={`${t('readMore')} — ${post.title}`} className="mt-4 inline-flex text-sm font-bold uppercase tracking-wide text-zinc-900 dark:text-zinc-100">
               {t('readMore')}
             </Link>
           </article>
