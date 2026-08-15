@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "Gustavo Colina — Ingeniero de Software",
-    "description": "Estudiante de Ingeniería de Sistemas. Enfocado en Backend y Cloud."
+    "description": "Ingeniero de Software Full-Stack. Especializado en Backend, Cloud y arquitecturas limpias."
   },
   "Navigation": {
     "curriculum": "Síntesis CV",
@@ -13,6 +13,8 @@
     "now": "Now",
     "blog": "Blog",
     "language": "Idioma",
+    "social": "Social",
+    "links": "Vínculos",
     "theme": "Tema",
     "skipToContent": "Saltar al contenido",
     "mainNav": "Navegación principal",
@@ -20,7 +22,7 @@
     "closeMenu": "Cerrar menú",
     "scrollToTop": "Volver al inicio",
     "toggleTheme": "Cambiar tema",
-    "footerSubtitle": "Estudiante de Ingeniería de Sistemas y Desarrollador Backend.",
+    "footerSubtitle": "Ingeniero de Software · Full-Stack & Backend.",
     "allRightsReserved": "Todos los derechos reservados."
   },
   "Hero": {
@@ -50,7 +52,7 @@
     "title": "Experiencia",
     "exp1Role": "Programador Full-Stack — Remoto",
     "exp1Company": "KeoIT · Perú",
-    "exp1Period": "Marzo 2026 – Actualidad",
+    "exp1Period": "Marzo 2026 – Agosto 2026",
     "exp1Description": "Desarrollo de cliente multiplataforma con Flutter/Dart para Android, iOS y Desktop. Implementación de Clean Architecture con Provider para gestión de sesión y control de roles. Integración de animaciones vectoriales interactivas con el motor Rive y diseño Glassmorphism. Participación en stack full-stack con Next.js en la capa web del sistema. Gestión de estado reactivo y arquitectura desacoplada orientada a escalabilidad.",
     "exp1Technologies": "Flutter, Dart, Next.js, React, TypeScript, Clean Architecture, Provider, Rive",
     "exp1Achievement1": "Reduje el tiempo de carga de la app en 40% mediante gestión de estado optimizada",
@@ -109,13 +111,14 @@
     "title": "Notas técnicas",
     "subtitle": "Ideas cortas sobre backend, cloud y productividad con IA.",
     "viewAll": "Ver todo",
-    "readMore": "Leer más"
+    "readMore": "Leer más",
+    "backToBlog": "← Blog"
   },
   "Now": {
     "kicker": "Página Now",
     "title": "En qué estoy enfocado ahora",
     "intro": "Esta página resume en tiempo real en qué estoy trabajando y qué estoy estudiando para mejorar mi perfil técnico.",
-    "currentFocus": "En este momento estoy priorizando arquitectura backend, perfeccionando mis habilidades en Java 21 y Spring Boot 3 con resultados medibles.",
+    "currentFocus": "Actualmente disponible para nuevas oportunidades. Enfocado en proyectos backend con Java 21, Spring Boot 3 y arquitecturas limpias, y abierto a freelance.",
     "buildingTitle": "Construyendo",
     "building1": "Refinando mi portafolio multilenguaje con enfoque en SEO y conversión.",
     "building2": "Diseñando proyectos backend aplicando principios SOLID y Arquitectura Limpia con Spring Boot.",

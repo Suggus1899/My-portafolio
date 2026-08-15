@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "Gustavo Colina — Software Engineer",
-    "description": "Systems Engineering Student. Backend-first and Cloud learner."
+    "description": "Full-Stack Software Engineer. Specialized in Backend, Cloud and clean architectures."
   },
   "Navigation": {
     "curriculum": "CV Summary",
@@ -13,6 +13,8 @@
     "now": "Now",
     "blog": "Blog",
     "language": "Language",
+    "social": "Social",
+    "links": "Links",
     "theme": "Theme",
     "skipToContent": "Skip to content",
     "mainNav": "Main navigation",
@@ -20,7 +22,7 @@
     "closeMenu": "Close menu",
     "scrollToTop": "Scroll to top",
     "toggleTheme": "Toggle theme",
-    "footerSubtitle": "Systems Engineering Student & Backend Developer.",
+    "footerSubtitle": "Software Engineer · Full-Stack & Backend.",
     "allRightsReserved": "All rights reserved."
   },
   "Hero": {
@@ -50,7 +52,7 @@
     "title": "Experience",
     "exp1Role": "Full-Stack Programmer — Remote",
     "exp1Company": "KeoIT · Peru",
-    "exp1Period": "March 2026 – Present",
+    "exp1Period": "March 2026 – August 2026",
     "exp1Description": "Cross-platform client development with Flutter/Dart for Android, iOS and Desktop. Implementation of Clean Architecture with Provider for session management and role control. Integration of interactive vector animations with Rive engine and Glassmorphism design. Participation in full-stack with Next.js in the web layer of the system. Reactive state management and decoupled architecture oriented to scalability.",
     "exp1Technologies": "Flutter, Dart, Next.js, React, TypeScript, Clean Architecture, Provider, Rive",
     "exp1Achievement1": "Reduced app load time by 40% through optimized state management",
@@ -109,13 +111,14 @@
     "title": "Technical notes",
     "subtitle": "Short ideas on backend, cloud and AI-driven productivity.",
     "viewAll": "View all",
-    "readMore": "Read more"
+    "readMore": "Read more",
+    "backToBlog": "← Blog"
   },
   "Now": {
     "kicker": "Now page",
     "title": "What I am focused on right now",
     "intro": "This page gives a real-time summary of what I am building and studying to strengthen my technical profile.",
-    "currentFocus": "Right now I am prioritizing backend architecture, sharpening my skills in Java 21 and Spring Boot 3 with measurable deliverables.",
+    "currentFocus": "Currently open to new opportunities. Focused on backend projects with Java 21, Spring Boot 3 and clean architectures, and open to freelance work.",
     "buildingTitle": "Building",
     "building1": "Refining my multilingual portfolio with SEO and conversion improvements.",
     "building2": "Designing backend projects applying SOLID principles and Clean Architecture with Spring Boot.",

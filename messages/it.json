@@ -1,10 +1,11 @@
 {
   "Index": {
     "title": "Gustavo Colina — Ingegnere del Software",
-    "description": "Studente di Ingegneria dei Sistemi. Orientato al backend e al cloud."
+    "description": "Ingegnere Software Full-Stack. Specializzato in backend, cloud e architetture pulite."
   },
   "Navigation": {
     "curriculum": "Sintesi CV",
+    "cv": "CV",
     "services": "Servizi",
     "experience": "Esperienza",
     "projects": "Progetti",
@@ -12,6 +13,8 @@
     "now": "Now",
     "blog": "Blog",
     "language": "Lingua",
+    "social": "Social",
+    "links": "Link",
     "theme": "Tema",
     "skipToContent": "Vai al contenuto",
     "mainNav": "Navigazione principale",
@@ -19,7 +22,7 @@
     "closeMenu": "Chiudi il menu",
     "scrollToTop": "Torna in cima",
     "toggleTheme": "Cambia tema",
-    "footerSubtitle": "Studente di Ingegneria dei Sistemi e Sviluppatore Backend.",
+    "footerSubtitle": "Ingegnere Software · Full-Stack & Backend.",
     "allRightsReserved": "Tutti i diritti riservati."
   },
   "Hero": {
@@ -49,12 +52,20 @@
     "title": "Esperienza",
     "exp1Role": "Programmatore Full-Stack — Remoto",
     "exp1Company": "KeoIT · Perù",
-    "exp1Period": "Marzo 2026 – Presente",
+    "exp1Period": "Marzo 2026 – Agosto 2026",
     "exp1Description": "Sviluppo di client multipiattaforma con Flutter/Dart per Android, iOS e Desktop. Implementazione di Clean Architecture con Provider per gestione sessione e controllo ruoli. Integrazione di animazioni vettoriali interattive con motore Rive e design Glassmorphism. Partecipazione in full-stack con Next.js nel livello web del sistema. Gestione stato reattiva e architettura disaccoppiata orientata alla scalabilità.",
     "exp2Role": "Sviluppatore Full-Stack Senior",
     "exp2Company": "Industrias de Alimentos El Trébol",
     "exp2Period": "2025 – 2026",
-    "exp2Description": "LogMaster — Sistema di Controllo Accessi e Gestione Visitatori. Raccolta requisiti e analisi processi operativi. Progettazione e modellazione di database cifrato con SQLCipher (AES-256-GCM). Sviluppo di applicazione desktop multipiattaforma (Electron + React + TypeScript) e versione web. Automazione processi manageriali con registro digitale completo. Integrazione di generatore di report PDF e Excel. Riduzione del tempo di esecuzione processi: da 10 minuti a meno di 1 minuto. Implementazione di ruoli differenziati: Amministratore, Guardia e Auditore."
+    "exp2Description": "LogMaster — Sistema di Controllo Accessi e Gestione Visitatori. Raccolta requisiti e analisi processi operativi. Progettazione e modellazione di database cifrato con SQLCipher (AES-256-GCM). Sviluppo di applicazione desktop multipiattaforma (Electron + React + TypeScript) e versione web. Automazione processi manageriali con registro digitale completo. Integrazione di generatore di report PDF e Excel. Riduzione del tempo di esecuzione processi: da 10 minuti a meno di 1 minuto. Implementazione di ruoli differenziati: Amministratore, Guardia e Auditore.",
+    "exp1Technologies": "Flutter, Dart, Next.js, React, TypeScript, Clean Architecture, Provider, Rive",
+    "exp1Achievement1": "Ridotto il tempo di caricamento dell'app del 40% tramite gestione dello stato ottimizzata",
+    "exp1Achievement2": "Implementato controllo accessi basato su ruoli per 500+ utenti simultanei",
+    "exp1Achievement3": "Consegnata soluzione multipiattaforma con 95% di riutilizzo del codice su iOS, Android e Desktop",
+    "exp2Technologies": "Electron, React, TypeScript, SQLCipher, AES-256, Node.js, PostgreSQL",
+    "exp2Achievement1": "Ridotto il tempo di esecuzione processi da 10 minuti a meno di 1 minuto (90% di miglioramento)",
+    "exp2Achievement2": "Implementata cifratura AES-256-GCM a protezione di 10.000+ record sensibili",
+    "exp2Achievement3": "Sistema di report automatizzato che genera 200+ report PDF/Excel mensili"
   },
   "Projects": {
     "title": "Progetti",
@@ -100,13 +111,14 @@
     "title": "Note tecniche",
     "subtitle": "Idee brevi su backend, cloud e produttivita con IA.",
     "viewAll": "Vedi tutto",
-    "readMore": "Leggi di piu"
+    "readMore": "Leggi di più",
+    "backToBlog": "← Blog"
   },
   "Now": {
     "kicker": "Pagina Now",
     "title": "Su cosa sono concentrato ora",
     "intro": "Questa pagina riassume in tempo reale cosa sto costruendo e cosa sto studiando per migliorare il mio profilo tecnico.",
-    "currentFocus": "In questo momento sto dando priorità all'architettura backend, perfezionando le mie competenze in Java 21 e Spring Boot 3 con risultati misurabili.",
+    "currentFocus": "Attualmente disponibile per nuove opportunità. Concentrato su progetti backend con Java 21, Spring Boot 3 e architetture pulite, e aperto al freelance.",
     "buildingTitle": "Sto costruendo",
     "building1": "Rifinitura del portfolio multilingua con SEO e ottimizzazione conversione.",
     "building2": "Progettazione di progetti backend applicando i principi SOLID e Clean Architecture con Spring Boot.",
@@ -128,14 +140,388 @@
   },
   "Services": {
     "title": "Servizi",
-    "subtitle": "Seleziona una card per vedere il dettaglio del servizio, lo scope e i contatti diretti.",
+    "subtitle": "Soluzioni tecnologiche su misura per il tuo business. Seleziona una categoria per esplorare i servizi specifici.",
     "openModal": "Vedi dettaglio",
     "close": "Chiudi",
-    "includes": "Include",
+    "idealFor": "Ideale per",
+    "scope": "Ambito",
     "deliverables": "Deliverable",
-    "etaLabel": "Tempo stimato",
-    "ctaWhatsapp": "Scrivi su WhatsApp",
-    "ctaEmail": "Scrivi via Gmail",
+    "technologies": "Tecnologie",
+    "duration": "Durata stimata",
+    "contactCTAs": {
+      "whatsapp": "Preventivo su WhatsApp",
+      "email": "Invia email",
+      "calendar": "Pianifica una chiamata"
+    },
+    "startingPrice": "Investimento a partire da",
+    "categories": [
+      {
+        "id": "backend",
+        "name": "Backend & API",
+        "description": "API robuste e scalabili per il tuo business",
+        "services": [
+          {
+            "id": "api-nodejs",
+            "title": "Backend Rapido per Startup e MVP",
+            "idealFor": "Startup che hanno bisogno di un backend MVP veloce",
+            "scope": "Progettazione API RESTful, autenticazione JWT/Auth0, CRUD completo, documentazione Swagger/OpenAPI",
+            "deliverables": ["Repository GitHub", "README completo", "Collezione Postman", "Guida al deploy"],
+            "technologies": ["Node.js", "NestJS", "TypeScript", "PostgreSQL", "MongoDB", "Redis"],
+            "duration": "2-3 settimane",
+            "startingPrice": "$1,000"
+          },
+          {
+            "id": "api-java",
+            "title": "Sistemi Core ad Alta Disponibilità",
+            "idealFor": "Aziende con requisiti di alta disponibilità",
+            "scope": "Clean Architecture, Spring Security OAuth2, JPA/Hibernate, test unitari e di integrazione",
+            "deliverables": ["Codice sorgente", "Documentazione tecnica", "Test automatizzati", "docker-compose.yml"],
+            "technologies": ["Java 21", "Spring Boot 3", "Spring Security", "PostgreSQL", "Docker"],
+            "duration": "3-5 settimane",
+            "startingPrice": "$2,500"
+          },
+          {
+            "id": "db-optimization",
+            "title": "Ottimizzazione Database",
+            "idealFor": "Sistemi con problemi di performance",
+            "scope": "Profilazione query, indici strategici, normalizzazione/denormalizzazione, migrazioni sicure con Flyway/Liquibase",
+            "deliverables": ["Report con metriche prima/dopo", "Script di ottimizzazione", "Piano di migrazione"],
+            "technologies": ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+            "duration": "1-2 settimane",
+            "startingPrice": "$500"
+          },
+          {
+            "id": "microservices-migration",
+            "title": "Migrazione a Microservizi (Go / Java)",
+            "idealFor": "Aziende con colli di bottiglia nei monoliti",
+            "scope": "Separazione dei domini, comunicazione event-driven, Dockerizzazione, ottimizzazione della latenza",
+            "deliverables": ["Architettura microservizi", "Docker Compose", "Guida al deploy"],
+            "technologies": ["Go", "Java", "Docker", "RabbitMQ", "Redis"],
+            "duration": "4-8 settimane",
+            "startingPrice": "$3,000"
+          }
+        ]
+      },
+      {
+        "id": "web-platforms",
+        "name": "Web & Sviluppo Piattaforme",
+        "description": "Interfacce moderne, veloci e convertenti",
+        "services": [
+          {
+            "id": "landing-page",
+            "title": "Landing Page Professionale",
+            "idealFor": "Imprenditori che hanno bisogno di presenza web",
+            "scope": "Design responsive, animazioni fluide, SEO tecnico, modulo di contatto integrato, analytics",
+            "deliverables": ["Codice Next.js", "Deploy Vercel/Netlify", "Guida all'editing del contenuto"],
+            "technologies": ["Next.js 14", "React", "Tailwind CSS", "Framer Motion"],
+            "duration": "1-2 settimane",
+            "startingPrice": "$400"
+          },
+          {
+            "id": "dashboard",
+            "title": "Dashboard di Amministrazione",
+            "idealFor": "SaaS che hanno bisogno di visualizzazione dati",
+            "scope": "UI con tabelle interattive, grafici (recharts/chart.js), filtri avanzati, export CSV/Excel, dark mode",
+            "deliverables": ["App funzionale", "Componenti documentati", "Sistema di temi"],
+            "technologies": ["Next.js", "TypeScript", "Tailwind", "shadcn/ui", "TanStack Table"],
+            "duration": "2-4 settimane",
+            "startingPrice": "$1,200"
+          },
+          {
+            "id": "ecommerce",
+            "title": "Frontend E-commerce",
+            "idealFor": "Negozi online",
+            "scope": "Catalogo con filtri, carrello persistente, checkout ottimizzato, integrazione gateway di pagamento",
+            "deliverables": ["Negozio funzionale", "Integrazione Stripe", "Pannello ordini"],
+            "technologies": ["Next.js", "Stripe SDK", "Tailwind", "Prisma"],
+            "duration": "3-4 settimane",
+            "startingPrice": "$1,500"
+          },
+          {
+            "id": "migration-nextjs",
+            "title": "Migrazione a Next.js",
+            "idealFor": "App React legacy che hanno bisogno di SSR/SEO",
+            "scope": "Migrazione CRA/Vite a Next.js, App Router, ottimizzazione immagini/font, SEO",
+            "deliverables": ["Codice migrato", "Audit performance", "Guida alla migrazione"],
+            "technologies": ["Next.js 14", "React", "TypeScript"],
+            "duration": "2-3 settimane",
+            "startingPrice": "$800"
+          },
+          {
+            "id": "mvp",
+            "title": "Sviluppo Prodotto Web (MVP)",
+            "idealFor": "Startup che validano idee di business",
+            "scope": "Landing page + dashboard + backend + auth + deploy completo",
+            "deliverables": ["App funzionale deployata", "Repository GitHub", "Documentazione", "Video demo"],
+            "technologies": ["Next.js", "Node.js/NestJS", "PostgreSQL", "Prisma", "Vercel"],
+            "duration": "4-6 settimane",
+            "startingPrice": "$2,000"
+          },
+          {
+            "id": "erp-crm",
+            "title": "Sistema di Gestione Interna (ERP/CRM)",
+            "idealFor": "Aziende che digitalizzano i processi",
+            "scope": "Gestione utenti/ruoli, CRUD completo, report Excel/PDF, dashboard metriche",
+            "deliverables": ["Sistema funzionale", "Manuale utente", "Codice sorgente", "1h di formazione"],
+            "technologies": ["Next.js", "Node.js/Java", "PostgreSQL", "shadcn/ui"],
+            "duration": "4-6 settimane",
+            "startingPrice": "$3,500"
+          },
+          {
+            "id": "saas",
+            "title": "Piattaforma SaaS Multi-tenant",
+            "idealFor": "Imprenditori che costruiscono prodotti SaaS",
+            "scope": "Auth con ruoli, fatturazione Stripe, abbonamenti, onboarding, dashboard admin",
+            "deliverables": ["SaaS con fatturazione", "Documentazione architettura", "Guida alla scalabilità"],
+            "technologies": ["Next.js", "Stripe", "Clerk/NextAuth", "PostgreSQL", "Prisma"],
+            "duration": "6-8 settimane",
+            "startingPrice": "$4,000"
+          }
+        ]
+      },
+      {
+        "id": "cloud-security",
+        "name": "Cloud, DevOps & Sicurezza",
+        "description": "Infrastruttura scalabile e automatizzata",
+        "services": [
+          {
+            "id": "cloud-setup",
+            "title": "Configurazione AWS/GCP per Backend",
+            "idealFor": "Team che hanno bisogno di infrastruttura cloud",
+            "scope": "VPC + subnet, EC2/Cloud Run, RDS/Cloud SQL, S3/Storage, load balancer",
+            "deliverables": ["Infrastructure as Code (Terraform)", "Documentazione architettura", "Guida operativa"],
+            "technologies": ["AWS", "GCP", "Terraform", "Docker"],
+            "duration": "1-2 settimane",
+            "startingPrice": "$800"
+          },
+          {
+            "id": "cicd",
+            "title": "Pipeline CI/CD",
+            "idealFor": "Team che vogliono automatizzare i deploy",
+            "scope": "GitHub Actions configurato, test automatizzati su PR, deploy automatico in staging/prod",
+            "deliverables": ["Workflow configurati", "Documentazione pipeline", "Procedure di rollback"],
+            "technologies": ["GitHub Actions", "Docker", "Vercel", "AWS"],
+            "duration": "3-5 giorni",
+            "startingPrice": "$400"
+          },
+          {
+            "id": "docker",
+            "title": "Containerizzazione Docker",
+            "idealFor": "App che hanno bisogno di deploy coerenti",
+            "scope": "Dockerfile multi-stage, docker-compose, Docker Registry, ottimizzazione immagini",
+            "deliverables": ["Dockerfile ottimizzati", "docker-compose.yml", "Guida al debug"],
+            "technologies": ["Docker", "Docker Compose", "Nginx"],
+            "duration": "2-4 giorni",
+            "startingPrice": "$300"
+          },
+          {
+            "id": "monitoring",
+            "title": "Monitoring e Osservabilità",
+            "idealFor": "App in produzione che hanno bisogno di visibilità",
+            "scope": "Log centralizzati, metriche, alerting, health check, tracing distribuito",
+            "deliverables": ["Dashboard configurate", "Alert configurati", "Runbook di troubleshooting"],
+            "technologies": ["Datadog", "New Relic", "Prometheus", "Grafana"],
+            "duration": "3-5 giorni",
+            "startingPrice": "$500"
+          },
+          {
+            "id": "security-review",
+            "title": "Revisione Sicurezza Applicazione Web",
+            "idealFor": "App che gestiscono dati sensibili e hanno bisogno di audit",
+            "scope": "Analisi OWASP Top 10, revisione auth, validazione input, header HTTP",
+            "deliverables": ["Report vulnerabilità", "Piano di remediation", "Implementazione fix"],
+            "technologies": ["OWASP ZAP", "SonarQube", "ESLint Security"],
+            "duration": "1-2 settimane",
+            "startingPrice": "$600"
+          },
+          {
+            "id": "hardening",
+            "title": "Hardening Server e Applicazione",
+            "idealFor": "Sistemi in produzione che hanno bisogno di più sicurezza",
+            "scope": "Configurazione HTTPS/TLS, header di sicurezza, rate limiting, CORS",
+            "deliverables": ["Configurazioni di hardening", "Checklist di sicurezza"],
+            "technologies": ["Nginx", "Cloudflare", "Helmet.js", "AWS WAF"],
+            "duration": "3-5 giorni",
+            "startingPrice": "$300"
+          }
+        ]
+      },
+      {
+        "id": "mobile",
+        "name": "App Mobili",
+        "description": "App native per iOS e Android",
+        "services": [
+          {
+            "id": "flutter",
+            "title": "Applicazione Mobile Universale (iOS/Android)",
+            "idealFor": "Aziende che hanno bisogno di iOS + Android con una sola base di codice",
+            "scope": "UI nativa, navigazione, integrazione backend, notifiche push",
+            "deliverables": ["Codice sorgente", "Build iOS/Android", "Guida alla pubblicazione"],
+            "technologies": ["Flutter", "Dart", "Firebase", "Provider/Bloc"],
+            "duration": "4-6 settimane",
+            "startingPrice": "$2,500"
+          },
+          {
+            "id": "react-native",
+            "title": "App React Native",
+            "idealFor": "Team con conoscenze React che vogliono app mobili",
+            "scope": "Componenti nativi, integrazione API, autenticazione, deep linking",
+            "deliverables": ["App funzionale", "Codice documentato", "Build"],
+            "technologies": ["React Native", "Expo", "TypeScript", "Firebase"],
+            "duration": "4-6 settimane",
+            "startingPrice": "$2,000"
+          }
+        ]
+      },
+      {
+        "id": "ai",
+        "name": "Intelligenza Artificiale",
+        "description": "Agenti, RAG e automazione intelligente",
+        "services": [
+          {
+            "id": "ai-agents",
+            "title": "Agenti Intelligenti e Sistemi RAG",
+            "idealFor": "Aziende che hanno bisogno di risposte automatizzate basate sui loro dati",
+            "scope": "Integrazione LLM, database vettoriali, agenti autonomi, webhook",
+            "deliverables": ["Agente funzionale", "Pipeline di ingestione dati", "Documentazione"],
+            "technologies": ["Python", "LangChain", "Gemini", "Pinecone", "OpenAI"],
+            "duration": "3-5 settimane",
+            "startingPrice": "$1,500"
+          }
+        ]
+      },
+      {
+        "id": "integrations",
+        "name": "Integrazioni API",
+        "description": "Connetti la tua app ai servizi di terze parti",
+        "services": [
+          {
+            "id": "stripe",
+            "title": "Integrazione Stripe / Gateway di Pagamento",
+            "idealFor": "E-commerce o SaaS che hanno bisogno di pagamenti online",
+            "scope": "Checkout, webhook, gestione abbonamenti, rimborsi",
+            "deliverables": ["Modulo di pagamento integrato", "Test", "Documentazione webhook"],
+            "technologies": ["Stripe API", "Node.js", "Next.js"],
+            "duration": "1-2 settimane",
+            "startingPrice": "$400"
+          },
+          {
+            "id": "communications",
+            "title": "Integrazione API di Comunicazione",
+            "idealFor": "App che hanno bisogno di email/SMS/notifiche",
+            "scope": "Integrazione SendGrid/Twilio, template dinamici, code di invio",
+            "deliverables": ["Sistema di notifiche funzionale", "Dashboard"],
+            "technologies": ["SendGrid", "Twilio", "AWS SES", "Node.js"],
+            "duration": "1-2 settimane",
+            "startingPrice": "$300"
+          },
+          {
+            "id": "openai",
+            "title": "Integrazione OpenAI / Servizi AI",
+            "idealFor": "App che vogliono funzionalità AI",
+            "scope": "Chatbot, generazione contenuti, analisi dati, embedding",
+            "deliverables": ["Modulo AI integrato", "Prompt ottimizzati", "Gestione costi"],
+            "technologies": ["OpenAI API", "LangChain", "Pinecone"],
+            "duration": "2-3 settimane",
+            "startingPrice": "$500"
+          }
+        ]
+      },
+      {
+        "id": "writing",
+        "name": "Documentazione Tecnica",
+        "description": "Documentazione tecnica di qualità professionale",
+        "services": [
+          {
+            "id": "api-docs",
+            "title": "Documentazione API",
+            "idealFor": "Team che hanno bisogno di docs professionali per le loro API",
+            "scope": "Spec OpenAPI, guide all'utilizzo, esempi di codice, SDK di base",
+            "deliverables": ["Documentazione web (Swagger/ReadMe/Docusaurus)", "Collezione Postman"],
+            "technologies": ["OpenAPI 3.0", "Swagger UI", "Docusaurus"],
+            "duration": "1-2 settimane",
+            "startingPrice": "$300"
+          },
+          {
+            "id": "readme",
+            "title": "README e Documentazione Tecnica",
+            "idealFor": "Repository che hanno bisogno di docs migliori",
+            "scope": "README professionale, CONTRIBUTING.md, CHANGELOG, guide all'installazione",
+            "deliverables": ["Documentazione Markdown", "Badge", "Diagrammi"],
+            "technologies": ["Markdown", "Mermaid", "GitHub Actions"],
+            "duration": "3-5 giorni",
+            "startingPrice": "$100"
+          }
+        ]
+      },
+      {
+        "id": "consulting",
+        "name": "Consulenza Tecnica",
+        "description": "Expertise per il tuo team",
+        "services": [
+          {
+            "id": "architecture",
+            "title": "Architettura Software",
+            "idealFor": "Team che definiscono il proprio stack tecnologico",
+            "scope": "Valutazione requisiti, progettazione architettura, roadmap tecnica",
+            "deliverables": ["Documento architettura (ADR)", "Diagrammi C4", "Raccomandazioni"],
+            "technologies": ["Architettura", "Diagrammi", "Documentazione"],
+            "duration": "2-3 giorni",
+            "startingPrice": "$500"
+          },
+          {
+            "id": "code-review",
+            "title": "Code Review & Refactoring",
+            "idealFor": "Codice legacy o debito tecnico",
+            "scope": "Analisi statica, refactoring per layer, miglioramento test",
+            "deliverables": ["Report di analisi", "PR con miglioramenti", "Standard di codice"],
+            "technologies": ["ESLint", "SonarQube", "Jest/Vitest"],
+            "duration": "1-2 settimane",
+            "startingPrice": "$400"
+          },
+          {
+            "id": "performance",
+            "title": "Audit di Performance",
+            "idealFor": "App lente che hanno bisogno di ottimizzazione",
+            "scope": "Audit Lighthouse, Core Web Vitals, analisi bundle",
+            "deliverables": ["Report di performance", "Implementazione miglioramenti"],
+            "technologies": ["Lighthouse", "Webpack Analyzer"],
+            "duration": "3-5 giorni",
+            "startingPrice": "$300"
+          },
+          {
+            "id": "mentorship",
+            "title": "Mentorship 1:1",
+            "idealFor": "Dev junior/mid che crescono tecnicamente",
+            "scope": "Sessioni 1:1 settimanali, code review, pair programming",
+            "deliverables": ["Piano di apprendimento personalizzato", "Feedback scritto"],
+            "technologies": ["Mentorship", "Code Review", "Pair Programming"],
+            "duration": "4/8/12 sessioni (1h ciascuna)",
+            "startingPrice": "$100 / mo"
+          },
+          {
+            "id": "legacy-modernization",
+            "title": "Modernizzazione Codice Legacy",
+            "idealFor": "Sistemi interni datati che hanno bisogno di stabilità",
+            "scope": "Audit, refactoring con principi SOLID, copertura test, migrazione progressiva",
+            "deliverables": ["Codice refactorizzato", "Report debito tecnico", "Test di regressione"],
+            "technologies": ["PHP", "Java", "TypeScript", "SonarQube"],
+            "duration": "3-6 settimane",
+            "startingPrice": "$1,500"
+          },
+          {
+            "id": "retainer",
+            "title": "Manutenzione Continua (Retainer)",
+            "idealFor": "Aziende che hanno bisogno di supporto dev senior part-time continuativo",
+            "scope": "Correzione bug, miglioramenti performance, aggiunta funzionalità minori, manutenzione infrastruttura",
+            "deliverables": ["Report mensile", "Problemi risolti", "Garanzia di uptime"],
+            "technologies": ["TypeScript", "Java", "Next.js", "AWS"],
+            "duration": "Mensile",
+            "startingPrice": "$500 / mo"
+          }
+        ]
+      }
+    ],
     "whatsappServiceMessage": "Ciao Gustavo, sono interessato al servizio: {title}",
     "emailServiceSubject": "Preventivo: {title}",
     "emailServiceBody": "Ciao Gustavo,\n\nVorrei ricevere maggiori informazioni sul tuo servizio: {title}\n\nIn attesa di una tua risposta.\n\nCordiali saluti."
@@ -199,6 +585,14 @@
     "successTitle": "Messaggio inviato!",
     "successMessage": "Grazie per aver scritto. Ti rispondo presto.",
     "sendAnother": "Invia un altro messaggio",
-    "errorMessage": "Si e verificato un errore. Scrivimi direttamente su WhatsApp o email."
+    "errorMessage": "Si e verificato un errore. Scrivimi direttamente su WhatsApp o email.",
+    "validation": {
+      "nameRequired": "Il nome è obbligatorio",
+      "nameMin": "Il nome deve contenere almeno 2 caratteri",
+      "emailRequired": "L'email è obbligatoria",
+      "emailInvalid": "Inserisci un indirizzo email valido",
+      "messageRequired": "Il messaggio è obbligatorio",
+      "messageMin": "Il messaggio deve contenere almeno 10 caratteri"
+    }
   }
 }
