@@ -23,7 +23,8 @@
     "scrollToTop": "Volver al inicio",
     "toggleTheme": "Cambiar tema",
     "footerSubtitle": "Ingeniero de Software · Full-Stack & Backend.",
-    "allRightsReserved": "Todos los derechos reservados."
+    "allRightsReserved": "Todos los derechos reservados.",
+    "privacy": "Privacidad"
   },
   "Hero": {
     "greeting": "¡Hola! Soy Gustavo Colina (Suggus1899)",
@@ -431,5 +432,25 @@
       "messageRequired": "El mensaje es obligatorio",
       "messageMin": "El mensaje debe tener al menos 10 caracteres"
     }
+  },
+  "NotFound": {
+    "kicker": "Error 404",
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o fue movida a otra dirección.",
+    "cta": "Volver al inicio"
+  },
+  "Privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: agosto de 2026",
+    "intro": "Este sitio es el portafolio personal de Gustavo Colina. Esta página explica qué datos se recopilan al visitarlo y cómo se utilizan.",
+    "dataTitle": "Datos que se recopilan",
+    "dataForm": "Formulario de contacto: al enviarlo, tu nombre, correo electrónico y mensaje se envían directamente a mi correo a través de EmailJS. No se almacenan en ningún servidor propio.",
+    "dataAnalytics": "Analítica del sitio: uso Vercel Analytics, que no utiliza cookies ni recopila datos personales identificables; solo agrega estadísticas de tráfico anónimas.",
+    "thirdPartiesTitle": "Servicios de terceros",
+    "thirdParties": "EmailJS (envío de correos) y Vercel Analytics (estadísticas de uso). Ambos procesan datos según sus propias políticas de privacidad.",
+    "rightsTitle": "Tus derechos",
+    "rights": "Puedes solicitar la eliminación de cualquier información que me hayas enviado por el formulario de contacto escribiéndome directamente.",
+    "contactTitle": "Contacto",
+    "contact": "Para cualquier consulta sobre esta política, escríbeme a"
   }
 }

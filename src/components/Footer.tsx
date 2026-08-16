@@ -34,6 +34,7 @@ export default function Footer() {
   const secondaryLinks = [
     { label: t('now'), href: '/now' },
     { label: t('blog'), href: '/blog' },
+    { label: t('privacy'), href: '/privacy' },
   ];
 
   return (

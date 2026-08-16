@@ -17,6 +17,102 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'caso-de-estudio-logmaster',
+    date: '2026-08-05',
+    readTime: '6 min',
+    tags: ['Case Study', 'Electron', 'SQLCipher', 'Security'],
+    title: {
+      es: 'Caso de estudio: LogMaster — cifrado de datos y reducción de tiempos en El Trébol',
+      en: 'Case Study: LogMaster — Data Encryption and Time Reduction at El Trébol',
+      fr: 'Étude de cas : LogMaster — Chiffrement des données et réduction des délais chez El Trébol',
+      it: 'Caso di studio: LogMaster — Cifratura dei dati e riduzione dei tempi presso El Trébol'
+    },
+    excerpt: {
+      es: 'Cómo diseñé una base de datos cifrada con AES-256-GCM y reduje un proceso operativo de 10 minutos a menos de 1.',
+      en: 'How I designed an AES-256-GCM encrypted database and cut an operational process from 10 minutes to under 1.',
+      fr: 'Comment j\'ai conçu une base de données chiffrée en AES-256-GCM et réduit un processus opérationnel de 10 minutes à moins d\'1.',
+      it: 'Come ho progettato un database cifrato con AES-256-GCM e ridotto un processo operativo da 10 minuti a meno di 1.'
+    },
+    content: {
+      es: [
+        'Industrias de Alimentos El Trébol necesitaba reemplazar un control de acceso y gestión de visitantes manual, lento y sin trazabilidad, por un sistema digital confiable.',
+        'El primer paso fue el levantamiento de requisitos: entender los roles del negocio (Administrador, Guardia, Auditor) y los puntos donde más se perdía tiempo operativo.',
+        'Diseñé el modelo de datos sobre SQLCipher con cifrado AES-256-GCM para proteger más de 10,000 registros sensibles de visitantes y accesos, siguiendo buenas prácticas de protección de datos desde el diseño.',
+        'La aplicación se construyó con Electron + React + TypeScript para escritorio, con una versión web equivalente, e incluyó generación automática de reportes en PDF y Excel como evidencia de auditoría.',
+        'El resultado: el proceso que antes tomaba hasta 10 minutos pasó a ejecutarse en menos de 1 — una mejora del 90% — reduciendo también el margen de error humano en el registro de visitantes.'
+      ],
+      en: [
+        'Industrias de Alimentos El Trébol needed to replace a manual, slow, and untraceable access control and visitor management process with a reliable digital system.',
+        'The first step was requirements gathering: understanding the business roles (Administrator, Guard, Auditor) and the points where the most operational time was lost.',
+        'I designed the data model on SQLCipher with AES-256-GCM encryption to protect over 10,000 sensitive visitor and access records, following data protection by design principles.',
+        'The application was built with Electron + React + TypeScript for desktop, with an equivalent web version, and included automatic PDF and Excel report generation as audit evidence.',
+        'The result: a process that used to take up to 10 minutes now runs in under 1 — a 90% improvement — while also reducing human error in visitor logging.'
+      ],
+      fr: [
+        'Industrias de Alimentos El Trébol avait besoin de remplacer un processus de contrôle d\'accès et de gestion des visiteurs manuel, lent et sans traçabilité, par un système numérique fiable.',
+        'La première étape a été le recueil des besoins : comprendre les rôles métier (Administrateur, Garde, Auditeur) et les points où le plus de temps opérationnel était perdu.',
+        'J\'ai conçu le modèle de données sur SQLCipher avec chiffrement AES-256-GCM pour protéger plus de 10 000 enregistrements sensibles de visiteurs et d\'accès, en suivant les principes de protection des données dès la conception.',
+        'L\'application a été construite avec Electron + React + TypeScript pour le bureau, avec une version web équivalente, et incluait la génération automatique de rapports PDF et Excel comme preuve d\'audit.',
+        'Le résultat : un processus qui prenait jusqu\'à 10 minutes s\'exécute maintenant en moins d\'1 minute — une amélioration de 90 % — tout en réduisant l\'erreur humaine dans l\'enregistrement des visiteurs.'
+      ],
+      it: [
+        'Industrias de Alimentos El Trébol aveva bisogno di sostituire un processo di controllo accessi e gestione visitatori manuale, lento e senza tracciabilità, con un sistema digitale affidabile.',
+        'Il primo passo è stato la raccolta dei requisiti: capire i ruoli aziendali (Amministratore, Guardia, Auditor) e i punti dove si perdeva più tempo operativo.',
+        'Ho progettato il modello dati su SQLCipher con cifratura AES-256-GCM per proteggere oltre 10.000 record sensibili di visitatori e accessi, seguendo i principi di protezione dei dati fin dalla progettazione.',
+        'L\'applicazione è stata costruita con Electron + React + TypeScript per desktop, con una versione web equivalente, e includeva la generazione automatica di report PDF ed Excel come prova di audit.',
+        'Il risultato: un processo che prima richiedeva fino a 10 minuti ora viene eseguito in meno di 1 — un miglioramento del 90% — riducendo anche l\'errore umano nella registrazione dei visitatori.'
+      ]
+    }
+  },
+  {
+    slug: 'caso-de-estudio-keoit-flutter-multiplataforma',
+    date: '2026-07-15',
+    readTime: '6 min',
+    tags: ['Case Study', 'Flutter', 'Cross-platform'],
+    title: {
+      es: 'Caso de estudio: una sola codebase Flutter para Android, iOS y Desktop en KeoIT',
+      en: 'Case Study: One Flutter Codebase for Android, iOS, and Desktop at KeoIT',
+      fr: 'Étude de cas : une seule base de code Flutter pour Android, iOS et Desktop chez KeoIT',
+      it: 'Caso di studio: un\'unica codebase Flutter per Android, iOS e Desktop in KeoIT'
+    },
+    excerpt: {
+      es: 'Cómo reduje el tiempo de carga en 40% y logré 95% de reutilización de código en una app multiplataforma.',
+      en: 'How I cut load time by 40% and reached 95% code reuse in a cross-platform app.',
+      fr: 'Comment j\'ai réduit le temps de chargement de 40 % et atteint 95 % de réutilisation du code dans une app multiplateforme.',
+      it: 'Come ho ridotto il tempo di caricamento del 40% e raggiunto il 95% di riutilizzo del codice in un\'app multipiattaforma.'
+    },
+    content: {
+      es: [
+        'KeoIT necesitaba un cliente multiplataforma capaz de correr en Android, iOS y Desktop sin triplicar el esfuerzo de desarrollo ni la superficie de bugs.',
+        'Elegí Flutter/Dart con Clean Architecture y Provider para desacoplar la gestión de sesión y el control de roles de la capa de presentación, manteniendo el código testeable y escalable.',
+        'Para la experiencia visual integré animaciones vectoriales interactivas con el motor Rive y un diseño Glassmorphism, sin sacrificar rendimiento en dispositivos de gama media.',
+        'También participé en la capa web del sistema con Next.js, manteniendo consistencia de producto entre plataformas.',
+        'Resultado: 40% menos tiempo de carga gracias a gestión de estado optimizada, control de acceso por roles para más de 500 usuarios concurrentes, y 95% de reutilización de código entre iOS, Android y Desktop.'
+      ],
+      en: [
+        'KeoIT needed a cross-platform client able to run on Android, iOS, and Desktop without tripling development effort or the bug surface.',
+        'I chose Flutter/Dart with Clean Architecture and Provider to decouple session management and role control from the presentation layer, keeping the code testable and scalable.',
+        'For the visual experience, I integrated interactive vector animations with the Rive engine and a Glassmorphism design, without sacrificing performance on mid-range devices.',
+        'I also contributed to the web layer of the system with Next.js, keeping product consistency across platforms.',
+        'Result: 40% less load time thanks to optimized state management, role-based access control for 500+ concurrent users, and 95% code reuse across iOS, Android, and Desktop.'
+      ],
+      fr: [
+        'KeoIT avait besoin d\'un client multiplateforme capable de fonctionner sur Android, iOS et Desktop sans tripler l\'effort de développement ni la surface de bugs.',
+        'J\'ai choisi Flutter/Dart avec Clean Architecture et Provider pour découpler la gestion de session et le contrôle des rôles de la couche de présentation, en gardant le code testable et évolutif.',
+        'Pour l\'expérience visuelle, j\'ai intégré des animations vectorielles interactives avec le moteur Rive et un design Glassmorphism, sans sacrifier les performances sur les appareils milieu de gamme.',
+        'J\'ai également contribué à la couche web du système avec Next.js, en maintenant la cohérence du produit entre les plateformes.',
+        'Résultat : 40 % de temps de chargement en moins grâce à une gestion d\'état optimisée, un contrôle d\'accès par rôles pour plus de 500 utilisateurs simultanés, et 95 % de réutilisation du code entre iOS, Android et Desktop.'
+      ],
+      it: [
+        'KeoIT aveva bisogno di un client multipiattaforma in grado di funzionare su Android, iOS e Desktop senza triplicare lo sforzo di sviluppo o la superficie di bug.',
+        'Ho scelto Flutter/Dart con Clean Architecture e Provider per disaccoppiare la gestione della sessione e il controllo dei ruoli dal layer di presentazione, mantenendo il codice testabile e scalabile.',
+        'Per l\'esperienza visiva ho integrato animazioni vettoriali interattive con il motore Rive e un design Glassmorphism, senza sacrificare le prestazioni su dispositivi di fascia media.',
+        'Ho contribuito anche al layer web del sistema con Next.js, mantenendo coerenza di prodotto tra le piattaforme.',
+        'Risultato: 40% in meno di tempo di caricamento grazie a una gestione dello stato ottimizzata, controllo accessi basato su ruoli per oltre 500 utenti simultanei, e 95% di riutilizzo del codice tra iOS, Android e Desktop.'
+      ]
+    }
+  },
+  {
     slug: 'hibernate-jpa-n-plus-1-problem',
     date: '2026-03-20',
     readTime: '6 min',

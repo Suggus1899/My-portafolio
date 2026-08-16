@@ -10,8 +10,7 @@ export default function SchemaOrg({ siteUrl }: SchemaOrgProps) {
     jobTitle: 'Software Engineer',
     url: siteUrl,
     sameAs: [
-      'https://github.com/Suggus1899',
-      'https://linkedin.com/in/gustavo-colina'
+      'https://github.com/Suggus1899'
     ]
   };
 

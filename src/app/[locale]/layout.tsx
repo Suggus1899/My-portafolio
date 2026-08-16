@@ -16,6 +16,7 @@ import ScrollProgressBar from '@/components/ScrollProgressBar';
 import ScrollToTop from '@/components/ScrollToTop';
 import SchemaOrg from '@/components/SchemaOrg';
 import { SITE_URL } from '@/config/constants';
+import { Analytics } from '@vercel/analytics/next';
 
 type AppLocale = (typeof routing.locales)[number];
 
@@ -99,6 +100,7 @@ export default async function RootLayout({
             <ScrollToTop />
           </NextIntlClientProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
