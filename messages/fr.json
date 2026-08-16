@@ -1,4 +1,4 @@
-{
+﻿{
   "Index": {
     "title": "Gustavo Colina — Ingénieur Logiciel",
     "description": "Ingénieur Logiciel Full-Stack. Spécialisé en backend, cloud et architectures propres."
@@ -168,7 +168,7 @@
             "deliverables": ["Dépôt GitHub", "README complet", "Collection Postman", "Guide de déploiement"],
             "technologies": ["Node.js", "NestJS", "TypeScript", "PostgreSQL", "MongoDB", "Redis"],
             "duration": "2-3 semaines",
-            "startingPrice": "$1,000"
+            "startingPrice": "$650"
           },
           {
             "id": "api-java",
@@ -178,7 +178,7 @@
             "deliverables": ["Code source", "Documentation technique", "Tests automatisés", "docker-compose.yml"],
             "technologies": ["Java 21", "Spring Boot 3", "Spring Security", "PostgreSQL", "Docker"],
             "duration": "3-5 semaines",
-            "startingPrice": "$2,500"
+            "startingPrice": "$1,600"
           },
           {
             "id": "db-optimization",
@@ -188,7 +188,7 @@
             "deliverables": ["Rapport avant/après métriques", "Scripts d'optimisation", "Plan de migration"],
             "technologies": ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
             "duration": "1-2 semaines",
-            "startingPrice": "$500"
+            "startingPrice": "$320"
           },
           {
             "id": "microservices-migration",
@@ -198,7 +198,7 @@
             "deliverables": ["Architecture microservices", "Docker Compose", "Guide de déploiement"],
             "technologies": ["Go", "Java", "Docker", "RabbitMQ", "Redis"],
             "duration": "4-8 semaines",
-            "startingPrice": "$3,000"
+            "startingPrice": "$2,000"
           }
         ]
       },
@@ -215,7 +215,7 @@
             "deliverables": ["Code Next.js", "Déploiement Vercel/Netlify", "Guide d'édition de contenu"],
             "technologies": ["Next.js 14", "React", "Tailwind CSS", "Framer Motion"],
             "duration": "1-2 semaines",
-            "startingPrice": "$400"
+            "startingPrice": "$250"
           },
           {
             "id": "dashboard",
@@ -225,7 +225,7 @@
             "deliverables": ["Application fonctionnelle", "Composants documentés", "Système de thème"],
             "technologies": ["Next.js", "TypeScript", "Tailwind", "shadcn/ui", "TanStack Table"],
             "duration": "2-4 semaines",
-            "startingPrice": "$1,200"
+            "startingPrice": "$800"
           },
           {
             "id": "ecommerce",
@@ -235,7 +235,7 @@
             "deliverables": ["Boutique fonctionnelle", "Intégration Stripe", "Panneau de commandes"],
             "technologies": ["Next.js", "Stripe SDK", "Tailwind", "Prisma"],
             "duration": "3-4 semaines",
-            "startingPrice": "$1,500"
+            "startingPrice": "$1,000"
           },
           {
             "id": "migration-nextjs",
@@ -245,7 +245,7 @@
             "deliverables": ["Code migré", "Audit de performance", "Guide de migration"],
             "technologies": ["Next.js 14", "React", "TypeScript"],
             "duration": "2-3 semaines",
-            "startingPrice": "$800"
+            "startingPrice": "$500"
           },
           {
             "id": "mvp",
@@ -255,7 +255,7 @@
             "deliverables": ["Application fonctionnelle déployée", "Dépôt GitHub", "Documentation", "Vidéo démo"],
             "technologies": ["Next.js", "Node.js/NestJS", "PostgreSQL", "Prisma", "Vercel"],
             "duration": "4-6 semaines",
-            "startingPrice": "$2,000"
+            "startingPrice": "$1,300"
           },
           {
             "id": "erp-crm",
@@ -265,7 +265,7 @@
             "deliverables": ["Système fonctionnel", "Manuel utilisateur", "Code source", "1h de formation"],
             "technologies": ["Next.js", "Node.js/Java", "PostgreSQL", "shadcn/ui"],
             "duration": "4-6 semaines",
-            "startingPrice": "$3,500"
+            "startingPrice": "$2,400"
           },
           {
             "id": "saas",
@@ -275,7 +275,7 @@
             "deliverables": ["SaaS avec facturation", "Documentation architecture", "Guide de mise à l'échelle"],
             "technologies": ["Next.js", "Stripe", "Clerk/NextAuth", "PostgreSQL", "Prisma"],
             "duration": "6-8 semaines",
-            "startingPrice": "$4,000"
+            "startingPrice": "$2,800"
           }
         ]
       },
@@ -292,7 +292,7 @@
             "deliverables": ["Infrastructure as Code (Terraform)", "Documentation architecture", "Guide d'exploitation"],
             "technologies": ["AWS", "GCP", "Terraform", "Docker"],
             "duration": "1-2 semaines",
-            "startingPrice": "$800"
+            "startingPrice": "$500"
           },
           {
             "id": "cicd",
@@ -302,7 +302,7 @@
             "deliverables": ["Workflows configurés", "Documentation pipeline", "Procédures de rollback"],
             "technologies": ["GitHub Actions", "Docker", "Vercel", "AWS"],
             "duration": "3-5 jours",
-            "startingPrice": "$400"
+            "startingPrice": "$250"
           },
           {
             "id": "docker",
@@ -312,7 +312,7 @@
             "deliverables": ["Dockerfiles optimisés", "docker-compose.yml", "Guide de débogage"],
             "technologies": ["Docker", "Docker Compose", "Nginx"],
             "duration": "2-4 jours",
-            "startingPrice": "$300"
+            "startingPrice": "$180"
           },
           {
             "id": "monitoring",
@@ -322,7 +322,7 @@
             "deliverables": ["Dashboards configurés", "Alertes configurées", "Runbook de dépannage"],
             "technologies": ["Datadog", "New Relic", "Prometheus", "Grafana"],
             "duration": "3-5 jours",
-            "startingPrice": "$500"
+            "startingPrice": "$320"
           },
           {
             "id": "security-review",
@@ -332,7 +332,7 @@
             "deliverables": ["Rapport de vulnérabilités", "Plan de remédiation", "Implémentation des correctifs"],
             "technologies": ["OWASP ZAP", "SonarQube", "ESLint Security"],
             "duration": "1-2 semaines",
-            "startingPrice": "$600"
+            "startingPrice": "$400"
           },
           {
             "id": "hardening",
@@ -342,7 +342,7 @@
             "deliverables": ["Configurations de durcissement", "Checklist de sécurité"],
             "technologies": ["Nginx", "Cloudflare", "Helmet.js", "AWS WAF"],
             "duration": "3-5 jours",
-            "startingPrice": "$300"
+            "startingPrice": "$180"
           }
         ]
       },
@@ -359,7 +359,7 @@
             "deliverables": ["Code source", "Builds iOS/Android", "Guide de publication"],
             "technologies": ["Flutter", "Dart", "Firebase", "Provider/Bloc"],
             "duration": "4-6 semaines",
-            "startingPrice": "$2,500"
+            "startingPrice": "$1,600"
           },
           {
             "id": "react-native",
@@ -369,7 +369,7 @@
             "deliverables": ["Application fonctionnelle", "Code documenté", "Builds"],
             "technologies": ["React Native", "Expo", "TypeScript", "Firebase"],
             "duration": "4-6 semaines",
-            "startingPrice": "$2,000"
+            "startingPrice": "$1,300"
           }
         ]
       },
@@ -386,7 +386,7 @@
             "deliverables": ["Agent fonctionnel", "Pipeline d'ingestion de données", "Documentation"],
             "technologies": ["Python", "LangChain", "Gemini", "Pinecone", "OpenAI"],
             "duration": "3-5 semaines",
-            "startingPrice": "$1,500"
+            "startingPrice": "$1,000"
           }
         ]
       },
@@ -403,7 +403,7 @@
             "deliverables": ["Module de paiement intégré", "Tests", "Documentation webhooks"],
             "technologies": ["Stripe API", "Node.js", "Next.js"],
             "duration": "1-2 semaines",
-            "startingPrice": "$400"
+            "startingPrice": "$250"
           },
           {
             "id": "communications",
@@ -413,7 +413,7 @@
             "deliverables": ["Système de notifications fonctionnel", "Dashboards"],
             "technologies": ["SendGrid", "Twilio", "AWS SES", "Node.js"],
             "duration": "1-2 semaines",
-            "startingPrice": "$300"
+            "startingPrice": "$180"
           },
           {
             "id": "openai",
@@ -423,7 +423,7 @@
             "deliverables": ["Module IA intégré", "Prompts optimisés", "Gestion des coûts"],
             "technologies": ["OpenAI API", "LangChain", "Pinecone"],
             "duration": "2-3 semaines",
-            "startingPrice": "$500"
+            "startingPrice": "$320"
           }
         ]
       },
@@ -440,7 +440,7 @@
             "deliverables": ["Documentation web (Swagger/ReadMe/Docusaurus)", "Collection Postman"],
             "technologies": ["OpenAPI 3.0", "Swagger UI", "Docusaurus"],
             "duration": "1-2 semaines",
-            "startingPrice": "$300"
+            "startingPrice": "$180"
           },
           {
             "id": "readme",
@@ -450,7 +450,7 @@
             "deliverables": ["Documentation Markdown", "Badges", "Diagrammes"],
             "technologies": ["Markdown", "Mermaid", "GitHub Actions"],
             "duration": "3-5 jours",
-            "startingPrice": "$100"
+            "startingPrice": "$80"
           }
         ]
       },
@@ -467,7 +467,7 @@
             "deliverables": ["Document d'architecture (ADR)", "Diagrammes C4", "Recommandations"],
             "technologies": ["Architecture", "Diagrammes", "Documentation"],
             "duration": "2-3 jours",
-            "startingPrice": "$500"
+            "startingPrice": "$320"
           },
           {
             "id": "code-review",
@@ -477,7 +477,7 @@
             "deliverables": ["Rapport d'analyse", "PRs avec améliorations", "Standards de code"],
             "technologies": ["ESLint", "SonarQube", "Jest/Vitest"],
             "duration": "1-2 semaines",
-            "startingPrice": "$400"
+            "startingPrice": "$250"
           },
           {
             "id": "performance",
@@ -487,7 +487,7 @@
             "deliverables": ["Rapport de performance", "Implémentation des améliorations"],
             "technologies": ["Lighthouse", "Webpack Analyzer"],
             "duration": "3-5 jours",
-            "startingPrice": "$300"
+            "startingPrice": "$180"
           },
           {
             "id": "mentorship",
@@ -497,7 +497,7 @@
             "deliverables": ["Plan d'apprentissage personnalisé", "Feedback écrit"],
             "technologies": ["Mentorat", "Revue de Code", "Pair Programming"],
             "duration": "4/8/12 sessions (1h chacune)",
-            "startingPrice": "$100 / mo"
+            "startingPrice": "$80 / mo"
           },
           {
             "id": "legacy-modernization",
@@ -507,7 +507,7 @@
             "deliverables": ["Code refactorisé", "Rapport de dette technique", "Tests de régression"],
             "technologies": ["PHP", "Java", "TypeScript", "SonarQube"],
             "duration": "3-6 semaines",
-            "startingPrice": "$1,500"
+            "startingPrice": "$1,000"
           },
           {
             "id": "retainer",
@@ -517,7 +517,7 @@
             "deliverables": ["Rapport mensuel", "Problèmes résolus", "Garantie de disponibilité"],
             "technologies": ["TypeScript", "Java", "Next.js", "AWS"],
             "duration": "Mensuel",
-            "startingPrice": "$500 / mo"
+            "startingPrice": "$350 / mo"
           }
         ]
       }

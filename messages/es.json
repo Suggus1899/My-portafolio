@@ -1,4 +1,4 @@
-{
+﻿{
   "Index": {
     "title": "Gustavo Colina — Ingeniero de Software",
     "description": "Ingeniero de Software Full-Stack. Especializado en Backend, Cloud y arquitecturas limpias."
@@ -179,7 +179,7 @@
               "Redis"
             ],
             "duration": "2-3 semanas",
-            "startingPrice": "$1,000"
+            "startingPrice": "$650"
           },
           {
             "id": "api-java",
@@ -200,7 +200,7 @@
               "Docker"
             ],
             "duration": "3-5 semanas",
-            "startingPrice": "$2,500"
+            "startingPrice": "$1,600"
           },
           {
             "id": "db-optimization",
@@ -219,7 +219,7 @@
               "Redis"
             ],
             "duration": "1-2 semanas",
-            "startingPrice": "$500"
+            "startingPrice": "$320"
           },
           {
             "id": "microservices-migration",
@@ -239,7 +239,7 @@
               "Redis"
             ],
             "duration": "4-8 semanas",
-            "startingPrice": "$3,000"
+            "startingPrice": "$2,000"
           }
         ]
       },
@@ -265,7 +265,7 @@
               "Framer Motion"
             ],
             "duration": "1-2 semanas",
-            "startingPrice": "$400"
+            "startingPrice": "$250"
           },
           {
             "id": "dashboard",
@@ -285,7 +285,7 @@
               "TanStack Table"
             ],
             "duration": "2-4 semanas",
-            "startingPrice": "$1,200"
+            "startingPrice": "$800"
           },
           {
             "id": "ecommerce",
@@ -304,7 +304,7 @@
               "Prisma"
             ],
             "duration": "3-4 semanas",
-            "startingPrice": "$1,500"
+            "startingPrice": "$1,000"
           },
           {
             "id": "migration-nextjs",
@@ -322,7 +322,7 @@
               "TypeScript"
             ],
             "duration": "2-3 semanas",
-            "startingPrice": "$800"
+            "startingPrice": "$500"
           },
           {
             "id": "mvp",
@@ -343,7 +343,7 @@
               "Vercel"
             ],
             "duration": "4-6 semanas",
-            "startingPrice": "$2,000"
+            "startingPrice": "$1,300"
           },
           {
             "id": "erp-crm",
@@ -363,7 +363,7 @@
               "shadcn/ui"
             ],
             "duration": "4-6 semanas",
-            "startingPrice": "$3,500"
+            "startingPrice": "$2,400"
           },
           {
             "id": "saas",
@@ -383,7 +383,7 @@
               "Prisma"
             ],
             "duration": "6-8 semanas",
-            "startingPrice": "$4,000"
+            "startingPrice": "$2,800"
           }
         ]
       },
@@ -409,7 +409,7 @@
               "Docker"
             ],
             "duration": "1-2 semanas",
-            "startingPrice": "$800"
+            "startingPrice": "$500"
           },
           {
             "id": "cicd",
@@ -428,7 +428,7 @@
               "AWS"
             ],
             "duration": "3-5 días",
-            "startingPrice": "$400"
+            "startingPrice": "$250"
           },
           {
             "id": "docker",
@@ -446,7 +446,7 @@
               "Nginx"
             ],
             "duration": "2-4 días",
-            "startingPrice": "$300"
+            "startingPrice": "$180"
           },
           {
             "id": "monitoring",
@@ -465,7 +465,7 @@
               "Grafana"
             ],
             "duration": "3-5 días",
-            "startingPrice": "$500"
+            "startingPrice": "$320"
           },
           {
             "id": "security-review",
@@ -483,7 +483,7 @@
               "ESLint Security"
             ],
             "duration": "1-2 semanas",
-            "startingPrice": "$600"
+            "startingPrice": "$400"
           },
           {
             "id": "hardening",
@@ -501,7 +501,7 @@
               "AWS WAF"
             ],
             "duration": "3-5 días",
-            "startingPrice": "$300"
+            "startingPrice": "$180"
           }
         ]
       },
@@ -527,7 +527,7 @@
               "Provider/Bloc"
             ],
             "duration": "4-6 semanas",
-            "startingPrice": "$2,500"
+            "startingPrice": "$1,600"
           },
           {
             "id": "react-native",
@@ -546,7 +546,7 @@
               "Firebase"
             ],
             "duration": "4-6 semanas",
-            "startingPrice": "$2,000"
+            "startingPrice": "$1,300"
           }
         ]
       },
@@ -573,7 +573,7 @@
               "OpenAI"
             ],
             "duration": "3-5 semanas",
-            "startingPrice": "$1,500"
+            "startingPrice": "$1,000"
           }
         ]
       },
@@ -598,7 +598,7 @@
               "Next.js"
             ],
             "duration": "1-2 semanas",
-            "startingPrice": "$400"
+            "startingPrice": "$250"
           },
           {
             "id": "communications",
@@ -616,7 +616,7 @@
               "Node.js"
             ],
             "duration": "1-2 semanas",
-            "startingPrice": "$300"
+            "startingPrice": "$180"
           },
           {
             "id": "openai",
@@ -634,7 +634,7 @@
               "Pinecone"
             ],
             "duration": "2-3 semanas",
-            "startingPrice": "$500"
+            "startingPrice": "$320"
           }
         ]
       },
@@ -658,7 +658,7 @@
               "Docusaurus"
             ],
             "duration": "1-2 semanas",
-            "startingPrice": "$300"
+            "startingPrice": "$180"
           },
           {
             "id": "readme",
@@ -676,7 +676,7 @@
               "GitHub Actions"
             ],
             "duration": "3-5 días",
-            "startingPrice": "$100"
+            "startingPrice": "$80"
           }
         ]
       },
@@ -701,7 +701,7 @@
               "Documentación"
             ],
             "duration": "2-3 días",
-            "startingPrice": "$500"
+            "startingPrice": "$320"
           },
           {
             "id": "code-review",
@@ -719,7 +719,7 @@
               "Jest/Vitest"
             ],
             "duration": "1-2 semanas",
-            "startingPrice": "$400"
+            "startingPrice": "$250"
           },
           {
             "id": "performance",
@@ -735,7 +735,7 @@
               "Webpack Analyzer"
             ],
             "duration": "3-5 días",
-            "startingPrice": "$300"
+            "startingPrice": "$180"
           },
           {
             "id": "mentorship",
@@ -752,7 +752,7 @@
               "Pair Programming"
             ],
             "duration": "4/8/12 sesiones (1h c/u)",
-            "startingPrice": "$100 / mo"
+            "startingPrice": "$80 / mo"
           },
           {
             "id": "legacy-modernization",
@@ -771,7 +771,7 @@
               "SonarQube"
             ],
             "duration": "3-6 semanas",
-            "startingPrice": "$1,500"
+            "startingPrice": "$1,000"
           },
           {
             "id": "retainer",
@@ -790,7 +790,7 @@
               "AWS"
             ],
             "duration": "Mensual",
-            "startingPrice": "$500 / mo"
+            "startingPrice": "$350 / mo"
           }
         ]
       }
