@@ -247,6 +247,25 @@
             "startingPrice": "$800"
           },
           {
+            "id": "ecommerce",
+            "title": "E-commerce Frontend",
+            "idealFor": "Online stores",
+            "scope": "Catalog with filters, persistent cart, optimized checkout, payment gateway integration",
+            "deliverables": [
+              "Functional store",
+              "Stripe integration",
+              "Orders panel"
+            ],
+            "technologies": [
+              "Next.js",
+              "Stripe SDK",
+              "Tailwind",
+              "Prisma"
+            ],
+            "duration": "3-4 weeks",
+            "startingPrice": "$1,000"
+          },
+          {
             "id": "erp-crm",
             "title": "Internal Management System (ERP/CRM)",
             "idealFor": "Companies digitizing processes",
