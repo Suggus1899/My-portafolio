@@ -267,6 +267,36 @@
             "technologies": ["Next.js", "PostgreSQL", "Node.js"],
             "duration": "6-8 settimane",
             "startingPrice": "$2,800"
+          },
+          {
+            "id": "itsm-tickets",
+            "title": "Sistema di Gestione Ticket IT (ITSM)",
+            "idealFor": "Aziende che hanno bisogno di un sistema di supporto IT formale con SLA ed escalation",
+            "scope": "Gestione ticket multilivello (N1/N2/N3), escalation automatica, tracking SLA, allineato a ITIL v4 / ISO/IEC 20000-1",
+            "deliverables": ["Sistema funzionale", "Manuale dei processi", "Codice sorgente", "Report SLA"],
+            "technologies": ["Java 21", "Spring Boot 3", "Next.js", "PostgreSQL"],
+            "duration": "4-5 settimane",
+            "startingPrice": "$2,000"
+          },
+          {
+            "id": "desktop-apps",
+            "title": "Applicazioni Desktop Multipiattaforma",
+            "idealFor": "Aziende che hanno bisogno di un'app installabile con accesso a hardware o file locali",
+            "scope": "Packaging con Electron o Tauri, aggiornamenti automatici, accesso al file system, build Windows/Mac/Linux",
+            "deliverables": ["Installer per piattaforma", "Codice sorgente", "Guida agli aggiornamenti"],
+            "technologies": ["Electron", "Tauri", "React", "TypeScript"],
+            "duration": "3-4 settimane",
+            "startingPrice": "$800"
+          },
+          {
+            "id": "edu-simulators",
+            "title": "Simulatori e Strumenti Educativi Interattivi",
+            "idealFor": "Istituzioni educative o team di formazione tecnica",
+            "scope": "Canvas interattivo drag & drop, validazione automatica degli esercizi, tracciamento dei progressi",
+            "deliverables": ["Simulatore funzionale", "Dashboard di progresso", "Codice sorgente"],
+            "technologies": ["React Flow", "Zustand", "Prisma"],
+            "duration": "3-4 settimane",
+            "startingPrice": "$650"
           }
         ]
       },
@@ -281,7 +311,7 @@
             "idealFor": "Aziende che hanno bisogno di iOS + Android con una sola base di codice",
             "scope": "UI nativa, navigazione, integrazione backend, notifiche push",
             "deliverables": ["Codice sorgente", "Build iOS/Android", "Guida alla pubblicazione"],
-            "technologies": ["Flutter", "Dart", "Firebase", "Provider/Bloc"],
+            "technologies": ["Flutter", "Dart", "Firebase", "Provider/Bloc", "Kotlin Multiplatform"],
             "duration": "4-6 settimane",
             "startingPrice": "$1,200"
           }
@@ -311,6 +341,16 @@
             "technologies": ["TypeScript", "Java", "Next.js", "AWS"],
             "duration": "Mensile",
             "startingPrice": "$250 / mo"
+          },
+          {
+            "id": "monorepo-architecture",
+            "title": "Architettura Monorepo",
+            "idealFor": "Team con più app (web, backend, mobile) che vogliono condividere codice",
+            "scope": "Setup monorepo con Turborepo/Nx, pipeline CI condivise, pacchetti di codice riutilizzabile",
+            "deliverables": ["Monorepo configurato", "Documentazione della struttura", "Pipeline CI/CD di base"],
+            "technologies": ["Turborepo", "Nx", "pnpm workspaces"],
+            "duration": "1-2 settimane",
+            "startingPrice": "$300"
           }
         ]
       }
