@@ -180,6 +180,26 @@
             "technologies": ["PostgreSQL", "SQLCipher", "AES-256", "Flyway/Liquibase"],
             "duration": "2-3 semaines",
             "startingPrice": "$450"
+          },
+          {
+            "id": "rust-backend",
+            "title": "Backends et CLI Haute Performance en Rust",
+            "idealFor": "Équipes qui ont besoin de services à faible latence ou d'outils CLI robustes",
+            "scope": "Backend Actix-web, couche de données SeaORM, CLI avec sous-commandes, authentification JWT, rate limiting, métriques Prometheus",
+            "deliverables": ["Code source", "Binaires compilés", "Documentation des commandes"],
+            "technologies": ["Rust", "Actix-web", "SeaORM", "Prometheus"],
+            "duration": "3-5 semaines",
+            "startingPrice": "$900"
+          },
+          {
+            "id": "go-backend",
+            "title": "Backends Haute Performance en Go",
+            "idealFor": "Systèmes qui ont besoin de calculs concurrents rapides ou de moteurs de règles/dépendances",
+            "scope": "Moteur de calcul (graphe de dépendances), concurrence avec goroutines, API REST, intégration PostgreSQL",
+            "deliverables": ["Code source", "Documentation technique", "Benchmarks de performance"],
+            "technologies": ["Go", "PostgreSQL", "API REST"],
+            "duration": "3-4 semaines",
+            "startingPrice": "$800"
           }
         ]
       },
@@ -209,6 +229,16 @@
             "startingPrice": "$800"
           },
           {
+            "id": "realtime-features",
+            "title": "Fonctionnalités Temps Réel (WebSockets)",
+            "idealFor": "Applications qui ont besoin de chat, collaboration en direct ou dashboards en temps réel",
+            "scope": "WebSockets avec Socket.io, synchronisation collaborative avec Yjs, gestion de présence, mise à l'échelle avec Redis",
+            "deliverables": ["Module temps réel intégré", "Documentation d'architecture", "Tests de charge de base"],
+            "technologies": ["Socket.io", "Yjs", "Redis", "WebSockets"],
+            "duration": "2-3 semaines",
+            "startingPrice": "$700"
+          },
+          {
             "id": "ecommerce",
             "title": "Frontend E-commerce",
             "idealFor": "Boutiques en ligne",
@@ -227,6 +257,16 @@
             "technologies": ["Next.js", "Node.js/Java", "PostgreSQL", "shadcn/ui"],
             "duration": "4-6 semaines",
             "startingPrice": "$2,400"
+          },
+          {
+            "id": "saas-multitenant",
+            "title": "Plateforme SaaS Multi-tenant",
+            "idealFor": "Entrepreneurs qui construisent un produit SaaS avec plusieurs clients",
+            "scope": "Architecture multi-tenant (schéma par tenant), auth avec rôles, onboarding, dashboard admin",
+            "deliverables": ["SaaS multi-tenant fonctionnel", "Documentation d'architecture", "Guide de mise à l'échelle"],
+            "technologies": ["Next.js", "PostgreSQL", "Node.js"],
+            "duration": "6-8 semaines",
+            "startingPrice": "$2,800"
           }
         ]
       },
