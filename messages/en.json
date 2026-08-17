@@ -180,7 +180,7 @@
               "Redis"
             ],
             "duration": "2-3 weeks",
-            "startingPrice": "$650"
+            "startingPrice": "$400"
           },
           {
             "id": "secure-data",
@@ -199,7 +199,7 @@
               "Flyway/Liquibase"
             ],
             "duration": "2-3 weeks",
-            "startingPrice": "$700"
+            "startingPrice": "$450"
           }
         ]
       },
@@ -310,7 +310,7 @@
               "Provider/Bloc"
             ],
             "duration": "4-6 weeks",
-            "startingPrice": "$1,600"
+            "startingPrice": "$1,200"
           }
         ]
       },
@@ -335,7 +335,7 @@
               "Jest/Vitest"
             ],
             "duration": "1-2 weeks",
-            "startingPrice": "$250"
+            "startingPrice": "$150"
           },
           {
             "id": "retainer",
@@ -354,7 +354,7 @@
               "AWS"
             ],
             "duration": "Monthly",
-            "startingPrice": "$350 / mo"
+            "startingPrice": "$250 / mo"
           }
         ]
       }

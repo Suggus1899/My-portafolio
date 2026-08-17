@@ -169,7 +169,7 @@
             "deliverables": ["Dépôt GitHub", "README complet", "Collection Postman", "Guide de déploiement"],
             "technologies": ["Node.js", "NestJS", "TypeScript", "PostgreSQL", "MongoDB", "Redis"],
             "duration": "2-3 semaines",
-            "startingPrice": "$650"
+            "startingPrice": "$400"
           },
           {
             "id": "secure-data",
@@ -179,7 +179,7 @@
             "deliverables": ["Schéma de base de données", "Documentation de sécurité", "Scripts de migration"],
             "technologies": ["PostgreSQL", "SQLCipher", "AES-256", "Flyway/Liquibase"],
             "duration": "2-3 semaines",
-            "startingPrice": "$700"
+            "startingPrice": "$450"
           }
         ]
       },
@@ -243,7 +243,7 @@
             "deliverables": ["Code source", "Builds iOS/Android", "Guide de publication"],
             "technologies": ["Flutter", "Dart", "Firebase", "Provider/Bloc"],
             "duration": "4-6 semaines",
-            "startingPrice": "$1,600"
+            "startingPrice": "$1,200"
           }
         ]
       },
@@ -260,7 +260,7 @@
             "deliverables": ["Rapport d'analyse", "PRs avec améliorations", "Standards de code"],
             "technologies": ["ESLint", "SonarQube", "Jest/Vitest"],
             "duration": "1-2 semaines",
-            "startingPrice": "$250"
+            "startingPrice": "$150"
           },
           {
             "id": "retainer",
@@ -270,7 +270,7 @@
             "deliverables": ["Rapport mensuel", "Problèmes résolus", "Garantie de disponibilité"],
             "technologies": ["TypeScript", "Java", "Next.js", "AWS"],
             "duration": "Mensuel",
-            "startingPrice": "$350 / mo"
+            "startingPrice": "$250 / mo"
           }
         ]
       }
