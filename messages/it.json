@@ -33,7 +33,7 @@
     "availability": "Disponibile per nuove opportunita",
     "contact": "Contattami",
     "contactAriaLabel": "Invia email a Gustavo Colina",
-    "downloadCv": "Scarica sintesi CV",
+    "downloadCv": "Scarica CV",
     "downloadCvAriaLabel": "Scarica CV in formato PDF",
     "github": "GitHub",
     "githubAriaLabel": "Visita profilo GitHub",
@@ -46,7 +46,7 @@
     "highlight1": "Sviluppo end-to-end: dalla raccolta dei requisiti al deploy in produzione con architetture pulite.",
     "highlight2": "Specializzazione in database cifrati (SQLCipher/AES-256) e sistemi multi-tenant scalabili.",
     "highlight3": "Automazione dei processi operativi con riduzione da 10 minuti a meno di 1 minuto.",
-    "download": "Scarica sintesi CV",
+    "download": "Scarica CV",
     "contact": "Contatta via email"
   },
   "Experience": {
@@ -165,41 +165,91 @@
             "id": "api-nodejs",
             "title": "Backend Rapido per Startup e MVP",
             "idealFor": "Startup che hanno bisogno di un backend MVP veloce",
-            "scope": "Progettazione API RESTful, autenticazione JWT/Auth0, CRUD completo, documentazione Swagger/OpenAPI",
-            "deliverables": ["Repository GitHub", "README completo", "Collezione Postman", "Guida al deploy"],
-            "technologies": ["Node.js", "NestJS", "TypeScript", "PostgreSQL", "MongoDB", "Redis"],
+            "scope": "Una API con fino a 3 entità CRUD, autenticazione, 2 ruoli, un database e documentazione.",
+            "deliverables": [
+              "Repository GitHub",
+              "README completo",
+              "Collezione Postman",
+              "Guida al deploy"
+            ],
+            "technologies": [
+              "Node.js",
+              "NestJS",
+              "TypeScript",
+              "PostgreSQL",
+              "MongoDB",
+              "Redis"
+            ],
             "duration": "2-3 settimane",
-            "startingPrice": "$400"
+            "startingPrice": "$400",
+            "exclusions": "Frontend, pagamenti, multi-tenant, migrazione dati e integrazioni esterne.",
+            "revisions": "2 revisioni",
+            "payment": "standard"
           },
           {
             "id": "secure-data",
             "title": "Database Sicuri e Cifrati",
             "idealFor": "Aziende che gestiscono dati sensibili e hanno bisogno di cifratura e controllo accessi",
-            "scope": "Modellazione dati, cifratura AES-256/SQLCipher, controllo accessi basato su ruoli, migrazioni sicure",
-            "deliverables": ["Schema del database", "Documentazione di sicurezza", "Script di migrazione"],
-            "technologies": ["PostgreSQL", "SQLCipher", "AES-256", "Flyway/Liquibase"],
+            "scope": "Un database con fino a 5 tabelle, cifratura dei campi concordati o SQLCipher, fino a 2 ruoli e una migrazione con dati di prova.",
+            "deliverables": [
+              "Schema del database",
+              "Documentazione di sicurezza",
+              "Script di migrazione"
+            ],
+            "technologies": [
+              "PostgreSQL",
+              "SQLCipher",
+              "AES-256",
+              "Flyway/Liquibase"
+            ],
             "duration": "2-3 settimane",
-            "startingPrice": "$450"
+            "startingPrice": "$450",
+            "exclusions": "Audit completo, certificazioni, recupero dati e migrazione in produzione senza interruzioni.",
+            "revisions": "1 revisione",
+            "payment": "standard"
           },
           {
             "id": "rust-backend",
             "title": "Backend e CLI ad Alte Prestazioni in Rust",
             "idealFor": "Team che hanno bisogno di servizi a bassa latenza o strumenti CLI robusti",
-            "scope": "Backend Actix-web, layer dati con SeaORM, CLI con sottocomandi, autenticazione JWT, rate limiting, metriche Prometheus",
-            "deliverables": ["Codice sorgente", "Binari compilati", "Documentazione dei comandi"],
-            "technologies": ["Rust", "Actix-web", "SeaORM", "Prometheus"],
+            "scope": "Una API con fino a 5 endpoint oppure una CLI con fino a 5 comandi, documentazione e test del perimetro.",
+            "deliverables": [
+              "Codice sorgente",
+              "API o CLI concordata e documentata",
+              "Test del perimetro"
+            ],
+            "technologies": [
+              "Rust",
+              "Actix-web",
+              "SeaORM",
+              "Prometheus"
+            ],
             "duration": "3-5 settimane",
-            "startingPrice": "$900"
+            "startingPrice": "$900",
+            "exclusions": "API e CLI combinate, sistemi distribuiti e obiettivi prestazionali senza diagnosi preliminare.",
+            "revisions": "2 revisioni",
+            "payment": "standard"
           },
           {
             "id": "go-backend",
             "title": "Backend ad Alte Prestazioni in Go",
             "idealFor": "Sistemi che hanno bisogno di calcoli concorrenti veloci o motori di regole/dipendenze",
-            "scope": "Motore di calcolo (grafo delle dipendenze), concorrenza con goroutine, API REST, integrazione PostgreSQL",
-            "deliverables": ["Codice sorgente", "Documentazione tecnica", "Benchmark di performance"],
-            "technologies": ["Go", "PostgreSQL", "API REST"],
+            "scope": "Una API con fino a 5 endpoint, PostgreSQL e un processo concorrente delimitato con benchmark riproducibile.",
+            "deliverables": [
+              "Codice sorgente",
+              "Documentazione tecnica",
+              "Benchmark di performance"
+            ],
+            "technologies": [
+              "Go",
+              "PostgreSQL",
+              "API REST"
+            ],
             "duration": "3-4 settimane",
-            "startingPrice": "$800"
+            "startingPrice": "$800",
+            "exclusions": "Motori di regole generici, grafi complessi, frontend e alta disponibilità.",
+            "revisions": "2 revisioni",
+            "payment": "standard"
           }
         ]
       },
@@ -212,91 +262,198 @@
             "id": "landing-page",
             "title": "Landing Page Professionale",
             "idealFor": "Imprenditori che hanno bisogno di presenza web",
-            "scope": "Design responsive, animazioni fluide, SEO tecnico, modulo di contatto integrato, analytics",
-            "deliverables": ["Codice Next.js", "Deploy Vercel/Netlify", "Guida all'editing del contenuto"],
-            "technologies": ["Next.js 14", "React", "Tailwind CSS", "Framer Motion"],
+            "scope": "Una pagina con fino a 5 sezioni, una lingua, modulo, SEO di base, analytics e un deploy Vercel.",
+            "deliverables": [
+              "Codice Next.js",
+              "Deploy Vercel",
+              "Guida all'editing del contenuto"
+            ],
+            "technologies": [
+              "Next.js",
+              "React",
+              "Tailwind CSS",
+              "Framer Motion"
+            ],
             "duration": "1-2 settimane",
-            "startingPrice": "$250"
+            "startingPrice": "$250",
+            "exclusions": "Branding, copywriting, negozio, CMS e traduzioni.",
+            "revisions": "2 revisioni",
+            "payment": "standard"
           },
           {
             "id": "dashboard",
             "title": "Dashboard di Amministrazione",
             "idealFor": "SaaS che hanno bisogno di visualizzazione dati",
-            "scope": "UI con tabelle interattive, grafici (recharts/chart.js), filtri avanzati, export CSV/Excel, dark mode",
-            "deliverables": ["App funzionale", "Componenti documentati", "Sistema di temi"],
-            "technologies": ["Next.js", "TypeScript", "Tailwind", "shadcn/ui", "TanStack Table"],
+            "scope": "Fino a 4 viste, 3 grafici, 2 tabelle con filtri e un’esportazione; collegamento a una API esistente.",
+            "deliverables": [
+              "App funzionale",
+              "Componenti documentati",
+              "Sistema di temi"
+            ],
+            "technologies": [
+              "Next.js",
+              "TypeScript",
+              "Tailwind",
+              "shadcn/ui",
+              "TanStack Table"
+            ],
             "duration": "2-4 settimane",
-            "startingPrice": "$800"
+            "startingPrice": "$800",
+            "exclusions": "Nuovo backend, pulizia dati, report personalizzati e tempo reale.",
+            "revisions": "2 revisioni",
+            "payment": "standard"
           },
           {
             "id": "realtime-features",
             "title": "Funzionalità in Tempo Reale (WebSocket)",
             "idealFor": "App che hanno bisogno di chat, collaborazione live o dashboard in tempo reale",
-            "scope": "WebSocket con Socket.io, sincronizzazione collaborativa con Yjs, gestione presenza, scalabilità con Redis",
-            "deliverables": ["Modulo real-time integrato", "Documentazione architettura", "Test di carico di base"],
-            "technologies": ["Socket.io", "Yjs", "Redis", "WebSocket"],
+            "scope": "Una funzionalità: chat semplice, notifiche o aggiornamento dashboard, integrata in un’app esistente.",
+            "deliverables": [
+              "Modulo real-time integrato",
+              "Documentazione architettura",
+              "Test di carico di base"
+            ],
+            "technologies": [
+              "Socket.io",
+              "WebSocket"
+            ],
             "duration": "2-3 settimane",
-            "startingPrice": "$700"
+            "startingPrice": "$700",
+            "exclusions": "Editing collaborativo Yjs, multimedia, modalità offline e deploy distribuito.",
+            "revisions": "2 revisioni",
+            "payment": "standard"
           },
           {
             "id": "ecommerce",
             "title": "Frontend E-commerce",
             "idealFor": "Negozi online",
-            "scope": "Catalogo con filtri, carrello persistente, checkout ottimizzato, integrazione gateway di pagamento",
-            "deliverables": ["Negozio funzionale", "Integrazione Stripe", "Pannello ordini"],
-            "technologies": ["Next.js", "Stripe SDK", "Tailwind", "Prisma"],
+            "scope": "Catalogo, carrello, checkout con un gateway, elenco ordini di base e inserimento di fino a 20 prodotti.",
+            "deliverables": [
+              "Negozio funzionale",
+              "Integrazione Stripe",
+              "Pannello ordini"
+            ],
+            "technologies": [
+              "Next.js",
+              "Stripe SDK",
+              "Tailwind",
+              "Prisma"
+            ],
             "duration": "3-4 settimane",
-            "startingPrice": "$1,000"
+            "startingPrice": "$1,000",
+            "exclusions": "Marketplace, abbonamenti, fatturazione fiscale, logistica personalizzata e integrazione ERP.",
+            "revisions": "2 revisioni",
+            "payment": "standard"
           },
           {
             "id": "erp-crm",
             "title": "Sistema di Gestione Interna (ERP/CRM)",
             "idealFor": "Aziende che digitalizzano i processi",
-            "scope": "Gestione utenti/ruoli, CRUD completo, report Excel/PDF, dashboard metriche",
-            "deliverables": ["Sistema funzionale", "Manuale utente", "Codice sorgente", "1h di formazione"],
-            "technologies": ["Next.js", "Node.js/Java", "PostgreSQL", "shadcn/ui"],
+            "scope": "Fino a 3 moduli aziendali, 3 ruoli, 2 report e un’ora di formazione.",
+            "deliverables": [
+              "Sistema funzionale",
+              "Manuale utente",
+              "Codice sorgente",
+              "1h di formazione"
+            ],
+            "technologies": [
+              "Next.js",
+              "Node.js/Java",
+              "PostgreSQL",
+              "shadcn/ui"
+            ],
             "duration": "4-6 settimane",
-            "startingPrice": "$2,400"
+            "startingPrice": "$2,400",
+            "exclusions": "Contabilità, paghe, processi fiscali, migrazioni massive e moduli aggiuntivi.",
+            "revisions": "3 revisioni",
+            "payment": "milestones"
           },
           {
             "id": "saas-multitenant",
             "title": "Piattaforma SaaS Multi-tenant",
             "idealFor": "Imprenditori che costruiscono un prodotto SaaS con più clienti",
-            "scope": "Architettura multi-tenant (schema per tenant), auth con ruoli, onboarding, dashboard admin",
-            "deliverables": ["SaaS multi-tenant funzionale", "Documentazione architettura", "Guida alla scalabilità"],
-            "technologies": ["Next.js", "PostgreSQL", "Node.js"],
+            "scope": "Un modulo aziendale, isolamento tra clienti, 3 ruoli, onboarding e amministrazione di base.",
+            "deliverables": [
+              "SaaS multi-tenant funzionale",
+              "Documentazione architettura",
+              "Guida alla scalabilità"
+            ],
+            "technologies": [
+              "Next.js",
+              "PostgreSQL",
+              "Node.js"
+            ],
             "duration": "6-8 settimane",
-            "startingPrice": "$2,800"
+            "startingPrice": "$2,800",
+            "exclusions": "Abbonamenti e fatturazione, domini per cliente, personalizzazioni per tenant e alta disponibilità.",
+            "revisions": "3 revisioni",
+            "payment": "milestones"
           },
           {
             "id": "itsm-tickets",
             "title": "Sistema di Gestione Ticket IT (ITSM)",
             "idealFor": "Aziende che hanno bisogno di un sistema di supporto IT formale con SLA ed escalation",
-            "scope": "Gestione ticket multilivello (N1/N2/N3), escalation automatica, tracking SLA, allineato a ITIL v4 / ISO/IEC 20000-1",
-            "deliverables": ["Sistema funzionale", "Manuale dei processi", "Codice sorgente", "Report SLA"],
-            "technologies": ["Java 21", "Spring Boot 3", "Next.js", "PostgreSQL"],
+            "scope": "Un flusso ticket, livelli N1/N2/N3, una politica SLA, un meccanismo di escalation e 2 report.",
+            "deliverables": [
+              "Sistema funzionale",
+              "Manuale dei processi",
+              "Codice sorgente",
+              "Report SLA"
+            ],
+            "technologies": [
+              "Java 21",
+              "Spring Boot 3",
+              "Next.js",
+              "PostgreSQL"
+            ],
             "duration": "4-5 settimane",
-            "startingPrice": "$2,000"
+            "startingPrice": "$2,000",
+            "exclusions": "Certificazione normativa, CMDB, inventario, supporto omnicanale e integrazioni esterne.",
+            "revisions": "3 revisioni",
+            "payment": "milestones"
           },
           {
             "id": "desktop-apps",
-            "title": "Applicazioni Desktop Multipiattaforma",
+            "title": "Packaging di Applicazione Desktop",
             "idealFor": "Aziende che hanno bisogno di un'app installabile con accesso a hardware o file locali",
-            "scope": "Packaging con Electron o Tauri, aggiornamenti automatici, accesso al file system, build Windows/Mac/Linux",
-            "deliverables": ["Installer per piattaforma", "Codice sorgente", "Guida agli aggiornamenti"],
-            "technologies": ["Electron", "Tauri", "React", "TypeScript"],
+            "scope": "Packaging di un’app esistente per un sistema operativo, installer e una semplice integrazione locale.",
+            "deliverables": [
+              "Installer per un sistema operativo",
+              "Codice sorgente del packaging",
+              "Guida di installazione"
+            ],
+            "technologies": [
+              "Electron",
+              "Tauri",
+              "React",
+              "TypeScript"
+            ],
             "duration": "3-4 settimane",
-            "startingPrice": "$800"
+            "startingPrice": "$800",
+            "exclusions": "Creazione dell’app completa, hardware specializzato, firma del codice, aggiornamenti automatici e più sistemi operativi.",
+            "revisions": "2 revisioni",
+            "payment": "standard"
           },
           {
             "id": "edu-simulators",
             "title": "Simulatori e Strumenti Educativi Interattivi",
             "idealFor": "Istituzioni educative o team di formazione tecnica",
-            "scope": "Canvas interattivo drag & drop, validazione automatica degli esercizi, tracciamento dei progressi",
-            "deliverables": ["Simulatore funzionale", "Dashboard di progresso", "Codice sorgente"],
-            "technologies": ["React Flow", "Zustand", "Prisma"],
+            "scope": "Uno scenario interattivo, fino a 5 tipi di elementi e 3 esercizi con validazione e progresso di base.",
+            "deliverables": [
+              "Simulatore funzionale",
+              "Dashboard di progresso",
+              "Codice sorgente"
+            ],
+            "technologies": [
+              "React Flow",
+              "Zustand",
+              "Prisma"
+            ],
             "duration": "3-4 settimane",
-            "startingPrice": "$650"
+            "startingPrice": "$650",
+            "exclusions": "Motore di simulazione generale, LMS completo, multiplayer e contenuti didattici.",
+            "revisions": "2 revisioni",
+            "payment": "standard"
           }
         ]
       },
@@ -309,11 +466,23 @@
             "id": "flutter",
             "title": "Applicazione Mobile Universale (iOS/Android)",
             "idealFor": "Aziende che hanno bisogno di iOS + Android con una sola base di codice",
-            "scope": "UI nativa, navigazione, integrazione backend, notifiche push",
-            "deliverables": ["Codice sorgente", "Build iOS/Android", "Guida alla pubblicazione"],
-            "technologies": ["Flutter", "Dart", "Firebase", "Provider/Bloc", "Kotlin Multiplatform"],
+            "scope": "Fino a 5 schermate, backend esistente, autenticazione e notifiche push di base per Android/iOS.",
+            "deliverables": [
+              "Codice sorgente",
+              "Build iOS/Android",
+              "Guida alla pubblicazione"
+            ],
+            "technologies": [
+              "Flutter",
+              "Dart",
+              "Firebase",
+              "Provider/Bloc"
+            ],
             "duration": "4-6 settimane",
-            "startingPrice": "$1,200"
+            "startingPrice": "$1,200",
+            "exclusions": "Nuovo backend, pagamenti, sincronizzazione offline, integrazioni native complesse e gestione pubblicazione.",
+            "revisions": "2 revisioni",
+            "payment": "standard"
           }
         ]
       },
@@ -324,40 +493,94 @@
         "services": [
           {
             "id": "code-review",
-            "title": "Code Review & Refactoring",
+            "title": "Diagnosi del Codice",
             "idealFor": "Codice legacy o debito tecnico",
-            "scope": "Analisi statica, refactoring per layer, miglioramento test",
-            "deliverables": ["Report di analisi", "PR con miglioramenti", "Standard di codice"],
-            "technologies": ["ESLint", "SonarQube", "Jest/Vitest"],
-            "duration": "1-2 settimane",
-            "startingPrice": "$150"
+            "scope": "Fino a 4 ore di analisi di un modulo concordato, report prioritizzato e sessione di restituzione di 30 minuti.",
+            "deliverables": [
+              "Report prioritizzato",
+              "Sessione di restituzione di 30 minuti"
+            ],
+            "technologies": [
+              "ESLint",
+              "SonarQube",
+              "Jest/Vitest"
+            ],
+            "duration": "Fino a 4 ore + restituzione di 30 minuti",
+            "startingPrice": "$150",
+            "exclusions": "Refactoring implementato, PR, audit di sicurezza completo e revisione dell’intero repository.",
+            "revisions": "1 chiarimento del report",
+            "payment": "upfront"
           },
           {
             "id": "retainer",
             "title": "Manutenzione Continua (Retainer)",
             "idealFor": "Aziende che hanno bisogno di supporto dev part-time continuativo",
-            "scope": "Correzione bug, miglioramenti performance, aggiunta funzionalità minori, manutenzione infrastruttura",
-            "deliverables": ["Report mensile", "Problemi risolti", "Garanzia di uptime"],
-            "technologies": ["TypeScript", "Java", "Next.js", "AWS"],
+            "scope": "Fino a 5 ore mensili nell’orario lavorativo concordato (UTC-4), con prima risposta entro 2 giorni lavorativi. Ore non cumulabili; extra solo con preventivo approvato.",
+            "deliverables": [
+              "Report mensile di ore e ticket",
+              "Prima risposta entro 2 giorni lavorativi"
+            ],
+            "technologies": [
+              "TypeScript",
+              "Java",
+              "Next.js",
+              "AWS"
+            ],
             "duration": "Mensile",
-            "startingPrice": "$250 / mo"
+            "startingPrice": "$250 / mo",
+            "exclusions": "Supporto 24/7, risoluzione immediata garantita, nuovi progetti e ore aggiuntive.",
+            "revisions": "Le revisioni consumano il pacchetto di 5 ore.",
+            "payment": "upfront"
           },
           {
             "id": "monorepo-architecture",
             "title": "Architettura Monorepo",
             "idealFor": "Team con più app (web, backend, mobile) che vogliono condividere codice",
-            "scope": "Setup monorepo con Turborepo/Nx, pipeline CI condivise, pacchetti di codice riutilizzabile",
-            "deliverables": ["Monorepo configurato", "Documentazione della struttura", "Pipeline CI/CD di base"],
-            "technologies": ["Turborepo", "Nx", "pnpm workspaces"],
-            "duration": "1-2 settimane",
-            "startingPrice": "$300"
+            "scope": "Fino a 6 ore per configurare 2 app compatibili, un pacchetto condiviso e una pipeline di base.",
+            "deliverables": [
+              "Monorepo configurato",
+              "Documentazione della struttura",
+              "Pipeline CI/CD di base"
+            ],
+            "technologies": [
+              "Turborepo",
+              "Nx",
+              "pnpm workspaces"
+            ],
+            "duration": "Fino a 6 ore",
+            "startingPrice": "$300",
+            "exclusions": "Migrazioni complesse, modifiche architetturali e deploy personalizzati.",
+            "revisions": "1 revisione",
+            "payment": "upfront"
           }
         ]
       }
     ],
     "whatsappServiceMessage": "Ciao Gustavo, sono interessato al servizio: {title}",
     "emailServiceSubject": "Preventivo: {title}",
-    "emailServiceBody": "Ciao Gustavo,\n\nVorrei ricevere maggiori informazioni sul tuo servizio: {title}\n\nIn attesa di una tua risposta.\n\nCordiali saluti."
+    "emailServiceBody": "Ciao Gustavo,\n\nVorrei ricevere maggiori informazioni sul tuo servizio: {title}\n\nIn attesa di una tua risposta.\n\nCordiali saluti.",
+    "terms": {
+      "title": "Condizioni del servizio",
+      "infrastructureTitle": "Infrastruttura e domini",
+      "providers": "Utilizziamo Contabo per i progetti che richiedono un VPS. Namecheap è il fornitore principale dei domini; Hostinger o Vercel sono alternative secondo disponibilità. Le app compatibili possono essere ospitate su Vercel. I servizi vengono acquistati tramite account del cliente.",
+      "externalCosts": "Hosting, VPS, domini e rinnovi, licenze, API a pagamento, commissioni e account di pubblicazione sono a carico del cliente. La configurazione iniziale è inclusa solo se prevista nel perimetro.",
+      "basePrice": "Il prezzo a partire da copre solo questo pacchetto base. Perimetro e preventivo finali vengono concordati per iscritto prima dell’inizio.",
+      "revisionsTitle": "Revisioni incluse",
+      "exclusionsTitle": "Fuori perimetro",
+      "paymentTitle": "Pagamento",
+      "paymentMethodsTitle": "Metodi di pagamento accettati",
+      "paymentMethods": "PayPal, Zinli, Binance e Airtm. I dati di pagamento, la valuta e le commissioni applicabili vengono confermati prima del pagamento.",
+      "commonTitle": "Garanzia, tempi e infrastruttura",
+      "revisionPolicy": "Una revisione è un elenco consolidato di modifiche al lavoro concordato. Nuove schermate, moduli o integrazioni vengono preventivati separatamente.",
+      "warranty": "Le consegne software includono 30 giorni per correggere difetti riproducibili rispetto al perimetro contrattuale. Nuove funzioni e cambiamenti di terzi sono esclusi. Le diagnosi includono chiarimenti sul report, non correzioni del codice.",
+      "maintenance": "La manutenzione successiva si acquista separatamente. Le revisioni del piano mensile consumano le ore incluse; disponibilità del server e supporto 24/7 non sono garantiti.",
+      "timing": "I tempi iniziano dopo la ricezione di anticipo, contenuti, accessi e requisiti. Ritardi del cliente o modifiche approvate aggiornano il calendario. La consegna viene validata rispetto al perimetro concordato.",
+      "payment": {
+        "standard": "50% di anticipo e 50% dopo la validazione della consegna.",
+        "milestones": "40% iniziale, 30% dopo la validazione della demo funzionale e 30% dopo la validazione finale.",
+        "upfront": "100% anticipato. La manutenzione si paga all’inizio di ogni periodo mensile."
+      }
+    }
   },
   "Skills": {
     "title": "Competenze",

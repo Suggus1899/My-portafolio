@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -11,6 +11,7 @@ const PROFILE_IMAGE_FALLBACK = '/profile-photo-placeholder.svg';
 
 export default function HeroSection() {
   const t = useTranslations('Hero');
+  const locale = useLocale();
   const [imageSrc, setImageSrc] = useState(PROFILE_IMAGE_PATH);
 
   return (
@@ -62,7 +63,7 @@ export default function HeroSection() {
                 <Github size={16} />
               </a>
               <a
-                href="/curriculum.pdf"
+                href={`/curriculum-${locale}.pdf`}
                 download
                 aria-label={t('downloadCvAriaLabel')}
                 className="inline-flex h-10 w-10 items-center justify-center border-2 border-zinc-900 bg-white text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
@@ -103,7 +104,7 @@ export default function HeroSection() {
                 {t('contact')}
               </a>
               <a
-                href="/curriculum.pdf"
+                href={`/curriculum-${locale}.pdf`}
                 download
                 className="inline-flex items-center justify-center border-2 border-zinc-900 bg-white px-8 py-3 text-base font-bold uppercase tracking-wider text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
               >

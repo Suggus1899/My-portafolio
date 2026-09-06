@@ -17,8 +17,10 @@ Live at [gustavocolina.dev](https://gustavocolina.dev).
 
 ## Getting started
 
+Use pnpm 11.3.0 (pinned in `package.json`) with Node.js 22.13 or newer. Vercel uses Node.js 24.
+
 ```bash
-pnpm install
+pnpm install --frozen-lockfile
 pnpm dev
 ```
 
@@ -43,3 +45,7 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Deployment
 
 Deployed on Vercel. `NEXT_PUBLIC_SITE_URL` controls canonical URLs and OG metadata.
+
+`vercel.json` uses Corepack to run the pinned pnpm version for installation and builds. Keep `pnpm-lock.yaml` committed; do not generate `package-lock.json` or use npm to install project dependencies.
+
+Run `pnpm audit`, `pnpm lint` and `pnpm build` before deploying dependency updates.

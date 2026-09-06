@@ -35,6 +35,9 @@ export type ServiceDetail = {
   technologies: string[];
   duration: string;
   startingPrice?: string;
+  exclusions: string;
+  revisions: string;
+  payment: 'standard' | 'milestones' | 'upfront';
 };
 
 export type ServiceCategory = {
