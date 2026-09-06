@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "Gustavo Colina — Sviluppatore Full-Stack",
-    "description": "Sviluppatore Full-Stack · Backend, Web e applicazioni multipiattaforma."
+    "description": "Sviluppatore Full-Stack · Laurea prevista a metà 2027."
   },
   "Navigation": {
     "curriculum": "Sintesi CV",
@@ -22,13 +22,13 @@
     "closeMenu": "Chiudi il menu",
     "scrollToTop": "Torna in cima",
     "toggleTheme": "Cambia tema",
-    "footerSubtitle": "Sviluppatore Full-Stack · Backend, Web e applicazioni multipiattaforma.",
+    "footerSubtitle": "Sviluppatore Full-Stack · Laurea prevista a metà 2027.",
     "allRightsReserved": "Tutti i diritti riservati.",
     "privacy": "Privacy"
   },
   "Hero": {
     "greeting": "Ciao! Sono Gustavo Colina (Suggus1899)",
-    "role": "Sviluppatore Full-Stack · Backend, Web e applicazioni multipiattaforma",
+    "role": "Sviluppatore Full-Stack · Laurea prevista a metà 2027",
     "whatIDo": "Cosa faccio?",
     "availability": "Disponibile per nuove opportunita",
     "contact": "Contattami",
@@ -42,7 +42,7 @@
   "Curriculum": {
     "kicker": "Sintesi CV",
     "title": "Sintesi professionale orientata a prodotto e backend",
-    "summary": "Ingegnere Informatico laureato, specializzato nello sviluppo Full-Stack con focus sull'automazione dei processi e la digitalizzazione dei flussi documentali. Con esperienza in ambienti universitari, industriali e in azienda tech da remoto, ho costruito sistemi web e desktop che riducono i tempi operativi e il margine di errore umano. Competente in progettazione e modellazione di database, architetture pulite (Clean Architecture, SOLID) e consegna di software orientata a risultati misurabili. Gestione fluida del ciclo completo di sviluppo: dalla raccolta dei requisiti al deploy in produzione.",
+    "summary": "Studente di Ingegneria Informatica, con laurea prevista a metà 2027, specializzato nello sviluppo Full-Stack con focus sull'automazione dei processi e la digitalizzazione dei flussi documentali. Con esperienza in ambienti universitari, industriali e in azienda tech da remoto, ho costruito sistemi web e desktop che riducono i tempi operativi e il margine di errore umano. Competente in progettazione e modellazione di database, architetture pulite (Clean Architecture, SOLID) e consegna di software orientata a risultati misurabili. Gestione fluida del ciclo completo di sviluppo: dalla raccolta dei requisiti al deploy in produzione.",
     "highlight1": "Sviluppo end-to-end: dalla raccolta dei requisiti al deploy in produzione con architetture pulite.",
     "highlight2": "Specializzazione in database cifrati (SQLCipher/AES-256) e sistemi multi-tenant scalabili.",
     "highlight3": "Automazione dei processi operativi con riduzione da 10 minuti a meno di 1 minuto.",
@@ -599,7 +599,7 @@
     "university": "Studi Universitari",
     "certifications": "Corsi e Certificazioni",
     "universityTitle": "Ingegneria Informatica",
-    "universitySubtitle": "Laureato · Specializzazione in Ingegneria dei Sistemi",
+    "universitySubtitle": "Laurea prevista a metà 2027 · Specializzazione in Ingegneria dei Sistemi",
     "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermedio)",
     "certDataScienceEntity": "DataCamp",

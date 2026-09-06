@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "Gustavo Colina — Full-Stack Developer",
-    "description": "Full-Stack Developer · Backend, Web y Aplicaciones Multiplataforma."
+    "description": "Full-Stack Developer · Graduación prevista a mediados de 2027."
   },
   "Navigation": {
     "curriculum": "Síntesis CV",
@@ -22,13 +22,13 @@
     "closeMenu": "Cerrar menú",
     "scrollToTop": "Volver al inicio",
     "toggleTheme": "Cambiar tema",
-    "footerSubtitle": "Full-Stack Developer · Backend, Web y Aplicaciones Multiplataforma.",
+    "footerSubtitle": "Full-Stack Developer · Graduación prevista a mediados de 2027.",
     "allRightsReserved": "Todos los derechos reservados.",
     "privacy": "Privacidad"
   },
   "Hero": {
     "greeting": "¡Hola! Soy Gustavo Colina (Suggus1899)",
-    "role": "Full-Stack Developer · Backend, Web y Aplicaciones Multiplataforma",
+    "role": "Full-Stack Developer · Graduación prevista a mediados de 2027",
     "whatIDo": "¿Qué hago?",
     "availability": "Disponible para nuevas oportunidades",
     "contact": "Contáctame",
@@ -599,7 +599,7 @@
     "university": "Estudios Universitarios",
     "certifications": "Cursos y Certificaciones",
     "universityTitle": "Ingeniería en Informática",
-    "universitySubtitle": "Especialización en Ingeniería de Sistemas",
+    "universitySubtitle": "Graduación prevista: mediados de 2027 · Especialización en Ingeniería de Sistemas",
     "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermedio)",
     "certDataScienceEntity": "DataCamp",

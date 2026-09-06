@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "Gustavo Colina — Développeur Full-Stack",
-    "description": "Développeur Full-Stack · Backend, Web et applications multiplateformes."
+    "description": "Développeur Full-Stack · Diplôme prévu mi-2027."
   },
   "Navigation": {
     "curriculum": "Synthèse CV",
@@ -22,13 +22,13 @@
     "closeMenu": "Fermer le menu",
     "scrollToTop": "Retour en haut",
     "toggleTheme": "Changer le thème",
-    "footerSubtitle": "Développeur Full-Stack · Backend, Web et applications multiplateformes.",
+    "footerSubtitle": "Développeur Full-Stack · Diplôme prévu mi-2027.",
     "allRightsReserved": "Tous droits réservés.",
     "privacy": "Confidentialité"
   },
   "Hero": {
     "greeting": "Salut ! Je suis Gustavo Colina (Suggus1899)",
-    "role": "Développeur Full-Stack · Backend, Web et applications multiplateformes",
+    "role": "Développeur Full-Stack · Diplôme prévu mi-2027",
     "whatIDo": "Que fais-je ?",
     "availability": "Disponible pour de nouvelles opportunités",
     "contact": "Me contacter",
@@ -42,7 +42,7 @@
   "Curriculum": {
     "kicker": "Synthèse CV",
     "title": "Résumé professionnel orienté produit et backend",
-    "summary": "Ingénieur en Informatique diplômé, spécialisé dans le développement Full-Stack avec un focus sur l'automatisation des processus et la digitalisation des flux documentaires. Fort d'une expérience en milieu universitaire, industriel et en entreprise tech à distance, j'ai construit des systèmes web et desktop qui réduisent les temps opérationnels et la marge d'erreur humaine. Compétent en conception et modélisation de bases de données, architectures propres (Clean Architecture, SOLID) et livraison de logiciels orientée vers des résultats mesurables. Maîtrise fluide du cycle complet de développement : du recueil des besoins au déploiement en production.",
+    "summary": "Étudiant en ingénierie informatique, avec un diplôme prévu mi-2027, spécialisé dans le développement Full-Stack avec un focus sur l'automatisation des processus et la digitalisation des flux documentaires. Fort d'une expérience en milieu universitaire, industriel et en entreprise tech à distance, j'ai construit des systèmes web et desktop qui réduisent les temps opérationnels et la marge d'erreur humaine. Compétent en conception et modélisation de bases de données, architectures propres (Clean Architecture, SOLID) et livraison de logiciels orientée vers des résultats mesurables. Maîtrise fluide du cycle complet de développement : du recueil des besoins au déploiement en production.",
     "highlight1": "Développement end-to-end : du recueil des besoins au déploiement en production avec architectures propres.",
     "highlight2": "Spécialisation dans les bases de données chiffrées (SQLCipher/AES-256) et les systèmes multi-tenant évolutifs.",
     "highlight3": "Automatisation des processus opérationnels avec réduction de 10 minutes à moins d'1 minute.",
@@ -599,7 +599,7 @@
     "university": "Études Universitaires",
     "certifications": "Cours et Certifications",
     "universityTitle": "Ingénierie Informatique",
-    "universitySubtitle": "Diplômé · Spécialisation en Ingénierie des Systèmes",
+    "universitySubtitle": "Diplôme prévu mi-2027 · Spécialisation en Ingénierie des Systèmes",
     "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermédiaire)",
     "certDataScienceEntity": "DataCamp",

@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "Gustavo Colina — Full-Stack Developer",
-    "description": "Full-Stack Developer · Backend, Web & Cross-Platform Applications."
+    "description": "Full-Stack Developer · Expected graduation: mid-2027."
   },
   "Navigation": {
     "curriculum": "CV Summary",
@@ -22,13 +22,13 @@
     "closeMenu": "Close menu",
     "scrollToTop": "Scroll to top",
     "toggleTheme": "Toggle theme",
-    "footerSubtitle": "Full-Stack Developer · Backend, Web & Cross-Platform Applications.",
+    "footerSubtitle": "Full-Stack Developer · Expected graduation: mid-2027.",
     "allRightsReserved": "All rights reserved.",
     "privacy": "Privacy"
   },
   "Hero": {
     "greeting": "Hi! I'm Gustavo Colina (Suggus1899)",
-    "role": "Full-Stack Developer · Backend, Web & Cross-Platform Applications",
+    "role": "Full-Stack Developer · Expected graduation: mid-2027",
     "whatIDo": "What do I do?",
     "availability": "Available for new opportunities",
     "contact": "Contact me",
@@ -599,7 +599,7 @@
     "university": "University Studies",
     "certifications": "Courses & Certifications",
     "universityTitle": "Computer Engineering",
-    "universitySubtitle": "Systems Engineering Specialization",
+    "universitySubtitle": "Expected graduation: mid-2027 · Systems Engineering Specialization",
     "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermediate)",
     "certDataScienceEntity": "DataCamp",
