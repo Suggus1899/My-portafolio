@@ -29,6 +29,48 @@
     color: var(--foreground);
     @apply transition-colors duration-300;
   }
+
+  button:not(:disabled),
+  a.inline-flex {
+    transition-property: transform, scale;
+    transition-duration: 160ms;
+    transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+  }
+
+  @media (hover: hover) {
+    button:not(:disabled):hover,
+    a.inline-flex:hover {
+      transform: translateY(-1px);
+    }
+  }
+
+  button:not(:disabled):active,
+  a.inline-flex:active {
+    scale: 0.97;
+  }
+
+  button:focus-visible,
+  a.inline-flex:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    button:not(:disabled),
+    a.inline-flex {
+      transition-duration: 0.01ms;
+    }
+
+    button:not(:disabled):hover,
+    a.inline-flex:hover {
+      transform: none;
+    }
+
+    button:not(:disabled):active,
+    a.inline-flex:active {
+      scale: 1;
+    }
+  }
 }
 
 .page-gradient {
