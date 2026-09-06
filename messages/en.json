@@ -1,7 +1,7 @@
 {
   "Index": {
-    "title": "Gustavo Colina — Software Engineer",
-    "description": "Full-Stack Software Engineer. Specialized in Backend, Cloud and clean architectures."
+    "title": "Gustavo Colina — Full-Stack Developer",
+    "description": "Full-Stack Developer · Backend, Web & Cross-Platform Applications."
   },
   "Navigation": {
     "curriculum": "CV Summary",
@@ -22,13 +22,13 @@
     "closeMenu": "Close menu",
     "scrollToTop": "Scroll to top",
     "toggleTheme": "Toggle theme",
-    "footerSubtitle": "Software Engineer · Full-Stack & Backend.",
+    "footerSubtitle": "Full-Stack Developer · Backend, Web & Cross-Platform Applications.",
     "allRightsReserved": "All rights reserved.",
     "privacy": "Privacy"
   },
   "Hero": {
     "greeting": "Hi! I'm Gustavo Colina (Suggus1899)",
-    "role": "Full-Stack Developer · Available Remotely",
+    "role": "Full-Stack Developer · Backend, Web & Cross-Platform Applications",
     "whatIDo": "What do I do?",
     "availability": "Available for new opportunities",
     "contact": "Contact me",

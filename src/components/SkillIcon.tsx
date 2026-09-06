@@ -2,17 +2,18 @@
 
 import { 
   SiHtml5, SiReact, SiNextdotjs, SiVuedotjs, SiAngular, SiTailwindcss, 
-  SiJavascript, SiTypescript, SiFramer, SiNodedotjs, SiExpress, SiMongodb, 
-  SiPostgresql, SiVercel, SiAnthropic, SiGithubcopilot, SiCss, SiMysql,
-  SiSpringboot, SiHibernate, SiApachemaven, SiOpenjdk,
-  SiNestjs, SiPrisma, SiSequelize, SiRedis, SiSocketdotio, SiNginx,
+  SiJavascript, SiTypescript, SiFramer, SiNodedotjs, SiMongodb,
+  SiPostgresql, SiVercel, SiAnthropic, SiCss,
+  SiSpringboot, SiHibernate, SiOpenjdk,
+  SiNestjs, SiPrisma, SiNginx,
   SiDocker, SiGithubactions, SiVite, SiLeaflet,
   SiRust, SiFlutter, SiDart,
   SiKotlin, SiElectron, SiTensorflow,
   SiGo, SiPhp, SiPython
 } from 'react-icons/si';
 import { BsStars, BsRobot, BsCloud } from 'react-icons/bs';
-import { Languages, Database, GitBranch, Layers, Cpu, Package, Server } from 'lucide-react';
+import { Code2, Languages, Database, GitBranch, Layers, Cpu, Package, Server } from 'lucide-react';
+import { AiFillOpenAI } from 'react-icons/ai';
 import type { ReactNode } from 'react';
 
 export function getSkillIcon(skillName: string): ReactNode {
@@ -49,8 +50,6 @@ export function getSkillIcon(skillName: string): ReactNode {
       return <SiLeaflet className="text-[#199900]" />;
     case 'Node.js':
       return <SiNodedotjs className="text-[#339933]" />;
-    case 'Express':
-      return <SiExpress className="dark:invert" />;
     case 'NestJS':
       return <SiNestjs className="text-[#E0234E]" />;
     case 'Java':
@@ -67,24 +66,12 @@ export function getSkillIcon(skillName: string): ReactNode {
       return <SiSpringboot className="text-[#4f8f2f]" />;
     case 'Hibernate / JPA':
       return <SiHibernate className="text-[#59666C]" />;
-    case 'Maven':
-      return <SiApachemaven className="text-[#C71A36]" />;
     case 'Prisma':
       return <SiPrisma className="dark:invert" />;
-    case 'Sequelize':
-      return <SiSequelize className="text-[#52B0E7]" />;
     case 'MongoDB':
       return <SiMongodb className="text-[#47A248]" />;
     case 'PostgreSQL':
       return <SiPostgresql className="text-[#4169E1]" />;
-    case 'MySQL':
-      return <SiMysql className="text-[#4479A1]" />;
-    case 'SQLite':
-      return <Database size={16} className="text-zinc-600 dark:text-zinc-300" />;
-    case 'Redis / BullMQ':
-      return <SiRedis className="text-[#DC382D]" />;
-    case 'Socket.io':
-      return <SiSocketdotio className="dark:invert" />;
     case 'Docker':
       return <SiDocker className="text-[#2496ED]" />;
     case 'GitHub Actions':
@@ -117,14 +104,14 @@ export function getSkillIcon(skillName: string): ReactNode {
       return <BsStars className="text-blue-500" />;
     case 'Claude Code':
       return <SiAnthropic className="text-[#D97757]" />;
-    case 'Copilot Pro':
-      return <SiGithubcopilot className="text-black dark:text-white" />;
+    case 'ChatGPT':
+      return <AiFillOpenAI className="text-zinc-900 dark:text-zinc-100" />;
+    case 'Codex':
+      return <Code2 size={16} className="text-zinc-900 dark:text-zinc-100" />;
     case 'Windsurf':
       return <BsRobot className="text-teal-500" />;
     case 'Gemini CLI':
       return <BsStars className="text-blue-400" />;
-    case 'Copilot CLI':
-      return <SiGithubcopilot className="text-black dark:text-gray-300" />;
     case 'langSpanish':
     case 'langEnglish':
     case 'langFrench':

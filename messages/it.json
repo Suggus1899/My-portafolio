@@ -1,7 +1,7 @@
 {
   "Index": {
-    "title": "Gustavo Colina — Ingegnere del Software",
-    "description": "Ingegnere Software Full-Stack. Specializzato in backend, cloud e architetture pulite."
+    "title": "Gustavo Colina — Sviluppatore Full-Stack",
+    "description": "Sviluppatore Full-Stack · Backend, Web e applicazioni multipiattaforma."
   },
   "Navigation": {
     "curriculum": "Sintesi CV",
@@ -22,13 +22,13 @@
     "closeMenu": "Chiudi il menu",
     "scrollToTop": "Torna in cima",
     "toggleTheme": "Cambia tema",
-    "footerSubtitle": "Ingegnere Software · Full-Stack & Backend.",
+    "footerSubtitle": "Sviluppatore Full-Stack · Backend, Web e applicazioni multipiattaforma.",
     "allRightsReserved": "Tutti i diritti riservati.",
     "privacy": "Privacy"
   },
   "Hero": {
     "greeting": "Ciao! Sono Gustavo Colina (Suggus1899)",
-    "role": "Sviluppatore Full-Stack · Laureato · Disponibile da remoto",
+    "role": "Sviluppatore Full-Stack · Backend, Web e applicazioni multipiattaforma",
     "whatIDo": "Cosa faccio?",
     "availability": "Disponibile per nuove opportunita",
     "contact": "Contattami",
