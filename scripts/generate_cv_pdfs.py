@@ -1,4 +1,5 @@
 from pathlib import Path
+from io import BytesIO
 
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_LEFT
@@ -13,6 +14,8 @@ from reportlab.platypus import (
     Table,
     TableStyle,
 )
+from reportlab.pdfgen import canvas
+from pypdf import PdfReader, PdfWriter
 
 
 OUTPUT_DIR = Path(__file__).resolve().parents[1] / "public"
@@ -32,7 +35,7 @@ CVS = {
         "skills_title": "Technical Skills",
         "skills": [("Programming Languages", "JavaScript, TypeScript, Go, Python, Rust, Java, Dart, C++"), ("Frontend", "React, Next.js, Vue.js, Angular, Tailwind CSS, Vite, Framer Motion, shadcn/ui, React Flow, Zustand, Leaflet"), ("Backend", "Node.js, Express, NestJS, Spring Boot, Spring Security, Hibernate/JPA, Actix-web"), ("ORM & Databases", "Prisma, Sequelize, MongoDB, PostgreSQL, MySQL, SQLite, Redis / BullMQ"), ("DevOps & Cloud", "Docker, GitHub Actions, Nginx, MinIO, AWS, Vercel"), ("Systems & Mobile", "Flutter / Dart, Kotlin Multiplatform, TensorFlow (face-api.js), Socket.io"), ("Tools", "Git, GitHub, Swagger / OpenAPI, Postman, ESLint, Jest")],
         "education_title": "Education",
-        "education": "Informatics Engineering - Systems Engineering Specialization\nUniversidad Nacional Experimental Romulo Gallegos (UNERG) - Aragua, Venezuela",
+        "education": "Informatics Engineering - Systems Engineering Specialization\nExpected graduation: mid-2027\nUniversidad Nacional Experimental Romulo Gallegos (UNERG) - Aragua, Venezuela",
         "certifications_title": "Certifications",
         "certifications": "Data Science, Prompt Engineering, SQL (Introduction & Intermediate) - DataCamp<br/>Java Fundamentals, Java OOP, Spring Boot - TodoCode",
         "languages_title": "Languages",
@@ -53,7 +56,7 @@ CVS = {
         "skills_title": "Competences Techniques",
         "skills": [("Langages", "JavaScript, TypeScript, Go, Python, Rust, Java, Dart, C++"), ("Frontend", "React, Next.js, Vue.js, Angular, Tailwind CSS, Vite, Framer Motion, shadcn/ui, React Flow, Zustand, Leaflet"), ("Backend", "Node.js, Express, NestJS, Spring Boot, Spring Security, Hibernate/JPA, Actix-web"), ("ORM et Bases de donnees", "Prisma, Sequelize, MongoDB, PostgreSQL, MySQL, SQLite, Redis / BullMQ"), ("DevOps et Cloud", "Docker, GitHub Actions, Nginx, MinIO, AWS, Vercel"), ("Systemes et Mobile", "Flutter / Dart, Kotlin Multiplatform, TensorFlow (face-api.js), Socket.io"), ("Outils", "Git, GitHub, Swagger / OpenAPI, Postman, ESLint, Jest")],
         "education_title": "Formation",
-        "education": "Ingenierie Informatique - Specialisation en Ingenierie des Systemes\nUniversidad Nacional Experimental Romulo Gallegos (UNERG) - Aragua, Venezuela",
+        "education": "Ingenierie Informatique - Specialisation en Ingenierie des Systemes\nDiplome prevu mi-2027\nUniversidad Nacional Experimental Romulo Gallegos (UNERG) - Aragua, Venezuela",
         "certifications_title": "Certifications",
         "certifications": "Data Science, Prompt Engineering, SQL (Introduction et Intermediaire) - DataCamp<br/>Fondamentaux Java, Java OOP, Spring Boot - TodoCode",
         "languages_title": "Langues",
@@ -74,7 +77,7 @@ CVS = {
         "skills_title": "Competenze Tecniche",
         "skills": [("Linguaggi", "JavaScript, TypeScript, Go, Python, Rust, Java, Dart, C++"), ("Frontend", "React, Next.js, Vue.js, Angular, Tailwind CSS, Vite, Framer Motion, shadcn/ui, React Flow, Zustand, Leaflet"), ("Backend", "Node.js, Express, NestJS, Spring Boot, Spring Security, Hibernate/JPA, Actix-web"), ("ORM e Database", "Prisma, Sequelize, MongoDB, PostgreSQL, MySQL, SQLite, Redis / BullMQ"), ("DevOps e Cloud", "Docker, GitHub Actions, Nginx, MinIO, AWS, Vercel"), ("Sistemi e Mobile", "Flutter / Dart, Kotlin Multiplatform, TensorFlow (face-api.js), Socket.io"), ("Strumenti", "Git, GitHub, Swagger / OpenAPI, Postman, ESLint, Jest")],
         "education_title": "Formazione",
-        "education": "Ingegneria Informatica - Specializzazione in Ingegneria dei Sistemi\nUniversidad Nacional Experimental Romulo Gallegos (UNERG) - Aragua, Venezuela",
+        "education": "Ingegneria Informatica - Specializzazione in Ingegneria dei Sistemi\nLaurea prevista a meta 2027\nUniversidad Nacional Experimental Romulo Gallegos (UNERG) - Aragua, Venezuela",
         "certifications_title": "Certificazioni",
         "certifications": "Data Science, Prompt Engineering, SQL (Introduzione e Intermedio) - DataCamp<br/>Fondamenti di Java, Java OOP, Spring Boot - TodoCode",
         "languages_title": "Lingue",
@@ -142,7 +145,34 @@ def build_cv(language, cv):
     document.build(story)
 
 
+def annotate_spanish_cv():
+    output = OUTPUT_DIR / "curriculum-es.pdf"
+    reader = PdfReader(str(output))
+    if "Graduación prevista: mediados de 2027" in "\n".join(page.extract_text() or "" for page in reader.pages):
+        return
+
+    overlay_buffer = BytesIO()
+    overlay = canvas.Canvas(overlay_buffer, pagesize=letter)
+    overlay.setFont("Helvetica", 7.5)
+    overlay.setFillColor(colors.HexColor("#374151"))
+    overlay.drawRightString(letter[0] - 0.36 * inch, letter[1] - 696, "Graduación prevista: mediados de 2027")
+    overlay.save()
+
+    overlay_buffer.seek(0)
+    watermark = PdfReader(overlay_buffer).pages[0]
+    reader.pages[0].merge_page(watermark)
+
+    writer = PdfWriter()
+    for page in reader.pages:
+        writer.add_page(page)
+
+    with output.open("wb") as file:
+        writer.write(file)
+
+
 if __name__ == "__main__":
     for language, cv in CVS.items():
         build_cv(language, cv)
         print(f"Generated curriculum-{language}.pdf")
+    annotate_spanish_cv()
+    print("Updated curriculum-es.pdf")
