@@ -9,10 +9,10 @@ import {
   SiDocker, SiGithubactions, SiVite, SiLeaflet,
   SiRust, SiFlutter, SiDart,
   SiKotlin, SiElectron, SiTensorflow,
-  SiGo, SiPhp, SiPython
+  SiGo, SiPhp, SiPython, SiVitest, SiJest, SiPostman
 } from 'react-icons/si';
 import { BsStars, BsRobot, BsCloud } from 'react-icons/bs';
-import { Code2, Languages, Database, GitBranch, Layers, Cpu, Package, Server } from 'lucide-react';
+import { Code2, Languages, Database, GitBranch, Layers, Cpu, Package, Server, ListChecks, TestTube2, Workflow, Repeat2 } from 'lucide-react';
 import { AiFillOpenAI } from 'react-icons/ai';
 import type { ReactNode } from 'react';
 
@@ -112,6 +112,24 @@ export function getSkillIcon(skillName: string): ReactNode {
       return <BsRobot className="text-teal-500" />;
     case 'Gemini CLI':
       return <BsStars className="text-blue-400" />;
+    case 'Test Case Design':
+      return <ListChecks size={16} className="text-violet-500" />;
+    case 'Functional Testing':
+      return <TestTube2 size={16} className="text-emerald-500" />;
+    case 'E2E Testing':
+      return <Workflow size={16} className="text-blue-500" />;
+    case 'Regression Testing':
+      return <Repeat2 size={16} className="text-amber-500" />;
+    case 'Playwright':
+      return <TestTube2 size={16} className="text-orange-500" />;
+    case 'Vitest':
+      return <SiVitest className="text-[#FCC72B]" />;
+    case 'Jest':
+      return <SiJest className="text-[#C21325]" />;
+    case 'API Testing':
+      return <Workflow size={16} className="text-cyan-500" />;
+    case 'Postman':
+      return <SiPostman className="text-[#FF6C37]" />;
     case 'langSpanish':
     case 'langEnglish':
     case 'langFrench':

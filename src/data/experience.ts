@@ -9,6 +9,14 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
+    roleKey: 'exp3Role',
+    companyKey: 'exp3Company',
+    periodKey: 'exp3Period',
+    descriptionKey: 'exp3Description',
+    technologiesKey: 'exp3Technologies',
+    achievementsKeys: ['exp3Achievement1', 'exp3Achievement2', 'exp3Achievement3'],
+  },
+  {
     roleKey: 'exp1Role',
     companyKey: 'exp1Company',
     periodKey: 'exp1Period',

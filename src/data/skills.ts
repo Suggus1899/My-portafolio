@@ -76,6 +76,20 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
+    titleKey: 'catQA',
+    skills: [
+      { name: 'Test Case Design' },
+      { name: 'Functional Testing' },
+      { name: 'API Testing' },
+      { name: 'E2E Testing' },
+      { name: 'Regression Testing' },
+      { name: 'Playwright' },
+      { name: 'Vitest' },
+      { name: 'Jest' },
+      { name: 'Postman' },
+    ],
+  },
+  {
     titleKey: 'catLanguages',
     skills: [
       { name: 'langSpanish' },
