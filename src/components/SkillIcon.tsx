@@ -26,6 +26,8 @@ export function getSkillIcon(skillName: string): ReactNode {
       return <SiTypescript className="text-[#3178C6]" />;
     case 'React':
       return <SiReact className="text-[#61DAFB]" />;
+    case 'Astro':
+      return <Code2 size={16} className="text-orange-500" />;
     case 'Next.js':
       return <SiNextdotjs className="dark:invert" />;
     case 'Vue.js':
@@ -50,6 +52,8 @@ export function getSkillIcon(skillName: string): ReactNode {
       return <SiLeaflet className="text-[#199900]" />;
     case 'Node.js':
       return <SiNodedotjs className="text-[#339933]" />;
+    case 'Express':
+      return <SiNodedotjs className="text-[#339933]" />;
     case 'NestJS':
       return <SiNestjs className="text-[#E0234E]" />;
     case 'Java':
@@ -72,6 +76,8 @@ export function getSkillIcon(skillName: string): ReactNode {
       return <SiMongodb className="text-[#47A248]" />;
     case 'PostgreSQL':
       return <SiPostgresql className="text-[#4169E1]" />;
+    case 'SQLite':
+      return <Database size={16} className="text-[#4169E1]" />;
     case 'Docker':
       return <SiDocker className="text-[#2496ED]" />;
     case 'GitHub Actions':
@@ -92,6 +98,8 @@ export function getSkillIcon(skillName: string): ReactNode {
       return <Cpu size={16} className="text-[#00599C]" />;
     case 'Flutter':
       return <SiFlutter className="text-[#02569B]" />;
+    case 'Chrome Extensions':
+      return <Workflow size={16} className="text-blue-500" />;
     case 'Dart':
       return <SiDart className="text-[#0175C2]" />;
     case 'Kotlin':

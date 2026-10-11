@@ -13,28 +13,20 @@ const stackItems = [
     detailKey: 'item2'
   },
   {
-    name: 'PostgreSQL + MongoDB',
+    name: 'Go + PostgreSQL',
     detailKey: 'item3'
   },
   {
-    name: 'AWS + Vercel',
+    name: 'Java + Spring Boot',
     detailKey: 'item4'
   },
   {
-    name: 'Java + Spring Boot',
+    name: 'Flutter + SQLite',
     detailKey: 'item5'
   },
   {
-    name: 'Spring Security + Hibernate/JPA',
+    name: 'Python + SciPy',
     detailKey: 'item6'
-  },
-  {
-    name: 'Rust + Actix-web',
-    detailKey: 'item7'
-  },
-  {
-    name: 'Flutter + Dart',
-    detailKey: 'item8'
   }
 ] as const;
 

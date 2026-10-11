@@ -1,8 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 import { blogPosts } from '@/data/blogPosts';
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gustavocolina.dev';
+import { SITE_URL } from '@/config/constants';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [];
@@ -11,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const locale of routing.locales) {
     // Página principal - máxima prioridad
     urls.push({
-      url: `${siteUrl}/${locale}`,
+      url: `${SITE_URL}/${locale}`,
       lastModified,
       changeFrequency: 'weekly',
       priority: 1
@@ -20,31 +19,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Páginas de sección principales
     urls.push(
       {
-        url: `${siteUrl}/${locale}/now`,
+        url: `${SITE_URL}/${locale}/now`,
         lastModified,
         changeFrequency: 'weekly',
         priority: 0.8
       },
       {
-        url: `${siteUrl}/${locale}/blog`,
+        url: `${SITE_URL}/${locale}/blog`,
         lastModified,
         changeFrequency: 'weekly',
         priority: 0.9
       },
       {
-        url: `${siteUrl}/${locale}/projects`,
+        url: `${SITE_URL}/${locale}/projects`,
         lastModified,
         changeFrequency: 'weekly',
         priority: 0.9
       },
       {
-        url: `${siteUrl}/${locale}/services`,
+        url: `${SITE_URL}/${locale}/services`,
         lastModified,
         changeFrequency: 'monthly',
         priority: 0.7
       },
       {
-        url: `${siteUrl}/${locale}/privacy`,
+        url: `${SITE_URL}/${locale}/privacy`,
         lastModified,
         changeFrequency: 'yearly',
         priority: 0.3
@@ -54,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Posts del blog
     for (const post of blogPosts) {
       urls.push({
-        url: `${siteUrl}/${locale}/blog/${post.slug}`,
+        url: `${SITE_URL}/${locale}/blog/${post.slug}`,
         lastModified: new Date(post.date),
         changeFrequency: 'monthly',
         priority: 0.7

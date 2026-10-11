@@ -26,7 +26,7 @@ export default function Footer() {
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/Suggus1899/Suggus1899',
+      url: 'https://github.com/Suggus1899',
       icon: <Github size={20} />
     }
   ];

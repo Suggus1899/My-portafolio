@@ -1,178 +1,179 @@
+import json
+import shutil
+from html import escape
 from pathlib import Path
-from io import BytesIO
 
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_LEFT
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch
-from reportlab.platypus import (
-    PageBreak,
-    Paragraph,
-    SimpleDocTemplate,
-    Spacer,
-    Table,
-    TableStyle,
+from reportlab.platypus import PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+from pypdf import PdfReader
+
+
+ROOT = Path(__file__).resolve().parents[1]
+OUTPUT_DIR = ROOT / "public"
+LOCALES = ("es", "en", "fr", "it")
+FEATURED_PROJECTS = (
+    "visitors",
+    "trickreport",
+    "chiguire",
+    "souvenirs",
+    "page-to-pdf",
+    "maintenance-tracker",
 )
-from reportlab.pdfgen import canvas
-from pypdf import PdfReader, PdfWriter
+CONTACT = "Aragua, Venezuela | +58-424-3737586 | gustavojose0819@gmail.com | github.com/Suggus1899"
 
-
-OUTPUT_DIR = Path(__file__).resolve().parents[1] / "public"
-PAGE_WIDTH = letter[0] - 0.72 * inch
-CONTACT = "Aragua, Cagua - Venezuela | +58-424-3737586 | gustavojose0819@gmail.com | github.com/Suggus1899"
-
-
-CVS = {
-    "en": {
-        "profile_title": "Professional Profile",
-        "profile": "Informatics Engineering student specialized in Full-Stack development, focused on process automation and document workflow digitization. I have built web and desktop systems for industrial and remote environments that reduce operating time and the margin for human error. Strong in database design and modeling, clean architectures (Clean Architecture, SOLID), and results-oriented software delivery, with hands-on experience across the complete development cycle: from requirements gathering to production deployment.",
-        "experience_title": "Professional Experience",
-        "experience": [
-            ("Full-Stack Developer - Remote", "KeoIT - Peru | March 2026 - July 2026", ["Developed a cross-platform Flutter/Dart client for Android, iOS, and desktop.", "Implemented Clean Architecture with Provider for session management and role-based access.", "Integrated interactive Rive vector animations and Glassmorphism design.", "Developed the system web layer with Next.js as part of the full-stack solution.", "Managed reactive state through a decoupled architecture designed for scalability."]),
-            ("Full-Stack Developer (Professional Internship)", "Industrias de Alimentos El Trebol | February 2026 - August 2026", ["LogMaster - Access Control and Visitor Management System.", "Gathered requirements and analyzed operations to understand business logic.", "Designed a PostgreSQL database with AES-256-GCM encryption for sensitive PII.", "Designed and developed a Turborepo monorepo: Express/TypeScript backend with Sequelize and multiple Next.js apps for administration, auditing, and reception kiosk.", "Automated management processes with complete digital visitor and access records.", "Integrated PDF and Excel reporting for operational evidence and audits.", "Reduced process execution time from up to 10 minutes to under 1 minute.", "Implemented differentiated Administrator, Guard, and Auditor roles."]),
-        ],
-        "skills_title": "Technical Skills",
-        "skills": [("Programming Languages", "JavaScript, TypeScript, Go, Python, Rust, Java, Dart, C++"), ("Frontend", "React, Next.js, Vue.js, Angular, Tailwind CSS, Vite, Framer Motion, shadcn/ui, React Flow, Zustand, Leaflet"), ("Backend", "Node.js, Express, NestJS, Spring Boot, Spring Security, Hibernate/JPA, Actix-web"), ("ORM & Databases", "Prisma, Sequelize, MongoDB, PostgreSQL, MySQL, SQLite, Redis / BullMQ"), ("DevOps & Cloud", "Docker, GitHub Actions, Nginx, MinIO, AWS, Vercel"), ("Systems & Mobile", "Flutter / Dart, Kotlin Multiplatform, TensorFlow (face-api.js), Socket.io"), ("Tools", "Git, GitHub, Swagger / OpenAPI, Postman, ESLint, Jest")],
-        "education_title": "Education",
-        "education": "Informatics Engineering - Systems Engineering Specialization\nExpected graduation: mid-2027\nUniversidad Nacional Experimental Romulo Gallegos (UNERG) - Aragua, Venezuela",
-        "certifications_title": "Certifications",
-        "certifications": "Data Science, Prompt Engineering, SQL (Introduction & Intermediate) - DataCamp<br/>Java Fundamentals, Java OOP, Spring Boot - TodoCode",
-        "languages_title": "Languages",
-        "language_headers": ["Language", "Level"],
-        "languages": [("Spanish", "Native"), ("English", "Upper-intermediate"), ("French", "Intermediate"), ("Italian", "Intermediate")],
-        "projects_title": "Selected Projects",
-        "project_headers": ["Project", "Key technologies", "Description"],
-        "projects": [("Chiguire", "Go (chi), Next.js, Flutter, PostgreSQL", "Offline-first multi-tenant ERP with PowerSync synchronization"), ("E-commerce Platform", "Go (chi, sqlc), Next.js, PostgreSQL", "Store and admin panel; Go monolith replacing 5 Spring Boot microservices"), ("Habitas", "Express, Sequelize, React/Vite, PostgreSQL", "Residential platform with biometric KYC and P2P transactions"), ("Hermit", "Rust, FUSE, cgroups/namespaces", "Linux container runtime (educational systems project)"), ("Meden", "Go (Gin), Flutter (GetX), PostgreSQL", "Fiscal, commercial, and operations management for Mexico with SAT integration"), ("Myvibesfit", "Go (chi), Flutter (Riverpod), PostgreSQL", "Multi-tenant gym training app with progression engine and gamification"), ("Ohana", "Express, Sequelize, React/Vite, Flutter", "Rental platform with biometric KYC, live chat, and mobile app"), ("Souvenirs", "NestJS, Prisma, Next.js, Expo", "Multi-tenant SaaS for photographer bookings, invoices, and payments"), ("TrickReport", "Go (chi), Astro 5, PostgreSQL, WebSockets", "IT ticketing system aligned with ITIL v4 and ISO/IEC 20000-1"), ("LogMaster", "Express, Sequelize, Next.js, Turborepo", "Encrypted (AES-256-GCM) access control and visitor management platform"), ("Libertarian Forum", "Next.js, Drizzle, Tiptap", "Bilingual CMS with an article editor for a think tank"), ("ZadintsPage", "React 19, Vite, Tailwind CSS", "Marketing website and dashboard for development services")],
-    },
-    "fr": {
-        "profile_title": "Profil Professionnel",
-        "profile": "Etudiant en ingenierie informatique specialise dans le developpement Full-Stack, avec un focus sur l'automatisation des processus et la numerisation des flux documentaires. J'ai construit des systemes web et desktop pour des environnements industriels et distants qui reduisent les temps operationnels et la marge d'erreur humaine. Solide en conception et modelisation de bases de donnees, architectures propres (Clean Architecture, SOLID) et livraison de logiciels orientes resultats, avec une maitrise pratique du cycle complet de developpement, de la collecte des besoins au deploiement en production.",
-        "experience_title": "Experience Professionnelle",
-        "experience": [
-            ("Developpeur Full-Stack - A distance", "KeoIT - Perou | Mars 2026 - Juillet 2026", ["Developpement d'un client multiplateforme Flutter/Dart pour Android, iOS et desktop.", "Implementation de Clean Architecture avec Provider pour la gestion de session et les roles.", "Integration d'animations vectorielles Rive interactives et du design Glassmorphism.", "Developpement de la couche web avec Next.js dans la solution full-stack.", "Gestion d'etat reactif avec une architecture decouplee et evolutive."]),
-            ("Developpeur Full-Stack (Stage professionnel)", "Industrias de Alimentos El Trebol | Fevrier 2026 - Aout 2026", ["LogMaster - Systeme de controle d'acces et de gestion des visiteurs.", "Recueil des besoins et analyse des processus operationnels pour comprendre la logique metier.", "Conception d'une base PostgreSQL avec chiffrement AES-256-GCM pour les donnees personnelles sensibles.", "Conception et developpement d'un monorepo Turborepo: backend Express/TypeScript avec Sequelize et plusieurs applications Next.js pour l'administration, l'audit et le kiosque d'accueil.", "Automatisation des processus de gestion avec registre numerique complet des visiteurs et acces.", "Integration de rapports PDF et Excel comme preuves operationnelles et d'audit.", "Reduction du temps d'execution des processus de jusqu'a 10 minutes a moins d'une minute.", "Implementation des roles Administrateur, Gardien et Auditeur."]),
-        ],
-        "skills_title": "Competences Techniques",
-        "skills": [("Langages", "JavaScript, TypeScript, Go, Python, Rust, Java, Dart, C++"), ("Frontend", "React, Next.js, Vue.js, Angular, Tailwind CSS, Vite, Framer Motion, shadcn/ui, React Flow, Zustand, Leaflet"), ("Backend", "Node.js, Express, NestJS, Spring Boot, Spring Security, Hibernate/JPA, Actix-web"), ("ORM et Bases de donnees", "Prisma, Sequelize, MongoDB, PostgreSQL, MySQL, SQLite, Redis / BullMQ"), ("DevOps et Cloud", "Docker, GitHub Actions, Nginx, MinIO, AWS, Vercel"), ("Systemes et Mobile", "Flutter / Dart, Kotlin Multiplatform, TensorFlow (face-api.js), Socket.io"), ("Outils", "Git, GitHub, Swagger / OpenAPI, Postman, ESLint, Jest")],
-        "education_title": "Formation",
-        "education": "Ingenierie Informatique - Specialisation en Ingenierie des Systemes\nDiplome prevu mi-2027\nUniversidad Nacional Experimental Romulo Gallegos (UNERG) - Aragua, Venezuela",
-        "certifications_title": "Certifications",
-        "certifications": "Data Science, Prompt Engineering, SQL (Introduction et Intermediaire) - DataCamp<br/>Fondamentaux Java, Java OOP, Spring Boot - TodoCode",
-        "languages_title": "Langues",
-        "language_headers": ["Langue", "Niveau"],
-        "languages": [("Espagnol", "Natif"), ("Anglais", "Intermediaire avance"), ("Francais", "Intermediaire"), ("Italien", "Intermediaire")],
-        "projects_title": "Projets Selectionnes",
-        "project_headers": ["Projet", "Technologies cles", "Description"],
-        "projects": [("Chiguire", "Go (chi), Next.js, Flutter, PostgreSQL", "ERP multi-tenant offline-first avec synchronisation PowerSync"), ("E-commerce Platform", "Go (chi, sqlc), Next.js, PostgreSQL", "Boutique et panneau admin; monolithe Go remplacant 5 microservices Spring Boot"), ("Habitas", "Express, Sequelize, React/Vite, PostgreSQL", "Plateforme residentielle avec KYC biometrique et transactions P2P"), ("Hermit", "Rust, FUSE, cgroups/namespaces", "Runtime de conteneurs Linux (projet educatif de systemes)"), ("Meden", "Go (Gin), Flutter (GetX), PostgreSQL", "Gestion fiscale, commerciale et operationnelle au Mexique avec integration SAT"), ("Myvibesfit", "Go (chi), Flutter (Riverpod), PostgreSQL", "Application multi-tenant d'entrainement en salle avec moteur de progression et gamification"), ("Ohana", "Express, Sequelize, React/Vite, Flutter", "Plateforme de location avec KYC biometrique, chat en direct et application mobile"), ("Souvenirs", "NestJS, Prisma, Next.js, Expo", "SaaS multi-tenant pour reservations, factures et paiements de photographes"), ("TrickReport", "Go (chi), Astro 5, PostgreSQL, WebSockets", "Systeme de tickets IT conforme a ITIL v4 et ISO/IEC 20000-1"), ("LogMaster", "Express, Sequelize, Next.js, Turborepo", "Plateforme de controle d'acces et de visiteurs avec donnees chiffrees AES-256-GCM"), ("Libertarian Forum", "Next.js, Drizzle, Tiptap", "CMS bilingue avec editeur d'articles pour un think tank"), ("ZadintsPage", "React 19, Vite, Tailwind CSS", "Site marketing et tableau de bord pour services de developpement")],
-    },
-    "it": {
-        "profile_title": "Profilo Professionale",
-        "profile": "Studente di Ingegneria Informatica specializzato nello sviluppo Full-Stack, con focus sull'automazione dei processi e sulla digitalizzazione dei flussi documentali. Ho realizzato sistemi web e desktop per ambienti industriali e remoti che riducono i tempi operativi e il margine di errore umano. Solido nella progettazione e modellazione di database, nelle architetture pulite (Clean Architecture, SOLID) e nella consegna di software orientato a risultati misurabili, con esperienza pratica dell'intero ciclo di sviluppo: dalla raccolta dei requisiti al deploy in produzione.",
-        "experience_title": "Esperienza Professionale",
-        "experience": [
-            ("Sviluppatore Full-Stack - Remoto", "KeoIT - Peru | Marzo 2026 - Luglio 2026", ["Sviluppo di un client multipiattaforma Flutter/Dart per Android, iOS e desktop.", "Implementazione di Clean Architecture con Provider per gestione sessione e ruoli.", "Integrazione di animazioni vettoriali Rive interattive e design Glassmorphism.", "Sviluppo del layer web con Next.js nella soluzione full-stack.", "Gestione dello stato reattivo con architettura disaccoppiata e scalabile."]),
-            ("Sviluppatore Full-Stack (Tirocinio professionale)", "Industrias de Alimentos El Trebol | Febbraio 2026 - Agosto 2026", ["LogMaster - Sistema di controllo accessi e gestione visitatori.", "Raccolta requisiti e analisi dei processi operativi per comprendere la logica di business.", "Progettazione di database PostgreSQL con cifratura AES-256-GCM per dati personali sensibili.", "Progettazione e sviluppo di un monorepo Turborepo: backend Express/TypeScript con Sequelize e applicazioni Next.js per amministrazione, audit e chiosco reception.", "Automazione dei processi gestionali con registro digitale completo di visitatori e accessi.", "Integrazione di report PDF ed Excel come evidenza operativa e di audit.", "Riduzione del tempo di esecuzione dei processi da fino a 10 minuti a meno di 1 minuto.", "Implementazione di ruoli differenziati: Amministratore, Guardia e Auditor."]),
-        ],
-        "skills_title": "Competenze Tecniche",
-        "skills": [("Linguaggi", "JavaScript, TypeScript, Go, Python, Rust, Java, Dart, C++"), ("Frontend", "React, Next.js, Vue.js, Angular, Tailwind CSS, Vite, Framer Motion, shadcn/ui, React Flow, Zustand, Leaflet"), ("Backend", "Node.js, Express, NestJS, Spring Boot, Spring Security, Hibernate/JPA, Actix-web"), ("ORM e Database", "Prisma, Sequelize, MongoDB, PostgreSQL, MySQL, SQLite, Redis / BullMQ"), ("DevOps e Cloud", "Docker, GitHub Actions, Nginx, MinIO, AWS, Vercel"), ("Sistemi e Mobile", "Flutter / Dart, Kotlin Multiplatform, TensorFlow (face-api.js), Socket.io"), ("Strumenti", "Git, GitHub, Swagger / OpenAPI, Postman, ESLint, Jest")],
-        "education_title": "Formazione",
-        "education": "Ingegneria Informatica - Specializzazione in Ingegneria dei Sistemi\nLaurea prevista a meta 2027\nUniversidad Nacional Experimental Romulo Gallegos (UNERG) - Aragua, Venezuela",
-        "certifications_title": "Certificazioni",
-        "certifications": "Data Science, Prompt Engineering, SQL (Introduzione e Intermedio) - DataCamp<br/>Fondamenti di Java, Java OOP, Spring Boot - TodoCode",
-        "languages_title": "Lingue",
-        "language_headers": ["Lingua", "Livello"],
-        "languages": [("Spagnolo", "Madrelingua"), ("Inglese", "Intermedio-avanzato"), ("Francese", "Intermedio"), ("Italiano", "Intermedio")],
-        "projects_title": "Progetti Selezionati",
-        "project_headers": ["Progetto", "Tecnologie chiave", "Descrizione"],
-        "projects": [("Chiguire", "Go (chi), Next.js, Flutter, PostgreSQL", "ERP multi-tenant offline-first con sincronizzazione PowerSync"), ("E-commerce Platform", "Go (chi, sqlc), Next.js, PostgreSQL", "Negozio e pannello admin; monolite Go che sostituisce 5 microservizi Spring Boot"), ("Habitas", "Express, Sequelize, React/Vite, PostgreSQL", "Piattaforma residenziale con KYC biometrico e transazioni P2P"), ("Hermit", "Rust, FUSE, cgroups/namespaces", "Runtime di container per Linux (progetto educativo di sistemi)"), ("Meden", "Go (Gin), Flutter (GetX), PostgreSQL", "Gestione fiscale, commerciale e operativa per il Messico con integrazione SAT"), ("Myvibesfit", "Go (chi), Flutter (Riverpod), PostgreSQL", "App multi-tenant di allenamento per palestre con motore di progressione e gamification"), ("Ohana", "Express, Sequelize, React/Vite, Flutter", "Piattaforma di noleggio con KYC biometrico, chat live e app mobile"), ("Souvenirs", "NestJS, Prisma, Next.js, Expo", "SaaS multi-tenant per prenotazioni, fatture e pagamenti dei fotografi"), ("TrickReport", "Go (chi), Astro 5, PostgreSQL, WebSockets", "Sistema di ticket IT conforme a ITIL v4 e ISO/IEC 20000-1"), ("LogMaster", "Express, Sequelize, Next.js, Turborepo", "Piattaforma per controllo accessi e visitatori con dati cifrati AES-256-GCM"), ("Libertarian Forum", "Next.js, Drizzle, Tiptap", "CMS bilingue con editor di articoli per un think tank"), ("ZadintsPage", "React 19, Vite, Tailwind CSS", "Sito marketing e dashboard per servizi di sviluppo")],
-    },
+LABELS = {
+    "es": {"experience": "Experiencia", "education": "Educación", "certifications": "Cursos", "technologies": "Tecnologías", "projects": "Proyectos seleccionados", "project": "Proyecto", "description": "Descripción", "languages": "Idiomas", "student": "Estudiante de Ingeniería en Informática", "expected": "Graduación prevista a mediados de 2027", "private": "Privado"},
+    "en": {"experience": "Experience", "education": "Education", "certifications": "Courses", "technologies": "Technologies", "projects": "Selected projects", "project": "Project", "description": "Description", "languages": "Languages", "student": "Computer Engineering student", "expected": "Expected graduation: mid-2027", "private": "Private"},
+    "fr": {"experience": "Expérience", "education": "Formation", "certifications": "Cours", "technologies": "Technologies", "projects": "Projets sélectionnés", "project": "Projet", "description": "Description", "languages": "Langues", "student": "Étudiant en génie informatique", "expected": "Diplôme prévu mi-2027", "private": "Privé"},
+    "it": {"experience": "Esperienza", "education": "Formazione", "certifications": "Corsi", "technologies": "Tecnologie", "projects": "Progetti selezionati", "project": "Progetto", "description": "Descrizione", "languages": "Lingue", "student": "Studente di ingegneria informatica", "expected": "Laurea prevista a metà 2027", "private": "Privato"},
 }
 
 
-def section_title(text, styles):
-    return [Spacer(1, 7), Paragraph(text, styles["section"])]
-
-
-def bullets(items, styles):
-    return [Paragraph(f"• {item}", styles["bullet"]) for item in items]
-
-
-def build_cv(language, cv):
-    output = OUTPUT_DIR / f"curriculum-{language}.pdf"
-    document = SimpleDocTemplate(str(output), pagesize=letter, leftMargin=0.36 * inch, rightMargin=0.36 * inch, topMargin=0.36 * inch, bottomMargin=0.34 * inch, title="Gustavo Colina CV", author="Gustavo Colina")
-    base = getSampleStyleSheet()
-    styles = {
-        "name": ParagraphStyle("name", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=17, leading=19, textColor=colors.HexColor("#111827")),
-        "contact": ParagraphStyle("contact", parent=base["Normal"], fontSize=8.4, leading=9.8, textColor=colors.HexColor("#374151")),
-        "section": ParagraphStyle("section", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=11, leading=13, textColor=colors.HexColor("#111827"), spaceAfter=3),
-        "body": ParagraphStyle("body", parent=base["Normal"], alignment=TA_LEFT, fontSize=8.7, leading=10.8, textColor=colors.HexColor("#1F2937")),
-        "role": ParagraphStyle("role", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=9.4, leading=11, textColor=colors.HexColor("#111827")),
-        "company": ParagraphStyle("company", parent=base["Normal"], fontSize=8.2, leading=9.8, textColor=colors.HexColor("#4B5563")),
-        "bullet": ParagraphStyle("bullet", parent=base["Normal"], fontSize=8.1, leading=9.8, leftIndent=8, firstLineIndent=-7, textColor=colors.HexColor("#1F2937"), spaceAfter=1),
-        "table": ParagraphStyle("table", parent=base["Normal"], fontSize=7.6, leading=9, textColor=colors.HexColor("#1F2937")),
-        "table_head": ParagraphStyle("table_head", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=7.6, leading=9, textColor=colors.white),
+def load_data():
+    repos = json.loads((ROOT / "src/repos.json").read_text(encoding="utf-8"))
+    messages = {
+        locale: json.loads((ROOT / f"messages/{locale}.json").read_text(encoding="utf-8"))
+        for locale in LOCALES
     }
-    story = [Paragraph("Gustavo Colina", styles["name"]), Spacer(1, 2), Paragraph(CONTACT, styles["contact"])]
-    story += section_title(cv["profile_title"], styles)
-    story.append(Paragraph(cv["profile"], styles["body"]))
-    story += section_title(cv["experience_title"], styles)
-    for role, company, items in cv["experience"]:
-        story.extend([Paragraph(role, styles["role"]), Paragraph(company, styles["company"])])
-        story.extend(bullets(items, styles))
-        story.append(Spacer(1, 2))
-    story += section_title(cv["skills_title"], styles)
-    skills = [[Paragraph(f"<b>{label}</b>", styles["table"]), Paragraph(value, styles["table"])] for label, value in cv["skills"]]
-    skills_table = Table(skills, colWidths=[1.28 * inch, PAGE_WIDTH - 1.28 * inch], hAlign="LEFT")
-    skills_table.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LINEBELOW", (0, 0), (-1, -1), 0.25, colors.HexColor("#D1D5DB")), ("LEFTPADDING", (0, 0), (-1, -1), 3), ("RIGHTPADDING", (0, 0), (-1, -1), 3), ("TOPPADDING", (0, 0), (-1, -1), 2), ("BOTTOMPADDING", (0, 0), (-1, -1), 2)]))
-    story.append(skills_table)
-    story += section_title(cv["education_title"], styles)
-    story.append(Paragraph(cv["education"].replace("\n", "<br/>"), styles["body"]))
-    story += section_title(cv["certifications_title"], styles)
-    story.append(Paragraph(cv["certifications"], styles["body"]))
+    ids = {repo["id"] for repo in repos}
+    assert len(repos) == 12 and sum(repo.get("isPrivate", False) for repo in repos) == 1
+    for locale in LOCALES:
+        assert set(messages[locale]["Projects"]["items"]) == ids
+    return repos, messages
+
+
+def styles():
+    base = getSampleStyleSheet()
+    return {
+        "name": ParagraphStyle("Name", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=18, leading=21, textColor=colors.HexColor("#111827")),
+        "contact": ParagraphStyle("Contact", parent=base["Normal"], fontSize=8, leading=10, textColor=colors.HexColor("#4B5563")),
+        "section": ParagraphStyle("Section", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=11, leading=14, textColor=colors.HexColor("#111827"), spaceBefore=8, spaceAfter=4),
+        "role": ParagraphStyle("Role", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=9.2, leading=11, textColor=colors.HexColor("#111827"), spaceBefore=4),
+        "company": ParagraphStyle("Company", parent=base["Normal"], fontSize=8.1, leading=9.5, textColor=colors.HexColor("#4B5563")),
+        "body": ParagraphStyle("Body", parent=base["Normal"], alignment=TA_LEFT, fontSize=8.5, leading=10.6, textColor=colors.HexColor("#1F2937")),
+        "bullet": ParagraphStyle("Bullet", parent=base["Normal"], fontSize=8, leading=9.8, leftIndent=9, firstLineIndent=-7, textColor=colors.HexColor("#1F2937"), spaceAfter=1),
+        "table": ParagraphStyle("Table", parent=base["Normal"], fontSize=7.3, leading=8.8, textColor=colors.HexColor("#1F2937")),
+        "table_head": ParagraphStyle("TableHead", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=7.3, leading=8.8, textColor=colors.white),
+    }
+
+
+def para(text, style):
+    markup = escape(str(text)).replace("\n", "<br/>")
+    for tag in ("b", "br"):
+        markup = markup.replace(f"&lt;{tag}&gt;", f"<{tag}>").replace(f"&lt;{tag}/&gt;", f"<{tag}/>")
+        markup = markup.replace(f"&lt;/{tag}&gt;", f"</{tag}>")
+    return Paragraph(markup, style)
+
+
+def section(title, style):
+    return Paragraph(escape(title), style["section"])
+
+
+def header(style):
+    return [Paragraph("Gustavo Colina", style["name"]), Spacer(1, 2), Paragraph(escape(CONTACT), style["contact"])]
+
+
+def build_cv(locale, repos, message):
+    language = LABELS[locale]
+    curriculum = message["Curriculum"]
+    experience = message["Experience"]
+    education = message["Education"]
+    project_content = message["Projects"]["items"]
+    style = styles()
+    output = OUTPUT_DIR / f"curriculum-{locale}.pdf"
+    document = SimpleDocTemplate(str(output), pagesize=letter, leftMargin=0.45 * inch, rightMargin=0.45 * inch, topMargin=0.4 * inch, bottomMargin=0.4 * inch, title=f"Gustavo Colina — {language['student']}", author="Gustavo Colina")
+
+    story = header(style)
+    story += [section(curriculum["pdfProfileTitle"], style), para(curriculum["summary"], style["body"]), section(curriculum["pdfExperienceTitle"], style)]
+    for index in (3, 1, 2):
+        role = experience[f"exp{index}Role"]
+        company = experience[f"exp{index}Company"]
+        period = experience[f"exp{index}Period"]
+        story.append(para(f"{role} · {company} · {period}", style["role"]))
+        story.append(para(experience[f"exp{index}Description"], style["body"]))
+        for achievement in range(1, 4):
+            story.append(para(f"• {experience[f'exp{index}Achievement{achievement}']}", style["bullet"]))
+        story.append(para(f"<b>{language['technologies']}:</b> {experience[f'exp{index}Technologies']}", style["company"]))
+
     story.append(PageBreak())
-    story += [Paragraph("Gustavo Colina", styles["name"]), Spacer(1, 2), Paragraph(CONTACT, styles["contact"])]
-    story += section_title(cv["languages_title"], styles)
-    language_rows = [[Paragraph(f"<b>{heading}</b>", styles["table_head"]) for heading in cv["language_headers"]]] + [[Paragraph(name, styles["table"]), Paragraph(level, styles["table"])] for name, level in cv["languages"]]
-    language_table = Table(language_rows, colWidths=[2.2 * inch, PAGE_WIDTH - 2.2 * inch], hAlign="LEFT")
-    language_table.setStyle(TableStyle([("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#111827")), ("TEXTCOLOR", (0, 0), (-1, 0), colors.white), ("VALIGN", (0, 0), (-1, -1), "TOP"), ("GRID", (0, 0), (-1, -1), 0.25, colors.HexColor("#D1D5DB")), ("LEFTPADDING", (0, 0), (-1, -1), 4), ("RIGHTPADDING", (0, 0), (-1, -1), 4), ("TOPPADDING", (0, 0), (-1, -1), 3), ("BOTTOMPADDING", (0, 0), (-1, -1), 3)]))
-    story.append(language_table)
-    story += section_title(cv["projects_title"], styles)
-    projects = [[Paragraph(f"<b>{heading}</b>", styles["table_head"]) for heading in cv["project_headers"]]] + [[Paragraph(name, styles["table"]), Paragraph(technology, styles["table"]), Paragraph(description, styles["table"])] for name, technology, description in cv["projects"]]
-    projects_table = Table(projects, colWidths=[1.13 * inch, 2.05 * inch, PAGE_WIDTH - 3.18 * inch], repeatRows=1, hAlign="LEFT")
-    projects_table.setStyle(TableStyle([("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#111827")), ("VALIGN", (0, 0), (-1, -1), "TOP"), ("GRID", (0, 0), (-1, -1), 0.25, colors.HexColor("#D1D5DB")), ("LEFTPADDING", (0, 0), (-1, -1), 3), ("RIGHTPADDING", (0, 0), (-1, -1), 3), ("TOPPADDING", (0, 0), (-1, -1), 2), ("BOTTOMPADDING", (0, 0), (-1, -1), 2)]))
-    story.append(projects_table)
+    story += header(style)
+    story.append(section(language["education"], style))
+    story.append(para(f"<b>{education['universityTitle']}</b> · {education['universityEntity']}<br/>{language['expected']}", style["body"]))
+    story.append(section(language["certifications"], style))
+    story.append(para(f"{education['certDataScienceTitle']} · {education['certDataScienceEntity']}<br/>{education['certJavaTitle']} · {education['certJavaEntity']}", style["body"]))
+    story.append(section(curriculum["pdfSkillsTitle"], style))
+    technologies = list(dict.fromkeys(tech for repo in repos for tech in repo["technologies"]))
+    story.append(para(", ".join(technologies), style["body"]))
+    skills = message["Skills"]
+    story.append(section(language["languages"], style))
+    story.append(para(", ".join(skills[key] for key in ("langSpanish", "langEnglish", "langFrench", "langItalian")), style["body"]))
+
+    selected = [repo for repo in repos if repo["id"] in FEATURED_PROJECTS]
+    rows = [[para(language["project"], style["table_head"]), para(language["technologies"], style["table_head"]), para(language["description"], style["table_head"])]]
+    for repo in selected:
+        content = project_content[repo["id"]]
+        name = content["name"]
+        if repo.get("isPrivate"):
+            name = f"{name} ({language['private']})"
+        rows.append([para(name, style["table"]), para(", ".join(repo["technologies"]), style["table"]), para(content["description"], style["table"])])
+    table = Table(rows, colWidths=[1.35 * inch, 2.0 * inch, 4.1 * inch], repeatRows=1, hAlign="LEFT")
+    table.setStyle(TableStyle([("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#111827")), ("VALIGN", (0, 0), (-1, -1), "TOP"), ("GRID", (0, 0), (-1, -1), 0.25, colors.HexColor("#D1D5DB")), ("LEFTPADDING", (0, 0), (-1, -1), 4), ("RIGHTPADDING", (0, 0), (-1, -1), 4), ("TOPPADDING", (0, 0), (-1, -1), 3), ("BOTTOMPADDING", (0, 0), (-1, -1), 3)]))
+    story.append(section(curriculum["pdfProjectsTitle"], style))
+    story.append(table)
     document.build(story)
+    assert len(PdfReader(str(output)).pages) == 2, f"Unexpected page count in {output.name}"
+    return output
 
 
-def annotate_spanish_cv():
-    output = OUTPUT_DIR / "curriculum-es.pdf"
-    reader = PdfReader(str(output))
-    if "Graduación prevista: mediados de 2027" in "\n".join(page.extract_text() or "" for page in reader.pages):
-        return
+def build_summary(repos, message):
+    locale = "es"
+    curriculum = message["Curriculum"]
+    experience = message["Experience"]
+    education = message["Education"]
+    style = styles()
+    output = OUTPUT_DIR / "sintesis-curricular.pdf"
+    document = SimpleDocTemplate(str(output), pagesize=letter, leftMargin=0.55 * inch, rightMargin=0.55 * inch, topMargin=0.5 * inch, bottomMargin=0.5 * inch, title="Síntesis curricular — Gustavo Colina", author="Gustavo Colina")
+    story = header(style)
+    story += [section("Perfil profesional", style), para(curriculum["summary"], style["body"]), section("Experiencia", style)]
+    for index in (3, 1, 2):
+        story.append(para(f"<b>{experience[f'exp{index}Role']}</b> · {experience[f'exp{index}Company']} · {experience[f'exp{index}Period']}", style["body"]))
+    story += [section("Formación", style), para(f"<b>{education['universityTitle']}</b> · {education['universityEntity']}<br/>{education['universitySubtitle']}", style["body"]), section("Proyectos seleccionados", style)]
+    for repo in repos:
+        content = message["Projects"]["items"][repo["id"]]
+        story.append(para(f"<b>{content['name']}</b> — {content['description']}", style["bullet"]))
+    document.build(story)
+    assert len(PdfReader(str(output)).pages) == 1, "The Spanish summary CV must fit on one page"
+    return output
 
-    overlay_buffer = BytesIO()
-    overlay = canvas.Canvas(overlay_buffer, pagesize=letter)
-    overlay.setFont("Helvetica", 7.5)
-    overlay.setFillColor(colors.HexColor("#374151"))
-    overlay.drawRightString(letter[0] - 0.36 * inch, letter[1] - 696, "Graduación prevista: mediados de 2027")
-    overlay.save()
 
-    overlay_buffer.seek(0)
-    watermark = PdfReader(overlay_buffer).pages[0]
-    reader.pages[0].merge_page(watermark)
-
-    writer = PdfWriter()
-    for page in reader.pages:
-        writer.add_page(page)
-
-    with output.open("wb") as file:
-        writer.write(file)
+def build_markdown(repos, message):
+    curriculum = message["Curriculum"]
+    experience = message["Experience"]
+    education = message["Education"]
+    projects = message["Projects"]["items"]
+    lines = ["# Síntesis curricular — Gustavo Colina", "", "## Perfil profesional", "", curriculum["summary"], "", "## Experiencia"]
+    for index in (3, 1, 2):
+        lines += ["", f"### {experience[f'exp{index}Role']} — {experience[f'exp{index}Company']}", "", experience[f'exp{index}Period'], "", experience[f'exp{index}Description']]
+    lines += ["", "## Formación", "", f"{education['universityTitle']} — {education['universityEntity']}", "", education['universitySubtitle'], "", "## Proyectos seleccionados", ""]
+    for repo in repos:
+        content = projects[repo["id"]]
+        name = f"{content['name']} (privado/anónimo)" if repo.get("isPrivate") else content["name"]
+        lines.append(f"- **{name}:** {content['description']}")
+    lines += ["", "## Contacto", "", "- Email: gustavojose0819@gmail.com", "- GitHub: https://github.com/Suggus1899", ""]
+    (ROOT / "public/docs/sintesis-curricular.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 if __name__ == "__main__":
-    for language, cv in CVS.items():
-        build_cv(language, cv)
-        print(f"Generated curriculum-{language}.pdf")
-    annotate_spanish_cv()
-    print("Updated curriculum-es.pdf")
+    OUTPUT_DIR.mkdir(exist_ok=True)
+    repositories, localized_messages = load_data()
+    generated = [build_cv(locale, repositories, localized_messages[locale]) for locale in LOCALES]
+    summary = build_summary(repositories, localized_messages["es"])
+    build_markdown(repositories, localized_messages["es"])
+    shutil.copyfile(generated[0], OUTPUT_DIR / "curriculum.pdf")
+    shutil.copyfile(generated[0], ROOT / "Curriculum Gustavo Colina.pdf")
+    shutil.copyfile(summary, ROOT / "Sintesis Curricular Gustavo Colina.pdf")
+    print("Generated four localized CVs and the Spanish summary.")

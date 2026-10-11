@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "Gustavo Colina — Développeur Full-Stack",
-    "description": "Développeur Full-Stack · Diplôme prévu mi-2027."
+    "description": "Développeur Full-Stack vénézuélien de produits web, mobiles et de bureau, étudiant en génie informatique à l’UNERG."
   },
   "Navigation": {
     "curriculum": "Synthèse CV",
@@ -22,13 +22,13 @@
     "closeMenu": "Fermer le menu",
     "scrollToTop": "Retour en haut",
     "toggleTheme": "Changer le thème",
-    "footerSubtitle": "Développeur Full-Stack · Diplôme prévu mi-2027.",
+    "footerSubtitle": "Développeur Full-Stack · Études en génie informatique",
     "allRightsReserved": "Tous droits réservés.",
     "privacy": "Confidentialité"
   },
   "Hero": {
     "greeting": "Salut ! Je suis Gustavo Colina (Suggus1899)",
-    "role": "Développeur Full-Stack · Diplôme prévu mi-2027",
+    "role": "Développeur Full-Stack · Étudiant en génie informatique",
     "whatIDo": "Que fais-je ?",
     "availability": "Disponible pour de nouvelles opportunités",
     "contact": "Me contacter",
@@ -37,36 +37,42 @@
     "downloadCvAriaLabel": "Télécharger le CV en PDF",
     "github": "GitHub",
     "githubAriaLabel": "Visiter le profil GitHub",
-    "profileAlt": "Photo de profil de Gustavo Colina"
+    "profileAlt": "Photo de profil de Gustavo Colina",
+    "whatIDoDescription": "Je développe et maintiens des produits web, mobiles et de bureau, des interfaces et API à leur intégration aux bases de données."
   },
   "Curriculum": {
     "kicker": "Synthèse CV",
-    "title": "Résumé professionnel orienté produit et backend",
-    "summary": "Étudiant en ingénierie informatique, avec un diplôme prévu mi-2027, spécialisé dans le développement Full-Stack avec un focus sur l'automatisation des processus et la digitalisation des flux documentaires. Fort d'une expérience en milieu universitaire, industriel et en entreprise tech à distance, j'ai construit des systèmes web et desktop qui réduisent les temps opérationnels et la marge d'erreur humaine. Compétent en conception et modélisation de bases de données, architectures propres (Clean Architecture, SOLID) et livraison de logiciels orientée vers des résultats mesurables. Maîtrise fluide du cycle complet de développement : du recueil des besoins au déploiement en production.",
-    "highlight1": "Développement end-to-end : du recueil des besoins au déploiement en production avec architectures propres.",
-    "highlight2": "Spécialisation dans les bases de données chiffrées (SQLCipher/AES-256) et les systèmes multi-tenant évolutifs.",
-    "highlight3": "Automatisation des processus opérationnels avec réduction de 10 minutes à moins d'1 minute.",
+    "title": "Développeur Full-Stack pour produits web et multiplateformes",
+    "summary": "Étudiant en génie informatique et développeur Full-Stack. Je contribue à des produits web, de bureau et multiplateformes, de la définition des parcours à la création d’interfaces et à l’intégration d’API et de bases de données. Mon expérience comprend le travail à distance et des logiciels de gestion pour différents secteurs.",
+    "highlight1": "Développement web et multiplateforme, des interfaces à l’intégration des services.",
+    "highlight2": "Expérience des API, bases de données relationnelles et applications de bureau et mobiles.",
+    "highlight3": "Collaboration à distance et maintenance logicielle orientée vers les besoins pratiques.",
     "download": "Télécharger le CV",
-    "contact": "Contacter par email"
+    "contact": "Contacter par email",
+    "pdfProfileTitle": "Profil professionnel",
+    "pdfExperienceTitle": "Expérience professionnelle",
+    "pdfSkillsTitle": "Technologies",
+    "pdfProjectsTitle": "Projets sélectionnés",
+    "pdfLanguagesTitle": "Langues"
   },
   "Experience": {
     "title": "Expérience",
-    "exp1Role": "Programmeur Full-Stack — À distance",
+    "exp1Role": "Développeur Full-Stack · À distance",
     "exp1Company": "KeoIT · Pérou",
     "exp1Period": "Mars 2026 – Juin 2026",
     "exp1Description": "Développement de client multiplateforme avec Flutter/Dart pour Android, iOS et Desktop. Implémentation de Clean Architecture avec Provider pour gestion de session et contrôle des rôles. Intégration d'animations vectorielles interactives avec le moteur Rive et design Glassmorphism. Participation en full-stack avec Next.js dans la couche web du système. Gestion d'état réactive et architecture découplée orientée scalabilité.",
-    "exp2Role": "Développeur Full-Stack Senior",
+    "exp2Role": "Développeur Full-Stack",
     "exp2Company": "Industrias de Alimentos El Trébol",
     "exp2Period": "2025 – 2026",
-    "exp2Description": "LogMaster — Système de Contrôle d'Accès et Gestion des Visiteurs. Recueil des besoins et analyse des processus opérationnels. Conception et modélisation de base de données chiffrée avec SQLCipher (AES-256-GCM). Développement d'application desktop multiplateforme (Electron + React + TypeScript) et version web. Automatisation des processus managériaux avec enregistrement digital complet. Intégration de générateur de rapports PDF et Excel. Réduction du temps d'exécution des processus : de 10 minutes à moins d'1 minute. Implémentation de rôles différenciés : Administrateur, Garde et Auditeur.",
+    "exp2Description": "LogMaster numérise l’enregistrement des visiteurs et la gestion des accès, avec suivi, gestion des rôles et export de rapports pour les audits.",
     "exp1Technologies": "Flutter, Dart, Next.js, React, TypeScript, Clean Architecture, Provider, Rive",
-    "exp1Achievement1": "Réduit le temps de chargement de l'app de 40% grâce à une gestion d'état optimisée",
-    "exp1Achievement2": "Implémenté un contrôle d'accès basé sur les rôles pour 500+ utilisateurs simultanés",
-    "exp1Achievement3": "Livré une solution multiplateforme avec 95% de réutilisation du code sur iOS, Android et Desktop",
-    "exp2Technologies": "Electron, React, TypeScript, SQLCipher, AES-256, Node.js, PostgreSQL",
-    "exp2Achievement1": "Réduit le temps d'exécution des processus de 10 minutes à moins d'1 minute (90% d'amélioration)",
-    "exp2Achievement2": "Implémenté le chiffrement AES-256-GCM sécurisant 10 000+ enregistrements sensibles",
-    "exp2Achievement3": "Système de rapports automatisé générant 200+ rapports PDF/Excel mensuels",
+    "exp1Achievement1": "Développement web et multiplateforme, des interfaces à l’intégration des services.",
+    "exp1Achievement2": "Mise en place de la navigation par rôles et de la gestion des sessions.",
+    "exp1Achievement3": "Intégration des animations Rive à une interface multiplateforme.",
+    "exp2Technologies": "Go, Chi, React, TypeScript, PostgreSQL",
+    "exp2Achievement1": "Gère l’arrivée, l’attente, l’admission, les sorties temporaires, le retour et la clôture des visites.",
+    "exp2Achievement2": "Client React/TypeScript et API Go avec PostgreSQL.",
+    "exp2Achievement3": "Organisation des autorisations pour les rôles administratifs, opérationnels et d’audit.",
     "exp3Role": "Développeur Full-Stack Freelance",
     "exp3Company": "ZoomMergeLabs · À distance",
     "exp3Period": "Juin 2026 – Aujourd'hui",
@@ -78,47 +84,123 @@
   },
   "Projects": {
     "title": "Projets",
-    "private_projects_note": "Un exemple de projet privé",
+    "description": "Une sélection de projets publics et un cas privé anonymisé couvrant différents produits et technologies.",
     "private": "Privé",
-    "privateStatus": "Développement interne",
-    "privateLicense": "Licence privée",
-    "privateHighlight1": "Moteur propriétaire avec automatisations assistées par IA",
-    "privateHighlight2": "Architecture distribuée pour flux à forte charge",
-    "statusLabel": "Statut",
-    "yearLabel": "Année",
-    "licenseLabel": "Licence",
-    "unknown": "Non défini",
     "viewCode": "Code",
-    "liveDemo": "Démo",
-    "privateDescSuffix": " - Un système propriétaire avec des intégrations d'IA et des architectures distribuées complexes.",
-    "privateName": "Projet Privé (Core Engine)",
-    "privateLanguage": "TypeScript / IA",
-    "privateDate": "2026",
-    "comingSoon": "Démo bientôt",
-    "noDescription": "Aucune description.",
     "filterAll": "Tous les projets",
-    "filterOther": "Autres",
-    "filterJava": "Java",
-    "filterRust": "Rust",
-    "filterPython": "Python",
-    "filterGo": "Go"
+    "items": {
+      "visitors": {
+        "name": "Visitors — LogMaster",
+        "description": "Système d’enregistrement des visiteurs et de gestion des accès pour les installations d’entreprise, avec consentement, photos et audit.",
+        "highlights": [
+          "Gère l’arrivée, l’attente, l’admission, les sorties temporaires, le retour et la clôture des visites.",
+          "Client React/TypeScript et API Go avec PostgreSQL."
+        ]
+      },
+      "trickreport": {
+        "name": "Trickreport",
+        "description": "Service d’assistance multi-tenant pour gérer les tickets, les SLA et les ressources de support.",
+        "highlights": [
+          "Comprend les tickets, SLA, base de connaissances, analyses et notifications en temps réel.",
+          "Frontend Astro et backend Go avec WebSockets."
+        ]
+      },
+      "chiguire": {
+        "name": "Chiguire",
+        "description": "ERP multi-tenant pour les entreprises vénézuéliennes, avec fonctions fiscales et opérationnelles hors connexion.",
+        "highlights": [
+          "Réunit inventaire, facturation, processus SENIAT et paiements locaux.",
+          "Les applications web et mobiles se synchronisent au retour de la connexion."
+        ]
+      },
+      "souvenirs": {
+        "name": "Souvenirs",
+        "description": "Plateforme de gestion de clients, réservations, factures et paiements pour les photographes.",
+        "highlights": [
+          "Gère le parcours de réservation et de facturation sur le web et mobile.",
+          "Envoie des rappels de paiement par courriel et notification push."
+        ]
+      },
+      "ohana": {
+        "name": "Ohana",
+        "description": "Plateforme de locations et résidences avec applications web et mobile pour publier et trouver des logements.",
+        "highlights": [
+          "Comprend vérification d’identité, messagerie en temps réel et itinéraires.",
+          "Client web React et application mobile Flutter."
+        ]
+      },
+      "netlab": {
+        "name": "SI Learning Red",
+        "description": "Plateforme éducative pour créer des topologies réseau et pratiquer les protocoles et la configuration.",
+        "highlights": [
+          "Simule ICMP, ARP, DNS, DHCP, HTTP, ainsi que le pare-feu et le NAT.",
+          "Propose des laboratoires guidés avec validation automatique."
+        ]
+      },
+      "nos-fleurs": {
+        "name": "Jusqu’au dernier pétale",
+        "description": "Fleuriste en ligne avec catalogue public et panneau d’administration sur PostgreSQL.",
+        "highlights": [
+          "Gère le catalogue et les images des produits.",
+          "Réunit la boutique et les actions serveur dans une application Next.js."
+        ]
+      },
+      "page-to-pdf": {
+        "name": "Collection Web PDF",
+        "description": "Extension de navigateur pour réunir les pages et états choisis par l’utilisateur dans un PDF.",
+        "highlights": [
+          "Capture des pages entières ou des sections sélectionnées.",
+          "Organise et exporte les captures en PDF visuel ou lisible par une IA."
+        ]
+      },
+      "saludtech": {
+        "name": "SaludTech",
+        "description": "Prototype de financement de soins de santé avec des portails pour patients, professionnels et administration.",
+        "highlights": [
+          "Modélise les échéanciers et opérations de crédit pour les dépenses de santé.",
+          "Monorepo avec applications Next.js et services backend en Go."
+        ]
+      },
+      "crud-java-spring-mongo": {
+        "name": "To-Do App — Spring Boot + MongoDB",
+        "description": "Application de gestion de tâches avec authentification, rôles, commentaires et historique.",
+        "highlights": [
+          "Fournit filtres, pagination et outils d’administration.",
+          "API Java/Spring Boot et client React/TypeScript déployés avec Docker."
+        ]
+      },
+      "simulimath": {
+        "name": "SimuliMath",
+        "description": "Simulateur académique pour étudier l’effet des interférences sur les communications sans fil.",
+        "highlights": [
+          "Modélise signaux, interférences et indicateurs comme SNR, BER et PER.",
+          "Visualise le temps et la fréquence dans une application de bureau Python."
+        ]
+      },
+      "maintenance-tracker": {
+        "name": "Application de maintenance préventive",
+        "description": "Application privée d’inventaire des équipements et de suivi de maintenance, présentée sans identifier l’organisation.",
+        "highlights": [
+          "Fiches d’équipement, historique des interventions et rappels de maintenance.",
+          "Application Flutter de bureau avec stockage SQLite et sauvegarde JSON."
+        ]
+      }
+    }
   },
   "FavoriteStack": {
     "title": "Stack préféré",
-    "subtitle": "Technologies avec lesquelles je suis le plus productif pour construire des produits complets.",
-    "item1": "Base backend solide pour des APIs propres, typées et maintenables.",
-    "item2": "Frontend rapide avec focus UX, performance et scalabilité des composants.",
-    "item3": "Persistance flexible: SQL pour la cohérence et NoSQL pour les modèles dynamiques.",
-    "item4": "Déploiement moderne avec observabilité de base et livraisons courtes.",
-    "item5": "Services Java prêts pour la production avec architecture claire et modulaire.",
-    "item6": "Authentification robuste et persistance enterprise pour des APIs sécurisées et évolutives.",
-    "item7": "CLI et backend haute performance avec mémoire sûre et concurrence sans GC.",
-    "item8": "Applications multiplateformes (Android, iOS, Desktop) depuis une seule base de code."
+    "subtitle": "Technologies utilisées dans des projets récents de différents types.",
+    "item1": "API web et métier avec Go, Chi et PostgreSQL.",
+    "item2": "Interfaces et applications avec TypeScript, React, Next.js et Astro.",
+    "item3": "Données relationnelles et documentaires avec PostgreSQL, Prisma et MongoDB.",
+    "item4": "Applications Java avec Spring Boot et gestion des rôles.",
+    "item5": "Applications multiplateformes et locales avec Flutter, SQLite et Dart.",
+    "item6": "Simulation scientifique en Python avec NumPy, SciPy et Matplotlib."
   },
   "Blog": {
     "kicker": "Blog technique court",
     "title": "Notes techniques",
-    "subtitle": "Idées courtes sur backend, cloud et productivité avec IA.",
+    "subtitle": "Notes sur le développement logiciel, les applications et les décisions produit.",
     "viewAll": "Voir tout",
     "readMore": "Lire plus",
     "backToBlog": "← Blog"
@@ -126,7 +208,7 @@
   "Now": {
     "kicker": "Page Now",
     "title": "Ce sur quoi je me concentre maintenant",
-    "intro": "Cette page résume en temps réel ce que je construis et ce que j apprends pour renforcer mon profil technique.",
+    "intro": "Un aperçu des projets et technologies sur lesquels je travaille actuellement.",
     "currentFocus": "Je travaille comme freelance depuis juin 2026. Je suis actuellement disponible pour de nouveaux projets backend avec Java 21, Spring Boot 3 et des architectures propres.",
     "buildingTitle": "En construction",
     "building1": "Amélioration de mon portfolio multilingue avec SEO et conversion.",
@@ -208,7 +290,7 @@
               "PostgreSQL",
               "SQLCipher",
               "AES-256",
-              "Flyway/Liquibase"
+              "Goose"
             ],
             "duration": "2-3 semaines",
             "startingPrice": "$450",
@@ -217,9 +299,9 @@
             "payment": "standard"
           },
           {
-            "id": "rust-backend",
-            "title": "Backends et CLI Haute Performance en Rust",
-            "idealFor": "Équipes qui ont besoin de services à faible latence ou d'outils CLI robustes",
+            "id": "java-backend",
+            "title": "API backend Java avec Spring Boot",
+            "idealFor": "Équipes ayant besoin d’une API Java avec authentification, rôles et persistance.",
             "scope": "Une API de 5 endpoints maximum ou une CLI de 5 commandes maximum, documentation et tests du périmètre.",
             "deliverables": [
               "Code source",
@@ -227,10 +309,9 @@
               "Tests du périmètre"
             ],
             "technologies": [
-              "Rust",
-              "Actix-web",
-              "SeaORM",
-              "Prometheus"
+              "Java",
+              "Spring Boot",
+              "MongoDB"
             ],
             "duration": "3-5 semaines",
             "startingPrice": "$900",
@@ -301,9 +382,8 @@
             "technologies": [
               "Next.js",
               "TypeScript",
-              "Tailwind",
-              "shadcn/ui",
-              "TanStack Table"
+              "Tailwind CSS",
+              "shadcn/ui"
             ],
             "duration": "2-4 semaines",
             "startingPrice": "$800",
@@ -409,9 +489,9 @@
               "Rapports SLA"
             ],
             "technologies": [
-              "Java 21",
-              "Spring Boot 3",
-              "Next.js",
+              "Go",
+              "Chi",
+              "Astro",
               "PostgreSQL"
             ],
             "duration": "4-5 semaines",
@@ -431,10 +511,9 @@
               "Guide d’installation"
             ],
             "technologies": [
-              "Electron",
-              "Tauri",
-              "React",
-              "TypeScript"
+              "Flutter",
+              "Dart",
+              "SQLite"
             ],
             "duration": "3-4 semaines",
             "startingPrice": "$800",
@@ -483,8 +562,7 @@
             "technologies": [
               "Flutter",
               "Dart",
-              "Firebase",
-              "Provider/Bloc"
+              "Provider"
             ],
             "duration": "4-6 semaines",
             "startingPrice": "$1,200",
@@ -532,7 +610,7 @@
               "TypeScript",
               "Java",
               "Next.js",
-              "AWS"
+              "Go"
             ],
             "duration": "Mensuel",
             "startingPrice": "$250 / mo",
@@ -552,7 +630,6 @@
             ],
             "technologies": [
               "Turborepo",
-              "Nx",
               "pnpm workspaces"
             ],
             "duration": "Jusqu’à 6 heures",
@@ -593,11 +670,10 @@
   "Skills": {
     "title": "Compétences",
     "catFrontend": "Frontend",
-    "catBackend": "Backend & Cloud",
+    "catBackend": "Backend et données",
     "catSystems": "Systèmes, Mobile & Desktop",
-    "catAI": "Ingénierie IA & Outils",
     "catQA": "QA & Tests",
-    "catLanguages": "Langues (Parlées)",
+    "catLanguages": "Langues",
     "langSpanish": "Espagnol (Natif)",
     "langEnglish": "Anglais",
     "langFrench": "Français",
@@ -615,16 +691,10 @@
     "certJavaTitle": "Fondamentaux de Java, Java POO, Spring Boot",
     "certJavaEntity": "TodoCode"
   },
-  "Stats": {
-    "yearsLabel": "Années d expérience",
-    "projectsLabel": "Projets construits",
-    "languagesLabel": "Langues maitrisées",
-    "techLabel": "Technologies Cloud / IA"
-  },
   "Availability": {
     "badge": "Freelance depuis juin 2026",
     "title": "Disponible pour des projets freelance à distance",
-    "description": "Je travaille comme freelance depuis juin 2026 et je construis des APIs robustes, des architectures propres et des produits avec une livraison continue. Je travaille 100% à distance depuis le Venezuela (UTC-4).",
+    "description": "Je travaille à distance comme développeur Full-Stack indépendant depuis le Venezuela (UTC-4). Je développe et maintiens des logiciels web, mobiles et de bureau, en reliant interfaces, API et bases de données.",
     "modalityLabel": "Modalité",
     "modality": "100% à distance",
     "contractLabel": "Type de contrat",

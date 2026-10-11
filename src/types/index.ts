@@ -1,16 +1,11 @@
-export type Repo = {
+export type Project = {
+  id: string;
   name: string;
-  description: string | null;
-  url: string;
-  language: string | null;
-  demoUrl?: string | null;
-  status?: string;
-  year?: string;
-  license?: string;
-  highlights?: string[];
-};
-
-export type Project = Repo & {
+  description: string;
+  highlights: string[];
+  url: string | null;
+  languages: string[];
+  technologies: string[];
   isPrivate?: boolean;
 };
 

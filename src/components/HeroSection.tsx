@@ -92,7 +92,7 @@ export default function HeroSection() {
               </h2>
               <div className="mt-3 h-[2px] w-56 bg-zinc-900/85 dark:bg-zinc-100/85" />
               <p className="mt-4 text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
-                {t('role')}
+                {t('whatIDoDescription')}
               </p>
             </div>
 
