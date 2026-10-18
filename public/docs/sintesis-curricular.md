@@ -2,7 +2,7 @@
 
 ## Perfil profesional
 
-Estudiante de Ingeniería en Informática y desarrollador Full-Stack. Participo en productos web, de escritorio y multiplataforma, desde la definición de flujos y la construcción de interfaces hasta la integración de APIs y bases de datos. Mi experiencia incluye equipos remotos y software de gestión para distintos sectores.
+Ingeniero en Informática egresado de la UNERG y desarrollador Full-Stack. Participo en productos web, de escritorio y multiplataforma, desde la definición de flujos y la construcción de interfaces hasta la integración de APIs y bases de datos. Mi experiencia incluye equipos remotos y software de gestión para distintos sectores.
 
 ## Experiencia
 
@@ -28,7 +28,7 @@ LogMaster digitaliza el registro y control de visitantes, con seguimiento de acc
 
 Ingeniería en Informática — Universidad Nacional Experimental Rómulo Gallegos (UNERG)
 
-Graduación prevista: mediados de 2027 · Especialización en Ingeniería de Sistemas
+Título obtenido
 
 ## Proyectos seleccionados
 

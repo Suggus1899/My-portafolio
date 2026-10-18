@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
-import { SITE_URL, EMAIL } from '@/config/constants';
+import { EMAIL } from '@/config/constants';
+import { getLocalizedAlternates } from '@/lib/seo';
 
 export async function generateMetadata({
   params
@@ -15,9 +16,7 @@ export async function generateMetadata({
   return {
     title: `${t('title')} | Gustavo Colina`,
     description: t('intro'),
-    alternates: {
-      canonical: `${SITE_URL}/${locale}/privacy`
-    }
+    alternates: getLocalizedAlternates(locale as 'es' | 'en' | 'fr' | 'it', '/privacy')
   };
 }
 

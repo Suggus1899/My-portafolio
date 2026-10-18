@@ -1,7 +1,7 @@
 {
   "Index": {
-    "title": "Gustavo Colina — Full-Stack Developer",
-    "description": "Venezuelan Full-Stack Developer building web, mobile and desktop products while studying Computer Engineering at UNERG."
+    "title": "Gustavo Colina — Computer Engineer",
+    "description": "Computer Engineer, UNERG graduate and Venezuelan Full-Stack Developer building web, mobile and desktop products."
   },
   "Navigation": {
     "curriculum": "CV Summary",
@@ -22,13 +22,13 @@
     "closeMenu": "Close menu",
     "scrollToTop": "Scroll to top",
     "toggleTheme": "Toggle theme",
-    "footerSubtitle": "Full-Stack Developer · Computer Engineering student",
+    "footerSubtitle": "Computer Engineer · Full-Stack Developer",
     "allRightsReserved": "All rights reserved.",
     "privacy": "Privacy"
   },
   "Hero": {
     "greeting": "Hi! I'm Gustavo Colina (Suggus1899)",
-    "role": "Full-Stack Developer · Computer Engineering Student",
+    "role": "Computer Engineer · Full-Stack Developer",
     "whatIDo": "What do I do?",
     "availability": "Available for new opportunities",
     "contact": "Contact me",
@@ -43,7 +43,7 @@
   "Curriculum": {
     "kicker": "CV Summary",
     "title": "Full-Stack Developer for web and cross-platform products",
-    "summary": "Computer Engineering student and Full-Stack Developer. I contribute to web, desktop and cross-platform products, from shaping user flows and building interfaces to integrating APIs and databases. My experience includes remote teams and management software for different sectors.",
+    "summary": "Computer Engineer, UNERG graduate and Full-Stack Developer. I contribute to web, desktop and cross-platform products, from shaping user flows and building interfaces to integrating APIs and databases. My experience includes remote teams and management software for different sectors.",
     "highlight1": "Web and cross-platform development, from interfaces to service integration.",
     "highlight2": "Experience with APIs, relational databases, desktop and mobile apps.",
     "highlight3": "Remote team collaboration and software maintenance shaped by practical needs.",
@@ -190,9 +190,9 @@
   "FavoriteStack": {
     "title": "Favorite stack",
     "subtitle": "Technologies used across recent projects of different kinds.",
-    "item1": "Web and business APIs with Go, Chi and PostgreSQL.",
+    "item1": "APIs and backend services with Node.js and TypeScript.",
     "item2": "Interfaces and applications with TypeScript, React, Next.js and Astro.",
-    "item3": "Relational and document data with PostgreSQL, Prisma and MongoDB.",
+    "item3": "Go and Chi backends with PostgreSQL persistence.",
     "item4": "Java applications with Spring Boot and role-based access.",
     "item5": "Cross-platform and local apps with Flutter, SQLite and Dart.",
     "item6": "Scientific simulation in Python with NumPy, SciPy and Matplotlib."
@@ -270,7 +270,7 @@
               "Redis"
             ],
             "duration": "2-3 weeks",
-            "startingPrice": "$400",
+            "startingPrice": "$750",
             "exclusions": "Frontend, payments, multi-tenancy, data migration and external integrations.",
             "revisions": "2 rounds",
             "payment": "standard"
@@ -292,7 +292,7 @@
               "Goose"
             ],
             "duration": "2-3 weeks",
-            "startingPrice": "$450",
+            "startingPrice": "$750",
             "exclusions": "Comprehensive audits, certifications, data recovery and zero-downtime production migration.",
             "revisions": "1 round",
             "payment": "standard"
@@ -427,7 +427,7 @@
               "Prisma"
             ],
             "duration": "3-4 weeks",
-            "startingPrice": "$1,000",
+            "startingPrice": "$1,500",
             "exclusions": "Marketplace, subscriptions, tax invoicing, custom logistics and ERP integration.",
             "revisions": "2 rounds",
             "payment": "standard"
@@ -536,7 +536,7 @@
               "Prisma"
             ],
             "duration": "3-4 weeks",
-            "startingPrice": "$650",
+            "startingPrice": "$1,000",
             "exclusions": "General simulation engine, full LMS, multiplayer and educational content.",
             "revisions": "2 rounds",
             "payment": "standard"
@@ -564,7 +564,7 @@
               "Provider"
             ],
             "duration": "4-6 weeks",
-            "startingPrice": "$1,200",
+            "startingPrice": "$2,000",
             "exclusions": "New backend, payments, offline sync, complex native integrations and store submission management.",
             "revisions": "2 rounds",
             "payment": "standard"
@@ -612,7 +612,7 @@
               "Go"
             ],
             "duration": "Monthly",
-            "startingPrice": "$250 / mo",
+            "startingPrice": "$250 / month",
             "exclusions": "24/7 support, guaranteed immediate resolution, new projects and additional hours.",
             "revisions": "Revisions consume the 5-hour allowance.",
             "payment": "upfront"
@@ -640,7 +640,7 @@
         ]
       }
     ],
-    "startingPrice": "Investment from",
+    "startingPrice": "Starting at (USD)",
     "whatsappServiceMessage": "Hi Gustavo, I'm interested in the service: {title}",
     "emailServiceSubject": "Quote: {title}",
     "emailServiceBody": "Hi Gustavo,\n\nI would like to get more information about your service: {title}\n\nLooking forward to hearing from you.\n\nBest regards.",
@@ -684,7 +684,7 @@
     "university": "University Studies",
     "certifications": "Courses & Certifications",
     "universityTitle": "Computer Engineering",
-    "universitySubtitle": "Expected graduation: mid-2027 · Systems Engineering Specialization",
+    "universitySubtitle": "Degree completed",
     "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermediate)",
     "certDataScienceEntity": "DataCamp",

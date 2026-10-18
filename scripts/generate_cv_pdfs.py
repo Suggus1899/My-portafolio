@@ -26,10 +26,10 @@ FEATURED_PROJECTS = (
 CONTACT = "Aragua, Venezuela | +58-424-3737586 | gustavojose0819@gmail.com | github.com/Suggus1899"
 
 LABELS = {
-    "es": {"experience": "Experiencia", "education": "Educación", "certifications": "Cursos", "technologies": "Tecnologías", "projects": "Proyectos seleccionados", "project": "Proyecto", "description": "Descripción", "languages": "Idiomas", "student": "Estudiante de Ingeniería en Informática", "expected": "Graduación prevista a mediados de 2027", "private": "Privado"},
-    "en": {"experience": "Experience", "education": "Education", "certifications": "Courses", "technologies": "Technologies", "projects": "Selected projects", "project": "Project", "description": "Description", "languages": "Languages", "student": "Computer Engineering student", "expected": "Expected graduation: mid-2027", "private": "Private"},
-    "fr": {"experience": "Expérience", "education": "Formation", "certifications": "Cours", "technologies": "Technologies", "projects": "Projets sélectionnés", "project": "Projet", "description": "Description", "languages": "Langues", "student": "Étudiant en génie informatique", "expected": "Diplôme prévu mi-2027", "private": "Privé"},
-    "it": {"experience": "Esperienza", "education": "Formazione", "certifications": "Corsi", "technologies": "Tecnologie", "projects": "Progetti selezionati", "project": "Progetto", "description": "Descrizione", "languages": "Lingue", "student": "Studente di ingegneria informatica", "expected": "Laurea prevista a metà 2027", "private": "Privato"},
+    "es": {"experience": "Experiencia", "education": "Educación", "certifications": "Cursos", "technologies": "Tecnologías", "projects": "Proyectos seleccionados", "project": "Proyecto", "description": "Descripción", "languages": "Idiomas", "private": "Privado"},
+    "en": {"experience": "Experience", "education": "Education", "certifications": "Courses", "technologies": "Technologies", "projects": "Selected projects", "project": "Project", "description": "Description", "languages": "Languages", "private": "Private"},
+    "fr": {"experience": "Expérience", "education": "Formation", "certifications": "Cours", "technologies": "Technologies", "projects": "Projets sélectionnés", "project": "Projet", "description": "Description", "languages": "Langues", "private": "Privé"},
+    "it": {"experience": "Esperienza", "education": "Formazione", "certifications": "Corsi", "technologies": "Tecnologie", "projects": "Progetti selezionati", "project": "Progetto", "description": "Descrizione", "languages": "Lingue", "private": "Privato"},
 }
 
 
@@ -85,7 +85,7 @@ def build_cv(locale, repos, message):
     project_content = message["Projects"]["items"]
     style = styles()
     output = OUTPUT_DIR / f"curriculum-{locale}.pdf"
-    document = SimpleDocTemplate(str(output), pagesize=letter, leftMargin=0.45 * inch, rightMargin=0.45 * inch, topMargin=0.4 * inch, bottomMargin=0.4 * inch, title=f"Gustavo Colina — {language['student']}", author="Gustavo Colina")
+    document = SimpleDocTemplate(str(output), pagesize=letter, leftMargin=0.45 * inch, rightMargin=0.45 * inch, topMargin=0.4 * inch, bottomMargin=0.4 * inch, title=f"Gustavo Colina — {message['Hero']['role']}", author="Gustavo Colina")
 
     story = header(style)
     story += [section(curriculum["pdfProfileTitle"], style), para(curriculum["summary"], style["body"]), section(curriculum["pdfExperienceTitle"], style)]
@@ -102,7 +102,7 @@ def build_cv(locale, repos, message):
     story.append(PageBreak())
     story += header(style)
     story.append(section(language["education"], style))
-    story.append(para(f"<b>{education['universityTitle']}</b> · {education['universityEntity']}<br/>{language['expected']}", style["body"]))
+    story.append(para(f"<b>{education['universityTitle']}</b> · {education['universityEntity']}<br/>{education['universitySubtitle']}", style["body"]))
     story.append(section(language["certifications"], style))
     story.append(para(f"{education['certDataScienceTitle']} · {education['certDataScienceEntity']}<br/>{education['certJavaTitle']} · {education['certJavaEntity']}", style["body"]))
     story.append(section(curriculum["pdfSkillsTitle"], style))

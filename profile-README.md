@@ -3,7 +3,7 @@
 <div align="center">
   <img src="https://github.com/Suggus1899.png" width="120" style="border-radius:50%" alt="Gustavo Colina" />
   <h1>Gustavo Colina · Suggus1899</h1>
-  <h3>Systems Engineer (8/10) · Full-Stack · Backend-first · Cloud learner</h3>
+  <h3>Computer Engineer · Full-Stack · Backend-first · Cloud learner</h3>
 
   <p>
     <a href="https://my-portafolio-puce.vercel.app/en"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
@@ -31,7 +31,7 @@
 
 ## About me
 
-Systems Engineering student (8 of 10 semesters) and full-stack developer with real production experience. I build web, desktop and cross-platform systems that automate operational workflows and eliminate human error, applying Clean Architecture, SOLID and clean domain boundaries across every layer.
+Computer Engineer, UNERG graduate and full-stack developer with real production experience. I build web, desktop and cross-platform systems that automate operational workflows and eliminate human error, applying Clean Architecture, SOLID and clean domain boundaries across every layer.
 
 **Shipped in production:**
 - Multi-tenant SaaS with AES-256-GCM encryption, 39 E2E tests (Playwright) and Turborepo monorepo
@@ -44,8 +44,12 @@ Currently sharpening Java 21 + Spring Boot 3, cloud networking and observability
 
 ## Experience
 
-### Full-Stack Programmer — Remote · KeoIT (Peru)
-**March 2026 – Present**
+### Freelance Full-Stack Developer · ZoomMergeLabs
+**June 2026 – Present**
+Develop and maintain Meden, a fiscal, commercial and operations management platform. Work primarily on the Flutter/GetX cross-platform client integrated with Go services on Railway, stabilizing API contracts and authentication flows while evolving client, CFDI invoicing and quoting, SAT operations and plan modules.
+
+### Full-Stack Developer — Remote · KeoIT (Peru)
+**March 2026 – June 2026**
 Cross-platform client (Flutter/Dart) for Android, iOS and Desktop. Clean Architecture with Provider for session management and role control. Rive vector animations and Glassmorphism design. Full-stack participation with Next.js on the web layer.
 - Reduced app load time by 40% via optimized state management
 - RBAC for 500+ concurrent users
@@ -116,7 +120,7 @@ Academic platform for tutoring management, student tracking and teacher coordina
 
 ## Education & Certifications
 
-- **Computer Engineering (Systems Engineering)** — University, 8th semester of 10
+- **Computer Engineering** — Universidad Nacional Experimental Rómulo Gallegos (UNERG), degree completed
 - **Data Science, Prompt Engineering, SQL** — DataCamp
 - **Java Fundamentals, OOP, Spring Boot** — TodoCode
 

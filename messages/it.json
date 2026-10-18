@@ -1,7 +1,7 @@
 {
   "Index": {
-    "title": "Gustavo Colina — Sviluppatore Full-Stack",
-    "description": "Sviluppatore Full-Stack venezuelano di prodotti web, mobili e desktop, studente di ingegneria informatica alla UNERG."
+    "title": "Gustavo Colina — Ingegnere informatico",
+    "description": "Ingegnere informatico laureato alla UNERG e sviluppatore Full-Stack venezuelano di prodotti web, mobili e desktop."
   },
   "Navigation": {
     "curriculum": "Sintesi CV",
@@ -22,13 +22,13 @@
     "closeMenu": "Chiudi il menu",
     "scrollToTop": "Torna in cima",
     "toggleTheme": "Cambia tema",
-    "footerSubtitle": "Sviluppatore Full-Stack · Studi di ingegneria informatica",
+    "footerSubtitle": "Ingegnere informatico · Sviluppatore Full-Stack",
     "allRightsReserved": "Tutti i diritti riservati.",
     "privacy": "Privacy"
   },
   "Hero": {
     "greeting": "Ciao! Sono Gustavo Colina (Suggus1899)",
-    "role": "Sviluppatore Full-Stack · Studente di ingegneria informatica",
+    "role": "Ingegnere informatico · Sviluppatore Full-Stack",
     "whatIDo": "Cosa faccio?",
     "availability": "Disponibile per nuove opportunita",
     "contact": "Contattami",
@@ -43,7 +43,7 @@
   "Curriculum": {
     "kicker": "Sintesi CV",
     "title": "Sviluppatore Full-Stack per prodotti web e multipiattaforma",
-    "summary": "Studente di ingegneria informatica e sviluppatore Full-Stack. Contribuisco a prodotti web, desktop e multipiattaforma, dalla definizione dei flussi utente alla realizzazione delle interfacce e all’integrazione di API e database. La mia esperienza comprende team remoti e software gestionali per diversi settori.",
+    "summary": "Ingegnere informatico laureato alla UNERG e sviluppatore Full-Stack. Contribuisco a prodotti web, desktop e multipiattaforma, dalla definizione dei flussi utente alla realizzazione delle interfacce e all’integrazione di API e database. La mia esperienza comprende team remoti e software gestionali per diversi settori.",
     "highlight1": "Sviluppo web e multipiattaforma, dalle interfacce all’integrazione dei servizi.",
     "highlight2": "Esperienza con API, database relazionali e app desktop e mobili.",
     "highlight3": "Collaborazione con team remoti e manutenzione software orientata alle esigenze pratiche.",
@@ -190,9 +190,9 @@
   "FavoriteStack": {
     "title": "Stack preferito",
     "subtitle": "Tecnologie utilizzate in progetti recenti di diversa natura.",
-    "item1": "API web e gestionali con Go, Chi e PostgreSQL.",
+    "item1": "API e servizi backend con Node.js e TypeScript.",
     "item2": "Interfacce e applicazioni con TypeScript, React, Next.js e Astro.",
-    "item3": "Dati relazionali e documentali con PostgreSQL, Prisma e MongoDB.",
+    "item3": "Backend Go con Chi e persistenza PostgreSQL.",
     "item4": "Applicazioni Java con Spring Boot e accesso basato sui ruoli.",
     "item5": "App multipiattaforma e locali con Flutter, SQLite e Dart.",
     "item6": "Simulazione scientifica in Python con NumPy, SciPy e Matplotlib."
@@ -244,7 +244,7 @@
       "email": "Invia email",
       "calendar": "Pianifica una chiamata"
     },
-    "startingPrice": "Investimento a partire da",
+    "startingPrice": "Prezzo a partire da (USD)",
     "categories": [
       {
         "id": "backend",
@@ -271,7 +271,7 @@
               "Redis"
             ],
             "duration": "2-3 settimane",
-            "startingPrice": "$400",
+            "startingPrice": "$750",
             "exclusions": "Frontend, pagamenti, multi-tenant, migrazione dati e integrazioni esterne.",
             "revisions": "2 revisioni",
             "payment": "standard"
@@ -293,7 +293,7 @@
               "Goose"
             ],
             "duration": "2-3 settimane",
-            "startingPrice": "$450",
+            "startingPrice": "$750",
             "exclusions": "Audit completo, certificazioni, recupero dati e migrazione in produzione senza interruzioni.",
             "revisions": "1 revisione",
             "payment": "standard"
@@ -428,7 +428,7 @@
               "Prisma"
             ],
             "duration": "3-4 settimane",
-            "startingPrice": "$1,000",
+            "startingPrice": "$1,500",
             "exclusions": "Marketplace, abbonamenti, fatturazione fiscale, logistica personalizzata e integrazione ERP.",
             "revisions": "2 revisioni",
             "payment": "standard"
@@ -537,7 +537,7 @@
               "Prisma"
             ],
             "duration": "3-4 settimane",
-            "startingPrice": "$650",
+            "startingPrice": "$1,000",
             "exclusions": "Motore di simulazione generale, LMS completo, multiplayer e contenuti didattici.",
             "revisions": "2 revisioni",
             "payment": "standard"
@@ -565,7 +565,7 @@
               "Provider"
             ],
             "duration": "4-6 settimane",
-            "startingPrice": "$1,200",
+            "startingPrice": "$2,000",
             "exclusions": "Nuovo backend, pagamenti, sincronizzazione offline, integrazioni native complesse e gestione pubblicazione.",
             "revisions": "2 revisioni",
             "payment": "standard"
@@ -613,7 +613,7 @@
               "Go"
             ],
             "duration": "Mensile",
-            "startingPrice": "$250 / mo",
+            "startingPrice": "$250 / mese",
             "exclusions": "Supporto 24/7, risoluzione immediata garantita, nuovi progetti e ore aggiuntive.",
             "revisions": "Le revisioni consumano il pacchetto di 5 ore.",
             "payment": "upfront"
@@ -684,7 +684,7 @@
     "university": "Studi Universitari",
     "certifications": "Corsi e Certificazioni",
     "universityTitle": "Ingegneria Informatica",
-    "universitySubtitle": "Laurea prevista a metà 2027 · Specializzazione in Ingegneria dei Sistemi",
+    "universitySubtitle": "Laurea conseguita",
     "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermedio)",
     "certDataScienceEntity": "DataCamp",

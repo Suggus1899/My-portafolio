@@ -3,6 +3,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { SITE_URL } from '@/config/constants';
+import { getLocalizedAlternates } from '@/lib/seo';
 
 export async function generateMetadata({
   params
@@ -15,11 +16,12 @@ export async function generateMetadata({
   return {
     title: `${t('title')} | Gustavo Colina`,
     description: t('intro'),
+    alternates: getLocalizedAlternates(locale as 'es' | 'en' | 'fr' | 'it', '/now'),
     openGraph: {
       title: `${t('title')} | Gustavo Colina`,
       description: t('intro'),
       url: `${SITE_URL}/${locale}/now`,
-      images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630 }]
+      images: [{ url: `${SITE_URL}/og-image.png`, width: 1254, height: 1254 }]
     },
     twitter: {
       card: 'summary_large_image',

@@ -4,6 +4,7 @@ import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { Link, routing } from '@/i18n/routing';
 import { getBlogPostBySlug, blogPosts, type AppLocale } from '@/data/blogPosts';
 import { SITE_URL } from '@/config/constants';
+import { getLocalizedAlternates } from '@/lib/seo';
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -25,18 +26,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const tBlog = await getTranslations({ locale: appLocale, namespace: 'Blog' });
 
   if (!post) {
-    return { title: `${tBlog('title')} | Gustavo Colina` };
+    return {
+      title: `${tBlog('title')} | Gustavo Colina`,
+      robots: { index: false, follow: false },
+      alternates: { canonical: `/${appLocale}/blog/${slug}` }
+    };
   }
 
   return {
     title: `${post.title} | Gustavo Colina`,
     description: post.excerpt,
+    alternates: getLocalizedAlternates(appLocale, `/blog/${slug}`),
     openGraph: {
       title: `${post.title} | Gustavo Colina`,
       description: post.excerpt,
       url: `${SITE_URL}/${appLocale}/blog/${slug}`,
       type: 'article',
-      images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630 }]
+      images: [{ url: `${SITE_URL}/og-image.png`, width: 1254, height: 1254 }]
     },
     twitter: {
       card: 'summary_large_image',

@@ -55,6 +55,7 @@ export default function EducationSection() {
                 <div>
                   <h4 className="font-space font-black uppercase text-lg text-zinc-900 dark:text-zinc-100">{item.title}</h4>
                   <p className="text-zinc-600 dark:text-zinc-300 font-medium mb-1">{item.subtitle}</p>
+                  <p className="text-zinc-500 dark:text-zinc-400 text-sm font-mono">{item.entity}</p>
                 </div>
               </div>
             ))}

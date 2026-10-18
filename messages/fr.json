@@ -1,7 +1,7 @@
 {
   "Index": {
-    "title": "Gustavo Colina — Développeur Full-Stack",
-    "description": "Développeur Full-Stack vénézuélien de produits web, mobiles et de bureau, étudiant en génie informatique à l’UNERG."
+    "title": "Gustavo Colina — Ingénieur en informatique",
+    "description": "Ingénieur en informatique diplômé de l’UNERG et développeur Full-Stack vénézuélien de produits web, mobiles et de bureau."
   },
   "Navigation": {
     "curriculum": "Synthèse CV",
@@ -22,13 +22,13 @@
     "closeMenu": "Fermer le menu",
     "scrollToTop": "Retour en haut",
     "toggleTheme": "Changer le thème",
-    "footerSubtitle": "Développeur Full-Stack · Études en génie informatique",
+    "footerSubtitle": "Ingénieur en informatique · Développeur Full-Stack",
     "allRightsReserved": "Tous droits réservés.",
     "privacy": "Confidentialité"
   },
   "Hero": {
     "greeting": "Salut ! Je suis Gustavo Colina (Suggus1899)",
-    "role": "Développeur Full-Stack · Étudiant en génie informatique",
+    "role": "Ingénieur en informatique · Développeur Full-Stack",
     "whatIDo": "Que fais-je ?",
     "availability": "Disponible pour de nouvelles opportunités",
     "contact": "Me contacter",
@@ -43,7 +43,7 @@
   "Curriculum": {
     "kicker": "Synthèse CV",
     "title": "Développeur Full-Stack pour produits web et multiplateformes",
-    "summary": "Étudiant en génie informatique et développeur Full-Stack. Je contribue à des produits web, de bureau et multiplateformes, de la définition des parcours à la création d’interfaces et à l’intégration d’API et de bases de données. Mon expérience comprend le travail à distance et des logiciels de gestion pour différents secteurs.",
+    "summary": "Ingénieur en informatique diplômé de l’UNERG et développeur Full-Stack. Je contribue à des produits web, de bureau et multiplateformes, de la définition des parcours à la création d’interfaces et à l’intégration d’API et de bases de données. Mon expérience comprend le travail à distance et des logiciels de gestion pour différents secteurs.",
     "highlight1": "Développement web et multiplateforme, des interfaces à l’intégration des services.",
     "highlight2": "Expérience des API, bases de données relationnelles et applications de bureau et mobiles.",
     "highlight3": "Collaboration à distance et maintenance logicielle orientée vers les besoins pratiques.",
@@ -190,9 +190,9 @@
   "FavoriteStack": {
     "title": "Stack préféré",
     "subtitle": "Technologies utilisées dans des projets récents de différents types.",
-    "item1": "API web et métier avec Go, Chi et PostgreSQL.",
+    "item1": "API et services backend avec Node.js et TypeScript.",
     "item2": "Interfaces et applications avec TypeScript, React, Next.js et Astro.",
-    "item3": "Données relationnelles et documentaires avec PostgreSQL, Prisma et MongoDB.",
+    "item3": "Backends Go avec Chi et persistance PostgreSQL.",
     "item4": "Applications Java avec Spring Boot et gestion des rôles.",
     "item5": "Applications multiplateformes et locales avec Flutter, SQLite et Dart.",
     "item6": "Simulation scientifique en Python avec NumPy, SciPy et Matplotlib."
@@ -244,7 +244,7 @@
       "email": "Envoyer un email",
       "calendar": "Planifier un appel"
     },
-    "startingPrice": "Investissement à partir de",
+    "startingPrice": "À partir de (USD)",
     "categories": [
       {
         "id": "backend",
@@ -271,7 +271,7 @@
               "Redis"
             ],
             "duration": "2-3 semaines",
-            "startingPrice": "$400",
+            "startingPrice": "$750",
             "exclusions": "Frontend, paiements, multi-tenant, migration de données et intégrations externes.",
             "revisions": "2 révisions",
             "payment": "standard"
@@ -293,7 +293,7 @@
               "Goose"
             ],
             "duration": "2-3 semaines",
-            "startingPrice": "$450",
+            "startingPrice": "$750",
             "exclusions": "Audit complet, certifications, récupération de données et migration de production sans interruption.",
             "revisions": "1 révision",
             "payment": "standard"
@@ -428,7 +428,7 @@
               "Prisma"
             ],
             "duration": "3-4 semaines",
-            "startingPrice": "$1,000",
+            "startingPrice": "$1,500",
             "exclusions": "Marketplace, abonnements, facturation fiscale, logistique personnalisée et intégration ERP.",
             "revisions": "2 révisions",
             "payment": "standard"
@@ -537,7 +537,7 @@
               "Prisma"
             ],
             "duration": "3-4 semaines",
-            "startingPrice": "$650",
+            "startingPrice": "$1,000",
             "exclusions": "Moteur de simulation général, LMS complet, multijoueur et contenu pédagogique.",
             "revisions": "2 révisions",
             "payment": "standard"
@@ -565,7 +565,7 @@
               "Provider"
             ],
             "duration": "4-6 semaines",
-            "startingPrice": "$1,200",
+            "startingPrice": "$2,000",
             "exclusions": "Nouveau backend, paiements, synchronisation hors ligne, intégrations natives complexes et gestion de publication.",
             "revisions": "2 révisions",
             "payment": "standard"
@@ -613,7 +613,7 @@
               "Go"
             ],
             "duration": "Mensuel",
-            "startingPrice": "$250 / mo",
+            "startingPrice": "$250 / mois",
             "exclusions": "Support 24/7, résolution immédiate garantie, nouveaux projets et heures supplémentaires.",
             "revisions": "Les révisions consomment le forfait de 5 heures.",
             "payment": "upfront"
@@ -684,7 +684,7 @@
     "university": "Études Universitaires",
     "certifications": "Cours et Certifications",
     "universityTitle": "Ingénierie Informatique",
-    "universitySubtitle": "Diplôme prévu mi-2027 · Spécialisation en Ingénierie des Systèmes",
+    "universitySubtitle": "Diplôme obtenu",
     "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermédiaire)",
     "certDataScienceEntity": "DataCamp",

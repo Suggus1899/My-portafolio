@@ -2,7 +2,7 @@
 
 Personal portfolio and services site for Gustavo Colina (Suggus1899), Full-Stack Software Engineer. Built with Next.js 16 (App Router) and TypeScript.
 
-Live at [gustavocolina.dev](https://gustavocolina.dev).
+Live at [my-portafolio-puce.vercel.app](https://my-portafolio-puce.vercel.app/es).
 
 ## Stack
 

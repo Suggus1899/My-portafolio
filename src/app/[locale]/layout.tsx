@@ -55,8 +55,8 @@ export async function generateMetadata({
       images: [
         {
           url: `${siteUrl}/og-image.png`,
-          width: 1200,
-          height: 630,
+          width: 1254,
+          height: 1254,
           alt: 'Gustavo Colina — Software Engineer'
         }
       ]
