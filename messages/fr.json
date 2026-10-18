@@ -1,7 +1,7 @@
 {
   "Index": {
-    "title": "Gustavo Colina — Ingénieur en informatique",
-    "description": "Ingénieur en informatique diplômé de l’UNERG et développeur Full-Stack vénézuélien de produits web, mobiles et de bureau."
+    "title": "Gustavo Colina — Ingénieur systèmes",
+    "description": "Diplômé en ingénierie des systèmes de l’UNERG et développeur Full-Stack vénézuélien de produits web, mobiles et de bureau."
   },
   "Navigation": {
     "curriculum": "Synthèse CV",
@@ -22,13 +22,13 @@
     "closeMenu": "Fermer le menu",
     "scrollToTop": "Retour en haut",
     "toggleTheme": "Changer le thème",
-    "footerSubtitle": "Ingénieur en informatique · Développeur Full-Stack",
+    "footerSubtitle": "Ingénieur systèmes · Développeur Full-Stack",
     "allRightsReserved": "Tous droits réservés.",
     "privacy": "Confidentialité"
   },
   "Hero": {
     "greeting": "Salut ! Je suis Gustavo Colina (Suggus1899)",
-    "role": "Ingénieur en informatique · Développeur Full-Stack",
+    "role": "Ingénieur systèmes · Développeur Full-Stack",
     "whatIDo": "Que fais-je ?",
     "availability": "Disponible pour de nouvelles opportunités",
     "contact": "Me contacter",
@@ -43,7 +43,7 @@
   "Curriculum": {
     "kicker": "Synthèse CV",
     "title": "Développeur Full-Stack pour produits web et multiplateformes",
-    "summary": "Ingénieur en informatique diplômé de l’UNERG et développeur Full-Stack. Je contribue à des produits web, de bureau et multiplateformes, de la définition des parcours à la création d’interfaces et à l’intégration d’API et de bases de données. Mon expérience comprend le travail à distance et des logiciels de gestion pour différents secteurs.",
+    "summary": "Ingénieur systèmes et développeur Full-Stack, diplômé en ingénierie des systèmes de l’UNERG. Je contribue à des produits web, de bureau et multiplateformes, de la définition des parcours à la création d’interfaces et à l’intégration d’API et de bases de données. Mon expérience comprend le travail à distance et des logiciels de gestion pour différents secteurs.",
     "highlight1": "Développement web et multiplateforme, des interfaces à l’intégration des services.",
     "highlight2": "Expérience des API, bases de données relationnelles et applications de bureau et mobiles.",
     "highlight3": "Collaboration à distance et maintenance logicielle orientée vers les besoins pratiques.",
@@ -681,11 +681,11 @@
   },
   "Education": {
     "title": "Éducation et Certifications",
-    "university": "Études Universitaires",
+    "university": "Formation universitaire",
     "certifications": "Cours et Certifications",
-    "universityTitle": "Ingénierie Informatique",
+    "universityTitle": "Ingénierie des systèmes",
     "universitySubtitle": "Diplôme obtenu",
-    "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
+    "universityEntity": "Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermédiaire)",
     "certDataScienceEntity": "DataCamp",
     "certJavaTitle": "Fondamentaux de Java, Java POO, Spring Boot",

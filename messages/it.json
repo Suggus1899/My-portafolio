@@ -1,7 +1,7 @@
 {
   "Index": {
-    "title": "Gustavo Colina — Ingegnere informatico",
-    "description": "Ingegnere informatico laureato alla UNERG e sviluppatore Full-Stack venezuelano di prodotti web, mobili e desktop."
+    "title": "Gustavo Colina — Ingegnere dei sistemi",
+    "description": "Laureato in Ingegneria dei sistemi presso la UNERG e sviluppatore Full-Stack venezuelano di prodotti web, mobili e desktop."
   },
   "Navigation": {
     "curriculum": "Sintesi CV",
@@ -22,13 +22,13 @@
     "closeMenu": "Chiudi il menu",
     "scrollToTop": "Torna in cima",
     "toggleTheme": "Cambia tema",
-    "footerSubtitle": "Ingegnere informatico · Sviluppatore Full-Stack",
+    "footerSubtitle": "Ingegnere dei sistemi · Sviluppatore Full-Stack",
     "allRightsReserved": "Tutti i diritti riservati.",
     "privacy": "Privacy"
   },
   "Hero": {
     "greeting": "Ciao! Sono Gustavo Colina (Suggus1899)",
-    "role": "Ingegnere informatico · Sviluppatore Full-Stack",
+    "role": "Ingegnere dei sistemi · Sviluppatore Full-Stack",
     "whatIDo": "Cosa faccio?",
     "availability": "Disponibile per nuove opportunita",
     "contact": "Contattami",
@@ -43,7 +43,7 @@
   "Curriculum": {
     "kicker": "Sintesi CV",
     "title": "Sviluppatore Full-Stack per prodotti web e multipiattaforma",
-    "summary": "Ingegnere informatico laureato alla UNERG e sviluppatore Full-Stack. Contribuisco a prodotti web, desktop e multipiattaforma, dalla definizione dei flussi utente alla realizzazione delle interfacce e all’integrazione di API e database. La mia esperienza comprende team remoti e software gestionali per diversi settori.",
+    "summary": "Ingegnere dei sistemi e sviluppatore Full-Stack, laureato in Ingegneria dei sistemi presso la UNERG. Contribuisco a prodotti web, desktop e multipiattaforma, dalla definizione dei flussi utente alla realizzazione delle interfacce e all’integrazione di API e database. La mia esperienza comprende team remoti e software gestionali per diversi settori.",
     "highlight1": "Sviluppo web e multipiattaforma, dalle interfacce all’integrazione dei servizi.",
     "highlight2": "Esperienza con API, database relazionali e app desktop e mobili.",
     "highlight3": "Collaborazione con team remoti e manutenzione software orientata alle esigenze pratiche.",
@@ -681,11 +681,11 @@
   },
   "Education": {
     "title": "Educazione e Certificazioni",
-    "university": "Studi Universitari",
+    "university": "Formazione universitaria",
     "certifications": "Corsi e Certificazioni",
-    "universityTitle": "Ingegneria Informatica",
-    "universitySubtitle": "Laurea conseguita",
-    "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
+    "universityTitle": "Ingegneria dei sistemi",
+    "universitySubtitle": "Titolo conseguito",
+    "universityEntity": "Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermedio)",
     "certDataScienceEntity": "DataCamp",
     "certJavaTitle": "Fondamenti di Java, Java OOP, Spring Boot",

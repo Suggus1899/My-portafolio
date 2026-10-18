@@ -1,7 +1,7 @@
 {
   "Index": {
-    "title": "Gustavo Colina — Computer Engineer",
-    "description": "Computer Engineer, UNERG graduate and Venezuelan Full-Stack Developer building web, mobile and desktop products."
+    "title": "Gustavo Colina — Systems Engineer",
+    "description": "Systems Engineering graduate of the UNERG and Venezuelan Full-Stack Developer building web, mobile and desktop products."
   },
   "Navigation": {
     "curriculum": "CV Summary",
@@ -22,13 +22,13 @@
     "closeMenu": "Close menu",
     "scrollToTop": "Scroll to top",
     "toggleTheme": "Toggle theme",
-    "footerSubtitle": "Computer Engineer · Full-Stack Developer",
+    "footerSubtitle": "Systems Engineer · Full-Stack Developer",
     "allRightsReserved": "All rights reserved.",
     "privacy": "Privacy"
   },
   "Hero": {
     "greeting": "Hi! I'm Gustavo Colina (Suggus1899)",
-    "role": "Computer Engineer · Full-Stack Developer",
+    "role": "Systems Engineer · Full-Stack Developer",
     "whatIDo": "What do I do?",
     "availability": "Available for new opportunities",
     "contact": "Contact me",
@@ -43,7 +43,7 @@
   "Curriculum": {
     "kicker": "CV Summary",
     "title": "Full-Stack Developer for web and cross-platform products",
-    "summary": "Computer Engineer, UNERG graduate and Full-Stack Developer. I contribute to web, desktop and cross-platform products, from shaping user flows and building interfaces to integrating APIs and databases. My experience includes remote teams and management software for different sectors.",
+    "summary": "Systems Engineer and Full-Stack Developer, with a Systems Engineering degree from the UNERG. I contribute to web, desktop and cross-platform products, from shaping user flows and building interfaces to integrating APIs and databases. My experience includes remote teams and management software for different sectors.",
     "highlight1": "Web and cross-platform development, from interfaces to service integration.",
     "highlight2": "Experience with APIs, relational databases, desktop and mobile apps.",
     "highlight3": "Remote team collaboration and software maintenance shaped by practical needs.",
@@ -681,11 +681,11 @@
   },
   "Education": {
     "title": "Education & Certifications",
-    "university": "University Studies",
+    "university": "University Education",
     "certifications": "Courses & Certifications",
-    "universityTitle": "Computer Engineering",
-    "universitySubtitle": "Degree completed",
-    "universityEntity": "Universidad Nacional Experimental Rómulo Gallegos (UNERG)",
+    "universityTitle": "Systems Engineering",
+    "universitySubtitle": "Degree obtained",
+    "universityEntity": "Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermediate)",
     "certDataScienceEntity": "DataCamp",
     "certJavaTitle": "Java Fundamentals, Java OOP, Spring Boot",

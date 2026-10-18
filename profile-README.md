@@ -3,7 +3,7 @@
 <div align="center">
   <img src="https://github.com/Suggus1899.png" width="120" style="border-radius:50%" alt="Gustavo Colina" />
   <h1>Gustavo Colina · Suggus1899</h1>
-  <h3>Computer Engineer · Full-Stack · Backend-first · Cloud learner</h3>
+  <h3>Systems Engineer · Full-Stack Developer · Backend-first · Cloud learner</h3>
 
   <p>
     <a href="https://my-portafolio-puce.vercel.app/en"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
@@ -31,7 +31,7 @@
 
 ## About me
 
-Computer Engineer, UNERG graduate and full-stack developer with real production experience. I build web, desktop and cross-platform systems that automate operational workflows and eliminate human error, applying Clean Architecture, SOLID and clean domain boundaries across every layer.
+Systems Engineering graduate of the UNERG and full-stack developer with real production experience. I build web, desktop and cross-platform systems that automate operational workflows and eliminate human error, applying Clean Architecture, SOLID and clean domain boundaries across every layer.
 
 **Shipped in production:**
 - Multi-tenant SaaS with AES-256-GCM encryption, 39 E2E tests (Playwright) and Turborepo monorepo
@@ -120,7 +120,7 @@ Academic platform for tutoring management, student tracking and teacher coordina
 
 ## Education & Certifications
 
-- **Computer Engineering** — Universidad Nacional Experimental Rómulo Gallegos (UNERG), degree completed
+- **Systems Engineering** — Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG), degree obtained
 - **Data Science, Prompt Engineering, SQL** — DataCamp
 - **Java Fundamentals, OOP, Spring Boot** — TodoCode
 
