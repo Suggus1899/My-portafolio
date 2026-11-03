@@ -55,8 +55,8 @@ Cross-platform client (Flutter/Dart) for Android, iOS and Desktop. Clean Archite
 - RBAC for 500+ concurrent users
 - 95% code reuse across iOS, Android and Desktop
 
-### Senior Full-Stack Developer · Industrias de Alimentos El Trébol
-**2025 – 2026**
+### Full-Stack Developer Intern · Industrias de Alimentos El Trébol
+**February 2026 – August 2026**
 **LogMaster Desktop** — Access Control and Visitor Management. Requirements gathering, encrypted database design (SQLCipher/AES-256-GCM), Electron + React + TypeScript desktop app and web version. PDF/Excel report generator, differentiated roles (Administrator, Guard, Auditor).
 - Reduced process time from 10 min → under 1 min (90% improvement)
 - AES-256-GCM encryption securing 10,000+ sensitive records

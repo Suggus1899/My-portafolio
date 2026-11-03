@@ -18,9 +18,9 @@ Marzo 2026 – Junio 2026
 
 Desarrollo de cliente multiplataforma con Flutter/Dart para Android, iOS y Desktop. Implementación de Clean Architecture con Provider para gestión de sesión y control de roles. Integración de animaciones vectoriales interactivas con el motor Rive y diseño Glassmorphism. Participación en stack full-stack con Next.js en la capa web del sistema. Gestión de estado reactivo y arquitectura desacoplada orientada a escalabilidad.
 
-### Desarrollador Full-Stack — Industrias de Alimentos El Trébol
+### Pasante de Desarrollo Full-Stack — Industrias de Alimentos El Trébol
 
-2025 – 2026
+Febrero 2026 – Agosto 2026
 
 LogMaster digitaliza el registro y control de visitantes, con seguimiento de accesos, gestión de roles y exportación de informes para auditoría.
 
