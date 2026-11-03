@@ -30,20 +30,16 @@ Ingeniería en Sistemas — Universidad Nacional Experimental de los Llanos Cent
 
 Título obtenido
 
+Junior Cybersecurity Analyst Career Path — Cisco Networking Academy · 4 de febrero de 2026
+
 ## Proyectos seleccionados
 
 - **Visitors — LogMaster:** Sistema de registro y control de visitantes para instalaciones corporativas, con gestión de consentimientos, fotografías y auditoría.
 - **Trickreport:** Mesa de ayuda multiempresa para gestionar tickets, acuerdos de servicio y conocimiento de soporte.
 - **Chiguire:** ERP multiempresa con funciones fiscales y de operación para negocios venezolanos, diseñado para seguir trabajando sin conexión.
-- **Souvenirs:** Plataforma para fotógrafos que reúne gestión de clientes, reservas, facturas y pagos.
+- **Copérnico Academy:** Plataforma académica para reservar tutorías, seguir cursos y gestionar documentos, notas y mensajes.
 - **Ohana:** Plataforma de alquileres y residencias con aplicaciones web y móvil para publicar y buscar propiedades.
 - **SI Learning Red:** Plataforma educativa para construir topologías de red y practicar configuración y protocolos.
-- **Jusqu’au dernier pétale:** Floristería en línea con catálogo público y panel de administración respaldados por PostgreSQL.
-- **Colección Web PDF:** Extensión de navegador para guardar las páginas y estados que el usuario elige y reunirlos en un PDF.
-- **SaludTech:** Prototipo de financiamiento de servicios de salud con portales para pacientes, comercios y administración.
-- **To-Do App — Spring Boot + MongoDB:** Aplicación de gestión de tareas con autenticación, roles, comentarios e historial.
-- **SimuliMath:** Simulador académico para estudiar cómo las interferencias afectan las comunicaciones inalámbricas.
-- **Aplicación de mantenimiento preventivo (privado/anónimo):** Aplicación privada para inventariar equipos y consultar su historial de mantenimiento, presentada sin identificar a la organización.
 
 ## Contacto
 

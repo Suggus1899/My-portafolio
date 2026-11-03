@@ -102,7 +102,7 @@
         "description": "Help desk multi-tenant per gestire ticket di supporto, SLA e conoscenza operativa.",
         "highlights": [
           "Include ticket, SLA, knowledge base, analisi e notifiche in tempo reale.",
-          "Frontend Astro e backend Go con WebSockets."
+          "App Next.js e API Go con WebSockets."
         ]
       },
       "chiguire": {
@@ -111,6 +111,14 @@
         "highlights": [
           "Collega inventario, fatturazione, processi SENIAT e pagamenti locali.",
           "Le app web e mobile si sincronizzano al ripristino della connessione."
+        ]
+      },
+      "copernico": {
+        "name": "Copérnico Academy",
+        "description": "Piattaforma accademica per prenotare tutoraggi, seguire corsi e gestire documenti, appunti e messaggi.",
+        "highlights": [
+          "Riunisce appuntamenti con i tutor, corsi e strumenti di monitoraggio accademico.",
+          "API Express e MongoDB con client React; include test d’integrazione e distribuzione con Docker."
         ]
       },
       "souvenirs": {
@@ -689,7 +697,9 @@
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermedio)",
     "certDataScienceEntity": "DataCamp",
     "certJavaTitle": "Fondamenti di Java, Java OOP, Spring Boot",
-    "certJavaEntity": "TodoCode"
+    "certJavaEntity": "TodoCode",
+    "certCiscoTitle": "Junior Cybersecurity Analyst Career Path",
+    "certCiscoEntity": "Cisco Networking Academy · 4 febbraio 2026"
   },
   "Availability": {
     "badge": "Freelance da giugno 2026",

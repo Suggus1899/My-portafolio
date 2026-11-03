@@ -123,6 +123,7 @@ Academic platform for tutoring management, student tracking and teacher coordina
 - **Systems Engineering** — Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG), degree obtained
 - **Data Science, Prompt Engineering, SQL** — DataCamp
 - **Java Fundamentals, OOP, Spring Boot** — TodoCode
+- **Junior Cybersecurity Analyst Career Path** — Cisco Networking Academy · Course completed February 4, 2026
 
 ---
 

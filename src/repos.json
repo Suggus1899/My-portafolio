@@ -1,13 +1,14 @@
 [
   { "id": "visitors", "url": "https://github.com/Suggus1899/Visitors", "languages": ["Go", "TypeScript"], "technologies": ["Go", "Chi", "React", "TypeScript", "PostgreSQL"] },
-  { "id": "trickreport", "url": "https://github.com/Suggus1899/TrickReport", "languages": ["Go", "TypeScript"], "technologies": ["Go", "Chi", "Astro", "TypeScript", "PostgreSQL", "WebSockets"] },
+  { "id": "trickreport", "url": "https://github.com/Suggus1899/Trickreport", "languages": ["Go", "TypeScript"], "technologies": ["Go", "Chi", "Next.js", "TypeScript", "PostgreSQL", "WebSockets"] },
   { "id": "chiguire", "url": "https://github.com/Suggus1899/Chiguire-app", "languages": ["Go", "TypeScript", "Dart"], "technologies": ["Go", "Next.js", "Flutter", "PostgreSQL"] },
+  { "id": "copernico", "url": "https://github.com/Suggus1899/Copernico", "languages": ["TypeScript"], "technologies": ["Node.js", "Express", "TypeScript", "React", "MongoDB", "Docker"] },
   { "id": "souvenirs", "url": "https://github.com/Suggus1899/Souvenirs", "languages": ["TypeScript"], "technologies": ["NestJS", "Prisma", "Next.js", "Expo", "PostgreSQL"] },
   { "id": "ohana", "url": "https://github.com/Suggus1899/Ohana-Inc", "languages": ["TypeScript", "Dart"], "technologies": ["React", "Vite", "Flutter", "Dart", "Node.js"] },
   { "id": "netlab", "url": "https://github.com/Suggus1899/Netlab-system", "languages": ["TypeScript"], "technologies": ["Next.js", "React Flow", "Prisma", "PostgreSQL"] },
   { "id": "nos-fleurs", "url": "https://github.com/Suggus1899/nos_fleurs", "languages": ["TypeScript"], "technologies": ["Next.js", "TypeScript", "PostgreSQL"] },
   { "id": "page-to-pdf", "url": "https://github.com/Suggus1899/page_to_pdf", "languages": ["TypeScript"], "technologies": ["WXT", "React", "TypeScript", "Chrome Extension"] },
-  { "id": "saludtech", "url": "https://github.com/Suggus1899/SaludTech_CasheaMedico", "languages": ["Go", "TypeScript"], "technologies": ["Go", "Next.js", "TypeScript", "PostgreSQL"] },
+  { "id": "saludtech", "url": "https://github.com/Suggus1899/SaludTech", "languages": ["Go", "TypeScript"], "technologies": ["Go", "Next.js", "TypeScript", "PostgreSQL"] },
   { "id": "crud-java-spring-mongo", "url": "https://github.com/Suggus1899/CRUD-J.SB-MGB", "languages": ["Java", "TypeScript"], "technologies": ["Java", "Spring Boot", "MongoDB", "React", "TypeScript", "Docker"] },
   { "id": "simulimath", "url": "https://github.com/Suggus1899/SimuliMath", "languages": ["Python"], "technologies": ["Python", "Tkinter", "NumPy", "SciPy", "Matplotlib"] },
   { "id": "maintenance-tracker", "url": null, "isPrivate": true, "languages": ["Dart"], "technologies": ["Flutter", "SQLite", "JSON"] }

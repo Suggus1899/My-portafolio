@@ -26,6 +26,11 @@ export default function EducationSection() {
       title: t('certJavaTitle'),
       entity: t('certJavaEntity'),
       icon: <Award className="text-purple-500" />
+    },
+    {
+      title: t('certCiscoTitle'),
+      entity: t('certCiscoEntity'),
+      icon: <Award className="text-blue-500" />
     }
   ];
 

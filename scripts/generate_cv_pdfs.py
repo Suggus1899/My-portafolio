@@ -19,9 +19,9 @@ FEATURED_PROJECTS = (
     "visitors",
     "trickreport",
     "chiguire",
-    "souvenirs",
-    "page-to-pdf",
-    "maintenance-tracker",
+    "copernico",
+    "ohana",
+    "netlab",
 )
 CONTACT = "Aragua, Venezuela | +58-424-3737586 | gustavojose0819@gmail.com | github.com/Suggus1899"
 
@@ -40,7 +40,7 @@ def load_data():
         for locale in LOCALES
     }
     ids = {repo["id"] for repo in repos}
-    assert len(repos) == 12 and sum(repo.get("isPrivate", False) for repo in repos) == 1
+    assert len(repos) == 13 and sum(repo.get("isPrivate", False) for repo in repos) == 1
     for locale in LOCALES:
         assert set(messages[locale]["Projects"]["items"]) == ids
     return repos, messages
@@ -104,7 +104,7 @@ def build_cv(locale, repos, message):
     story.append(section(language["education"], style))
     story.append(para(f"<b>{education['universityTitle']}</b> · {education['universityEntity']}<br/>{education['universitySubtitle']}", style["body"]))
     story.append(section(language["certifications"], style))
-    story.append(para(f"{education['certDataScienceTitle']} · {education['certDataScienceEntity']}<br/>{education['certJavaTitle']} · {education['certJavaEntity']}", style["body"]))
+    story.append(para(f"{education['certDataScienceTitle']} · {education['certDataScienceEntity']}<br/>{education['certJavaTitle']} · {education['certJavaEntity']}<br/>{education['certCiscoTitle']} · {education['certCiscoEntity']}", style["body"]))
     story.append(section(curriculum["pdfSkillsTitle"], style))
     technologies = list(dict.fromkeys(tech for repo in repos for tech in repo["technologies"]))
     story.append(para(", ".join(technologies), style["body"]))
@@ -141,8 +141,9 @@ def build_summary(repos, message):
     story += [section("Perfil profesional", style), para(curriculum["summary"], style["body"]), section("Experiencia", style)]
     for index in (3, 1, 2):
         story.append(para(f"<b>{experience[f'exp{index}Role']}</b> · {experience[f'exp{index}Company']} · {experience[f'exp{index}Period']}", style["body"]))
-    story += [section("Formación", style), para(f"<b>{education['universityTitle']}</b> · {education['universityEntity']}<br/>{education['universitySubtitle']}", style["body"]), section("Proyectos seleccionados", style)]
-    for repo in repos:
+    story += [section("Formación", style), para(f"<b>{education['universityTitle']}</b> · {education['universityEntity']}<br/>{education['universitySubtitle']}<br/>{education['certCiscoTitle']} · {education['certCiscoEntity']}", style["body"]), section("Proyectos seleccionados", style)]
+    selected = [repo for repo in repos if repo["id"] in FEATURED_PROJECTS]
+    for repo in selected:
         content = message["Projects"]["items"][repo["id"]]
         story.append(para(f"<b>{content['name']}</b> — {content['description']}", style["bullet"]))
     document.build(story)
@@ -158,8 +159,9 @@ def build_markdown(repos, message):
     lines = ["# Síntesis curricular — Gustavo Colina", "", "## Perfil profesional", "", curriculum["summary"], "", "## Experiencia"]
     for index in (3, 1, 2):
         lines += ["", f"### {experience[f'exp{index}Role']} — {experience[f'exp{index}Company']}", "", experience[f'exp{index}Period'], "", experience[f'exp{index}Description']]
-    lines += ["", "## Formación", "", f"{education['universityTitle']} — {education['universityEntity']}", "", education['universitySubtitle'], "", "## Proyectos seleccionados", ""]
-    for repo in repos:
+    lines += ["", "## Formación", "", f"{education['universityTitle']} — {education['universityEntity']}", "", education['universitySubtitle'], "", f"{education['certCiscoTitle']} — {education['certCiscoEntity']}", "", "## Proyectos seleccionados", ""]
+    selected = [repo for repo in repos if repo["id"] in FEATURED_PROJECTS]
+    for repo in selected:
         content = projects[repo["id"]]
         name = f"{content['name']} (privado/anónimo)" if repo.get("isPrivate") else content["name"]
         lines.append(f"- **{name}:** {content['description']}")
