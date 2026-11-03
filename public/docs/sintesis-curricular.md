@@ -28,8 +28,6 @@ LogMaster digitaliza el registro y control de visitantes, con seguimiento de acc
 
 Ingeniería en Sistemas — Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)
 
-Título obtenido
-
 Junior Cybersecurity Analyst Career Path — Cisco Networking Academy · 4 de febrero de 2026
 
 ## Proyectos seleccionados
