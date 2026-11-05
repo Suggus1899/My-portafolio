@@ -22,15 +22,15 @@ export default function ProjectsSection() {
   return (
     <motion.section
       id="projects"
-      className="py-24 px-6 max-w-4xl mx-auto"
+      className="mx-auto max-w-4xl px-4 py-14 sm:px-6 sm:py-20 md:py-24"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <h2 className="text-3xl font-space font-black uppercase mb-4 tracking-tight">
+      <h1 className="mb-4 text-3xl font-space font-black uppercase leading-tight tracking-tight">
         {t("title")}
-      </h2>
+      </h1>
       <div className="mb-10 h-[2px] w-36 bg-zinc-900/85 dark:bg-zinc-100/85" />
       <p className="mb-8 max-w-3xl text-zinc-600 dark:text-zinc-400">{t("description")}</p>
 
@@ -39,7 +39,8 @@ export default function ProjectsSection() {
           <button
             key={filter}
             onClick={() => setActiveFilter(filter)}
-            className={`px-4 py-2 text-sm font-bold uppercase tracking-wide border-2 transition-colors ${
+            aria-pressed={activeFilter === filter}
+            className={`min-h-11 px-3 py-2 text-sm font-bold uppercase tracking-wide border-2 transition-colors sm:px-4 ${
               activeFilter === filter
                 ? "bg-zinc-900 text-white border-zinc-900 dark:bg-zinc-100 dark:text-zinc-900 dark:border-zinc-100"
                 : "bg-transparent text-zinc-900 border-zinc-900 hover:bg-zinc-100 dark:text-zinc-100 dark:border-zinc-100 dark:hover:bg-zinc-900"
@@ -54,7 +55,7 @@ export default function ProjectsSection() {
         {displayedProjects.map((project) => (
           <article
             key={project.id}
-            className={`group p-6 border-2 transition-all duration-300 hover:-translate-y-1 ${
+            className={`group border-2 p-4 transition-all duration-300 hover:-translate-y-1 sm:p-6 ${
               project.isPrivate
                 ? "bg-zinc-50/90 border-zinc-900 dark:bg-zinc-900/50 dark:border-zinc-100 border-dashed"
                 : "bg-white/95 border-zinc-900 hover:shadow-lg dark:bg-zinc-950/95 dark:border-zinc-100"
@@ -110,7 +111,7 @@ export default function ProjectsSection() {
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 border border-zinc-900 bg-white px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-zinc-900 hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
+                  className="inline-flex min-h-11 items-center gap-1.5 border border-zinc-900 bg-white px-3 py-2 text-xs font-bold uppercase tracking-wide text-zinc-900 hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
                 >
                   <Github size={13} />
                   {t("viewCode")}

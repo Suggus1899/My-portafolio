@@ -4,7 +4,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState } from 'react';
-import { Mail, Github, FileText } from 'lucide-react';
+import { ArrowUpRight, Mail, Github, FileText } from 'lucide-react';
 
 const PROFILE_IMAGE_PATH = '/profile-photo.png';
 const PROFILE_IMAGE_FALLBACK = '/profile-photo-placeholder.svg';
@@ -15,15 +15,15 @@ export default function HeroSection() {
   const [imageSrc, setImageSrc] = useState(PROFILE_IMAGE_PATH);
 
   return (
-    <section className="relative isolate overflow-hidden px-6 py-20 min-h-[72vh]">
+    <section className="relative isolate overflow-hidden px-4 py-10 sm:px-6 sm:py-14 md:py-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="relative z-10 mx-auto max-w-5xl"
       >
-        <div className="grid items-start gap-10 md:grid-cols-[250px,1fr]">
-          <aside className="mx-auto w-full max-w-[250px]">
+        <div className="grid items-start gap-6 md:grid-cols-[250px,1fr] md:gap-10">
+          <aside className="mx-auto w-full max-w-[180px] sm:max-w-[220px] md:max-w-[250px]">
             <div className="border-2 border-zinc-900 bg-white p-2 dark:border-zinc-100 dark:bg-zinc-950">
               <div className="relative aspect-square overflow-hidden border-2 border-zinc-900 dark:border-zinc-100">
                 <Image
@@ -49,7 +49,7 @@ export default function HeroSection() {
               <a
                 href="#contact"
                 aria-label={t('contactAriaLabel')}
-                className="inline-flex h-10 w-10 items-center justify-center border-2 border-zinc-900 bg-white text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
+                className="inline-flex h-11 w-11 items-center justify-center border-2 border-zinc-900 bg-white text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
               >
                 <Mail size={16} />
               </a>
@@ -58,7 +58,7 @@ export default function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t('githubAriaLabel')}
-                className="inline-flex h-10 w-10 items-center justify-center border-2 border-zinc-900 bg-white text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
+                className="inline-flex h-11 w-11 items-center justify-center border-2 border-zinc-900 bg-white text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
               >
                 <Github size={16} />
               </a>
@@ -66,7 +66,7 @@ export default function HeroSection() {
                 href={`/curriculum-${locale}.pdf`}
                 download
                 aria-label={t('downloadCvAriaLabel')}
-                className="inline-flex h-10 w-10 items-center justify-center border-2 border-zinc-900 bg-white text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
+                className="inline-flex h-11 w-11 items-center justify-center border-2 border-zinc-900 bg-white text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
               >
                 <FileText size={16} />
               </a>
@@ -77,7 +77,7 @@ export default function HeroSection() {
             <span className="inline-block border border-zinc-900 bg-zinc-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-zinc-700 dark:border-zinc-100 dark:bg-zinc-900 dark:text-zinc-200">
               {t('availability')}
             </span>
-            <h1 className="mt-5 text-4xl md:text-6xl font-space font-black uppercase tracking-tight leading-[0.95] text-zinc-900 dark:text-zinc-100">
+            <h1 className="mt-5 text-3xl sm:text-4xl md:text-6xl font-space font-black uppercase tracking-tight leading-[0.95] text-zinc-900 dark:text-zinc-100">
               {t('greeting')}
             </h1>
 
@@ -86,38 +86,30 @@ export default function HeroSection() {
               {t('role')}
             </p>
 
-            <div className="mt-7 max-w-3xl border-2 border-zinc-900 bg-white/95 p-6 dark:border-zinc-100 dark:bg-zinc-950/95">
-              <h2 className="text-3xl font-space font-black uppercase tracking-tight text-zinc-900 dark:text-zinc-100">
-                {t('whatIDo')}
-              </h2>
-              <div className="mt-3 h-[2px] w-56 bg-zinc-900/85 dark:bg-zinc-100/85" />
-              <p className="mt-4 text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
-                {t('whatIDoDescription')}
-              </p>
-            </div>
-
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-4 md:justify-start">
+            <div className="mt-6 sm:mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4 md:justify-start">
+              <a
+                href={`/${locale}/projects`}
+                className="inline-flex min-h-11 w-full items-center justify-center gap-2 border-2 border-zinc-900 bg-zinc-900 px-6 py-3 text-base font-bold uppercase tracking-wider text-white transition-colors hover:bg-zinc-700 dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300 sm:w-auto sm:px-8"
+              >
+                {t('viewProjects')}
+                <ArrowUpRight size={18} aria-hidden="true" />
+              </a>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center border-2 border-zinc-900 bg-zinc-900 px-8 py-3 text-base font-bold uppercase tracking-wider text-white transition-colors hover:bg-zinc-700 dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
+                className="inline-flex min-h-11 w-full items-center justify-center border-2 border-zinc-900 bg-white px-6 py-3 text-base font-bold uppercase tracking-wider text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900 sm:w-auto sm:px-8"
               >
                 {t('contact')}
               </a>
-              <a
-                href={`/curriculum-${locale}.pdf`}
-                download
-                className="inline-flex items-center justify-center border-2 border-zinc-900 bg-white px-8 py-3 text-base font-bold uppercase tracking-wider text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
-              >
-                {t('downloadCv')}
-              </a>
-              <a
-                href="https://github.com/Suggus1899"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center border-2 border-zinc-900 bg-white px-8 py-3 text-base font-bold uppercase tracking-wider text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
-              >
-                {t('github')}
-              </a>
+            </div>
+
+            <div className="mt-6 sm:mt-7 max-w-3xl border-2 border-zinc-900 bg-white/95 p-4 sm:p-6 dark:border-zinc-100 dark:bg-zinc-950/95">
+              <h2 className="text-2xl sm:text-3xl font-space font-black uppercase tracking-tight text-zinc-900 dark:text-zinc-100">
+                {t('whatIDo')}
+              </h2>
+              <div className="mt-3 h-[2px] w-56 bg-zinc-900/85 dark:bg-zinc-100/85" />
+              <p className="mt-4 text-base sm:text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
+                {t('whatIDoDescription')}
+              </p>
             </div>
           </div>
         </div>

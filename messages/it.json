@@ -31,6 +31,7 @@
     "role": "Ingegnere dei sistemi · Sviluppatore Full-Stack",
     "whatIDo": "Cosa faccio?",
     "availability": "Disponibile per nuove opportunita",
+    "viewProjects": "Vedi i progetti",
     "contact": "Contattami",
     "contactAriaLabel": "Invia email a Gustavo Colina",
     "downloadCv": "Scarica CV",
@@ -85,6 +86,10 @@
   "Projects": {
     "title": "Progetti",
     "description": "Una selezione di progetti pubblici e un caso privato anonimizzato, con prodotti e tecnologie diversi.",
+    "featuredTitle": "Progetti in evidenza",
+    "featuredDescription": "Prodotti web, mobile e desktop, dal frontend al backend e ai dati.",
+    "viewAll": "Vedi tutti i progetti",
+    "caseStudy": "Caso di studio",
     "private": "Privato",
     "viewCode": "Codice",
     "filterAll": "Tutti i progetti",
