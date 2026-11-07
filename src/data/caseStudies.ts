@@ -12,7 +12,7 @@ export const caseStudyPosts: CaseStudyPost[] = [
     slug: 'caso-de-estudio-logmaster',
     date: '2026-08-05',
     readTime: '2 min',
-    tags: ['Case Study', 'Go', 'React', 'PostgreSQL'],
+    tags: ['Go', 'React', 'PostgreSQL'],
     title: {
       es: 'Caso de estudio: LogMaster — gestión digital de visitantes',
       en: 'Case Study: LogMaster — Digital Visitor Management',
@@ -62,7 +62,7 @@ export const caseStudyPosts: CaseStudyPost[] = [
     slug: 'caso-de-estudio-trickreport',
     date: '2026-11-07',
     readTime: '2 min',
-    tags: ['Case Study', 'Go', 'Next.js', 'WebSockets'],
+    tags: ['Go', 'Next.js', 'WebSockets'],
     title: {
       es: 'Caso de estudio: Trickreport — soporte y tickets multiempresa',
       en: 'Case Study: Trickreport — Multi-Company Support and Tickets',
@@ -110,7 +110,7 @@ export const caseStudyPosts: CaseStudyPost[] = [
     slug: 'caso-de-estudio-chiguire',
     date: '2026-11-07',
     readTime: '2 min',
-    tags: ['Case Study', 'Next.js', 'Flutter', 'Go'],
+    tags: ['Next.js', 'Flutter', 'Go'],
     title: {
       es: 'Caso de estudio: Chiguire — operación local y sincronización',
       en: 'Case Study: Chiguire — Local Operations and Sync',

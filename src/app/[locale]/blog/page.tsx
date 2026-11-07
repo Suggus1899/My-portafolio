@@ -66,6 +66,7 @@ function BlogList({ locale }: { locale: AppLocale }) {
                   />
                 )}
                 <div className="p-5 sm:p-6">
+                  <p className="editorial-kicker">{post.caseStudy ? tProjects('caseStudy') : t('kicker')}</p>
                   <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
                     <time dateTime={post.date}>{post.date}</time><span aria-hidden="true">·</span><span>{post.readTime}</span>
                   </div>
