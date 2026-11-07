@@ -17,6 +17,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import SchemaOrg from '@/components/SchemaOrg';
 import { SITE_URL } from '@/config/constants';
 import { Analytics } from '@vercel/analytics/next';
+import { MotionConfig } from 'framer-motion';
 
 type AppLocale = (typeof routing.locales)[number];
 
@@ -91,13 +92,15 @@ export default async function RootLayout({
         <SchemaOrg siteUrl={siteUrl} />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <NextIntlClientProvider messages={messages}>
-            <ScrollProgressBar />
-            <Navbar />
-            <main id="main-content" className="pt-24 min-h-screen page-gradient">
-              {children}
-            </main>
-            <Footer />
-            <ScrollToTop />
+            <MotionConfig reducedMotion="user">
+              <ScrollProgressBar />
+              <Navbar />
+              <main id="main-content" className="pt-24 min-h-screen page-gradient">
+                {children}
+              </main>
+              <Footer />
+              <ScrollToTop />
+            </MotionConfig>
           </NextIntlClientProvider>
         </ThemeProvider>
         <Analytics />

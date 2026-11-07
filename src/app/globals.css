@@ -247,6 +247,18 @@
   background: rgba(20, 31, 49, 0.94);
 }
 
+.editorial-story {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(29, 44, 64, 0.25);
+  background: rgba(255, 253, 248, 0.92);
+}
+
+.dark .editorial-story {
+  border-color: rgba(228, 226, 219, 0.24);
+  background: rgba(20, 31, 49, 0.94);
+}
+
 .editorial-project-card--lead {
   display: grid;
   align-items: stretch;
@@ -548,6 +560,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .animate-spin { animation: none !important; }
   .hero-rule { animation: none; }
   .editorial-button { transition-duration: 0.01ms; }
   .editorial-button:hover,
