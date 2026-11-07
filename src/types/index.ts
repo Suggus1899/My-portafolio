@@ -7,6 +7,8 @@ export type Project = {
   languages: string[];
   technologies: string[];
   isPrivate?: boolean;
+  caseStudySlug?: string;
+  imageSrc?: string;
 };
 
 // Legacy Service type - kept for backward compatibility

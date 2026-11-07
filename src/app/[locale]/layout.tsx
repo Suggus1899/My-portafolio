@@ -87,7 +87,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head />
-      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased bg-white text-zinc-900 dark:bg-[#0a0a0a] dark:text-zinc-100 transition-colors duration-300 selection:bg-zinc-800 selection:text-white dark:selection:bg-zinc-200 dark:selection:text-black`} suppressHydrationWarning>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased bg-background text-foreground dark:bg-[#101827] dark:text-[#f5f1e8] transition-colors duration-300 selection:bg-blue-600 selection:text-white`} suppressHydrationWarning>
         <SchemaOrg siteUrl={siteUrl} />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <NextIntlClientProvider messages={messages}>

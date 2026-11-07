@@ -24,10 +24,11 @@
     "toggleTheme": "Changer le thème",
     "footerSubtitle": "Ingénieur systèmes · Développeur Full-Stack",
     "allRightsReserved": "Tous droits réservés.",
-    "privacy": "Confidentialité"
+    "privacy": "Confidentialité",
+    "contact": "Contact"
   },
   "Hero": {
-    "greeting": "Salut ! Je suis Gustavo Colina (Suggus1899)",
+    "greeting": "Gustavo Colina",
     "role": "Ingénieur systèmes · Développeur Full-Stack",
     "whatIDo": "Que fais-je ?",
     "availability": "Disponible pour de nouvelles opportunités",
@@ -39,7 +40,14 @@
     "github": "GitHub",
     "githubAriaLabel": "Visiter le profil GitHub",
     "profileAlt": "Photo de profil de Gustavo Colina",
-    "whatIDoDescription": "Je développe et maintiens des produits web, mobiles et de bureau, des interfaces et API à leur intégration aux bases de données."
+    "whatIDoDescription": "Je conçois et développe des produits numériques de bout en bout, des interfaces et API à l’intégration des données.",
+    "magazineAlt": "Couverture de magazine bleue illustrée avec les initiales GC.",
+    "magazineCaption": "Couverture · projets sélectionnés",
+    "openMagazine": "Ouvrir la couverture 3D",
+    "replayMagazine": "Ouvrir à nouveau",
+    "loadingMagazine": "Ouverture…",
+    "reducedMotionMagazine": "La couverture statique reste disponible ; l’animation est désactivée selon votre préférence de mouvement réduit.",
+    "unavailableMagazine": "La couverture statique reste disponible ; cette animation 3D n’est pas disponible dans ce navigateur."
   },
   "Curriculum": {
     "kicker": "Synthèse CV",
@@ -87,7 +95,7 @@
     "title": "Projets",
     "description": "Une sélection de projets publics et un cas privé anonymisé couvrant différents produits et technologies.",
     "featuredTitle": "Projets à la une",
-    "featuredDescription": "Des produits web, mobiles et de bureau, du frontend au backend et aux données.",
+    "featuredDescription": "Trois projets : la gestion des visiteurs, le support multi-entreprise et le travail hors connexion.",
     "viewAll": "Voir tous les projets",
     "caseStudy": "Étude de cas",
     "private": "Privé",
@@ -100,7 +108,8 @@
         "highlights": [
           "Gère l’arrivée, l’attente, l’admission, les sorties temporaires, le retour et la clôture des visites.",
           "Client React/TypeScript et API Go avec PostgreSQL."
-        ]
+        ],
+        "imageAlt": "Schéma illustratif du parcours d’un visiteur, de son arrivée à la clôture."
       },
       "trickreport": {
         "name": "Trickreport",
@@ -108,7 +117,8 @@
         "highlights": [
           "Comprend les tickets, SLA, base de connaissances, analyses et notifications en temps réel.",
           "Applications Next.js et API Go avec WebSockets."
-        ]
+        ],
+        "imageAlt": "Schéma illustratif d’un centre d’assistance avec des tickets classés par état."
       },
       "chiguire": {
         "name": "Chiguire",
@@ -116,7 +126,8 @@
         "highlights": [
           "Réunit inventaire, facturation, processus SENIAT et paiements locaux.",
           "Les applications web et mobiles se synchronisent au retour de la connexion."
-        ]
+        ],
+        "imageAlt": "Schéma illustratif d’applications web et mobile synchronisées au retour de la connexion."
       },
       "copernico": {
         "name": "Copérnico Academy",
@@ -198,7 +209,8 @@
           "Application Flutter de bureau avec stockage SQLite et sauvegarde JSON."
         ]
       }
-    }
+    },
+    "diagramCaption": "Schéma illustratif du flux de travail"
   },
   "FavoriteStack": {
     "title": "Stack préféré",

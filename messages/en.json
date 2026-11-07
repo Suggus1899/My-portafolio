@@ -24,10 +24,11 @@
     "toggleTheme": "Toggle theme",
     "footerSubtitle": "Systems Engineer · Full-Stack Developer",
     "allRightsReserved": "All rights reserved.",
-    "privacy": "Privacy"
+    "privacy": "Privacy",
+    "contact": "Contact"
   },
   "Hero": {
-    "greeting": "Hi! I'm Gustavo Colina (Suggus1899)",
+    "greeting": "Gustavo Colina",
     "role": "Systems Engineer · Full-Stack Developer",
     "whatIDo": "What do I do?",
     "availability": "Available for new opportunities",
@@ -39,7 +40,14 @@
     "github": "GitHub",
     "githubAriaLabel": "Visit GitHub profile",
     "profileAlt": "Profile photo of Gustavo Colina",
-    "whatIDoDescription": "I build and maintain web, mobile and desktop products, from interfaces and APIs to their database integrations."
+    "whatIDoDescription": "I design and build digital products end to end, from interfaces and APIs to their data integrations.",
+    "magazineAlt": "Illustrated blue magazine cover with the initials GC.",
+    "magazineCaption": "Cover · selected projects",
+    "openMagazine": "Open 3D cover",
+    "replayMagazine": "Open again",
+    "loadingMagazine": "Opening…",
+    "reducedMotionMagazine": "The static cover remains available; animation is disabled by your reduced-motion preference.",
+    "unavailableMagazine": "The static cover remains available; this 3D animation is unavailable in this browser."
   },
   "Curriculum": {
     "kicker": "CV Summary",
@@ -87,7 +95,7 @@
     "title": "Projects",
     "description": "A selection of public projects and one anonymized private case, spanning different product types and technologies.",
     "featuredTitle": "Featured projects",
-    "featuredDescription": "Web, mobile and desktop products built across frontend, backend and data.",
+    "featuredDescription": "Three product stories: visitor management, multi-company support and offline operations.",
     "viewAll": "View all projects",
     "caseStudy": "Case study",
     "private": "Private",
@@ -100,7 +108,8 @@
         "highlights": [
           "Covers arrival, waiting, admission, temporary exit, re-entry and visit closure.",
           "React/TypeScript client and Go API backed by PostgreSQL."
-        ]
+        ],
+        "imageAlt": "Illustrative diagram of a visitor workflow, from arrival through closure."
       },
       "trickreport": {
         "name": "Trickreport",
@@ -108,7 +117,8 @@
         "highlights": [
           "Includes ticket workflows, SLAs, a knowledge base, analytics and live notifications.",
           "Next.js applications and a Go API with WebSockets."
-        ]
+        ],
+        "imageAlt": "Illustrative help desk diagram with tickets organized by status."
       },
       "chiguire": {
         "name": "Chiguire",
@@ -116,7 +126,8 @@
         "highlights": [
           "Connects inventory, invoicing, SENIAT processes and local payment methods.",
           "Web and mobile apps synchronize when connectivity returns."
-        ]
+        ],
+        "imageAlt": "Illustrative diagram of web and mobile apps syncing when connectivity returns."
       },
       "copernico": {
         "name": "Copérnico Academy",
@@ -198,7 +209,8 @@
           "Flutter desktop app with SQLite storage and JSON backup."
         ]
       }
-    }
+    },
+    "diagramCaption": "Illustrative workflow diagram"
   },
   "FavoriteStack": {
     "title": "Favorite stack",

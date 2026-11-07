@@ -1,7 +1,7 @@
 [
-  { "id": "visitors", "url": "https://github.com/Suggus1899/Visitors", "languages": ["Go", "TypeScript"], "technologies": ["Go", "Chi", "React", "TypeScript", "PostgreSQL"] },
-  { "id": "trickreport", "url": "https://github.com/Suggus1899/Trickreport", "languages": ["Go", "TypeScript"], "technologies": ["Go", "Chi", "Next.js", "TypeScript", "PostgreSQL", "WebSockets"] },
-  { "id": "chiguire", "url": "https://github.com/Suggus1899/Chiguire-app", "languages": ["Go", "TypeScript", "Dart"], "technologies": ["Go", "Next.js", "Flutter", "PostgreSQL"] },
+  { "id": "visitors", "url": "https://github.com/Suggus1899/Visitors", "languages": ["Go", "TypeScript"], "technologies": ["Go", "Chi", "React", "TypeScript", "PostgreSQL"], "caseStudySlug": "caso-de-estudio-logmaster", "imageSrc": "/projects/logmaster-flow.svg" },
+  { "id": "trickreport", "url": "https://github.com/Suggus1899/Trickreport", "languages": ["Go", "TypeScript"], "technologies": ["Go", "Chi", "Next.js", "TypeScript", "PostgreSQL", "WebSockets"], "caseStudySlug": "caso-de-estudio-trickreport", "imageSrc": "/projects/trickreport-flow.svg" },
+  { "id": "chiguire", "url": "https://github.com/Suggus1899/Chiguire-app", "languages": ["Go", "TypeScript", "Dart"], "technologies": ["Go", "Next.js", "Flutter", "PostgreSQL"], "caseStudySlug": "caso-de-estudio-chiguire", "imageSrc": "/projects/chiguire-flow.svg" },
   { "id": "copernico", "url": "https://github.com/Suggus1899/Copernico", "languages": ["TypeScript"], "technologies": ["Node.js", "Express", "TypeScript", "React", "MongoDB", "Docker"] },
   { "id": "souvenirs", "url": "https://github.com/Suggus1899/Souvenirs", "languages": ["TypeScript"], "technologies": ["NestJS", "Prisma", "Next.js", "Expo", "PostgreSQL"] },
   { "id": "ohana", "url": "https://github.com/Suggus1899/Ohana-Inc", "languages": ["TypeScript", "Dart"], "technologies": ["React", "Vite", "Flutter", "Dart", "Node.js"] },

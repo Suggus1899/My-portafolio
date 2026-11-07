@@ -1,14 +1,16 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { ArrowUpRight, Github } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import type { Project } from "@/types";
 import repos from "../repos.json";
+import ProjectFigure from "./ProjectFigure";
 
 export default function ProjectsSection() {
   const t = useTranslations("Projects");
+  const locale = useLocale();
   const [activeFilter, setActiveFilter] = useState("All");
   const projects = repos.map((repo) => ({
     ...repo,
@@ -61,6 +63,13 @@ export default function ProjectsSection() {
                 : "bg-white/95 border-zinc-900 hover:shadow-lg dark:bg-zinc-950/95 dark:border-zinc-100"
             }`}
           >
+            {project.imageSrc && (
+              <ProjectFigure
+                src={project.imageSrc}
+                alt={t(`items.${project.id}.imageAlt`)}
+                caption={t("diagramCaption")}
+              />
+            )}
             <div className="flex justify-between items-start mb-4">
               <h3 className="font-space font-black uppercase text-lg text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
                 {project.name}
@@ -102,10 +111,19 @@ export default function ProjectsSection() {
               ))}
             </div>
 
-            <div className="flex items-center justify-between gap-3">
+            <div className="flex flex-wrap items-center justify-between gap-3">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400">
                 {project.languages.join(" · ")}
               </span>
+              {project.caseStudySlug && (
+                <a
+                  href={`/${locale}/blog/${project.caseStudySlug}`}
+                  className="inline-flex min-h-11 items-center gap-1.5 border-2 border-zinc-900 bg-zinc-900 px-3 py-2 text-xs font-bold uppercase tracking-wide text-white hover:bg-blue-700 dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
+                >
+                  {t("caseStudy")}
+                  <ArrowUpRight size={14} aria-hidden="true" />
+                </a>
+              )}
               {project.url && (
                 <a
                   href={project.url}
