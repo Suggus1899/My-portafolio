@@ -2,6 +2,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import HeroSection from '@/components/HeroSection';
 import FeaturedProjectsSection from '@/components/FeaturedProjectsSection';
+import CurriculumSummarySection from '@/components/CurriculumSummarySection';
 import ExperienceSection from '@/components/ExperienceSection';
 import FavoriteStackSection from '@/components/FavoriteStackSection';
 import BlogPreviewSection from '@/components/BlogPreviewSection';
@@ -23,11 +24,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     <div className="flex flex-col items-center w-full">
       <HeroSection />
       <FeaturedProjectsSection />
+      <CurriculumSummarySection />
       <ExperienceSection />
       <EducationSection />
       <FavoriteStackSection />
-      <SkillsSection />
       <BlogPreviewSection locale={appLocale} />
+      <SkillsSection />
       <AvailabilitySection />
       <ContactSection />
     </div>
