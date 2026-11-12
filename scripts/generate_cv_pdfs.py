@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = ROOT / "public"
 LOCALES = ("es", "en", "fr", "it")
 FEATURED_PROJECTS = (
+    "morrojobs",
     "visitors",
     "trickreport",
     "chiguire",
@@ -40,7 +41,7 @@ def load_data():
         for locale in LOCALES
     }
     ids = {repo["id"] for repo in repos}
-    assert len(repos) == 13 and sum(repo.get("isPrivate", False) for repo in repos) == 1
+    assert len(repos) == 14 and sum(repo.get("isPrivate", False) for repo in repos) == 2
     for locale in LOCALES:
         assert set(messages[locale]["Projects"]["items"]) == ids
     return repos, messages
@@ -163,7 +164,7 @@ def build_markdown(repos, message):
     selected = [repo for repo in repos if repo["id"] in FEATURED_PROJECTS]
     for repo in selected:
         content = projects[repo["id"]]
-        name = f"{content['name']} (privado/anónimo)" if repo.get("isPrivate") else content["name"]
+        name = f"{content['name']} (privado)" if repo.get("isPrivate") else content["name"]
         lines.append(f"- **{name}:** {content['description']}")
     lines += ["", "## Contacto", "", "- Email: gustavojose0819@gmail.com", "- GitHub: https://github.com/Suggus1899", ""]
     (ROOT / "public/docs/sintesis-curricular.md").write_text("\n".join(lines), encoding="utf-8")
@@ -179,3 +180,4 @@ if __name__ == "__main__":
     shutil.copyfile(generated[0], ROOT / "Curriculum Gustavo Colina.pdf")
     shutil.copyfile(summary, ROOT / "Sintesis Curricular Gustavo Colina.pdf")
     print("Generated four localized CVs and the Spanish summary.")
+

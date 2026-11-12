@@ -1,4 +1,5 @@
 [
+  { "id": "morrojobs", "url": null, "isPrivate": true, "languages": ["Python", "TypeScript"], "technologies": ["Next.js", "React", "FastAPI", "SQLAlchemy", "PostgreSQL"] },
   { "id": "visitors", "url": "https://github.com/Suggus1899/Visitors", "languages": ["Go", "TypeScript"], "technologies": ["Go", "Chi", "React", "TypeScript", "PostgreSQL"] },
   { "id": "trickreport", "url": "https://github.com/Suggus1899/Trickreport", "languages": ["Go", "TypeScript"], "technologies": ["Go", "Chi", "Next.js", "TypeScript", "PostgreSQL", "WebSockets"] },
   { "id": "chiguire", "url": "https://github.com/Suggus1899/Chiguire-app", "languages": ["Go", "TypeScript", "Dart"], "technologies": ["Go", "Next.js", "Flutter", "PostgreSQL"] },
@@ -13,3 +14,4 @@
   { "id": "simulimath", "url": "https://github.com/Suggus1899/SimuliMath", "languages": ["Python"], "technologies": ["Python", "Tkinter", "NumPy", "SciPy", "Matplotlib"] },
   { "id": "maintenance-tracker", "url": null, "isPrivate": true, "languages": ["Dart"], "technologies": ["Flutter", "SQLite", "JSON"] }
 ]
+

@@ -85,7 +85,7 @@
   },
   "Projects": {
     "title": "Projects",
-    "description": "A selection of public projects and one anonymized private case, spanning different product types and technologies.",
+    "description": "A selection of public and private projects spanning different product types and technologies.",
     "featuredTitle": "Featured projects",
     "featuredDescription": "Web, mobile and desktop products built across frontend, backend and data.",
     "viewAll": "View all projects",
@@ -188,6 +188,14 @@
         "highlights": [
           "Models signals, interference and metrics such as SNR, BER and PER.",
           "Plots time- and frequency-domain results in a Python desktop app."
+        ]
+      },
+      "morrojobs": {
+        "name": "MorroJobs",
+        "description": "Work platform connecting students with businesses and residents in San Juan de los Morros for short-term jobs that fit their schedules.",
+        "highlights": [
+          "Manages job offers, applications, assignments and chat through role-based dashboards.",
+          "Includes moderation, profile verification and simulated payments."
         ]
       },
       "maintenance-tracker": {

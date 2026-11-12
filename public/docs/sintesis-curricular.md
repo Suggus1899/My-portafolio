@@ -32,6 +32,7 @@ Junior Cybersecurity Analyst Career Path — Cisco Networking Academy · 4 de fe
 
 ## Proyectos seleccionados
 
+- **MorroJobs (privado):** Plataforma de trabajo que conecta estudiantes con comercios y residentes de San Juan de los Morros para realizar trabajos puntuales compatibles con sus horarios.
 - **Visitors — LogMaster:** Sistema de registro y control de visitantes para instalaciones corporativas, con gestión de consentimientos, fotografías y auditoría.
 - **Trickreport:** Mesa de ayuda multiempresa para gestionar tickets, acuerdos de servicio y conocimiento de soporte.
 - **Chiguire:** ERP multiempresa con funciones fiscales y de operación para negocios venezolanos, diseñado para seguir trabajando sin conexión.
