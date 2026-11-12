@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "Gustavo Colina — Ingénieur systèmes",
-    "description": "Diplômé en ingénierie des systèmes de l’UNERG et développeur Full-Stack vénézuélien de produits web, mobiles et de bureau."
+    "description": "Ingénieur systèmes de l’UNERG et développeur Full-Stack vénézuélien de produits web, mobiles et de bureau."
   },
   "Navigation": {
     "curriculum": "Synthèse CV",
@@ -44,7 +44,7 @@
   "Curriculum": {
     "kicker": "Synthèse CV",
     "title": "Développeur Full-Stack pour produits web et multiplateformes",
-    "summary": "Ingénieur systèmes et développeur Full-Stack, diplômé en ingénierie des systèmes de l’UNERG. Je contribue à des produits web, de bureau et multiplateformes, de la définition des parcours à la création d’interfaces et à l’intégration d’API et de bases de données. Mon expérience comprend le travail à distance et des logiciels de gestion pour différents secteurs.",
+    "summary": "Ingénieur systèmes de l’UNERG et développeur Full-Stack. Je contribue à des produits web, de bureau et multiplateformes, de la définition des parcours à la création d’interfaces et à l’intégration d’API et de bases de données. Mon expérience comprend le travail à distance et des logiciels de gestion pour différents secteurs.",
     "highlight1": "Développement web et multiplateforme, des interfaces à l’intégration des services.",
     "highlight2": "Expérience des API, bases de données relationnelles et applications de bureau et mobiles.",
     "highlight3": "Collaboration à distance et maintenance logicielle orientée vers les besoins pratiques.",
@@ -696,8 +696,8 @@
     "title": "Éducation et Certifications",
     "university": "Formation universitaire",
     "certifications": "Cours et Certifications",
-    "universityTitle": "Ingénierie des systèmes",
-    "universitySubtitle": "Diplôme obtenu",
+    "universityTitle": "Ingénieur systèmes",
+    "universitySubtitle": "UNERG",
     "universityEntity": "Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermédiaire)",
     "certDataScienceEntity": "DataCamp",
@@ -766,3 +766,4 @@
     "contact": "Pour toute question sur cette politique, écrivez-moi à"
   }
 }
+

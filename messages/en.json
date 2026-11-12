@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "Gustavo Colina — Systems Engineer",
-    "description": "Systems Engineering graduate of the UNERG and Venezuelan Full-Stack Developer building web, mobile and desktop products."
+    "description": "Systems Engineer from UNERG and Venezuelan Full-Stack Developer building web, mobile and desktop products."
   },
   "Navigation": {
     "curriculum": "CV Summary",
@@ -44,7 +44,7 @@
   "Curriculum": {
     "kicker": "CV Summary",
     "title": "Full-Stack Developer for web and cross-platform products",
-    "summary": "Systems Engineer and Full-Stack Developer, with a Systems Engineering degree from the UNERG. I contribute to web, desktop and cross-platform products, from shaping user flows and building interfaces to integrating APIs and databases. My experience includes remote teams and management software for different sectors.",
+    "summary": "Systems Engineer from UNERG and Full-Stack Developer. I contribute to web, desktop and cross-platform products, from shaping user flows and building interfaces to integrating APIs and databases. My experience includes remote teams and management software for different sectors.",
     "highlight1": "Web and cross-platform development, from interfaces to service integration.",
     "highlight2": "Experience with APIs, relational databases, desktop and mobile apps.",
     "highlight3": "Remote team collaboration and software maintenance shaped by practical needs.",
@@ -696,8 +696,8 @@
     "title": "Education & Certifications",
     "university": "University Education",
     "certifications": "Courses & Certifications",
-    "universityTitle": "Systems Engineering",
-    "universitySubtitle": "Degree obtained",
+    "universityTitle": "Systems Engineer",
+    "universitySubtitle": "UNERG",
     "universityEntity": "Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermediate)",
     "certDataScienceEntity": "DataCamp",
@@ -766,3 +766,4 @@
     "contact": "For any questions about this policy, write to me at"
   }
 }
+

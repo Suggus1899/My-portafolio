@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "Gustavo Colina — Ingegnere dei sistemi",
-    "description": "Laureato in Ingegneria dei sistemi presso la UNERG e sviluppatore Full-Stack venezuelano di prodotti web, mobili e desktop."
+    "description": "Ingegnere dei sistemi dell’UNERG e sviluppatore Full-Stack venezuelano di prodotti web, mobili e desktop."
   },
   "Navigation": {
     "curriculum": "Sintesi CV",
@@ -44,7 +44,7 @@
   "Curriculum": {
     "kicker": "Sintesi CV",
     "title": "Sviluppatore Full-Stack per prodotti web e multipiattaforma",
-    "summary": "Ingegnere dei sistemi e sviluppatore Full-Stack, laureato in Ingegneria dei sistemi presso la UNERG. Contribuisco a prodotti web, desktop e multipiattaforma, dalla definizione dei flussi utente alla realizzazione delle interfacce e all’integrazione di API e database. La mia esperienza comprende team remoti e software gestionali per diversi settori.",
+    "summary": "Ingegnere dei sistemi dell’UNERG e sviluppatore Full-Stack. Contribuisco a prodotti web, desktop e multipiattaforma, dalla definizione dei flussi utente alla realizzazione delle interfacce e all’integrazione di API e database. La mia esperienza comprende team remoti e software gestionali per diversi settori.",
     "highlight1": "Sviluppo web e multipiattaforma, dalle interfacce all’integrazione dei servizi.",
     "highlight2": "Esperienza con API, database relazionali e app desktop e mobili.",
     "highlight3": "Collaborazione con team remoti e manutenzione software orientata alle esigenze pratiche.",
@@ -696,8 +696,8 @@
     "title": "Educazione e Certificazioni",
     "university": "Formazione universitaria",
     "certifications": "Corsi e Certificazioni",
-    "universityTitle": "Ingegneria dei sistemi",
-    "universitySubtitle": "Titolo conseguito",
+    "universityTitle": "Ingegnere dei sistemi",
+    "universitySubtitle": "UNERG",
     "universityEntity": "Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermedio)",
     "certDataScienceEntity": "DataCamp",
@@ -766,3 +766,4 @@
     "contact": "Per qualsiasi domanda su questa informativa, scrivimi a"
   }
 }
+
