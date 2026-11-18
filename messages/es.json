@@ -1,7 +1,7 @@
 {
   "Index": {
-    "title": "Gustavo Colina — Ingeniero en Sistemas",
-    "description": "Ingeniero en Sistemas de la UNERG y desarrollador Full-Stack venezolano. Construyo productos web, móviles y de escritorio."
+    "title": "Gustavo Colina — Desarrollador Full-Stack",
+    "description": "Desarrollador Full-Stack venezolano y estudiante de Ingeniería en Sistemas en la UNERG (graduación prevista en 2027). Construyo productos web, móviles y de escritorio."
   },
   "Navigation": {
     "curriculum": "Síntesis CV",
@@ -15,28 +15,25 @@
     "language": "Idioma",
     "social": "Social",
     "links": "Vínculos",
-    "theme": "Tema",
     "skipToContent": "Saltar al contenido",
     "mainNav": "Navegación principal",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
     "scrollToTop": "Volver al inicio",
     "toggleTheme": "Cambiar tema",
-    "footerSubtitle": "Ingeniero en Sistemas · Desarrollador Full-Stack",
+    "footerSubtitle": "Desarrollador Full-Stack · Estudiante de Ingeniería en Sistemas",
     "allRightsReserved": "Todos los derechos reservados.",
     "privacy": "Privacidad"
   },
   "Hero": {
     "greeting": "¡Hola! Soy Gustavo Colina (Suggus1899)",
-    "role": "Ingeniero en Sistemas · Desarrollador Full-Stack",
+    "role": "Desarrollador Full-Stack · Estudiante de Ingeniería en Sistemas",
     "whatIDo": "¿Qué hago?",
     "availability": "Disponible para nuevas oportunidades",
     "viewProjects": "Ver proyectos",
     "contact": "Contáctame",
     "contactAriaLabel": "Enviar correo electrónico a Gustavo Colina",
-    "downloadCv": "Descargar CV",
     "downloadCvAriaLabel": "Descargar currículum en PDF",
-    "github": "GitHub",
     "githubAriaLabel": "Visitar perfil de GitHub",
     "profileAlt": "Foto de perfil de Gustavo Colina",
     "whatIDoDescription": "Desarrollo y mantengo productos web, móviles y de escritorio, desde interfaces y APIs hasta su integración con bases de datos."
@@ -44,7 +41,7 @@
   "Curriculum": {
     "kicker": "Síntesis Curricular",
     "title": "Desarrollador Full-Stack para productos web y multiplataforma",
-    "summary": "Ingeniero en Sistemas de la UNERG y desarrollador Full-Stack. Participo en productos web, de escritorio y multiplataforma, desde la definición de flujos y la construcción de interfaces hasta la integración de APIs y bases de datos. Mi experiencia incluye equipos remotos y software de gestión para distintos sectores.",
+    "summary": "Desarrollador Full-Stack y estudiante de Ingeniería en Sistemas en la UNERG, con graduación prevista en 2027. Participo en productos web, de escritorio y multiplataforma, desde la definición de flujos y la construcción de interfaces hasta la integración de APIs y bases de datos. Mi experiencia incluye equipos remotos y software de gestión para distintos sectores.",
     "highlight1": "Desarrollo web y multiplataforma, desde interfaces hasta integración con servicios.",
     "highlight2": "Experiencia con APIs, bases de datos relacionales y aplicaciones de escritorio y móviles.",
     "highlight3": "Colaboración en equipos remotos y mantenimiento de software orientado a necesidades reales.",
@@ -53,8 +50,7 @@
     "pdfProfileTitle": "Perfil profesional",
     "pdfExperienceTitle": "Experiencia profesional",
     "pdfSkillsTitle": "Tecnologías",
-    "pdfProjectsTitle": "Proyectos seleccionados",
-    "pdfLanguagesTitle": "Idiomas"
+    "pdfProjectsTitle": "Proyectos seleccionados"
   },
   "Experience": {
     "title": "Experiencia",
@@ -704,8 +700,8 @@
     "title": "Educación y Certificaciones",
     "university": "Formación Universitaria",
     "certifications": "Cursos y Certificaciones",
-    "universityTitle": "Ingeniero en Sistemas",
-    "universitySubtitle": "UNERG",
+    "universityTitle": "Ingeniería en Sistemas",
+    "universitySubtitle": "En curso · graduación prevista en 2027",
     "universityEntity": "Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermedio)",
     "certDataScienceEntity": "DataCamp",
@@ -750,8 +746,11 @@
       "emailRequired": "El correo electrónico es obligatorio",
       "emailInvalid": "Ingresa un correo electrónico válido",
       "messageRequired": "El mensaje es obligatorio",
-      "messageMin": "El mensaje debe tener al menos 10 caracteres"
-    }
+      "messageMin": "El mensaje debe tener al menos 10 caracteres",
+      "nameMax": "El nombre no puede superar 100 caracteres",
+      "messageMax": "El mensaje no puede superar 5000 caracteres"
+    },
+    "rateLimited": "Alcanzaste el límite de envíos de esta sesión. Escríbeme por WhatsApp o email."
   },
   "NotFound": {
     "kicker": "Error 404",
@@ -774,4 +773,3 @@
     "contact": "Para cualquier consulta sobre esta política, escríbeme a"
   }
 }
-

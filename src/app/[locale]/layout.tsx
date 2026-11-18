@@ -1,5 +1,5 @@
 import {NextIntlClientProvider} from 'next-intl';
-import {getMessages, getTranslations} from 'next-intl/server';
+import {getMessages, getTranslations, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 
@@ -16,7 +16,9 @@ import ScrollProgressBar from '@/components/ScrollProgressBar';
 import ScrollToTop from '@/components/ScrollToTop';
 import SchemaOrg from '@/components/SchemaOrg';
 import { SITE_URL } from '@/config/constants';
+import { getLocalizedAlternates, ogImage, ogLocale } from '@/lib/seo';
 import { Analytics } from '@vercel/analytics/next';
+import { MotionConfig } from 'framer-motion';
 
 type AppLocale = (typeof routing.locales)[number];
 
@@ -41,31 +43,21 @@ export async function generateMetadata({
     metadataBase: new URL(siteUrl),
     title: t('title'),
     description: t('description'),
-    alternates: {
-      canonical: `/${appLocale}`,
-      languages: Object.fromEntries(routing.locales.map((item) => [item, `/${item}`]))
-    },
+    alternates: getLocalizedAlternates(appLocale),
     openGraph: {
       title: t('title'),
       description: t('description'),
       url: `/${appLocale}`,
-      siteName: 'Gustavo Colina Portfolio',
-      locale: appLocale,
+      siteName: 'Gustavo Colina',
+      locale: ogLocale[appLocale],
       type: 'website',
-      images: [
-        {
-          url: `${siteUrl}/og-image.png`,
-          width: 1254,
-          height: 1254,
-          alt: 'Gustavo Colina — Software Engineer'
-        }
-      ]
+      images: [ogImage]
     },
     twitter: {
       card: 'summary_large_image',
       title: t('title'),
       description: t('description'),
-      images: [`${siteUrl}/og-image.png`]
+      images: [ogImage.url]
     }
   };
 }
@@ -82,6 +74,9 @@ export default async function RootLayout({
     notFound();
   }
  
+  // Without this next-intl reads the locale from headers(), which opts every page out of static rendering.
+  setRequestLocale(locale);
+
   const messages = await getMessages();
  
   return (
@@ -91,13 +86,15 @@ export default async function RootLayout({
         <SchemaOrg siteUrl={siteUrl} />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <NextIntlClientProvider messages={messages}>
-            <ScrollProgressBar />
-            <Navbar />
-            <main id="main-content" className="pt-24 min-h-screen page-gradient">
-              {children}
-            </main>
-            <Footer />
-            <ScrollToTop />
+            <MotionConfig reducedMotion="user">
+              <ScrollProgressBar />
+              <Navbar />
+              <main id="main-content" className="pt-24 min-h-screen page-gradient">
+                {children}
+              </main>
+              <Footer />
+              <ScrollToTop />
+            </MotionConfig>
           </NextIntlClientProvider>
         </ThemeProvider>
         <Analytics />

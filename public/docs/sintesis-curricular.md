@@ -2,7 +2,7 @@
 
 ## Perfil profesional
 
-Ingeniero en Sistemas de la UNERG y desarrollador Full-Stack. Participo en productos web, de escritorio y multiplataforma, desde la definición de flujos y la construcción de interfaces hasta la integración de APIs y bases de datos. Mi experiencia incluye equipos remotos y software de gestión para distintos sectores.
+Desarrollador Full-Stack y estudiante de Ingeniería en Sistemas en la UNERG, con graduación prevista en 2027. Participo en productos web, de escritorio y multiplataforma, desde la definición de flujos y la construcción de interfaces hasta la integración de APIs y bases de datos. Mi experiencia incluye equipos remotos y software de gestión para distintos sectores.
 
 ## Experiencia
 
@@ -26,7 +26,7 @@ LogMaster digitaliza el registro y control de visitantes, con seguimiento de acc
 
 ## Formación
 
-Ingeniero en Sistemas — Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)
+Ingeniería en Sistemas — Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)
 
 Junior Cybersecurity Analyst Career Path — Cisco Networking Academy · 4 de febrero de 2026
 
