@@ -58,6 +58,7 @@
     "contact": "Contact"
   },
   "Hero": {
+    "role": "Full-Stack Developer · Systems Engineering student",
     "viewProjects": "See projects",
     "downloadCv": "Download CV",
     "githubAriaLabel": "Visit GitHub profile",
@@ -71,7 +72,10 @@
     "highlight2": "Experience with APIs, relational databases, desktop and mobile apps.",
     "highlight3": "Remote team collaboration and software maintenance shaped by practical needs.",
     "contact": "Contact by email",
-    "pdfProfileTitle": "Professional profile"
+    "pdfProfileTitle": "Professional profile",
+    "pdfExperienceTitle": "Professional experience",
+    "pdfSkillsTitle": "Technologies",
+    "pdfProjectsTitle": "Selected projects"
   },
   "Experience": {
     "title": "Experience",

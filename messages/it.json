@@ -58,6 +58,7 @@
     "contact": "Contatti"
   },
   "Hero": {
+    "role": "Sviluppatore Full-Stack · Studente di Ingegneria dei sistemi",
     "viewProjects": "Vedi i progetti",
     "downloadCv": "Scarica CV",
     "githubAriaLabel": "Visita profilo GitHub",
@@ -71,7 +72,10 @@
     "highlight2": "Esperienza con API, database relazionali e app desktop e mobili.",
     "highlight3": "Collaborazione con team remoti e manutenzione software orientata alle esigenze pratiche.",
     "contact": "Contatta via email",
-    "pdfProfileTitle": "Profilo professionale"
+    "pdfProfileTitle": "Profilo professionale",
+    "pdfExperienceTitle": "Esperienza professionale",
+    "pdfSkillsTitle": "Tecnologie",
+    "pdfProjectsTitle": "Progetti selezionati"
   },
   "Experience": {
     "title": "Esperienza",
