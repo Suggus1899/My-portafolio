@@ -1,11 +1,42 @@
 {
   "Index": {
-    "title": "Gustavo Colina — Systems Engineer",
-    "description": "Systems Engineer from UNERG and Venezuelan Full-Stack Developer building web, mobile and desktop products."
+    "title": "Gustavo Colina — Full-Stack Developer",
+    "description": "Venezuelan Full-Stack Developer and Systems Engineering student at UNERG (expected graduation 2027), building web, mobile and desktop products."
+  },
+  "Magazine": {
+    "open": "Open magazine",
+    "readView": "Reading view",
+    "bookView": "3D view",
+    "previous": "Previous page",
+    "next": "Next page",
+    "index": "Contents",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "resetZoom": "Reset zoom",
+    "pageOf": "Page {current} of {total}",
+    "loading": "Opening magazine…",
+    "unavailable": "Reading view is available while the 3D magazine cannot load.",
+    "reducedMotion": "Reading view is active based on your reduced motion preference.",
+    "cover": "Cover",
+    "profile": "Profile",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Technologies",
+    "projects": "Projects",
+    "articles": "Articles",
+    "services": "Services",
+    "contact": "Contact",
+    "now": "Now",
+    "privacy": "Privacy",
+    "linkedInAriaLabel": "Visit LinkedIn profile",
+    "backToCover": "Back to cover",
+    "role": "Systems Engineering · Full-Stack Developer",
+    "issue": "Digital edition",
+    "coverTopic": "Design · Code · Product",
+    "socialLinks": "Social profiles"
   },
   "Navigation": {
     "curriculum": "CV Summary",
-    "cv": "CV",
     "services": "Services",
     "experience": "Experience",
     "projects": "Projects",
@@ -15,54 +46,32 @@
     "language": "Language",
     "social": "Social",
     "links": "Links",
-    "theme": "Theme",
     "skipToContent": "Skip to content",
     "mainNav": "Main navigation",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "scrollToTop": "Scroll to top",
     "toggleTheme": "Toggle theme",
-    "footerSubtitle": "Systems Engineer · Full-Stack Developer",
+    "footerSubtitle": "Full-Stack Developer · Systems Engineering student",
     "allRightsReserved": "All rights reserved.",
     "privacy": "Privacy",
     "contact": "Contact"
   },
   "Hero": {
-    "greeting": "Gustavo Colina",
-    "role": "Systems Engineer · Full-Stack Developer",
-    "whatIDo": "What do I do?",
-    "availability": "Available for new opportunities",
     "viewProjects": "See projects",
-    "contact": "Contact me",
-    "contactAriaLabel": "Send email to Gustavo Colina",
     "downloadCv": "Download CV",
-    "downloadCvAriaLabel": "Download CV in PDF format",
-    "github": "GitHub",
     "githubAriaLabel": "Visit GitHub profile",
-    "profileAlt": "Profile photo of Gustavo Colina",
-    "whatIDoDescription": "I design and build digital products end to end, from interfaces and APIs to their data integrations.",
-    "magazineAlt": "Illustrated blue magazine cover with the initials GC.",
-    "magazineCaption": "Cover · selected projects",
-    "openMagazine": "Open 3D cover",
-    "replayMagazine": "Open again",
-    "loadingMagazine": "Opening…",
-    "reducedMotionMagazine": "The static cover remains available; animation is disabled by your reduced-motion preference.",
-    "unavailableMagazine": "The static cover remains available; this 3D animation is unavailable in this browser."
+    "profileAlt": "Profile photo of Gustavo Colina"
   },
   "Curriculum": {
     "kicker": "CV Summary",
     "title": "Full-Stack Developer for web and cross-platform products",
-    "summary": "Systems Engineer from UNERG and Full-Stack Developer. I contribute to web, desktop and cross-platform products, from shaping user flows and building interfaces to integrating APIs and databases. My experience includes remote teams and management software for different sectors.",
+    "summary": "Full-Stack Developer and Systems Engineering student at UNERG, expected to graduate in 2027. I contribute to web, desktop and cross-platform products, from shaping user flows and building interfaces to integrating APIs and databases. My experience includes remote teams and management software for different sectors.",
     "highlight1": "Web and cross-platform development, from interfaces to service integration.",
     "highlight2": "Experience with APIs, relational databases, desktop and mobile apps.",
     "highlight3": "Remote team collaboration and software maintenance shaped by practical needs.",
-    "download": "Download CV",
     "contact": "Contact by email",
-    "pdfProfileTitle": "Professional profile",
-    "pdfExperienceTitle": "Professional experience",
-    "pdfSkillsTitle": "Technologies",
-    "pdfProjectsTitle": "Selected projects",
-    "pdfLanguagesTitle": "Languages"
+    "pdfProfileTitle": "Professional profile"
   },
   "Experience": {
     "title": "Experience",
@@ -71,7 +80,7 @@
     "exp1Period": "March 2026 – June 2026",
     "exp1Description": "Cross-platform client development with Flutter/Dart for Android, iOS and Desktop. Implementation of Clean Architecture with Provider for session management and role control. Integration of interactive vector animations with Rive engine and Glassmorphism design. Participation in full-stack with Next.js in the web layer of the system. Reactive state management and decoupled architecture oriented to scalability.",
     "exp1Technologies": "Flutter, Dart, Next.js, React, TypeScript, Clean Architecture, Provider, Rive",
-    "exp1Achievement1": "Web and cross-platform development, from interfaces to service integration.",
+    "exp1Achievement1": "Developed a Flutter/Dart client for mobile and desktop.",
     "exp1Achievement2": "Configured role-based navigation and session management.",
     "exp1Achievement3": "Integrated Rive animations into a cross-platform interface.",
     "exp2Role": "Full-Stack Developer Intern",
@@ -79,9 +88,9 @@
     "exp2Period": "February 2026 – August 2026",
     "exp2Description": "LogMaster digitizes visitor registration and access management, with access tracking, role management and report exports for auditing.",
     "exp2Technologies": "Go, Chi, React, TypeScript, PostgreSQL",
-    "exp2Achievement1": "Covers arrival, waiting, admission, temporary exit, re-entry and visit closure.",
-    "exp2Achievement2": "React/TypeScript client and Go API backed by PostgreSQL.",
-    "exp2Achievement3": "Organized access permissions for administrative, operational and audit roles.",
+    "exp2Achievement1": "Organized visit registration and tracking flows.",
+    "exp2Achievement2": "Integrated exportable PDF and Excel reports for queries and audits.",
+    "exp2Achievement3": "Configured access profiles for operations and audit functions.",
     "exp3Role": "Freelance Full-Stack Developer",
     "exp3Company": "ZoomMergeLabs · Remote",
     "exp3Period": "June 2026 – Present",
@@ -94,14 +103,19 @@
   "Projects": {
     "title": "Projects",
     "description": "A selection of public and private projects spanning different product types and technologies.",
-    "featuredTitle": "Featured projects",
-    "featuredDescription": "Three product stories: visitor management, multi-company support and offline operations.",
-    "viewAll": "View all projects",
     "caseStudy": "Case study",
     "private": "Private",
     "viewCode": "Code",
     "filterAll": "All projects",
     "items": {
+      "morrojobs": {
+        "name": "MorroJobs",
+        "description": "Work platform connecting students with businesses and residents in San Juan de los Morros for short-term jobs that fit their schedules.",
+        "highlights": [
+          "Manages job offers, applications, assignments and chat through role-based dashboards.",
+          "Includes moderation, profile verification and simulated payments."
+        ]
+      },
       "visitors": {
         "name": "Visitors — LogMaster",
         "description": "Visitor registration and access management for corporate facilities, including consent, photos and audit records.",
@@ -201,14 +215,6 @@
           "Plots time- and frequency-domain results in a Python desktop app."
         ]
       },
-      "morrojobs": {
-        "name": "MorroJobs",
-        "description": "Work platform connecting students with businesses and residents in San Juan de los Morros for short-term jobs that fit their schedules.",
-        "highlights": [
-          "Manages job offers, applications, assignments and chat through role-based dashboards.",
-          "Includes moderation, profile verification and simulated payments."
-        ]
-      },
       "maintenance-tracker": {
         "name": "Preventive maintenance app",
         "description": "A private application for equipment inventory and maintenance history, shown without identifying its organization.",
@@ -234,7 +240,6 @@
     "kicker": "Short technical blog",
     "title": "Technical notes",
     "subtitle": "Notes on software development, applications and product decisions.",
-    "viewAll": "View all",
     "readMore": "Read more",
     "backToBlog": "← Blog"
   },
@@ -242,25 +247,25 @@
     "kicker": "Now page",
     "title": "What I am focused on right now",
     "intro": "A snapshot of the projects and technologies I am currently working with.",
-    "currentFocus": "I have been working as a freelancer since June 2026. Currently available for new backend projects with Java 21, Spring Boot 3 and clean architectures.",
+    "currentFocus": "I work on Meden's Flutter client and its integration with the Go services. I'm also available for remote Full-Stack projects from Venezuela (UTC−4).",
     "buildingTitle": "Building",
-    "building1": "Refining my multilingual portfolio with SEO and conversion improvements.",
-    "building2": "Designing backend projects applying SOLID principles and Clean Architecture with Spring Boot.",
-    "building3": "Writing project case studies for technical interviews.",
-    "building4": "Consolidating a service section focused on client acquisition and lead conversion.",
+    "building1": "Evolving client, billing and operations flows in the app.",
+    "building2": "Reviewing API contracts, authentication and error states.",
+    "building3": "Building and maintaining web, mobile and desktop products.",
+    "building4": "Selecting projects that show technical decisions and product work.",
     "learningTitle": "Learning",
-    "learning1": "Cloud networking applied to backend service deployments.",
-    "learning2": "Observability and performance practices for API platforms.",
-    "learning3": "AI-assisted workflows to move faster without losing quality.",
-    "learning4": "Enterprise practices with Java, Spring Security and Hibernate/JPA.",
+    "learning1": "API design and consumption with Go and TypeScript.",
+    "learning2": "SQL and MongoDB data modeling based on product needs.",
+    "learning3": "Web interface development with React, Next.js and Astro.",
+    "learning4": "Mobile and desktop apps with Flutter, Dart and SQLite.",
     "shippingTitle": "Shipping",
-    "shipping1": "Iterative UX improvements with a more cohesive visual system.",
-    "shipping2": "Technical quality fixes: lint, build and hydration mismatch cleanup.",
-    "shipping3": "New content modules: technical blog, services and SEO metadata.",
+    "shipping1": "Maintaining client, billing and operations flows in Meden.",
+    "shipping2": "Integration between the mobile client and the backend services.",
+    "shipping3": "Improvements and maintenance of web and cross-platform tools.",
     "nextTitle": "Next",
-    "next1": "Publish full project case studies.",
-    "next2": "Add conversion analytics to contact CTAs.",
-    "next3": "Implement CI/CD pipeline with automated checks."
+    "next1": "Keep building products alongside technology teams and clients.",
+    "next2": "Collaborate on Full-Stack projects that require end-to-end work.",
+    "next3": "Document decisions and lessons from recent projects."
   },
   "Services": {
     "title": "Services",
@@ -274,8 +279,7 @@
     "duration": "Estimated duration",
     "contactCTAs": {
       "whatsapp": "Quote via WhatsApp",
-      "email": "Send email",
-      "calendar": "Schedule a call"
+      "email": "Send email"
     },
     "categories": [
       {
@@ -716,8 +720,8 @@
     "title": "Education & Certifications",
     "university": "University Education",
     "certifications": "Courses & Certifications",
-    "universityTitle": "Systems Engineer",
-    "universitySubtitle": "UNERG",
+    "universityTitle": "Systems Engineering",
+    "universitySubtitle": "In progress · expected graduation 2027",
     "universityEntity": "Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermediate)",
     "certDataScienceEntity": "DataCamp",
@@ -762,8 +766,11 @@
       "emailRequired": "Email is required",
       "emailInvalid": "Please enter a valid email",
       "messageRequired": "Message is required",
-      "messageMin": "Message must be at least 10 characters"
-    }
+      "messageMin": "Message must be at least 10 characters",
+      "nameMax": "Name cannot exceed 100 characters",
+      "messageMax": "Message cannot exceed 5000 characters"
+    },
+    "rateLimited": "You reached the message limit for this session. Write to me on WhatsApp or email."
   },
   "NotFound": {
     "kicker": "Error 404",
@@ -786,4 +793,3 @@
     "contact": "For any questions about this policy, write to me at"
   }
 }
-

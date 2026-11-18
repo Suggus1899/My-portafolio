@@ -4,7 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { Link, routing } from '@/i18n/routing';
 import { getBlogPostsForLocale, type AppLocale } from '@/data/blogPosts';
-import { getLocalizedAlternates } from '@/lib/seo';
+import { getLocalizedAlternates, getPageSocial } from '@/lib/seo';
 import repos from '@/repos.json';
 import ProjectFigure from '@/components/ProjectFigure';
 import { ArrowUpRight } from 'lucide-react';
@@ -23,7 +23,8 @@ export async function generateMetadata({
   return {
     title: `${t('title')} | Gustavo Colina`,
     description: t('subtitle'),
-    alternates: getLocalizedAlternates(appLocale, '/blog')
+    alternates: getLocalizedAlternates(appLocale, '/blog'),
+    ...getPageSocial(appLocale, '/blog', `${t('title')} | Gustavo Colina`, t('subtitle'))
   };
 }
 

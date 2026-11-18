@@ -1,20 +1,22 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { MessageCircle, Mail, X } from 'lucide-react';
 import type { ServiceCategory, ServiceDetail } from '@/types';
 import { WHATSAPP_NUMBER, EMAIL } from '@/config/constants';
 
-export default function ServicesSection() {
+export default function ServicesSection({ categoryId, serviceIds, compact = false }: { categoryId?: string; serviceIds?: string[]; compact?: boolean } = {}) {
   const t = useTranslations('Services');
+  const instanceId = useId();
   const categories = useMemo(() => t.raw('categories') as ServiceCategory[], [t]);
 
   // Calculate initial category
   const initialCategory = useMemo(() =>
-    categories.length > 0 ? categories[0].id : '',
-    [categories]
+    categoryId ?? (categories.length > 0 ? categories[0].id : ''),
+    [categories, categoryId]
   );
 
   const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
@@ -55,18 +57,20 @@ export default function ServicesSection() {
   };
 
   return (
-    <section id="services" className="py-24 px-6 max-w-6xl mx-auto w-full">
+    <section id={compact ? undefined : 'services'} className={compact ? 'w-full' : 'py-24 px-6 max-w-6xl mx-auto w-full'}>
+      {!compact && <>
       <h1 className="text-3xl font-space font-black uppercase mb-4 tracking-tight">{t('title')}</h1>
       <div className="mb-5 h-[2px] w-40 bg-zinc-900/85 dark:bg-zinc-100/85" />
       <p className="mb-8 max-w-3xl text-zinc-600 dark:text-zinc-400">{t('subtitle')}</p>
-      <aside className="mb-8 border-2 border-zinc-900 bg-zinc-50 p-5 dark:border-zinc-100 dark:bg-zinc-900" aria-labelledby="infrastructure-title">
-        <h2 id="infrastructure-title" className="font-space font-bold uppercase">{t('terms.infrastructureTitle')}</h2>
+      <aside className="mb-8 p-5 border-2 border-zinc-900 bg-zinc-50 dark:border-zinc-100 dark:bg-zinc-900" aria-labelledby={`${instanceId}-infrastructure-title`}>
+        <h2 id={`${instanceId}-infrastructure-title`} className="font-space font-bold uppercase">{t('terms.infrastructureTitle')}</h2>
         <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">{t('terms.providers')}</p>
         <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">{t('terms.externalCosts')}</p>
       </aside>
+      </>}
 
       {/* Category Tabs */}
-      <div className="flex flex-wrap gap-2 mb-8">
+      {!categoryId && <div className="flex flex-wrap gap-2 mb-8">
         {categories.map((category) => (
           <button
             key={category.id}
@@ -81,23 +85,24 @@ export default function ServicesSection() {
             {category.name}
           </button>
         ))}
-      </div>
+      </div>}
 
       {/* Category Description */}
       {selectedCategoryData && (
-        <p className="mb-6 text-sm text-zinc-600 dark:text-zinc-400">
-          {selectedCategoryData.description}
-        </p>
+        <div className={`${compact ? 'mb-3' : 'mb-6'} text-sm text-zinc-600 dark:text-zinc-400`}>
+          {compact && <h2 className="font-bold uppercase">{selectedCategoryData.name}</h2>}
+          <p>{selectedCategoryData.description}</p>
+        </div>
       )}
 
       {/* Services Grid */}
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {selectedCategoryData?.services.map((service) => (
+      <div className={compact ? 'grid gap-3' : 'grid gap-4 md:grid-cols-2 lg:grid-cols-3'}>
+        {selectedCategoryData?.services.filter((service) => !serviceIds || serviceIds.includes(service.id)).map((service) => (
           <button
             key={service.id}
             type="button"
             onClick={() => setSelectedServiceId(service.id)}
-            className="text-left border-2 border-zinc-900 bg-white p-5 transition-all hover:-translate-y-0.5 hover:shadow-md dark:border-zinc-100 dark:bg-zinc-950 flex flex-col h-full"
+            className={`text-left border-2 border-zinc-900 bg-white ${compact ? 'p-3' : 'p-5'} transition-all hover:-translate-y-0.5 hover:shadow-md dark:border-zinc-100 dark:bg-zinc-950 flex flex-col h-full`}
           >
             <div className="flex flex-wrap gap-1 mb-3">
               {service.technologies.slice(0, 3).map((tech) => (
@@ -121,13 +126,13 @@ export default function ServicesSection() {
         ))}
       </div>
 
-      {selectedService && selectedCategoryData && (
+      {selectedService && selectedCategoryData && createPortal(
         <div
           className="fixed inset-0 z-[120] flex items-center justify-center bg-black/55 p-4"
           onClick={() => setSelectedServiceId(null)}
           role="dialog"
           aria-modal="true"
-          aria-labelledby="service-title"
+          aria-labelledby={`${instanceId}-service-title`}
         >
           <div
             ref={modalRef}
@@ -139,7 +144,7 @@ export default function ServicesSection() {
                 <span className="inline-flex border border-zinc-900 dark:border-zinc-100 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-zinc-700 dark:text-zinc-300">
                   {selectedCategoryData.name}
                 </span>
-                <h3 id="service-title" className="mt-3 text-2xl font-space font-black uppercase text-zinc-900 dark:text-zinc-100">
+                <h3 id={`${instanceId}-service-title`} className="mt-3 text-2xl font-space font-black uppercase text-zinc-900 dark:text-zinc-100">
                   {selectedService.title}
                 </h3>
               </div>
@@ -205,8 +210,8 @@ export default function ServicesSection() {
               )}
             </div>
 
-            <section className="mt-6 border-t border-zinc-300 pt-5 dark:border-zinc-700" aria-labelledby="service-terms-title">
-              <h4 id="service-terms-title" className="font-space font-bold uppercase">{t('terms.title')}</h4>
+            <section className="mt-6 border-t border-zinc-300 pt-5 dark:border-zinc-700" aria-labelledby={`${instanceId}-service-terms-title`}>
+              <h4 id={`${instanceId}-service-terms-title`} className="font-space font-bold uppercase">{t('terms.title')}</h4>
               <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">{t('terms.basePrice')}</p>
               <dl className="mt-4 space-y-4 text-sm">
                 {[
@@ -251,7 +256,7 @@ export default function ServicesSection() {
               </button>
             </div>
           </div>
-        </div>
+        </div>, document.body
       )}
     </section>
   );

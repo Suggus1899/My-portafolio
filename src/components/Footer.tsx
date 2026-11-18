@@ -41,14 +41,14 @@ export default function Footer() {
     <footer className="w-full border-t-2 border-zinc-900 dark:border-zinc-100 py-12 px-6 mt-12 bg-zinc-50/95 dark:bg-zinc-950/95">
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
         <div className="text-center md:text-left">
-          <h3 className="font-space font-black uppercase text-xl mb-2 text-zinc-900 dark:text-zinc-100">Gustavo Colina (Suggus1899)</h3>
-          <p className="text-zinc-500 dark:text-zinc-400 text-sm">
+          <p className="font-space font-black uppercase text-xl mb-2 text-zinc-900 dark:text-zinc-100">Gustavo Colina (Suggus1899)</p>
+          <p className="text-zinc-600 dark:text-zinc-400 text-sm">
             {t('footerSubtitle')}
           </p>
         </div>
 
         <div className="flex flex-col gap-3">
-          <p className="text-xs font-bold uppercase tracking-[0.12em] text-zinc-400 dark:text-zinc-500">{t('social')}</p>
+          <p className="text-xs font-bold uppercase tracking-[0.12em] text-zinc-600 dark:text-zinc-400">{t('social')}</p>
           <div className="flex gap-2">
             {socialLinks.map((link, idx) => (
               <a
@@ -65,8 +65,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <nav className="flex flex-col gap-2">
-          <p className="text-xs font-bold uppercase tracking-[0.12em] text-zinc-400 dark:text-zinc-500 mb-1">{t('links')}</p>
+        <nav aria-label={t('links')} className="flex flex-col gap-2">
+          <p className="text-xs font-bold uppercase tracking-[0.12em] text-zinc-600 dark:text-zinc-400 mb-1">{t('links')}</p>
           {secondaryLinks.map((link) => (
             <Link
               key={link.href}
@@ -79,7 +79,7 @@ export default function Footer() {
         </nav>
       </div>
       
-      <div className="max-w-4xl mx-auto mt-12 pt-8 border-t-2 border-zinc-900/70 dark:border-zinc-100/70 text-center text-zinc-500 dark:text-zinc-500 text-sm uppercase tracking-[0.08em]">
+      <div className="max-w-4xl mx-auto mt-12 pt-8 border-t-2 border-zinc-900/70 dark:border-zinc-100/70 text-center text-zinc-600 dark:text-zinc-400 text-sm uppercase tracking-[0.08em]">
         <p>© {currentYear} Gustavo Colina. {t('allRightsReserved')}</p>
       </div>
     </footer>

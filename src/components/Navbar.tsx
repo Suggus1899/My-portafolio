@@ -70,7 +70,7 @@ export default function Navbar() {
               </li>
             ) : (
               <li key={link.href} className={`transition-colors hover:text-zinc-900 dark:hover:text-zinc-100 ${activeClass}`}>
-                <Link href={link.href as '/'}>{link.label}</Link>
+                <Link href={link.href as '/'} aria-current={active ? 'page' : undefined}>{link.label}</Link>
               </li>
             );
           })}
@@ -130,6 +130,7 @@ export default function Navbar() {
                     key={link.href}
                     href={link.href as '/'}
                     onClick={close}
+                    aria-current={active ? 'page' : undefined}
                     className={`border-b border-zinc-200 dark:border-zinc-800 py-3 text-sm font-bold uppercase tracking-[0.12em] text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-zinc-100 ${activeClass}`}
                   >
                     {link.label}
