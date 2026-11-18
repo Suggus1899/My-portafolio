@@ -76,6 +76,8 @@ export default function Navbar() {
             className="md:hidden inline-flex h-9 w-9 items-center justify-center border-2 border-zinc-900 bg-white text-zinc-900 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100"
             onClick={() => setIsOpen((prev) => !prev)}
             aria-label={isOpen ? t('closeMenu') : t('openMenu')}
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
           >
             {isOpen ? <X size={18} /> : <Menu size={18} />}
           </button>
@@ -92,7 +94,14 @@ export default function Navbar() {
             aria-hidden="true"
           />
           {/* Drawer */}
-          <div ref={drawerRef} className="fixed top-0 right-0 z-50 h-full w-4/5 max-w-xs border-l-2 border-zinc-900 bg-white dark:border-zinc-100 dark:bg-[#0a0a0a] flex flex-col pt-24 pb-8 px-6 gap-2 overflow-y-auto">
+          <div
+            ref={drawerRef}
+            id="mobile-menu"
+            role="dialog"
+            aria-modal="true"
+            aria-label={t('mainNav')}
+            onKeyDown={(event) => { if (event.key === 'Escape') close(); }}
+            className="fixed top-0 right-0 z-50 h-full w-4/5 max-w-xs border-l-2 border-zinc-900 bg-white dark:border-zinc-100 dark:bg-[#0a0a0a] flex flex-col pt-24 pb-8 px-6 gap-2 overflow-y-auto">
             <button
               type="button"
               className="absolute top-5 right-5 inline-flex h-9 w-9 items-center justify-center border-2 border-zinc-900 dark:border-zinc-100"

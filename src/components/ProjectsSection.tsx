@@ -38,6 +38,7 @@ export default function ProjectsSection() {
         {filters.map((filter) => (
           <button
             key={filter}
+            type="button"
             onClick={() => setActiveFilter(filter)}
             aria-pressed={activeFilter === filter}
             className={`min-h-11 px-3 py-2 text-sm font-bold uppercase tracking-wide border-2 transition-colors sm:px-4 ${
