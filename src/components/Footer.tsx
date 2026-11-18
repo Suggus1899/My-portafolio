@@ -38,7 +38,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full border-t-2 border-zinc-900 dark:border-zinc-100 py-12 px-6 mt-12 bg-zinc-50/95 dark:bg-[#0a0a0a]/95">
+    <footer className="w-full border-t-2 border-zinc-900 dark:border-zinc-100 py-12 px-6 mt-12 bg-zinc-50/95 dark:bg-zinc-950/95">
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
         <div className="text-center md:text-left">
           <h3 className="font-space font-black uppercase text-xl mb-2 text-zinc-900 dark:text-zinc-100">Gustavo Colina (Suggus1899)</h3>

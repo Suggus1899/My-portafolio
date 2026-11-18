@@ -17,6 +17,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import SchemaOrg from '@/components/SchemaOrg';
 import { SITE_URL } from '@/config/constants';
 import { Analytics } from '@vercel/analytics/next';
+import { MotionConfig } from 'framer-motion';
 
 type AppLocale = (typeof routing.locales)[number];
 
@@ -87,17 +88,19 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head />
-      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased bg-white text-zinc-900 dark:bg-[#0a0a0a] dark:text-zinc-100 transition-colors duration-300 selection:bg-zinc-800 selection:text-white dark:selection:bg-zinc-200 dark:selection:text-black`} suppressHydrationWarning>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased bg-background text-foreground dark:bg-[#101827] dark:text-[#f5f1e8] transition-colors duration-300 selection:bg-blue-600 selection:text-white`} suppressHydrationWarning>
         <SchemaOrg siteUrl={siteUrl} />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <NextIntlClientProvider messages={messages}>
-            <ScrollProgressBar />
-            <Navbar />
-            <main id="main-content" className="pt-24 min-h-screen page-gradient">
-              {children}
-            </main>
-            <Footer />
-            <ScrollToTop />
+            <MotionConfig reducedMotion="user">
+              <ScrollProgressBar />
+              <Navbar />
+              <main id="main-content" className="pt-24 min-h-screen page-gradient">
+                {children}
+              </main>
+              <Footer />
+              <ScrollToTop />
+            </MotionConfig>
           </NextIntlClientProvider>
         </ThemeProvider>
         <Analytics />

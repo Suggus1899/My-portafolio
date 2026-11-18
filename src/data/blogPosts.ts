@@ -1,9 +1,11 @@
 import { routing } from '@/i18n/routing';
+import { caseStudyPosts } from './caseStudies';
 
 export type AppLocale = (typeof routing.locales)[number];
 
 type LocalizedText = Record<AppLocale, string>;
 type LocalizedParagraphs = Record<AppLocale, string[]>;
+type LocalizedCaseSections = Record<AppLocale, { heading: string; body: string }[]>;
 
 export type BlogPost = {
   slug: string;
@@ -12,10 +14,11 @@ export type BlogPost = {
   tags: string[];
   title: LocalizedText;
   excerpt: LocalizedText;
-  content: LocalizedParagraphs;
+  content?: LocalizedParagraphs;
+  caseStudy?: { projectId: string; sections: LocalizedCaseSections };
 };
 
-export const blogPosts: BlogPost[] = [
+const legacyBlogPosts: BlogPost[] = [
   {
     slug: 'caso-de-estudio-logmaster',
     date: '2026-08-05',
@@ -354,12 +357,17 @@ export const blogPosts: BlogPost[] = [
   }
 ];
 
+export const blogPosts: BlogPost[] = [...caseStudyPosts, ...legacyBlogPosts.slice(1)];
+
 export function getBlogPostsForLocale(locale: AppLocale) {
   return blogPosts.map((post) => ({
     ...post,
     title: post.title[locale],
     excerpt: post.excerpt[locale],
-    content: post.content[locale]
+    content: post.content?.[locale] ?? [],
+    caseStudy: post.caseStudy
+      ? { ...post.caseStudy, sections: post.caseStudy.sections[locale] }
+      : undefined
   }));
 }
 
@@ -373,6 +381,9 @@ export function getBlogPostBySlug(slug: string, locale: AppLocale) {
     ...post,
     title: post.title[locale],
     excerpt: post.excerpt[locale],
-    content: post.content[locale]
+    content: post.content?.[locale] ?? [],
+    caseStudy: post.caseStudy
+      ? { ...post.caseStudy, sections: post.caseStudy.sections[locale] }
+      : undefined
   };
 }

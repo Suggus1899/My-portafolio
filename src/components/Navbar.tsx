@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { usePathname } from 'next/navigation';
@@ -18,10 +18,10 @@ export default function Navbar() {
   useFocusTrap(drawerRef, isOpen);
 
   const navLinks = [
-    { label: t('cv'), href: `/${locale}#curriculum`, isAnchor: true },
+    { label: t('projects'), href: `/${locale}#featured-projects`, isAnchor: true },
+    { label: t('experience'), href: `/${locale}#experience`, isAnchor: true },
     { label: t('services'), href: '/services', isAnchor: false },
-    { label: t('projects'), href: '/projects', isAnchor: false },
-    { label: t('skills'), href: `/${locale}#skills`, isAnchor: true },
+    { label: t('contact'), href: `/${locale}#contact`, isAnchor: true },
   ];
 
   const isActive = (href: string, isAnchor: boolean) => {
@@ -36,6 +36,15 @@ export default function Navbar() {
 
   const close = () => setIsOpen(false);
 
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setIsOpen(false);
+    };
+    window.addEventListener('keydown', handleEscape);
+    return () => window.removeEventListener('keydown', handleEscape);
+  }, [isOpen]);
+
   return (
     <>
       {/* Skip to main content link for accessibility */}
@@ -45,7 +54,7 @@ export default function Navbar() {
       >
         {t('skipToContent')}
       </a>
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between border-b-2 border-zinc-900/90 bg-white/90 px-6 py-4 backdrop-blur-sm dark:border-zinc-100/90 dark:bg-[#0a0a0a]/88" aria-label={t('mainNav')}>
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between border-b-2 border-zinc-900/90 bg-white/90 px-6 py-4 backdrop-blur-sm dark:border-zinc-100/90 dark:bg-zinc-950/90" aria-label={t('mainNav')}>
         <Link href="/" className="text-xl font-space font-black uppercase tracking-[0.04em] text-zinc-900 dark:text-zinc-100" onClick={close}>
           Gustavo Colina
         </Link>
@@ -71,11 +80,13 @@ export default function Navbar() {
           <LanguageSwitcher />
           <ThemeSwitcher />
           {/* Hamburger button — mobile only */}
-          <button
+    <button
             type="button"
             className="md:hidden inline-flex h-9 w-9 items-center justify-center border-2 border-zinc-900 bg-white text-zinc-900 dark:border-zinc-100 dark:bg-zinc-950 dark:text-zinc-100"
             onClick={() => setIsOpen((prev) => !prev)}
             aria-label={isOpen ? t('closeMenu') : t('openMenu')}
+            aria-expanded={isOpen}
+            aria-controls="mobile-navigation"
           >
             {isOpen ? <X size={18} /> : <Menu size={18} />}
           </button>
@@ -92,7 +103,7 @@ export default function Navbar() {
             aria-hidden="true"
           />
           {/* Drawer */}
-          <div ref={drawerRef} className="fixed top-0 right-0 z-50 h-full w-4/5 max-w-xs border-l-2 border-zinc-900 bg-white dark:border-zinc-100 dark:bg-[#0a0a0a] flex flex-col pt-24 pb-8 px-6 gap-2 overflow-y-auto">
+          <div id="mobile-navigation" ref={drawerRef} role="dialog" aria-modal="true" aria-label={t('mainNav')} className="fixed top-0 right-0 z-50 h-full w-4/5 max-w-xs border-l-2 border-zinc-900 bg-white dark:border-zinc-100 dark:bg-zinc-950 flex flex-col pt-24 pb-8 px-6 gap-2 overflow-y-auto">
             <button
               type="button"
               className="absolute top-5 right-5 inline-flex h-9 w-9 items-center justify-center border-2 border-zinc-900 dark:border-zinc-100"
