@@ -18,6 +18,7 @@ export default function ThemeSwitcher() {
 
   return (
     <button
+      type="button"
       onClick={handleToggleTheme}
       className="p-2 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-all"
       aria-label={t('toggleTheme')}

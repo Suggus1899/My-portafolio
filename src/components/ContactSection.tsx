@@ -1,13 +1,13 @@
 'use client';
 
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import emailjs from '@emailjs/browser';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { z } from 'zod';
 
-type Status = 'idle' | 'loading' | 'success' | 'error';
+type Status = 'idle' | 'loading' | 'success' | 'error' | 'limited';
 
 type ValidationErrors = {
   name?: string;
@@ -26,18 +26,26 @@ export default function ContactSection() {
   const [status, setStatus] = useState<Status>('idle');
   const [errors, setErrors] = useState<ValidationErrors>({});
   const [rateLimitCount, setRateLimitCount] = useState(0);
+  const successRef = useRef<HTMLParagraphElement>(null);
+
+  useEffect(() => {
+    if (status === 'success') successRef.current?.focus();
+  }, [status]);
 
   const createSchema = useCallback(() => {
     return z.object({
       name: z.string()
         .min(1, t('validation.nameRequired'))
-        .min(2, t('validation.nameMin')),
+        .min(2, t('validation.nameMin'))
+        .max(100, t('validation.nameMax')),
       email: z.string()
         .min(1, t('validation.emailRequired'))
+        .max(254, t('validation.emailInvalid'))
         .email(t('validation.emailInvalid')),
       message: z.string()
         .min(1, t('validation.messageRequired'))
         .min(10, t('validation.messageMin'))
+        .max(5000, t('validation.messageMax'))
     });
   }, [t]);
 
@@ -47,13 +55,19 @@ export default function ContactSection() {
 
     if (!formRef.current) return;
 
-    // Rate limiting check
+    // shortcut: per-tab limit only deters humans; real abuse control lives in the EmailJS dashboard (allowed domains, captcha, quota).
     if (rateLimitCount >= 3) {
-      setStatus('error');
+      setStatus('limited');
       return;
     }
 
     const formData = new FormData(formRef.current);
+    // Honeypot: hidden from people, bots that autofill it get a fake success.
+    if (getFormStringValue(formData, 'website')) {
+      setStatus('success');
+      formRef.current.reset();
+      return;
+    }
     const data = {
       name: getFormStringValue(formData, 'name'),
       email: getFormStringValue(formData, 'email'),
@@ -114,9 +128,9 @@ export default function ContactSection() {
 
         <div className="border-2 border-zinc-900 dark:border-zinc-100 bg-white/95 dark:bg-zinc-950/95 p-8">
           {status === 'success' ? (
-            <div className="flex flex-col items-center gap-4 py-12 text-center">
-              <CheckCircle size={48} className="text-emerald-500" />
-              <p className="text-xl font-space font-black uppercase text-zinc-900 dark:text-zinc-100">
+            <div role="status" className="flex flex-col items-center gap-4 py-12 text-center">
+              <CheckCircle size={48} className="text-emerald-500" aria-hidden="true" />
+              <p ref={successRef} tabIndex={-1} className="outline-none text-xl font-space font-black uppercase text-zinc-900 dark:text-zinc-100">
                 {t('successTitle')}
               </p>
               <p className="text-zinc-600 dark:text-zinc-400">{t('successMessage')}</p>
@@ -129,7 +143,11 @@ export default function ContactSection() {
               </button>
             </div>
           ) : (
-            <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+            <form ref={formRef} onSubmit={handleSubmit} noValidate className="space-y-6">
+              <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
+                <label htmlFor="website">Website</label>
+                <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
+              </div>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="from_name" className="block text-xs font-bold uppercase tracking-[0.14em] text-zinc-700 dark:text-zinc-300 mb-2">
@@ -139,11 +157,13 @@ export default function ContactSection() {
                     id="from_name"
                     name="name"
                     type="text"
+                    autoComplete="name"
+                    maxLength={100}
                     placeholder={t('namePlaceholder')}
                     aria-required="true"
                     aria-invalid={errors.name ? 'true' : 'false'}
                     aria-describedby={errors.name ? 'name-error' : undefined}
-                    className={`w-full border-2 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-600 ${errors.name ? 'border-red-500 focus:ring-red-500 dark:border-red-500 dark:focus:ring-red-500' : 'border-zinc-900 focus:ring-zinc-900 dark:border-zinc-100 dark:focus:ring-zinc-100'}`}
+                    className={`w-full border-2 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-500 focus:outline-none focus:ring-2 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-400 ${errors.name ? 'border-red-500 focus:ring-red-500 dark:border-red-500 dark:focus:ring-red-500' : 'border-zinc-900 focus:ring-zinc-900 dark:border-zinc-100 dark:focus:ring-zinc-100'}`}
                   />
                   {errors.name && (
                     <p id="name-error" className="mt-1 text-xs text-red-600 dark:text-red-400" role="alert">{errors.name}</p>
@@ -157,11 +177,13 @@ export default function ContactSection() {
                     id="reply_to"
                     name="email"
                     type="email"
+                    autoComplete="email"
+                    maxLength={254}
                     placeholder={t('emailPlaceholder')}
                     aria-required="true"
                     aria-invalid={errors.email ? 'true' : 'false'}
                     aria-describedby={errors.email ? 'email-error' : undefined}
-                    className={`w-full border-2 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-600 ${errors.email ? 'border-red-500 focus:ring-red-500 dark:border-red-500 dark:focus:ring-red-500' : 'border-zinc-900 focus:ring-zinc-900 dark:border-zinc-100 dark:focus:ring-zinc-100'}`}
+                    className={`w-full border-2 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-500 focus:outline-none focus:ring-2 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-400 ${errors.email ? 'border-red-500 focus:ring-red-500 dark:border-red-500 dark:focus:ring-red-500' : 'border-zinc-900 focus:ring-zinc-900 dark:border-zinc-100 dark:focus:ring-zinc-100'}`}
                   />
                   {errors.email && (
                     <p id="email-error" className="mt-1 text-xs text-red-600 dark:text-red-400" role="alert">{errors.email}</p>
@@ -177,21 +199,22 @@ export default function ContactSection() {
                   id="message"
                   name="message"
                   rows={5}
+                  maxLength={5000}
                   placeholder={t('messagePlaceholder')}
                   aria-required="true"
                   aria-invalid={errors.message ? 'true' : 'false'}
                   aria-describedby={errors.message ? 'message-error' : undefined}
-                  className={`w-full border-2 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-400 resize-none focus:outline-none focus:ring-2 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-600 ${errors.message ? 'border-red-500 focus:ring-red-500 dark:border-red-500 dark:focus:ring-red-500' : 'border-zinc-900 focus:ring-zinc-900 dark:border-zinc-100 dark:focus:ring-zinc-100'}`}
+                  className={`w-full border-2 bg-zinc-50 px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-500 resize-none focus:outline-none focus:ring-2 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-400 ${errors.message ? 'border-red-500 focus:ring-red-500 dark:border-red-500 dark:focus:ring-red-500' : 'border-zinc-900 focus:ring-zinc-900 dark:border-zinc-100 dark:focus:ring-zinc-100'}`}
                 />
                 {errors.message && (
                   <p id="message-error" className="mt-1 text-xs text-red-600 dark:text-red-400" role="alert">{errors.message}</p>
                 )}
               </div>
 
-              {status === 'error' && (
-                <div className="flex items-center gap-2 text-red-600 dark:text-red-400 text-sm" role="alert" aria-live="assertive">
+              {(status === 'error' || status === 'limited') && (
+                <div className="flex items-center gap-2 text-red-600 dark:text-red-400 text-sm" role="alert">
                   <AlertCircle size={16} aria-hidden="true" />
-                  <span>{t('errorMessage')}</span>
+                  <span>{t(status === 'limited' ? 'rateLimited' : 'errorMessage')}</span>
                 </div>
               )}
 

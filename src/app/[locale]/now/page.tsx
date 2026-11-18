@@ -2,8 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
-import { SITE_URL } from '@/config/constants';
-import { getLocalizedAlternates } from '@/lib/seo';
+import { getLocalizedAlternates, getPageSocial } from '@/lib/seo';
 
 export async function generateMetadata({
   params
@@ -17,18 +16,7 @@ export async function generateMetadata({
     title: `${t('title')} | Gustavo Colina`,
     description: t('intro'),
     alternates: getLocalizedAlternates(locale as 'es' | 'en' | 'fr' | 'it', '/now'),
-    openGraph: {
-      title: `${t('title')} | Gustavo Colina`,
-      description: t('intro'),
-      url: `${SITE_URL}/${locale}/now`,
-      images: [{ url: `${SITE_URL}/og-image.png`, width: 1254, height: 1254 }]
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: `${t('title')} | Gustavo Colina`,
-      description: t('intro'),
-      images: [`${SITE_URL}/og-image.png`]
-    }
+    ...getPageSocial(locale as 'es' | 'en' | 'fr' | 'it', '/now', `${t('title')} | Gustavo Colina`, t('intro'))
   };
 }
 

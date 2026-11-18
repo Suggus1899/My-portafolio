@@ -3,8 +3,7 @@ import { notFound } from 'next/navigation';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { Link, routing } from '@/i18n/routing';
 import { getBlogPostBySlug, blogPosts, type AppLocale } from '@/data/blogPosts';
-import { SITE_URL } from '@/config/constants';
-import { getLocalizedAlternates } from '@/lib/seo';
+import { getLocalizedAlternates, ogImage } from '@/lib/seo';
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -40,15 +39,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: `${post.title} | Gustavo Colina`,
       description: post.excerpt,
-      url: `${SITE_URL}/${appLocale}/blog/${slug}`,
+      url: `/${appLocale}/blog/${slug}`,
+      siteName: 'Gustavo Colina',
       type: 'article',
-      images: [{ url: `${SITE_URL}/og-image.png`, width: 1254, height: 1254 }]
+      publishedTime: post.date,
+      images: [ogImage]
     },
     twitter: {
       card: 'summary_large_image',
       title: `${post.title} | Gustavo Colina`,
       description: post.excerpt,
-      images: [`${SITE_URL}/og-image.png`]
+      images: [ogImage.url]
     }
   };
 }

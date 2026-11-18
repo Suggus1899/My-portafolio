@@ -1,7 +1,7 @@
 {
   "Index": {
-    "title": "Gustavo Colina — Ingegnere dei sistemi",
-    "description": "Ingegnere dei sistemi dell’UNERG e sviluppatore Full-Stack venezuelano di prodotti web, mobili e desktop."
+    "title": "Gustavo Colina — Sviluppatore Full-Stack",
+    "description": "Sviluppatore Full-Stack venezuelano e studente di Ingegneria dei sistemi presso la UNERG (laurea prevista nel 2027), realizzo prodotti web, mobili e desktop."
   },
   "Navigation": {
     "curriculum": "Sintesi CV",
@@ -15,28 +15,25 @@
     "language": "Lingua",
     "social": "Social",
     "links": "Link",
-    "theme": "Tema",
     "skipToContent": "Vai al contenuto",
     "mainNav": "Navigazione principale",
     "openMenu": "Apri il menu",
     "closeMenu": "Chiudi il menu",
     "scrollToTop": "Torna in cima",
     "toggleTheme": "Cambia tema",
-    "footerSubtitle": "Ingegnere dei sistemi · Sviluppatore Full-Stack",
+    "footerSubtitle": "Sviluppatore Full-Stack · Studente di Ingegneria dei sistemi",
     "allRightsReserved": "Tutti i diritti riservati.",
     "privacy": "Privacy"
   },
   "Hero": {
     "greeting": "Ciao! Sono Gustavo Colina (Suggus1899)",
-    "role": "Ingegnere dei sistemi · Sviluppatore Full-Stack",
+    "role": "Sviluppatore Full-Stack · Studente di Ingegneria dei sistemi",
     "whatIDo": "Cosa faccio?",
     "availability": "Disponibile per nuove opportunita",
     "viewProjects": "Vedi i progetti",
     "contact": "Contattami",
     "contactAriaLabel": "Invia email a Gustavo Colina",
-    "downloadCv": "Scarica CV",
     "downloadCvAriaLabel": "Scarica CV in formato PDF",
-    "github": "GitHub",
     "githubAriaLabel": "Visita profilo GitHub",
     "profileAlt": "Foto profilo di Gustavo Colina",
     "whatIDoDescription": "Sviluppo e mantengo prodotti web, mobili e desktop, dalle interfacce e API alla loro integrazione con i database."
@@ -44,7 +41,7 @@
   "Curriculum": {
     "kicker": "Sintesi CV",
     "title": "Sviluppatore Full-Stack per prodotti web e multipiattaforma",
-    "summary": "Ingegnere dei sistemi dell’UNERG e sviluppatore Full-Stack. Contribuisco a prodotti web, desktop e multipiattaforma, dalla definizione dei flussi utente alla realizzazione delle interfacce e all’integrazione di API e database. La mia esperienza comprende team remoti e software gestionali per diversi settori.",
+    "summary": "Sviluppatore Full-Stack e studente di Ingegneria dei sistemi presso la UNERG, con laurea prevista nel 2027. Contribuisco a prodotti web, desktop e multipiattaforma, dalla definizione dei flussi utente alla realizzazione delle interfacce e all’integrazione di API e database. La mia esperienza comprende team remoti e software gestionali per diversi settori.",
     "highlight1": "Sviluppo web e multipiattaforma, dalle interfacce all’integrazione dei servizi.",
     "highlight2": "Esperienza con API, database relazionali e app desktop e mobili.",
     "highlight3": "Collaborazione con team remoti e manutenzione software orientata alle esigenze pratiche.",
@@ -53,8 +50,7 @@
     "pdfProfileTitle": "Profilo professionale",
     "pdfExperienceTitle": "Esperienza professionale",
     "pdfSkillsTitle": "Tecnologie",
-    "pdfProjectsTitle": "Progetti selezionati",
-    "pdfLanguagesTitle": "Lingue"
+    "pdfProjectsTitle": "Progetti selezionati"
   },
   "Experience": {
     "title": "Esperienza",
@@ -67,13 +63,13 @@
     "exp2Period": "Febbraio 2026 – Agosto 2026",
     "exp2Description": "LogMaster digitalizza la registrazione dei visitatori e la gestione degli accessi, con tracciamento, ruoli ed esportazione di report per gli audit.",
     "exp1Technologies": "Flutter, Dart, Next.js, React, TypeScript, Clean Architecture, Provider, Rive",
-    "exp1Achievement1": "Sviluppo web e multipiattaforma, dalle interfacce all’integrazione dei servizi.",
+    "exp1Achievement1": "Sviluppo di un client Flutter/Dart per mobile e desktop.",
     "exp1Achievement2": "Configurazione della navigazione per ruoli e gestione delle sessioni.",
     "exp1Achievement3": "Integrazione delle animazioni Rive in un’interfaccia multipiattaforma.",
     "exp2Technologies": "Go, Chi, React, TypeScript, PostgreSQL",
-    "exp2Achievement1": "Gestisce arrivo, attesa, ammissione, uscita temporanea, rientro e chiusura della visita.",
-    "exp2Achievement2": "Client React/TypeScript e API Go con PostgreSQL.",
-    "exp2Achievement3": "Organizzazione dei permessi per i ruoli amministrativi, operativi e di audit.",
+    "exp2Achievement1": "Organizzazione dei flussi di registrazione e monitoraggio delle visite.",
+    "exp2Achievement2": "Integrazione di report esportabili in PDF ed Excel per consultazioni e audit.",
+    "exp2Achievement3": "Configurazione dei profili di accesso per le funzioni operative e di audit.",
     "exp3Role": "Sviluppatore Full-Stack Freelance",
     "exp3Company": "ZoomMergeLabs · Da remoto",
     "exp3Period": "Giugno 2026 – Presente",
@@ -230,25 +226,25 @@
     "kicker": "Pagina Now",
     "title": "Su cosa sono concentrato ora",
     "intro": "Uno sguardo ai progetti e alle tecnologie su cui lavoro attualmente.",
-    "currentFocus": "Lavoro come freelance da giugno 2026. Attualmente disponibile per nuovi progetti backend con Java 21, Spring Boot 3 e architetture pulite.",
+    "currentFocus": "Lavoro al client Flutter di Meden e alla sua integrazione con i servizi Go. Sono anche disponibile per progetti Full-Stack da remoto dal Venezuela (UTC−4).",
     "buildingTitle": "Sto costruendo",
-    "building1": "Rifinitura del portfolio multilingua con SEO e ottimizzazione conversione.",
-    "building2": "Progettazione di progetti backend applicando i principi SOLID e Clean Architecture con Spring Boot.",
-    "building3": "Scrittura di case study per colloqui tecnici.",
-    "building4": "Consolidamento della sezione servizi orientata a clienti e lead.",
+    "building1": "Evoluzione dei flussi di clienti, fatturazione e operazioni nell’applicazione.",
+    "building2": "Revisione di contratti API, autenticazione e stati di errore.",
+    "building3": "Sviluppo e manutenzione di prodotti web, mobili e desktop.",
+    "building4": "Selezione di progetti che mostrino decisioni tecniche e lavoro di prodotto.",
     "learningTitle": "Sto imparando",
-    "learning1": "Cloud networking applicato ai deploy backend.",
-    "learning2": "Osservabilita e performance per piattaforme API.",
-    "learning3": "Workflow con IA per consegnare piu velocemente senza perdere qualita.",
-    "learning4": "Pratiche enterprise con Java, Spring Security e Hibernate/JPA.",
+    "learning1": "Progettazione e consumo di API con Go e TypeScript.",
+    "learning2": "Modellazione dei dati SQL e MongoDB in base alle esigenze del prodotto.",
+    "learning3": "Sviluppo di interfacce web con React, Next.js e Astro.",
+    "learning4": "App mobili e desktop con Flutter, Dart e SQLite.",
     "shippingTitle": "Consegna",
-    "shipping1": "Miglioramenti UX iterativi con una linea visiva piu coerente.",
-    "shipping2": "Correzioni qualita tecnica: lint, build e mismatch di hydration.",
-    "shipping3": "Nuovi moduli: blog tecnico, servizi e metadata SEO.",
+    "shipping1": "Manutenzione dei flussi di clienti, fatturazione e operazioni in Meden.",
+    "shipping2": "Integrazione tra il client mobile e i servizi backend.",
+    "shipping3": "Miglioramenti e manutenzione di strumenti web e multipiattaforma.",
     "nextTitle": "Prossimo passo",
-    "next1": "Pubblicare case study completi per progetto.",
-    "next2": "Aggiungere analytics di conversione ai CTA di contatto.",
-    "next3": "Implementare pipeline CI/CD con controlli automatici."
+    "next1": "Continuare a sviluppare prodotti insieme a team tecnologici e clienti.",
+    "next2": "Collaborare a progetti Full-Stack che richiedono lavoro end-to-end.",
+    "next3": "Documentare decisioni e apprendimenti dei progetti recenti."
   },
   "Services": {
     "title": "Servizi",
@@ -704,8 +700,8 @@
     "title": "Educazione e Certificazioni",
     "university": "Formazione universitaria",
     "certifications": "Corsi e Certificazioni",
-    "universityTitle": "Ingegnere dei sistemi",
-    "universitySubtitle": "UNERG",
+    "universityTitle": "Ingegneria dei sistemi",
+    "universitySubtitle": "In corso · laurea prevista nel 2027",
     "universityEntity": "Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)",
     "certDataScienceTitle": "Data Science, Prompt Engineering, SQL (Intro & Intermedio)",
     "certDataScienceEntity": "DataCamp",
@@ -743,15 +739,18 @@
     "successTitle": "Messaggio inviato!",
     "successMessage": "Grazie per aver scritto. Ti rispondo presto.",
     "sendAnother": "Invia un altro messaggio",
-    "errorMessage": "Si e verificato un errore. Scrivimi direttamente su WhatsApp o email.",
+    "errorMessage": "Si è verificato un errore. Scrivimi direttamente su WhatsApp o email.",
     "validation": {
       "nameRequired": "Il nome è obbligatorio",
       "nameMin": "Il nome deve contenere almeno 2 caratteri",
       "emailRequired": "L'email è obbligatoria",
       "emailInvalid": "Inserisci un indirizzo email valido",
       "messageRequired": "Il messaggio è obbligatorio",
-      "messageMin": "Il messaggio deve contenere almeno 10 caratteri"
-    }
+      "messageMin": "Il messaggio deve contenere almeno 10 caratteri",
+      "nameMax": "Il nome non può superare i 100 caratteri",
+      "messageMax": "Il messaggio non può superare i 5000 caratteri"
+    },
+    "rateLimited": "Hai raggiunto il limite di invii per questa sessione. Scrivimi su WhatsApp o via email."
   },
   "NotFound": {
     "kicker": "Errore 404",
@@ -774,4 +773,3 @@
     "contact": "Per qualsiasi domanda su questa informativa, scrivimi a"
   }
 }
-
