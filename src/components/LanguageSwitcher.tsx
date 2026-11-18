@@ -47,7 +47,7 @@ export default function LanguageSwitcher() {
       className="relative"
       ref={dropdownRef}
       onKeyDown={(event) => {
-        if (event.key === 'Escape' && isOpen) { setIsOpen(false); triggerRef.current?.focus(); }
+        if (event.key === 'Escape' && isOpen) { event.stopPropagation(); setIsOpen(false); triggerRef.current?.focus(); }
       }}
     >
       <button

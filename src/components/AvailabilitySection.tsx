@@ -39,21 +39,21 @@ export default function AvailabilitySection() {
           <div className="flex items-center gap-3 border border-zinc-900/30 dark:border-zinc-100/30 px-4 py-3">
             <MapPin size={16} className="text-zinc-500 shrink-0" />
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-zinc-400 dark:text-zinc-500">{t('modalityLabel')}</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-zinc-600 dark:text-zinc-400">{t('modalityLabel')}</p>
               <p className="text-sm font-bold text-zinc-900 dark:text-zinc-100">{t('modality')}</p>
             </div>
           </div>
           <div className="flex items-center gap-3 border border-zinc-900/30 dark:border-zinc-100/30 px-4 py-3">
             <Briefcase size={16} className="text-zinc-500 shrink-0" />
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-zinc-400 dark:text-zinc-500">{t('contractLabel')}</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-zinc-600 dark:text-zinc-400">{t('contractLabel')}</p>
               <p className="text-sm font-bold text-zinc-900 dark:text-zinc-100">{t('contract')}</p>
             </div>
           </div>
           <div className="flex items-center gap-3 border border-zinc-900/30 dark:border-zinc-100/30 px-4 py-3">
             <Clock size={16} className="text-zinc-500 shrink-0" />
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-zinc-400 dark:text-zinc-500">{t('timezoneLabel')}</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-zinc-600 dark:text-zinc-400">{t('timezoneLabel')}</p>
               <p className="text-sm font-bold text-zinc-900 dark:text-zinc-100">{t('timezone')}</p>
             </div>
           </div>
